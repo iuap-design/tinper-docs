@@ -1,0 +1,11 @@
+<!-- <li>
+  <form id="search-form">
+    <input type="text" id="search-query-<%- context %>" class="search-query st-default-search-input">
+  </form>
+</li> -->
+<li><a href="<%- url_for("/moy/") %>" class="nav-link<%- page.path.match(/moy/) ? ' current' : '' %>">集成开发框架(moy)</a></li>
+<!-- <li><a href="<%- url_for("/api/") %>" class="nav-link<%- page.path.match(/api/) ? ' current' : '' %>">moy</a></li> -->
+<li><a href="<%- url_for("/neoui/") %>" class="nav-link<%- page.path.match(/neoui/) ? ' current' : '' %>">ui框架(neoui)</a></li>
+<li><a href="<%- url_for("/uba/") %>" class="nav-link<%- page.path.match(/uba/) ? ' current' : '' %>">开发工具(uba)</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link<%- page.path.match(/bee/) ? ' current' : '' %>">react组件库(bee)</a></li>
+<li><a href="<%- url_for("/sparrow/") %>" class="nav-link<%- page.path.match(/sparrow/) ? ' current' : '' %>">工具库(sparrow)</a></li>

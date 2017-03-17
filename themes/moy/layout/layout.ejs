@@ -1,0 +1,91 @@
+<% var isIndex = page.path === 'index.html' %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%- page.title ? page.title + ' — ' : '' %>moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="<%- theme.site_description %>">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="<%- page.title ? page.title + ' — ' : '' %>moy">
+        <meta property="og:description" content="<%- theme.site_description %>">
+        <meta property="og:image" content="https://<%- theme.root_domain %>/<%- url_for("/images/logo.png") %>">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="<%- page.title ? page.title + ' — ' : '' %>moy">
+        <meta name="twitter:description" content="<%- theme.site_description %>">
+        <meta name="twitter:image" content="https://<%- theme.root_domain %>/images/logo.png">
+
+        <link rel="icon" href="<%- url_for("/images/logo-x.png") %>" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yyuap.com/static/uui/latest/css/tree.css">
+        <script src="//design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yyuap.com/static/raty/rating.js"></script>
+        <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yyuap.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <%- css(isIndex ? 'css/index' : 'css/page') %>
+
+        <script>window.PAGE_TYPE = "<%- page.type %>"</script>
+    </head>
+    <body class="<%- isIndex ? '' : 'docs' -%>">
+        <div id="mobile-bar" <%- isIndex ? 'class="top"' : '' %>>
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <%- partial('partials/header') %>
+        <% if (!isIndex) { %>
+            <div id="main" class="fix-sidebar">
+                <% if (page.blog_index) { %>
+                    <%- partial('partials/blog') %>
+                <% } else { %>
+                    <%- body %>
+                <% } %>
+            </div>
+            <script src="<%- url_for("/js/smooth-scroll.min.js") %>"></script>
+        <% } else { %>
+            <%- body %>
+        <% } %>
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="<%- url_for("/js/css.escape.js") %>"></script>
+        <script src="<%- url_for("/js/common.js") %>"></script>
+
+        <!-- search -->
+        <!-- <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <%- css('css/search') %>
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        [
+          '#search-query-nav',
+          '#search-query-sidebar'
+        ].forEach(function (selector) {
+          if (!document.querySelector(selector)) return
+          // search index defaults to v2
+          var match = window.location.pathname.match(/^\/(v\d+)/)
+          var version = match ? match[1] : 'v2'
+          docsearch({
+            appId: 'BH4D9OD16A',
+            apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+            indexName: 'vuejs',
+            inputSelector: selector,
+            algoliaOptions: { facetFilters: ["version:" + version] }
+          })
+        })
+        </script> -->
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>
