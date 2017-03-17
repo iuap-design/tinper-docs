@@ -25,7 +25,7 @@ order: 10
 	field:绑定数据集中对应的字段
 	datasource:绑定数据
 -->
-<input u-meta='{"id":"f1","type":"percent","data":"dt1","field":"f1"}' />
+<input u-meta='{&quot;id&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;percent&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}' />
 
 
 

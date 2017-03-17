@@ -228,7 +228,7 @@ DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGrid
                     <div class="u-widget-title">主表</div>
                 </div>
                 <div class="u-widget-body" style="margin-bottom: 30px">
-                    <div id="mainGridDiv" u-meta='{"id":"mainGrid","data":"mainDataTable","type":"grid","onRowSelected":"mainGridRowSelect"}'>
+                    <div id="mainGridDiv" u-meta='{&quot;id&quot;:&quot;mainGrid&quot;,&quot;data&quot;:&quot;mainDataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;onRowSelected&quot;:&quot;mainGridRowSelect&quot;}'>
 						<div options='{"field":"name","dataType":"String","title":"姓名"}'></div>
 						<div options='{"field":"tel","dataType":"String","title":"手机"}'></div>
 						<div options='{"field":"email","dataType":"String","title":"邮件"}'></div>
@@ -244,7 +244,7 @@ DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGrid
                     <div class="u-widget-title">子表</div>
                 </div>
                 <div class="u-widget-body" style="margin-bottom: 30px">
-                    <div id="childGridDiv" u-meta='{"id":"childGrid","data":"childDataTable","type":"grid"}'>
+                    <div id="childGridDiv" u-meta='{&quot;id&quot;:&quot;childGrid&quot;,&quot;data&quot;:&quot;childDataTable&quot;,&quot;type&quot;:&quot;grid&quot;}'>
 						<div options='{"field":"name","dataType":"String","title":"报销人"}'></div>
 						<div options='{"field":"date","dataType":"String","title":"日期"}'></div>
 						<div options='{"field":"type","dataType":"String","title":"费用类型"}'></div>

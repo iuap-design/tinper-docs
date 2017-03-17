@@ -25,7 +25,7 @@ order: 12
 	field:绑定数据集中对应的字段
 	datasource:绑定数据
 -->
-	<div id='pagination' class='u-pagination'  u-meta='{"type":"pagination","data":"listData"}'>
+	<div id='pagination' class='u-pagination'  u-meta='{&quot;type&quot;:&quot;pagination&quot;,&quot;data&quot;:&quot;listData&quot;}'>
     </div>
 
 

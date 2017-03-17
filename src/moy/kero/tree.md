@@ -32,7 +32,7 @@ order: 27
 
 
 {% raw %}
-<div id="treeTest" class="ztree" u-meta='{"id":"tree2","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'>
+<div id="treeTest" class="ztree" u-meta='{&quot;id&quot;:&quot;tree2&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;tree&quot;,&quot;idField&quot;:&quot;id&quot;,&quot;pidField&quot;:&quot;pid&quot;,&quot;nameField&quot;:&quot;title&quot;,&quot;setting&quot;:&quot;treeSetting&quot;}'>
 </div>
 
 

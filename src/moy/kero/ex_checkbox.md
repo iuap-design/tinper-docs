@@ -112,7 +112,7 @@ checkboxAObject.setEnable(true);//设置可用
 	field:绑定数据集中对应的字段
 	datasource:绑定数据
 -->
-<div u-meta='{"id":"c1","type":"u-checkbox","data":"dt1","field":"f1","datasource":"checkboxData"}'>
+<div u-meta='{&quot;id&quot;:&quot;c1&quot;,&quot;type&quot;:&quot;u-checkbox&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;datasource&quot;:&quot;checkboxData&quot;}'>
     <label class="u-checkbox">
         <input type="checkbox" class="u-checkbox-input">
         <span class="u-checkbox-label" data-role="name"></span>

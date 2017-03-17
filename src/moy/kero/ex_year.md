@@ -25,7 +25,7 @@ order: 18
 	data:指定数据模型中的数据集
 	field:绑定数据集中对应的字段
 -->
-<div class="" u-meta='{"id":"t1","type":"u-year","data":"dt1","field":"f1"}'>
+<div class="" u-meta='{&quot;id&quot;:&quot;t1&quot;,&quot;type&quot;:&quot;u-year&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'>
     <input class="u-input"/>
 </div>
 

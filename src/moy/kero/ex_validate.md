@@ -28,22 +28,22 @@ order: 16
 -->
 <div class="u-form-group">
     <label>验证输入不为空且需要为数值</label>
-    <div class="u-input-group u-has-feedback" u-meta='{"type":"u-text","data":"dt1","field":"otherSupportMoney"}'>
+    <div class="u-input-group u-has-feedback" u-meta='{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;otherSupportMoney&quot;}'>
         <div class="u-input-group-before" style="color: red;">*</div>
         <input type="text" class="u-form-control">
     </div>
     <label>验证编码不能为空：</label>
-    <div class="u-input-group u-has-feedback" u-meta='{"type":"u-text","data":"dt1","field":"otherSupportCode"}'>
+    <div class="u-input-group u-has-feedback" u-meta='{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;otherSupportCode&quot;}'>
         <div class="u-input-group-before" style="color: red;">*</div>
         <input type="text" class="u-form-control">
     </div>
     <label>显示默认值：</label>
-    <div class="u-input-group u-has-feedback" u-meta='{"type":"u-text","data":"dt1","field":"isValid"}'>
+    <div class="u-input-group u-has-feedback" u-meta='{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;isValid&quot;}'>
         <div class="u-input-group-before" style="color: red;">*</div>
         <input type="text" class="u-form-control">
     </div>
     <label>显示默认值(函数)：</label>
-    <div class="u-input-group u-has-feedback" u-meta='{"type":"u-text","data":"dt1","field":"isDefault"}'>
+    <div class="u-input-group u-has-feedback" u-meta='{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;isDefault&quot;}'>
         <div class="u-input-group-before" style="color: red;">*</div>
         <input type="text" class="u-form-control">
     </div>

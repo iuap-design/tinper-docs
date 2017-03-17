@@ -33,7 +33,7 @@ order: 25
 	data:指定数据模型中的数据集
 	field:绑定数据集中对应的字段
 -->
-<div class="u-text"  u-meta='{"id":"f1","type":"u-text","data":"dt1","field":"f1"}'>
+<div class="u-text"  u-meta='{&quot;id&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'>
     <input class="u-input"/>
     <label class="u-label">f1</label>
 </div>

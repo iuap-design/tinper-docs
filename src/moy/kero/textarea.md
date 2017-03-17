@@ -31,7 +31,7 @@ order: 26
 	field:绑定数据集中对应的字段
 -->
 <div id="txtWrap">
-    <textarea u-meta='{"id":"textareaAdapter","data":"dt1","field":"f1","type":"textarea"}'></textarea>
+    <textarea u-meta='{&quot;id&quot;:&quot;textareaAdapter&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;textarea&quot;}'></textarea>
 </div>
 
 

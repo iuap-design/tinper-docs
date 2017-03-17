@@ -26,7 +26,7 @@ order: 13
 	field:绑定数据集中对应的字段
 	datasource:绑定数据
 -->
-<div class="u-progress" u-meta='{"id":"c1","type":"u-progress","data":"dt1","field":"f1"}'></div>
+<div class="u-progress" u-meta='{&quot;id&quot;:&quot;c1&quot;,&quot;type&quot;:&quot;u-progress&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'></div>
 
 
 

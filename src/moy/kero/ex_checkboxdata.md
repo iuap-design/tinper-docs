@@ -27,11 +27,11 @@ order: 6
 	datasource:绑定数据
 	checkedValue:表示元素为选中状态对应的value值
 -->
-<label  class="u-checkbox" for="checkbox-1" u-meta='{"id":"c1","type":"u-checkbox","data":"dt1","field":"f1","checkedValue":"ck1"}'>
+<label  class="u-checkbox" for="checkbox-1" u-meta='{&quot;id&quot;:&quot;c1&quot;,&quot;type&quot;:&quot;u-checkbox&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;checkedValue&quot;:&quot;ck1&quot;}'>
     <input type="checkbox" id="checkbox-1"  value="test1" class="u-checkbox-input">
     <span class="u-checkbox-label">test1</span>
 </label>
-<label  class="u-checkbox" for="checkbox-2" u-meta='{"id":"c1","type":"u-checkbox","data":"dt1","field":"f1","checkedValue":"ck2"}'>
+<label  class="u-checkbox" for="checkbox-2" u-meta='{&quot;id&quot;:&quot;c1&quot;,&quot;type&quot;:&quot;u-checkbox&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;checkedValue&quot;:&quot;ck2&quot;}'>
     <input type="checkbox" id="checkbox-2"  value="test2" class="u-checkbox-input" >
     <span class="u-checkbox-label">test2</span>
 </label>

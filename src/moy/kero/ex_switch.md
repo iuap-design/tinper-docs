@@ -88,7 +88,7 @@ switchAObject.setEnable(true);//设置可用
 	checkedValue:打开值
 	unCheckedValue：关闭值
 -->
-<label class="u-switch" u-meta='{"id":"field1","type":"u-switch","data":"dt1","field":"f1","checkedValue":"男","unCheckedValue":"女"}'>
+<label class="u-switch" u-meta='{&quot;id&quot;:&quot;field1&quot;,&quot;type&quot;:&quot;u-switch&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;checkedValue&quot;:&quot;男&quot;,&quot;unCheckedValue&quot;:&quot;女&quot;}'>
     <input type="checkbox" class="u-switch-input" />
     <span class="u-switch-label"></span>
 </label>

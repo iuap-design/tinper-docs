@@ -92,7 +92,7 @@ comboboxAObject.setEnable(true);//设置可用
 	field:绑定数据集中对应的字段
 	datasource:绑定数据模型对应的数据
 -->
-<div id="combo1" class="u-combo u-text u-label-floating" u-meta='{"id":"dt1","type":"u-combobox","data":"dt1","field":"f1","datasource":"comboData"}'>
+<div id="combo1" class="u-combo u-text u-label-floating" u-meta='{&quot;id&quot;:&quot;dt1&quot;,&quot;type&quot;:&quot;u-combobox&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;datasource&quot;:&quot;comboData&quot;}'>
     <input class="u-input"/>
     <span class="u-combo-icon"></span>
 </div>

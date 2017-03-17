@@ -104,7 +104,7 @@ dateTimeAObject.setEnable(true);//设置可用
 	field:绑定数据集中对应的字段
 	format:日期控件特有属性。type为u-date时format默认为“YYYY-MM-DD”，type为u-datetime时format默认为“YYYY-MM-DD HH:mm:ss”
 -->
-<div class='u-datepicker' u-meta='{"id":"udatetime","type":"u-datetime","data":"dt1","field":"f1","format":"YYYY-MM-DD HH:mm"}'>
+<div class='u-datepicker' u-meta='{&quot;id&quot;:&quot;udatetime&quot;,&quot;type&quot;:&quot;u-datetime&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;format&quot;:&quot;YYYY-MM-DD HH:mm&quot;}'>
     <input class="u-input" type="text">
     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 	</span>

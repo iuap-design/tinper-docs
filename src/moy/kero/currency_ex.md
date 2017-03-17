@@ -27,9 +27,9 @@ order: 5
 	datasource:绑定数据模型对应的数据
 -->
 人民币：
-<input  u-meta='{"id":"f1","type":"currency","data":"dt1","field":"f1"}' />
+<input  u-meta='{&quot;id&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;currency&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}' />
 美元：
-<input  u-meta='{"id":"f2","type":"currency","data":"dt1","field":"f2"}' />
+<input  u-meta='{&quot;id&quot;:&quot;f2&quot;,&quot;type&quot;:&quot;currency&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f2&quot;}' />
 
 
 

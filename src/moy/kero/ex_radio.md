@@ -92,7 +92,7 @@ radioAObject.setEnable(true);//设置可用
 	field:绑定数据集中对应的字段
 	datasource:绑定数据
 -->
-<div u-meta='{"id":"r1","type":"u-radio","data":"dt1","field":"f1","datasource":"radiodata"}'>
+<div u-meta='{&quot;id&quot;:&quot;r1&quot;,&quot;type&quot;:&quot;u-radio&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;datasource&quot;:&quot;radiodata&quot;}'>
     <label  class="u-radio" >
         <input type="radio" class="u-radio-button" name="options">
         <span class="u-radio-label"></span>
