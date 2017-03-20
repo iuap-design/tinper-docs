@@ -26,9 +26,17 @@
 4. 启动hexo服务，会占用4000端口
 
    ```
-   $ hexo server
+   $ npm run server
    ```
 
 5. 访问[localhost:4000](localhost:4000)
 
    ​
+
+
+
+产出html，执行以下命令
+
+```
+$ npm run build
+```

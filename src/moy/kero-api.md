@@ -1,7 +1,7 @@
 ---
 title: keroAPI
 type: moy
-order: 2
+order: 3
 ---
 ## 基础api
 
@@ -617,3 +617,4 @@ order: 2
   			tmpdata[i] = node.innerHTML
   		})
   	//遍历将class为m_context的HTML的内容翻入数组tmpdata中。
+

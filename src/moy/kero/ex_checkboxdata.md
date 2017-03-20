@@ -1,7 +1,7 @@
 ---
 title: 复选框
 type: moy
-order: 6
+order: 7
 ---
 
 

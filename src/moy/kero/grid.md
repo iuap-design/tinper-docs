@@ -213,3 +213,4 @@ $(document).ready(function () {
     viewModel.dataTable.setSimpleData(data);
 });
 ```
+

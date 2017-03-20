@@ -1403,3 +1403,4 @@ keyValue | string | true | 需要展开节点的keyField对应的数值
 参数       | 类型      | 是否必须 | 说明
 -------- | ------- | ---- | ------------
 rowIndex | integer | true | 需要展开节点的index
+

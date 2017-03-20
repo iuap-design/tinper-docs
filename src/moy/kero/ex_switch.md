@@ -1,7 +1,7 @@
 ---
 title: 开关
 type: moy
-order: 15
+order: 16
 ---
 #### 开关
 

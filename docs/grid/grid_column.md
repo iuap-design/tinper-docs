@@ -1,0 +1,253 @@
+## Grid 列属性API
+
+### field
+
+类型     | 默认值  | 说明
+------ | ---- | -----------
+string | null | 数据列对应的field
+
+### width
+
+类型      | 默认值 | 说明
+------- | --- | ----------------------------------------
+integer | 200 | 数据列显示的宽度，可支持百分比和数字两种方式。百分比情况下则内容区不显示滚动条。
+
+### sortable
+
+类型      | 默认值  | 说明
+------- | ---- | ---------------------------------
+boolean | true | 数据列是否支持排序。true表示支持排序，false表示不支持排序
+
+### canDrag
+
+类型      | 默认值  | 说明
+------- | ---- | -------------------------------------
+boolean | true | 数据列是否支持拖动修改宽度。true表示支持拖动，false表示不支持拖动
+
+### fixed
+
+类型      | 默认值   | 说明
+------- | ----- | ---------------------------------------------
+boolean | false | 是否为固定列。true表示此列为固定列，在表头前面固定显示，false，表示此列不为固定列
+
+### visible
+
+类型      | 默认值  | 说明
+------- | ---- | --------------------------------
+boolean | true | 是否显示。true表示此列进行显示，false表示此列不进行显示
+
+### canVisible
+
+类型      | 默认值  | 说明
+------- | ---- | -----------------------------------------------------------
+boolean | true | 是否可以通过表头功能设置数据列是否显示。true表示可以通过表头设置是否显示，false表示不可以通过表头设置是否显示
+
+### sumCol
+
+类型      | 默认值   | 说明
+------- | ----- | --------------------------------------------
+boolean | false | 表格支持合计功能时，是否计算合计。true表示需要计算合计，false表示不需要计算合计
+
+### editable
+
+类型      | 默认值  | 说明
+------- | ---- | -----------------------------------------------
+boolean | true | 表格支持修改过程时，数据列是否可以修改。true表示可以进行修改，false表示不可以进行修改
+
+### editFormShow
+
+类型      | 默认值  | 说明
+------- | ---- | -----------------------------------------------------------------------
+boolean | true | 在表格以form形式编辑时，数据列是否显示，此参数用于支持form编辑模式下可对未显示的数据列进行编辑。true表示显示，false表示不显示
+
+### autoExpand
+
+类型      | 默认值   | 说明
+------- | ----- | -----------------------------------------------------
+boolean | false | 数据列宽度是否需要自动扩展，只有最后一列需要设置为true。true表示自动扩展，false表示不自动扩展
+
+### renderType
+
+类型       | 默认值  | 说明
+-------- | ---- | -------------------------------
+function | null | 数据列的渲染方式，通过function创建数据列对应的编辑控件
+
+**object属性说明**
+
+属性             | 说明
+-------------- | -----------------------------------
+value          | 单元格对应的value值
+element        | 单元格渲染时，组件提供的顶层div，自定义渲染内容在此div下进行渲染
+gridObj        | 表格控件对象
+row            | 单元格所在行对应的行对象，可获取所在行其他列信息
+gridCompColumn | 单元格对应的列对象，可获取所在列的配置信息
+rowIndex       | 单元格所在行的index
+
+### editType
+
+类型       | 默认值  | 说明
+-------- | ---- | -------------------------------
+function | null | 数据列的编辑方式，通过function创建数据列对应的编辑控件
+
+**object属性说明**
+
+属性       | 说明
+-------- | -----------------------------------
+value    | 单元格对应的value值
+element  | 单元格编辑时，组件提供的顶层div，自定义编辑内容在此div下进行编辑
+gridObj  | 表格控件对象
+field    | 数据列对应的field
+rowObj   | 数据行对象
+rowIndex | 数据行对应的index
+
+### dataType
+
+类型     | 默认值    | 说明
+------ | ------ | ----------------------------------------------
+string | String | 数据列的数据类型，支持：String, Date, Datetime, Int, Float
+
+### format
+
+类型     | 默认值    | 说明
+------ | ------ | -----------------------------------------------------------
+string | String | 数据列显示时的格式化方式。目前只对日期类型进行处理，例如：YYYY-MM-DD、YYYY-MM-DD hh:mm:ss
+
+### headerLevel
+
+类型      | 默认值 | 说明
+------- | --- | -------------------
+integer | 1   | header的层级，目前只支持最大2级
+
+### hiddenLevel
+
+类型      | 默认值 | 说明
+------- | --- | --------------------------------------------------------
+integer | 1   | 当表格属性overWidthHiddenColumn为true时，自动隐藏的优先级，数值越大，宽度不足时优先显示
+
+## 示例
+
+
+
+{% raw %}
+<div class="grid-body">
+	<div class="grid" id="grid-comp1"></div>
+</div>
+
+
+
+<script>
+$(document).ready(function () {
+	var data1 = {
+        values: [{
+            column1: "11",
+            column2: "12",
+            column3: "13",
+            id: '0',
+            pid: ''
+        }, {
+            column1: "21",
+            column2: "22",
+            column3: "23",
+            id: '1',
+            pid: '0'
+        }, {
+            column1: "31",
+            column2: "32",
+            column3: "33",
+            id: '3',
+            pid: '1'
+        }
+        ]
+    };
+
+    var colu = [{
+        field: "id",
+        title: "id"
+    }, {
+        field: "pid",
+        title: "pid"
+    }, {
+        field: "column1",
+        title: "column1"
+    }, {
+        field: "column2",
+        title: "column2"
+    }, {
+        field: "column3",
+        title: "column3"
+    }
+    ];
+
+    $("#grid-comp1").grid({
+        dataSource: data1,
+        id: 'case-g1',
+        editable: true,
+        keyField: 'id',
+        parentKeyField: 'pid',
+        columns: colu
+
+    });
+});
+</script>
+
+{% endraw %}
+``` html
+<div class="grid-body">
+	<div class="grid" id="grid-comp1"></div>
+</div>
+```
+
+``` js
+$(document).ready(function () {
+	var data1 = {
+        values: [{
+            column1: "11",
+            column2: "12",
+            column3: "13",
+            id: '0',
+            pid: ''
+        }, {
+            column1: "21",
+            column2: "22",
+            column3: "23",
+            id: '1',
+            pid: '0'
+        }, {
+            column1: "31",
+            column2: "32",
+            column3: "33",
+            id: '3',
+            pid: '1'
+        }
+        ]
+    };
+
+    var colu = [{
+        field: "id",
+        title: "id"
+    }, {
+        field: "pid",
+        title: "pid"
+    }, {
+        field: "column1",
+        title: "column1"
+    }, {
+        field: "column2",
+        title: "column2"
+    }, {
+        field: "column3",
+        title: "column3"
+    }
+    ];
+
+    $("#grid-comp1").grid({
+        dataSource: data1,
+        id: 'case-g1',
+        editable: true,
+        keyField: 'id',
+        parentKeyField: 'pid',
+        columns: colu
+
+    });
+});
+```

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "server": "hexo server",
-    "build": "hexo generate"
+    "build": "hexo generate",
+    "catch": "sh bin/catchmd.sh",
+    "concat": "node mdoperate/kero/mdconcat.js&& node mdoperate/neoui/mdconcat.js&&node mdoperate/neoui-kero/mdconcat.js&&node mdoperate/sparrow/mdconcat.js&&node mdoperate/grid/mdconcat.js",
+    "trans": "node mdoperate/kero/concatmd.js&& node mdoperate/neoui/concatmd.js&&node mdoperate/neoui-kero/concatmd.js&&node mdoperate/sparrow/concatmd.js&&node mdoperate/grid/concatmd.js&&node mdoperate/uba/concatmd.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "version": "3.2.2"
   },
   "dependencies": {
+    "fs-extra": "^2.1.2",
     "hexo": "^3.2.2",
     "hexo-deployer-git": "0.1.0",
     "hexo-generator-alias": "git+https://github.com/chrisvfritz/vuejs.org-hexo-generator-alias.git",
@@ -32,6 +36,13 @@
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "kero": "^3.1.27",
+    "neoui-kero": "^3.1.27",
+    "tinper-neoui": "^3.1.27",
+    "tinper-neoui-grid": "^3.1.28",
+    "tinper-neoui-tree": "^3.1.27",
+    "tinper-sparrow": "^3.1.27",
+    "uba": "^2.0.4"
   }
 }

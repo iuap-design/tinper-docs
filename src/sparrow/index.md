@@ -1,7 +1,7 @@
 ---
 title: 工具库详解
-type: sparrow
-order: 0
+type: moy
+order: 6
 ---
 ## 终端API
 
@@ -211,6 +211,39 @@ order: 0
 
   Boolean
 
+## Tinper-Sparrow
+
+### Sparrow介绍
+
+`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
+
+
+
+### 如何使用
+
+##### 浏览器环境
+
+* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
+
+```
+<script src="sparrow.js"></script>
+```
+
+
+##### 使用ES6模块开发环境
+
+* 步骤一：安装依赖
+
+```
+$ npm install --save tinper-sparrow
+```
+
+* 步骤二：在需要依赖的文件中引入
+
+```
+import {u} from 'tinper-sparrow/js/index.js'
+```
+
 
 ## DOM
 
@@ -318,119 +351,6 @@ order: 0
 * 用法：
   	u.stopEvent(e);	 
 
-## Tinper-Sparrow
-
-### Sparrow介绍
-
-`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
-
-
-
-### 如何使用
-
-##### 浏览器环境
-
-* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
-
-```
-<script src="sparrow.js"></script>
-```
-
-
-##### 使用ES6模块开发环境
-
-* 步骤一：安装依赖
-
-```
-$ npm install --save tinper-sparrow
-```
-
-* 步骤二：在需要依赖的文件中引入
-
-```
-import {u} from 'tinper-sparrow/js/index.js'
-```
-
-## 对象判断
-
-### isDate(obj)
-* 说明：
-
-  判断传入对象是否为Date对象
-
-* 参数：
-
-  * {Object} obj：必需。需要进行判断的对象。
-* 返回值：
-
-  {Boolean}传入对象为Date对象返回true否则返回false
-* 用法：
-  ​
-  	u.isDate(new Date());	 
-
-### isNumber(obj)
-* 说明：
-
-  判断传入对象是否为Number对象
-
-* 参数：
-
-  * {Object} obj：必需。需要进行判断的对象。
-* 返回值：
-
-  {Boolean}传入对象为Number对象返回true否则返回false
-* 用法：
-  ​
-  	u.isNumber('123');
-
-### isArray(obj)
-* 说明：
-
-  判断传入对象是否为数组对象
-
-* 参数：
-
-  * {Object} obj：必需。需要进行判断的对象。
-* 返回值：
-
-  {Boolean}传入对象为数组对象返回true否则返回false
-* 用法：
-  ​
-  	u.isArray(['1','2']);
-
-
-### isEmptyObject(obj)
-* 说明：
-
-  判断传入对象是否为空对象
-
-* 参数：
-
-  * {Object} obj：必需。需要进行判断的对象。
-* 返回值：
-
-  {Boolean}传入对象为空对象返回true否则返回false
-* 用法：
-  ​
-  	u.isEmptyObject({id:'id'});
-
-
-### inArray(node,arr)
-* 说明：
-
-  判断元素是否在数组中
-
-* 参数：
-
-  * {Object} node：必需。需要进行判断的元素。
-  * {Array} arr：必需。需要进行判断的数组。
-* 返回值：
-
-  {Boolean}如果数组中存在元素则返回true，否则返回false。
-* 用法：
-  ​
-  	u.inArray('a1',['a2','a3']);
-
 
 ## 样式
 
@@ -513,6 +433,86 @@ import {u} from 'tinper-sparrow/js/index.js'
   	u.css(document.getElementById('id1'), 'width','200px');	 //设置宽度为200px
   	u.css(document.getElementById('id1'), {width:'500px'}); // 设置宽度为500px
   	u.css(document.getElementById('id1'), 'width'); // 获取宽度
+
+## 对象判断
+
+### isDate(obj)
+* 说明：
+
+  判断传入对象是否为Date对象
+
+* 参数：
+
+  * {Object} obj：必需。需要进行判断的对象。
+* 返回值：
+
+  {Boolean}传入对象为Date对象返回true否则返回false
+* 用法：
+  ​
+  	u.isDate(new Date());	 
+
+### isNumber(obj)
+* 说明：
+
+  判断传入对象是否为Number对象
+
+* 参数：
+
+  * {Object} obj：必需。需要进行判断的对象。
+* 返回值：
+
+  {Boolean}传入对象为Number对象返回true否则返回false
+* 用法：
+  ​
+  	u.isNumber('123');
+
+### isArray(obj)
+* 说明：
+
+  判断传入对象是否为数组对象
+
+* 参数：
+
+  * {Object} obj：必需。需要进行判断的对象。
+* 返回值：
+
+  {Boolean}传入对象为数组对象返回true否则返回false
+* 用法：
+  ​
+  	u.isArray(['1','2']);
+
+
+### isEmptyObject(obj)
+* 说明：
+
+  判断传入对象是否为空对象
+
+* 参数：
+
+  * {Object} obj：必需。需要进行判断的对象。
+* 返回值：
+
+  {Boolean}传入对象为空对象返回true否则返回false
+* 用法：
+  ​
+  	u.isEmptyObject({id:'id'});
+
+
+### inArray(node,arr)
+* 说明：
+
+  判断元素是否在数组中
+
+* 参数：
+
+  * {Object} node：必需。需要进行判断的元素。
+  * {Array} arr：必需。需要进行判断的数组。
+* 返回值：
+
+  {Boolean}如果数组中存在元素则返回true，否则返回false。
+* 用法：
+  ​
+  	u.inArray('a1',['a2','a3']);
 
 ## 方法扩展
 
@@ -747,3 +747,4 @@ import {u} from 'tinper-sparrow/js/index.js'
       })
   })
   ```
+
