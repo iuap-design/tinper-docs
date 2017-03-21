@@ -12,7 +12,7 @@ var allData = '---' + '\r\n' +
 var allData1 = '---' + '\r\n' +
     'title: keroAPI' + '\r\n' +
     'type: moy' + '\r\n' +
-    'order: 3' + '\r\n' +
+    'order: 2' + '\r\n' +
     '---' + '\r\n';
 
 fs.readdir(readPath, function(err, files) {

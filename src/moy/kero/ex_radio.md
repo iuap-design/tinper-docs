@@ -1,7 +1,7 @@
 ---
 title: 单选框
 type: moy
-order: 15
+order: 14
 ---
 #### 单选框
 
