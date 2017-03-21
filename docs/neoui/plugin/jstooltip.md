@@ -43,12 +43,12 @@ title:'默认向上显示'
 ### 普通tooltip
 
 {% raw %}
-<div id='example'>
+<div class="example-content"><div id='example'>
 	<label id="top" class="ws">上提示</label>
 	<label id="down" class="ws">下提示</label>
 	<label id="left" class="ws">左提示</label>
 	<label id="right" class="ws">右提示</label>
-</div>
+</div></div>
 
 <style>
 .ws{
@@ -158,13 +158,13 @@ placement:'right'
 ### 批量生成tooltip
 
 {% raw %}
-<div id='example'>
+<div class="example-content"><div id='example'>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 </div>
-
+</div>
 
 <style>
 .ws{

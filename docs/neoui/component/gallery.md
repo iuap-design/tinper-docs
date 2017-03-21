@@ -7,7 +7,7 @@
 `u-gallery` 后跟上 `u-gallery-default`
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-default">
+<div class="example-content"><ul class="ui-gallery ui-gallery-default">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
             <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
@@ -45,7 +45,7 @@
         </div>
       </li>
   </ul>
-
+</div>
 
 
 
@@ -99,7 +99,7 @@
 `u-gallery` 后跟上 `u-gallery-overlay`
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-overlay">
+<div class="example-content"><ul class="ui-gallery ui-gallery-overlay">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
             <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
@@ -137,7 +137,7 @@
         </div>
       </li>
   </ul>
-
+</div>
 
 
 
@@ -191,7 +191,7 @@
 `u-gallery` 后跟上 `u-gallery-bordered`
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-bordered">
+<div class="example-content"><ul class="ui-gallery ui-gallery-bordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
             <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
@@ -229,7 +229,7 @@
         </div>
       </li>
   </ul>
-
+</div>
 
 <style>
 .example-content .u-button-group{
@@ -291,7 +291,7 @@
 `u-gallery` 后跟上 `u-gallery-imgbordered`
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-imgbordered">
+<div class="example-content"><ul class="ui-gallery ui-gallery-imgbordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
             <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
@@ -329,7 +329,7 @@
         </div>
       </li>
   </ul>
-
+</div>
 
 
 

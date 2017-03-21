@@ -77,7 +77,7 @@ comboboxAObject.setEnable(true);//设置可用
 * 实现JS更改下拉菜单默认数据`setComboData(arg)`
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -90,7 +90,7 @@ comboboxAObject.setEnable(true);//设置可用
 <div id="combo1" class="u-combo u-text u-label-floating" u-meta='{"id":"dt1","type":"u-combobox","data":"dt1","field":"f1","datasource":"comboData"}'>
     <input class="u-input"/>
     <span class="u-combo-icon"></span>
-</div>
+</div></div>
 
 
 

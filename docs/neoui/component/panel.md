@@ -4,7 +4,7 @@
 ### 基础
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
       <!-- Example Heading With Desc -->
       <div class="u-panel">
         <div class="u-panel-heading">
@@ -20,7 +20,7 @@
     </div>
       <!-- End Example Heading With Desc -->
 </div>
-
+</div>
 
 
 
@@ -51,7 +51,7 @@
 ### 带标题和注脚
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
     <!-- Example Panel With All -->
     <div class="u-panel u-panel-bordered">
         <div class="u-panel-heading">
@@ -66,7 +66,7 @@
     </div>
       <!-- End Example Panel With All -->
 </div>
-
+</div>
 
 
 
@@ -96,7 +96,7 @@
 ### 带注脚的面板
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
       <!-- Example Panel With Footer -->
     <div class="u-panel u-panel-bordered">
         <div class="u-panel-body">
@@ -109,7 +109,7 @@
     </div>
       <!-- End Example Panel With Footer -->
 </div>
-
+</div>
 
 
 
@@ -137,7 +137,7 @@
 ### 带标题的面板
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
   <!-- Example Panel With Heading -->
   <div class="u-panel u-panel-bordered">
     <div class="u-panel-heading">
@@ -153,7 +153,7 @@
   </div>
   <!-- End Example Panel With Heading -->
 </div>
-
+</div>
 
 
 

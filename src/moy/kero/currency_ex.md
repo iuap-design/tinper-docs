@@ -1,7 +1,7 @@
 ---
 title: 输入转换
 type: moy
-order: 5
+order: 4
 ---
 #### 输入转换
 
@@ -16,7 +16,7 @@ order: 5
 * 输入错误类型报错
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -29,7 +29,7 @@ order: 5
 人民币：
 <input  u-meta='{&quot;id&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;currency&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}' />
 美元：
-<input  u-meta='{&quot;id&quot;:&quot;f2&quot;,&quot;type&quot;:&quot;currency&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f2&quot;}' />
+<input  u-meta='{&quot;id&quot;:&quot;f2&quot;,&quot;type&quot;:&quot;currency&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f2&quot;}' /></div>
 
 
 

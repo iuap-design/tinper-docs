@@ -16,7 +16,7 @@ order: 18
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -27,7 +27,7 @@ order: 18
 -->
 <div class="" u-meta='{&quot;id&quot;:&quot;t2&quot;,&quot;type&quot;:&quot;u-time&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f2&quot;}'>
     <input class="u-input"/>
-</div>
+</div></div>
 
 
 

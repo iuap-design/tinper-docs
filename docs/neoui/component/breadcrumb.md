@@ -12,7 +12,7 @@
 "/"为分隔符
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb">
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Library</li>
@@ -22,7 +22,7 @@
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
 </ol>
-
+</div>
 
 
 
@@ -49,7 +49,7 @@
 "/"为分隔符,并添加Home icon
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb">
     <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Data</li>
@@ -58,7 +58,7 @@
     <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
-</ol>
+</ol></div>
 
 <style>
 .md-home:before {
@@ -92,7 +92,7 @@
 ### 其他分隔符
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb u-breadcrumb-arrow">
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Library</li>
@@ -101,7 +101,7 @@
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
-</ol>
+</ol></div>
 
 <style>
 .md-home:before {

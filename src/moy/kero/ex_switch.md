@@ -1,7 +1,7 @@
 ---
 title: 开关
 type: moy
-order: 16
+order: 12
 ---
 #### 开关
 
@@ -76,7 +76,7 @@ switchAObject.setEnable(true);//设置可用
 本例实现如下效果：
 
 {% raw %}
-
+<div class="example-content">
 <!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
@@ -91,7 +91,7 @@ switchAObject.setEnable(true);//设置可用
 <label class="u-switch" u-meta='{&quot;id&quot;:&quot;field1&quot;,&quot;type&quot;:&quot;u-switch&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;checkedValue&quot;:&quot;男&quot;,&quot;unCheckedValue&quot;:&quot;女&quot;}'>
     <input type="checkbox" class="u-switch-input" />
     <span class="u-switch-label"></span>
-</label>
+</label></div>
 
 
 

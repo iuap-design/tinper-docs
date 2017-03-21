@@ -1,7 +1,7 @@
 ---
 title: 年月选择
 type: moy
-order: 15
+order: 17
 ---
 #### 年月选择
 
@@ -33,7 +33,7 @@ u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -44,7 +44,7 @@ u-meta基础api请参考[这里](http://tinper.org/dist/kero/docs/moduleapi.html
 -->
 <div class="" u-meta='{&quot;id&quot;:&quot;t1&quot;,&quot;type&quot;:&quot;u-yearmonth&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'>
     <input class="u-input"/>
-</div>
+</div></div>
 
 
 

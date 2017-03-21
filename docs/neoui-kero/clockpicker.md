@@ -11,7 +11,7 @@
 * 关联`clockpicker`控件
 
 {% raw %}
-<!--
+<div class="example-content"><!--
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定
 	id,type.data,field为必选项
@@ -23,7 +23,7 @@
 <div class="" u-meta='{"id":"t1","type":"u-clockpicker","data":"dt1","field":"f1"}'>
     <input class="u-input"/>
 </div>
-
+</div>
 
 
 

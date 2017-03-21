@@ -1,7 +1,7 @@
 ---
 title: 下拉框
 type: moy
-order: 4
+order: 5
 ---
 #### 下拉框
 
@@ -82,7 +82,7 @@ comboboxAObject.setEnable(true);//设置可用
 * 实现JS更改下拉菜单默认数据`setComboData(arg)`
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -95,7 +95,7 @@ comboboxAObject.setEnable(true);//设置可用
 <div id="combo1" class="u-combo u-text u-label-floating" u-meta='{&quot;id&quot;:&quot;dt1&quot;,&quot;type&quot;:&quot;u-combobox&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;datasource&quot;:&quot;comboData&quot;}'>
     <input class="u-input"/>
     <span class="u-combo-icon"></span>
-</div>
+</div></div>
 
 
 

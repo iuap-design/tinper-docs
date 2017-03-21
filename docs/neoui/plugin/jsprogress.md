@@ -66,7 +66,7 @@
 ### 基本Progress
 
 {% raw %}
-<div id="p1" class="u-progress"></div>
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
 
 
 
@@ -95,7 +95,7 @@ u.on(window, 'load', function() {
 ### 不确定Progress
 
 {% raw %}
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
 
 
 
@@ -112,7 +112,7 @@ u.on(window, 'load', function() {
 有缓冲标识的进度条
 
 {% raw %}
-<div id="p3" class="u-progress"></div>
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
 
 
 

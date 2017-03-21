@@ -84,7 +84,7 @@ radioObject.enable();
 * `disabled`单选框不可用
 
 {% raw %}
-<span>可用未选radio</span>
+<div class="example-content"><span>可用未选radio</span>
 <label class="u-radio" for="option-1">
     <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
     <span class="u-radio-label">First</span>
@@ -103,7 +103,7 @@ radioObject.enable();
 <label class="u-radio" for="option-3">
     <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
     <span class="u-radio-label">Second</span>
-</label>
+</label></div>
 
 
 
@@ -143,7 +143,7 @@ radioObject.enable();
 * `u-radio-dark` - 灰色按钮
 
 {% raw %}
-<label class="u-radio u-radio-success" >
+<div class="example-content"><label class="u-radio u-radio-success" >
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">green</span>
 </label>
@@ -162,7 +162,7 @@ radioObject.enable();
 <label class="u-radio u-radio-dark">
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">grey</span>
-</label>
+</label></div>
 
 
 

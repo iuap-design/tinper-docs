@@ -142,9 +142,9 @@ dateObject.setFormat('YYYY');
 定义样式为`u-datepicker`的div父元素，包裹样式为`u-input`的input元素。
 
 {% raw %}
-<div class='u-datepicker'>
+<div class="example-content"><div class='u-datepicker'>
     <input class="u-input" type="text">
-</div>
+</div></div>
 
 
 

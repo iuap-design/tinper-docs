@@ -5,7 +5,7 @@
 在普通的input元素上添加`u-form-control`样式
 
 {% raw %}
-<input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com">
+<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></div>
 
 
 
@@ -21,8 +21,8 @@
 在普通输入框中添加`disabled` 属性
 
 {% raw %}
-<input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
-
+<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
+</div>
 
 
 
@@ -38,10 +38,10 @@
 ### 带后缀
 
 {% raw %}
-<div class="u-input-group u-has-feedback">
+<div class="example-content"><div class="u-input-group u-has-feedback">
     <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
     <span class="u-form-control-feedback uf uf-search-light-2"></span>
-</div>
+</div></div>
 
 
 
@@ -60,14 +60,14 @@
 当input框失去焦点时，校验输入的内容，如果内容长度大于0则隐藏必输字符`*`,否则显示
 
 {% raw %}
-<div class="u-form-group">
+<div class="example-content"><div class="u-form-group">
     <label for="exampleInput3">必输:</label>
     <div class="u-input-group u-has-feedback must-in">
         <div class="u-input-group-before " style="color: red;">*</div>
         <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
         <span class="u-form-control-feedback uf uf-search-light-2"></span>
     </div>
-</div>
+</div></div>
 
 
 

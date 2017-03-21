@@ -38,11 +38,11 @@ js会根据`u-clockpicker`来定位dom，然后绑定事件。
 ### clockpicker
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
 	<div class='u-clockpicker'>
 	    <input class="u-input" type="text">
 	</div>
-</div>
+</div></div>
 
 <style>
 .example .u-input{

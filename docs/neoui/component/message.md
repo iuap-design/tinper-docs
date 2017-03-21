@@ -12,7 +12,7 @@
 * `.u-meswarning` - 警告信息提示
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
     <div class="u-message u-mesnews active">
         <span class="u-msg-close uf uf-close"></span>
         News!
@@ -34,7 +34,7 @@
         Warning!
     </div>
 </div>
-
+</div>
 
 <style>
 .margin-r-10{
@@ -89,7 +89,7 @@
 消息类型对应相应的icon
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
     <div class="u-message dark u-mesnews active" >    
         <span class="u-msg-close uf uf-close"></span>
         <i class="uf uf-bell margin-r-10"></i>News!
@@ -110,7 +110,7 @@
         <span class="u-msg-close uf uf-close"></span>
         <i class="uf uf-exc-t-o margin-r-10"></i>Warning!
     </div>
-</div>
+</div></div>
 
 <style>
 .margin-r-10{

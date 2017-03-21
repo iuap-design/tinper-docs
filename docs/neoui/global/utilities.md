@@ -12,11 +12,11 @@
 添加`.center-block`实现水平居中
 
 {% raw %}
- <div class="example example-box">
+<div class="example-content"> <div class="example example-box">
 	<div class="h-64 w-64 bg-blue center-block ">
 		我是内容
 	</div>
-</div>
+</div></div>
 
 
 
@@ -40,10 +40,10 @@
 * `.clearfix`: 清除浮动
 
 {% raw %}
-<div class="example example-box">
+<div class="example-content"><div class="example example-box">
   <button type="button" class="u-button  u-button-success ">Left</button>
   <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
-</div>
+</div></div>
 
 
 
@@ -66,7 +66,7 @@
 * `.vertical-align-bottom`:添加这个样式到子元素上，实现垂直向下
 
 {% raw %}
-<div class="example example-box u-container-fluid">
+<div class="example-content"><div class="example example-box u-container-fluid">
 	<div class="u-row">
 
 		<div class="u-col-6">
@@ -80,7 +80,7 @@
 	 		</div>
 		</div>
 	</div>
-</div>
+</div></div>
 
 <style>
 .vertical-align-bottom.u-button{
@@ -126,7 +126,7 @@
 * `text-justify`: 文字两端对齐
 
 {% raw %}
-<div class="example example-box u-container-fluid">
+<div class="example-content"><div class="example example-box u-container-fluid">
     <div class="row">
         <div class="col-md-4 m-b-sm bg-grey h-64">
     		<img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:top">
@@ -147,7 +147,7 @@
         <p class="text-right">文件向右对齐</p>
         <p class="text-justify">文件两端对齐</p>
     </div>
-</div>
+</div></div>
 
 
 
@@ -245,11 +245,11 @@
 * `text-capitalize`: 将单词首字母大写
 
 {% raw %}
-<div class="example example-box">
+<div class="example-content"><div class="example example-box">
 	<p class="text-lowercase">Lowercased text.</p>
 	<p class="text-uppercase">Uppercased text.</p>
 	<p class="text-capitalize">Capitalized text.</p>
-</div>
+</div></div>
 
 
 
@@ -274,7 +274,7 @@
 * `text-nowrap`: 当内容超出容器宽度时，在一行显示，不折行。
 
 {% raw %}
-<p>文字是否包裹换行</p>
+<div class="example-content"><p>文字是否包裹换行</p>
 <div class="example example-box u-container-fluid " style="width:500px">
     <div class="u-row">
         <div class="u-col-md-3">
@@ -298,7 +298,7 @@
             </div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .vertical-align-bottom.u-button {

@@ -8,7 +8,7 @@
 
 
 {% raw %}
-<nav class="u-navbar u-navbar-default" role="navigation">
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
     <div class="u-container-fluid">
         <div class="u-navbar-header">
             <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
@@ -55,7 +55,7 @@
         </div>
     </div>
 </nav>
-
+</div>
 
 <style>
 .u-navbar {

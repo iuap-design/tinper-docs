@@ -1196,9 +1196,9 @@ rowIndex | integer | true | 需要展开节点的index
 
 
 {% raw %}
-<div class="grid-body">
+<div class="example-content"><div class="grid-body">
 	<div class="grid" id="grid-comp1"></div>
-</div>
+</div></div>
 
 
 

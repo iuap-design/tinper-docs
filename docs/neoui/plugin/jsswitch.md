@@ -114,7 +114,7 @@ switchObject.isChecked();
 - `disabled` 不可用
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-info" for="switch-info-unchecked">
     <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     <span class="u-switch-label"></span>
@@ -131,7 +131,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 
@@ -170,7 +170,7 @@ switchObject.isChecked();
 * `.u-switch-dark` - 灰色开关
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-primary" for="switch-primary">
     <input type="checkbox" id="switch-primary" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
@@ -195,7 +195,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-dark" class="u-switch-input" checked>
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 
@@ -239,7 +239,7 @@ switchObject.isChecked();
 * `.u-switch-sm` - 小尺寸开关
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-primary u-switch-lg margin-bottom-20" for="switch-primary-lg">
     <input type="checkbox" id="switch-primary-lg" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
@@ -252,7 +252,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-primary-sm" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 主子表
 type: moy
-order: 21
+order: 23
 ---
 #### 主子表
 
@@ -220,7 +220,7 @@ DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGrid
 
 
 {% raw %}
-<div class="u-container-fluid u-widget-bg">
+<div class="example-content"><div class="u-container-fluid u-widget-bg">
     <div class="u-row">
         <div class="u-col-md-12">
             <div class="u-widget  u-widget-right">
@@ -255,7 +255,7 @@ DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGrid
             </div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 

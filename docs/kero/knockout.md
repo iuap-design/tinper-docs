@@ -42,11 +42,11 @@ Ko的官网除了提供[Live examples](http://knockoutjs.com/examples/),还提�
 
 
 {% raw %}
-<!-- ko通过data-bind绑定数据 -->
+<div class="example-content"><!-- ko通过data-bind绑定数据 -->
 <p>First name: <input data-bind="value: firstName" /></p>
 <p>Last name: <input data-bind="value: lastName" /></p>
 <h4>Hello, <span data-bind="text: fullName"> </span>!</h4>
-
+</div>
 
 
 

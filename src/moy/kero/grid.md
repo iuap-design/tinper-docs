@@ -119,11 +119,11 @@ http://design.yyuap.com/static/uui/latest/js/u-grid.js
 
 
 {% raw %}
-<div id="gridTest1" u-meta='{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}'>
+<div class="example-content"><div id="gridTest1" u-meta='{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}'>
 	<div options='{"field":"name","dataType":"String","title":"名","editType":"string","sortable":true,"canSwap":true}'></div>
     <div options='{"field":"surname","dataType":"String","title":"姓氏","editType":"string" ,"renderType":"timeRender","sortable":true}'></div>
 	<div options='{"field":"currency","dataType":"String","title":"余额","editType":"float","editOptions":{"validType":"float","precision":"3","max":10000},"sumCol":true}'></div>
-</div>
+</div></div>
 
 <style>
 

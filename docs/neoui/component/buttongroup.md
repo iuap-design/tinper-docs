@@ -10,12 +10,12 @@
 ### 基础
 
 {% raw %}
-<div class="u-button-group ">
+<div class="example-content"><div class="u-button-group ">
     <button class="u-button">BUTTON</button>
     <button class="u-button">BUTTON</button>
     <button class="u-button">BUTTON</button>
 </div>
-
+</div>
 
 
 
@@ -37,7 +37,7 @@
 按钮组里嵌套下拉菜单
 
 {% raw %}
- <div class="u-button-group">
+<div class="example-content"> <div class="u-button-group">
     <button class="u-button ">BUTTON</button>
     <button class="u-button ">BUTTON</button>
     <button class="u-button " id="demo-menu-default">
@@ -51,7 +51,7 @@
         <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
     </ul>
 </div>
-
+</div>
 
 
 
@@ -85,7 +85,7 @@
 * 不添加样式代表默认尺寸
 
 {% raw %}
-<div class="u-button-group u-button-group-xg">	
+<div class="example-content"><div class="u-button-group u-button-group-xg">	
 	<button class="u-button raised u-button-border default">BUTTON</button>
 	<button class="u-button raised u-button-border default">BUTTON</button>
 	<button class="u-button raised u-button-border default">BUTTON</button>
@@ -107,7 +107,7 @@
 	<button class="u-button raised u-button-border default">BUTTON</button>
 	<button class="u-button raised u-button-border default">BUTTON</button>
 	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
+</div></div>
 
 <style>
 .example-content .u-button-group{

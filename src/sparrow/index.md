@@ -211,39 +211,6 @@ order: 6
 
   Boolean
 
-## Tinper-Sparrow
-
-### Sparrow介绍
-
-`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
-
-
-
-### 如何使用
-
-##### 浏览器环境
-
-* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
-
-```
-<script src="sparrow.js"></script>
-```
-
-
-##### 使用ES6模块开发环境
-
-* 步骤一：安装依赖
-
-```
-$ npm install --save tinper-sparrow
-```
-
-* 步骤二：在需要依赖的文件中引入
-
-```
-import {u} from 'tinper-sparrow/js/index.js'
-```
-
 
 ## DOM
 
@@ -351,88 +318,38 @@ import {u} from 'tinper-sparrow/js/index.js'
 * 用法：
   	u.stopEvent(e);	 
 
+## Tinper-Sparrow
 
-## 样式
+### Sparrow介绍
 
-### addClass(element,value)
-* 说明：
+`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
 
-  为HTML元素添加样式
 
-* 参数：
-  * {HTMLElement} element：必需。需要添加样式的HTML元素。
-  * {String} value：必需。添加的样式名。
-* 返回值：
 
-  无
-* 用法：
-  ​
-  	u.addClass(document.getElementById('id1'), 'add-class');
+### 如何使用
 
-### removeClass(element,value)
-* 说明：
+##### 浏览器环境
 
-  为HTML元素删除样式
+* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
 
-* 参数：
-  * {HTMLElement} element：必需。需要删除样式的HTML元素。
-  * {String} value：必需。删除的样式名。
-* 返回值：
+```
+<script src="sparrow.js"></script>
+```
 
-  无
-* 用法：
-  ​
-  	u.removeClass(document.getElementById('id1'), 'add-class');
 
-### hasClass(element,value)
-* 说明：
+##### 使用ES6模块开发环境
 
-  判断HTML元素是否存在某样式
+* 步骤一：安装依赖
 
-* 参数：
-  * {HTMLElement} element：必需。进行判断的HTML元素。
-  * {String} value：必需。进行判断的样式名。
-* 返回值：
+```
+$ npm install --save tinper-sparrow
+```
 
-  {Boolean}存在样式则返回true，不存在样式则返回false
-* 用法：
-  ​
-  	u.hasClass(document.getElementById('id1'), 'add-class');
+* 步骤二：在需要依赖的文件中引入
 
-### toggleClass(element,value)
-* 说明：
-
-  判断HTML元素是否存在某样式，存在则删除此样式，否则添加此样式
-
-* 参数：
-  * {HTMLElement} element：必需。进行判断的HTML元素。
-  * {String} value：必需。进行判断的样式名。
-* 返回值：
-
-  {Boolean}执行完方法之后，如果存在样式则返回true，不存在样式则返回false
-* 用法：
-  ​
-  	u.toggleClass(document.getElementById('id1'), 'add-class');
-
-### css(element,csstext,val)
-* 说明：
-
-  为HTML元素添加css样式属性。传入2个参数且第二个参数为字符串时获取HTML元素的css样式属性。
-
-* 参数：
-  * {HTMLElement} element：必需。进行判断的HTML元素。
-  * {String}/{Object} csstext：必需。传入值为String时表示要添加的css属性名称，传入值为Object时表示要添加的css属性名称及属性值组成的Object对象。
-  * {String} value：csstext为String时必需。需要添加的css属性值。
-* 返回值：
-
-  设置css样式属性时返回值为空。
-
-  获取css样式属性时返回值为对应的css样式属性值。
-* 用法：
-  ​
-  	u.css(document.getElementById('id1'), 'width','200px');	 //设置宽度为200px
-  	u.css(document.getElementById('id1'), {width:'500px'}); // 设置宽度为500px
-  	u.css(document.getElementById('id1'), 'width'); // 获取宽度
+```
+import {u} from 'tinper-sparrow/js/index.js'
+```
 
 ## 对象判断
 
@@ -747,4 +664,87 @@ import {u} from 'tinper-sparrow/js/index.js'
       })
   })
   ```
+
+
+## 样式
+
+### addClass(element,value)
+* 说明：
+
+  为HTML元素添加样式
+
+* 参数：
+  * {HTMLElement} element：必需。需要添加样式的HTML元素。
+  * {String} value：必需。添加的样式名。
+* 返回值：
+
+  无
+* 用法：
+  ​
+  	u.addClass(document.getElementById('id1'), 'add-class');
+
+### removeClass(element,value)
+* 说明：
+
+  为HTML元素删除样式
+
+* 参数：
+  * {HTMLElement} element：必需。需要删除样式的HTML元素。
+  * {String} value：必需。删除的样式名。
+* 返回值：
+
+  无
+* 用法：
+  ​
+  	u.removeClass(document.getElementById('id1'), 'add-class');
+
+### hasClass(element,value)
+* 说明：
+
+  判断HTML元素是否存在某样式
+
+* 参数：
+  * {HTMLElement} element：必需。进行判断的HTML元素。
+  * {String} value：必需。进行判断的样式名。
+* 返回值：
+
+  {Boolean}存在样式则返回true，不存在样式则返回false
+* 用法：
+  ​
+  	u.hasClass(document.getElementById('id1'), 'add-class');
+
+### toggleClass(element,value)
+* 说明：
+
+  判断HTML元素是否存在某样式，存在则删除此样式，否则添加此样式
+
+* 参数：
+  * {HTMLElement} element：必需。进行判断的HTML元素。
+  * {String} value：必需。进行判断的样式名。
+* 返回值：
+
+  {Boolean}执行完方法之后，如果存在样式则返回true，不存在样式则返回false
+* 用法：
+  ​
+  	u.toggleClass(document.getElementById('id1'), 'add-class');
+
+### css(element,csstext,val)
+* 说明：
+
+  为HTML元素添加css样式属性。传入2个参数且第二个参数为字符串时获取HTML元素的css样式属性。
+
+* 参数：
+  * {HTMLElement} element：必需。进行判断的HTML元素。
+  * {String}/{Object} csstext：必需。传入值为String时表示要添加的css属性名称，传入值为Object时表示要添加的css属性名称及属性值组成的Object对象。
+  * {String} value：csstext为String时必需。需要添加的css属性值。
+* 返回值：
+
+  设置css样式属性时返回值为空。
+
+  获取css样式属性时返回值为对应的css样式属性值。
+* 用法：
+  ​
+  	u.css(document.getElementById('id1'), 'width','200px');	 //设置宽度为200px
+  	u.css(document.getElementById('id1'), {width:'500px'}); // 设置宽度为500px
+  	u.css(document.getElementById('id1'), 'width'); // 获取宽度
 

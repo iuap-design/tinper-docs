@@ -12,7 +12,7 @@
 基本的表格没有外边框、悬浮特效、只是一个最基本的表格,需要开发者在`table`标签上添加样式`u-table-base`
 
 {% raw %}
-<table class="u-table-base">
+<div class="example-content"><table class="u-table-base">
     <thead>
         <tr>
             <th>#</th>
@@ -79,7 +79,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 
 
 
@@ -162,7 +162,7 @@
 含有外边框的表格，需要在`table`标签上添加样式`u-table-base u-table-bordered`
 
 {% raw %}
-<table class="u-table-base u-table-bordered">
+<div class="example-content"><table class="u-table-base u-table-bordered">
     <thead>
         <tr>
             <th>#</th>
@@ -229,7 +229,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 
 
 
@@ -313,7 +313,7 @@
 悬浮表格指鼠标移动到表格中的某行时，出现浅蓝色背景特效，需要开发者在`table`标签上添加样式`u-table-base u-table-hover`
 
 {% raw %}
-
+<div class="example-content">
 <table class="u-table-base u-table-hover">
     <thead>
         <tr>
@@ -381,7 +381,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 
 
 
@@ -465,7 +465,7 @@
 常用表格的表头含有背景色，表格整体具有边框，悬浮到tr上会有蓝色特效。开发者需要在`table`标签上添加样式`u-table`。
 
 {% raw %}
-<table class="u-table">
+<div class="example-content"><table class="u-table">
     <thead>
         <tr>
             <th>名称</th>
@@ -491,7 +491,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 
 
 
@@ -534,7 +534,7 @@
 斑马线表格的奇数行和偶数行的显示效果不同，需要开发者在`table`标签上添加样式`u-table-base u-table-striped`
 
 {% raw %}
-<table class="u-table-base u-table-striped">
+<div class="example-content"><table class="u-table-base u-table-striped">
     <thead>
         <tr>
             <th>#</th>
@@ -601,7 +601,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 
 
 

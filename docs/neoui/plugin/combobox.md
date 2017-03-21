@@ -103,12 +103,12 @@ document.getElementById('domId')['u.Combo'].emptyValue();
 ### 基础
 
 {% raw %}
-<div class="u-combo" id="combo1">
+<div class="example-content"><div class="u-combo" id="combo1">
     <div class="u-input-group u-has-feedback">
         <input class="u-form-control" />
         <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
     </div>
-</div>
+</div></div>
 
 
 
@@ -137,12 +137,12 @@ document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男
 添加 `mutil-select`样式 支持多选
 
 {% raw %}
-<div class="u-combo mutil-select" id="combo3">
+<div class="example-content"><div class="u-combo mutil-select" id="combo3">
     <div class="u-input-group u-has-feedback">
         <input class="u-form-control" />
         <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
     </div>
-</div>
+</div></div>
 
 
 

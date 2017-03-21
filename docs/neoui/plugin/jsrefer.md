@@ -46,9 +46,9 @@ u.refer({
 点击id为`referdom`元素的按钮，弹出参照层
 
 {% raw %}
-
+<div class="example-content">
 <button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-
+</div>
 
 
 

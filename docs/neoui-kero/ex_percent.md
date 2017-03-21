@@ -10,7 +10,7 @@
 * 设置默认精度
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -21,7 +21,7 @@
 	datasource:绑定数据
 -->
 <input u-meta='{"id":"f1","type":"percent","data":"dt1","field":"f1"}' />
-
+</div>
 
 
 

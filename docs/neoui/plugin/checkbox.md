@@ -97,7 +97,7 @@ checkboxObject.toggle();
 - `disabled` 不可用
 
 {% raw %}
-
+<div class="example-content">
 <label  class="u-checkbox">
     <input type="checkbox" class="u-checkbox-input" checked>
     <span class="u-checkbox-label">Checkbox</span>
@@ -114,7 +114,7 @@ checkboxObject.toggle();
     <input type="checkbox" class="u-checkbox-input" disabled checked>
     <span class="u-checkbox-label">Checkbox</span>
 </label>
-
+</div>
 
 
 
@@ -153,7 +153,7 @@ checkboxObject.toggle();
 - `u-checkbox-dark` 灰色
 
 {% raw %}
-<label  class="u-checkbox u-checkbox-success w-xs">
+<div class="example-content"><label  class="u-checkbox u-checkbox-success w-xs">
     <input type="checkbox" class="u-checkbox-input"  checked>
     <span class="u-checkbox-label">green</span>
 </label>
@@ -173,7 +173,7 @@ checkboxObject.toggle();
 <label  class="u-checkbox u-checkbox-dark w-xs">
     <input type="checkbox" class="u-checkbox-input"  checked>
     <span class="u-checkbox-label">grey</span>
-</label>
+</label></div>
 
 
 

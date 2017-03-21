@@ -10,7 +10,7 @@
 ### 左边menu
 
 {% raw %}
-<!-- Left aligned menu below button -->
+<div class="example-content"><!-- Left aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -22,7 +22,7 @@
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{
@@ -57,7 +57,7 @@
 ### 右边menu
 
 {% raw %}
-<!-- right aligned menu below button -->
+<div class="example-content"><!-- right aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -68,7 +68,7 @@
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{

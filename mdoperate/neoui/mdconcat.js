@@ -178,8 +178,8 @@ async.auto({
                                                 } else if (/\.html$/.test(filePath)) {
 
                                                     htmls = ts;
-                                                    //demoHtml = '<div class="example-content">' + ts + '</div>\r\n';
-                                                    demoHtml = ts + '\r\n';
+                                                    demoHtml = '<div class="example-content">' + ts + '</div>\r\n';
+                                                    // demoHtml = ts + '\r\n';
                                                     codeHtml = codeHtmlFun(ts);
                                                     cb(null, null)
                                                 } else if (/\.css$/.test(filePath)) {

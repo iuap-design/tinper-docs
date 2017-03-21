@@ -6,7 +6,7 @@
 ### 方向 
 
 {% raw %}
-<div class="example-tooltips">
+<div class="example-content"><div class="example-tooltips">
     <div id='example2'>
         <div class="tooltip top active" role="tooltip">
             <div class="tooltip-arrow"></div>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 <style>
 .example-tooltips{
@@ -97,7 +97,7 @@
 ### 预定义样式
 
 {% raw %}
-<div class="example-tooltips">
+<div class="example-content"><div class="example-tooltips">
     <div id='example3'>
         <div class="tooltip tooltip-primary top active" role="tooltip">
             <div class="tooltip-arrow"></div>
@@ -129,7 +129,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 <style>
 .example-tooltips{

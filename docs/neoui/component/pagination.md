@@ -10,8 +10,8 @@
 ### 基础
 
 {% raw %}
-<div id='pagination' class='u-pagination'>
-</div>
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
 
 
 
@@ -50,8 +50,8 @@
 在含有`u-pagination`的div元素中添加`u-pagination-no-border`样式即可
 
 {% raw %}
-<div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
-</div>
+<div class="example-content"><div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
+</div></div>
 
 
 
@@ -82,8 +82,8 @@
 添加样式`pagination-gap`可以增加页码之间的间距
 
 {% raw %}
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
 
 
 
@@ -116,7 +116,7 @@
 添加`pagination-lg`、`pagination-sm`样式可以使分页变大、变小
 
 {% raw %}
-<p>大尺寸</p>
+<div class="example-content"><p>大尺寸</p>
 <div id='paginationLg' class='u-pagination pagination-lg'>
 </div>
 <p>默认尺寸</p>
@@ -124,7 +124,7 @@
 </div>
 <p>小尺寸</p>
 <div id='paginationSm' class='u-pagination pagination-sm'>
-</div>
+</div></div>
 
 
 

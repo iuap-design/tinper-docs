@@ -11,7 +11,7 @@
 * 输入错误类型报错
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -24,7 +24,7 @@
 人民币：
 <input  u-meta='{"id":"f1","type":"currency","data":"dt1","field":"f1"}' />
 美元：
-<input  u-meta='{"id":"f2","type":"currency","data":"dt1","field":"f2"}' />
+<input  u-meta='{"id":"f2","type":"currency","data":"dt1","field":"f2"}' /></div>
 
 
 

@@ -10,7 +10,7 @@
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
 </div>
@@ -23,7 +23,7 @@
   <input type="text" class="u-form-control" placeholder="Username">
   <span class="u-input-group-addon">.00</span>
 </div>
-
+</div>
 
 
 
@@ -51,7 +51,7 @@
 
 
 {% raw %}
-<div class="u-input-group u-input-group-lg">
+<div class="example-content"><div class="u-input-group u-input-group-lg">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
 </div>
@@ -62,7 +62,7 @@
 <div class="u-input-group u-input-group-sm">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
-</div>
+</div></div>
 
 <style>
 .example-content .u-button-group{
@@ -96,7 +96,7 @@
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
   <span class="u-input-group-addon">
     <label  class="u-checkbox">
         <input type="checkbox" class="u-checkbox-input" checked>
@@ -111,7 +111,7 @@
     </label>
   </span>
   <input type="text" class="u-form-control">
-</div>
+</div></div>
 
 
 
@@ -141,7 +141,7 @@
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
     <div class="u-input-group-btn">
    		<button class="u-button  u-button-default" id="demo-menu">
             success
@@ -170,7 +170,7 @@
             <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 

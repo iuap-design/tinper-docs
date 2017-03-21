@@ -1,7 +1,7 @@
 ---
 title: 文本输入框
 type: moy
-order: 26
+order: 25
 ---
 #### 文本输入框
 
@@ -24,7 +24,7 @@ order: 26
 * 默认数据绑定：`textfield`输入框绑定默认字段
 
 {% raw %}
-<!--
+<div class="example-content"><!--
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定
 	id,type.data,field为必选项
@@ -36,7 +36,7 @@ order: 26
 <div class="u-text"  u-meta='{&quot;id&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'>
     <input class="u-input"/>
     <label class="u-label">f1</label>
-</div>
+</div></div>
 
 <style>
 

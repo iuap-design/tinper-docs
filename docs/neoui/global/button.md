@@ -16,13 +16,13 @@
 * `.u-button-warning` - 橙色按钮
 
 {% raw %}
-<button class="u-button ">BUTTON</button>
+<div class="example-content"><button class="u-button ">BUTTON</button>
 <button class="u-button u-button-primary">主色按钮</button>
 <button class="u-button u-button-accent">辅色按钮</button>
 <button class="u-button u-button-success">success</button>
 <button class="u-button u-button-info">info</button>
 <button class="u-button u-button-danger">danger</button>
-<button class="u-button u-button-warning">warning</button>
+<button class="u-button u-button-warning">warning</button></div>
 
 
 
@@ -47,10 +47,10 @@
 * `.u-button-sm` - 小尺寸
 
 {% raw %}
-<button class="u-button u-button-primary u-button-xg">特大尺寸</button>
+<div class="example-content"><button class="u-button u-button-primary u-button-xg">特大尺寸</button>
 <button class="u-button u-button-primary u-button-lg">大尺寸</button>
 <button class="u-button u-button-primary">默认尺寸</button>
-<button class="u-button u-button-primary u-button-sm">小尺寸</button>
+<button class="u-button u-button-primary u-button-sm">小尺寸</button></div>
 
 
 
@@ -70,8 +70,8 @@
 如果想按钮充满，添加样式 `.u-button-block`。
 
 {% raw %}
-<button class="u-button u-button-block u-button-primary">块级按钮</button>   
-<button class="u-button u-button-block u-button-accent">块级按钮</button>   
+<div class="example-content"><button class="u-button u-button-block u-button-primary">块级按钮</button>   
+<button class="u-button u-button-block u-button-accent">块级按钮</button>   </div>
 
 
 
@@ -93,13 +93,13 @@
 * `.u-button-round` + `.u-button-pill-right` - 右半圆按钮
 
 {% raw %}
-<button class="u-button u-button-primary u-button-round">椭圆按钮</button>
+<div class="example-content"><button class="u-button u-button-primary u-button-round">椭圆按钮</button>
 <button class="u-button u-button-primary u-button-squared">直角按钮</button>
 <button class="u-button u-button-primary u-button-floating">
     <i class="uf uf-pc"></i>
 </button>
 <button class="u-button u-button-primary u-button-round u-button-pill-left">左半圆按钮</button>
-<button class="u-button u-button-primary u-button-round u-button-pill-right">右半圆按钮</button>
+<button class="u-button u-button-primary u-button-round u-button-pill-right">右半圆按钮</button></div>
 
 
 

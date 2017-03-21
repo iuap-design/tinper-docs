@@ -11,7 +11,7 @@
 * 利用setSimpleData，修改数据集默认值
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -31,7 +31,7 @@
     <span class="u-checkbox-label">test2</span>
 </label>
 <div id="demo_div"></div>
-
+</div>
 
 
 

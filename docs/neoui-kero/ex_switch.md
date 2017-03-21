@@ -71,7 +71,7 @@ switchAObject.setEnable(true);//设置可用
 本例实现如下效果：
 
 {% raw %}
-
+<div class="example-content">
 <!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
@@ -86,7 +86,7 @@ switchAObject.setEnable(true);//设置可用
 <label class="u-switch" u-meta='{"id":"field1","type":"u-switch","data":"dt1","field":"f1","checkedValue":"男","unCheckedValue":"女"}'>
     <input type="checkbox" class="u-switch-input" />
     <span class="u-switch-label"></span>
-</label>
+</label></div>
 
 
 

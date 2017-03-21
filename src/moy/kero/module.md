@@ -1,7 +1,7 @@
 ---
 title: 控件模型
 type: moy
-order: 23
+order: 22
 ---
 ####  控件模型
 
@@ -24,7 +24,7 @@ order: 23
 
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -34,7 +34,7 @@ order: 23
 	field:绑定数据集中对应的字段
 -->
 <input id="demo_input" u-meta='{&quot;id&quot;:&quot;t1&quot;,&quot;type&quot;:&quot;string&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}' />
-<div id="demo_div"></div>
+<div id="demo_div"></div></div>
 
 
 

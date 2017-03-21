@@ -47,6 +47,14 @@ $uba -h
 ---
 > 通过查看[uba-templates](https://github.com/uba-templates)已知repo名字可以这样快速创建。
 
+## 如何安装
+
+使用 `npm` 将 `uba` 进行全局安装使用.
+
+```sh
+$ npm install uba -g
+```
+
 
 ## 关于uba
 
@@ -62,12 +70,4 @@ $ uba
 ```
 
 查看更多脚手架工程及说明请前往[uba-templates](https://github.com/uba-templates)
-
-## 如何安装
-
-使用 `npm` 将 `uba` 进行全局安装使用.
-
-```sh
-$ npm install uba -g
-```
 

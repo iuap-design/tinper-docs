@@ -1,7 +1,7 @@
 ---
 title: 分页
 type: moy
-order: 12
+order: 8
 ---
 #### 分页
 
@@ -15,7 +15,7 @@ order: 12
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -27,7 +27,7 @@ order: 12
 -->
 	<div id='pagination' class='u-pagination'  u-meta='{&quot;type&quot;:&quot;pagination&quot;,&quot;data&quot;:&quot;listData&quot;}'>
     </div>
-
+</div>
 
 
 

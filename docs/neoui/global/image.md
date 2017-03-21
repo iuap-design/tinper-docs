@@ -8,13 +8,13 @@
 在`img`标签上添加`img-rounded`可以显示成圆角图片，添加`img-circle`可以显示成圆形图片
 
 {% raw %}
-
+<div class="example-content">
 <img class="img-rounded" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
 
 <img class="img-circle" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
 
 <img width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
+</div>
 
 
 
@@ -37,11 +37,11 @@
 在`img`标签上添加样式`img-bordered`即可实现一个灰色边框的图片。在上面的基础添加`img-bordered-orange`可以显示警告黄色边框，添加`img-bordered-green`实现成功绿色边框
 
 {% raw %}
-<img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+<div class="example-content"><img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
 
 <img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
 
-<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="..."></div>
 
 
 

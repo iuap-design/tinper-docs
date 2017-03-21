@@ -19,7 +19,7 @@
 
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -29,7 +29,7 @@
 	field:绑定数据集中对应的字段
 -->
 <input id="demo_input" u-meta='{"id":"t1","type":"string","data":"dt1","field":"f1"}' />
-<div id="demo_div"></div>
+<div id="demo_div"></div></div>
 
 
 

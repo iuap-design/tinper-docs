@@ -1,7 +1,7 @@
 ---
 title: 年份选择
 type: moy
-order: 19
+order: 16
 ---
 #### 年份选择
 
@@ -16,7 +16,7 @@ order: 19
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -27,7 +27,7 @@ order: 19
 -->
 <div class="" u-meta='{&quot;id&quot;:&quot;t1&quot;,&quot;type&quot;:&quot;u-year&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}'>
     <input class="u-input"/>
-</div>
+</div></div>
 
 
 

@@ -21,7 +21,7 @@
 使用单一的一组`Row`和`col`栅格组件，就可以创建一个基本的栅格系统。所有的列`col`必须放在`Row`中。
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
 	<div class="u-row">
 	    <div class="u-col-4"><div class="example-col">4</div></div>
 	    <div class="u-col-4"><div class="example-col">4</div></div>
@@ -32,7 +32,7 @@
 	    <div class="u-col-4"><div class="example-col">4</div></div>
 	    <div class="u-col-2"><div class="example-col">2</div></div>
 	</div>
-</div>
+</div></div>
 
 <style>
 .example {
@@ -84,7 +84,7 @@
 是否不希望在小屏幕设备上所有的列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 `.u-col-xs-*` 和 `.u-col-md-*`
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
     <div class="u-row">
         <div class="u-col-xs-12 u-col-md-8">
             <div class="example-col">u-col-xs-12 u-col-md-8</div>
@@ -102,7 +102,7 @@
             <div class="example-col">u-col-xs-6 u-col-md-4</div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .example {
@@ -161,7 +161,7 @@
 即便有上面给出的栅格class，你也不免会碰到一些问题，例如，在某些阈值时，某些列可能会出现比别的列高的情况。为了克服这一问题，建议联合使用 `.clearfix` 和 响应式工具类（参考辅助类的响应式布局）。
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
     <div class="u-row">
         <div class="u-col-xs-6 u-col-sm-3">
             <div class="example-col">.col-xs-6 .col-sm-3我的内容比较多。修改屏幕的宽度或者在手机端可以看到clearfix所起到的效果</div>
@@ -179,7 +179,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 <style>
 .example {
@@ -238,7 +238,7 @@
 为了在内容中嵌套默认的网格，请添加一个新的 `.u-row`，并在一个已有的 `.u-col-md-*` 列内添加一组 `.u-col-md-*` 列。被嵌套的行应包含一组列，这组列个数不能超过12（其实，没有要求你必须占满12列）。
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
     <div class="u-row">
         <div class="u-col-sm-9">
             <div class="example-col">Level 1: .col-sm-9
@@ -253,7 +253,7 @@
             </div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .example {
@@ -316,7 +316,7 @@
 为了在大屏幕显示器上使用偏移，请使用 `.col-md-offset-* `类。这些类会把一个列的左外边距（margin）增加 * 列，其中 * 范围是从 1 到 11。例如，`.u-col-md-offset-4`类将 `.u-col-md-4`元素向右侧偏移了4个列（column）的宽度。
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
     <div class="u-row">
         <div class="u-col-md-4  u-col-md-offset-4">
             <div class="example-col">.u-col-md-4  .u-col-md-offset-4</div>
@@ -325,7 +325,7 @@
             <div class="example-col">.u-col-md-4</div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .example {
@@ -375,7 +375,7 @@
 使用`.col-md-push-*` and `.col-md-pull-* `能改变我们的内置网格列的顺序。*越大值越大，push值到左边距，pull值到右边距。
 
 {% raw %}
-<div class="u-container-fluid example">
+<div class="example-content"><div class="u-container-fluid example">
     <div class="u-row">
         <div class="u-col-md-8 u-col-md-push-4">
             <div class="example-col">.u-col-md-8 .u-col-md-push-4</div>
@@ -384,7 +384,7 @@
             <div class="example-col">.u-col-md-4 .u-col-md-pull-8</div>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .example {

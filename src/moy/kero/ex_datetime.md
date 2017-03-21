@@ -1,7 +1,7 @@
 ---
 title: 日期时间选择
 type: moy
-order: 8
+order: 9
 ---
 #### 日期时间选择
 
@@ -94,7 +94,7 @@ dateTimeAObject.setEnable(true);//设置可用
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -109,7 +109,7 @@ dateTimeAObject.setEnable(true);//设置可用
     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 	</span>
 </div>
-
+</div>
 
 
 

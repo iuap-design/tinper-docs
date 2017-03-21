@@ -3,6 +3,98 @@ title: JavaScript插件
 type: neoui
 order: 3
 ---
+## Autocomplete
+### 基本使用
+下面的例子是autocomplete的基本使用   
+html 代码
+``` html
+<!--html-->
+<input id="test1"/><br/>
+```
+javascript 代码
+``` javascript
+// JS
+var sourceValue = [
+        {
+            label : "C++"
+        },
+        {
+            label : 'Java'
+        },
+        {
+            label : 'Python'
+        },
+        {
+            label : 'JavaScript'
+        },
+        {
+            label : 'C#'
+        },
+        {
+            label : 'C'
+        },
+        {
+            label : 'Jython'
+        },
+        {
+            label : 'Html'
+        },
+        {
+            label : 'html'
+        }
+    ];
+
+    new u.Autocomplete({
+        el:'#test1',
+        source: sourceValue,
+        select: function(item){
+            alert('select');
+        }
+    })
+```
+### 参数详解
+#### source
+数据源
+
+#### select
+选中之后的回调函数。
+
+#### multiSelect
+是否允许多选
+
+#### maxItemsToShow
+最多显示的条数。默认为-1，为不限制显示条数
+
+#### minChars
+控制智能提示时输入的最少字符数。默认为1
+
+#### delay
+设置弹出智能提示的延迟时间（单位ms）。默认为400ms
+
+#### inputClass
+input框的自定义样式。
+
+#### resultsClass
+下拉框的自定义样式
+
+#### lineSeparator
+ajax请求返回数据的行的分隔符。默认为\n
+
+#### cellSeparator
+ajax请求返回数据的数据项的分隔符。默认为|
+
+#### matchCase
+是否区分大小写。默认为否
+
+#### cacheLength
+是否缓存数据。默认为是
+
+#### loadingClass
+加载数据时input框的样式
+
+#### selectFirst
+是否默认选中第一项。默认为false
+
 ## 复选框
 
 checkbox提供了基础复选框、不同色彩复选框、图片复选框、个性复选框
@@ -102,7 +194,7 @@ checkboxObject.toggle();
 - `disabled` 不可用
 
 {% raw %}
-
+<div class="example-content">
 <label  class="u-checkbox">
     <input type="checkbox" class="u-checkbox-input" checked>
     <span class="u-checkbox-label">Checkbox</span>
@@ -119,7 +211,7 @@ checkboxObject.toggle();
     <input type="checkbox" class="u-checkbox-input" disabled checked>
     <span class="u-checkbox-label">Checkbox</span>
 </label>
-
+</div>
 
 
 
@@ -158,7 +250,7 @@ checkboxObject.toggle();
 - `u-checkbox-dark` 灰色
 
 {% raw %}
-<label  class="u-checkbox u-checkbox-success w-xs">
+<div class="example-content"><label  class="u-checkbox u-checkbox-success w-xs">
     <input type="checkbox" class="u-checkbox-input"  checked>
     <span class="u-checkbox-label">green</span>
 </label>
@@ -178,7 +270,7 @@ checkboxObject.toggle();
 <label  class="u-checkbox u-checkbox-dark w-xs">
     <input type="checkbox" class="u-checkbox-input"  checked>
     <span class="u-checkbox-label">grey</span>
-</label>
+</label></div>
 
 
 
@@ -208,98 +300,6 @@ checkboxObject.toggle();
 ```
 
 
-
-## Autocomplete
-### 基本使用
-下面的例子是autocomplete的基本使用   
-html 代码
-``` html
-<!--html-->
-<input id="test1"/><br/>
-```
-javascript 代码
-``` javascript
-// JS
-var sourceValue = [
-        {
-            label : "C++"
-        },
-        {
-            label : 'Java'
-        },
-        {
-            label : 'Python'
-        },
-        {
-            label : 'JavaScript'
-        },
-        {
-            label : 'C#'
-        },
-        {
-            label : 'C'
-        },
-        {
-            label : 'Jython'
-        },
-        {
-            label : 'Html'
-        },
-        {
-            label : 'html'
-        }
-    ];
-
-    new u.Autocomplete({
-        el:'#test1',
-        source: sourceValue,
-        select: function(item){
-            alert('select');
-        }
-    })
-```
-### 参数详解
-#### source
-数据源
-
-#### select
-选中之后的回调函数。
-
-#### multiSelect
-是否允许多选
-
-#### maxItemsToShow
-最多显示的条数。默认为-1，为不限制显示条数
-
-#### minChars
-控制智能提示时输入的最少字符数。默认为1
-
-#### delay
-设置弹出智能提示的延迟时间（单位ms）。默认为400ms
-
-#### inputClass
-input框的自定义样式。
-
-#### resultsClass
-下拉框的自定义样式
-
-#### lineSeparator
-ajax请求返回数据的行的分隔符。默认为\n
-
-#### cellSeparator
-ajax请求返回数据的数据项的分隔符。默认为|
-
-#### matchCase
-是否区分大小写。默认为否
-
-#### cacheLength
-是否缓存数据。默认为是
-
-#### loadingClass
-加载数据时input框的样式
-
-#### selectFirst
-是否默认选中第一项。默认为false
 
 ## clockpicker插件
 
@@ -341,11 +341,11 @@ js会根据`u-clockpicker`来定位dom，然后绑定事件。
 ### clockpicker
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
 	<div class='u-clockpicker'>
 	    <input class="u-input" type="text">
 	</div>
-</div>
+</div></div>
 
 <style>
 .example .u-input{
@@ -475,12 +475,12 @@ document.getElementById('domId')['u.Combo'].emptyValue();
 ### 基础
 
 {% raw %}
-<div class="u-combo" id="combo1">
+<div class="example-content"><div class="u-combo" id="combo1">
     <div class="u-input-group u-has-feedback">
         <input class="u-form-control" />
         <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
     </div>
-</div>
+</div></div>
 
 
 
@@ -509,12 +509,12 @@ document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男
 添加 `mutil-select`样式 支持多选
 
 {% raw %}
-<div class="u-combo mutil-select" id="combo3">
+<div class="example-content"><div class="u-combo mutil-select" id="combo3">
     <div class="u-input-group u-has-feedback">
         <input class="u-form-control" />
         <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
     </div>
-</div>
+</div></div>
 
 
 
@@ -537,6 +537,189 @@ document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'jav
 u.compMgr.updateComp();
 document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
 ```
+
+## 日期
+
+用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/datetime)
+(http://tinper.org/webide/#/demos/ui/datetime)
+
+
+用户可以在`u-datepicker`的dom元素添加format属性，来自定义日期的显示格式。具体fomat内容定义如下：
+
+|         | 标记     | 输出结果  |
+| ------------- |:-------------:| -----:|
+| Year      | YY | 70 71 ... 29 30 |
+|     | YYYY    |   1970 1971 ... 2029 2030 |
+| Month | M     |   1 2 ... 11 12 |
+|  | MM     |   01 02 ... 11 12 |
+|  | MMM     |   1月 2月 ... 11月 12月 |
+|  | MMMM     |   一月 二月 ... 十一月 十二月 |
+| Day of Month | D     |   1 2 ... 30 31 |
+|  | DD     |  01 02 ... 30 31 |
+| Hour | H     |   0 1 ... 22 23 |
+|  | HH     |  00 01 ... 22 23 |
+|  | h   |  1 2 ... 11 12 |
+|  | hh    |  01 02 ... 11 12 |
+| Minute | m     |   0 1 ... 58 59 |
+|  | mm     |  00 01 ... 58 59 |
+| Second | s     |   0 1 ... 58 59 |
+|  | ss     |  00 01 ... 58 59|
+| 12小时制时间后缀 | a     |   am/pm |
+
+
+
+
+### API
+
+
+#### DateTimePicker 对象
+
+* 类型：`Object`
+* 说明： DateTimePicker表示一个时间对象
+* 用法：
+
+获取方式：1、获取绑定日期的dom元素 ； 2、读取dom元素上的属性'u.DateTimePicker'
+
+```
+
+var dateObject = document.getElementById('domId')['u.DateTimePicker'];
+
+```
+
+**注：** 如果获取的日期对象为空，原因为日期没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取日期对象。
+
+
+#### Methods
+
+#### setDate
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置具体的日期 | * `{String} dateStr` 具体格式："YYYY-MM-DD hh:mm:ss" |
+
+* 用法：
+
+```
+dateObject.setDate('2016-02-03'),可以设置空值，清掉之前设置的值，dateObject.setDate('')。
+
+```
+#### setEnable
+
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置日期控件是否可用 | * `{Boolean},  `true`时可用，为`false`为不可用 |
+
+* 用法：
+
+```
+
+dateObject.setEnable(false);
+
+```
+
+#### setStartDate
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置可选时间范围的起始日期 | * `{String} startDate` 具体格式："YYYY-MM-DD" |
+
+* 用法：
+
+```
+
+    dateObject.setStartDate('2016-01-01');
+
+```
+
+#### setEndDate
+
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 设置可选时间范围的结束日期 | * `{String} endDate` 具体格式："YYYY-MM-DD" |
+
+* 用法：
+
+```
+
+dateObject.setEndDate('2016-01-01');
+
+```
+
+#### setFormat
+
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
+
+
+* 用法：
+
+```
+
+dateObject.setFormat('YYYY');
+
+```
+
+#### Event
+
+#### select
+
+| 类型        | 说明          | 参数  |
+| ------------- |:-------------:| -----:|
+| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
+
+
+
+相关内容：
+
+[日期在kero中使用](http://tinper.org/dist/kero/docs/ex_datetime.html)    
+
+[日期在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+### 如何使用
+定义样式为`u-datepicker`的div父元素，包裹样式为`u-input`的input元素。
+
+{% raw %}
+<div class="example-content"><div class='u-datepicker'>
+    <input class="u-input" type="text">
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class='u-datepicker'>
+    <input class="u-input" type="text">
+</div>
+```
+
+
+
+## 表格控件扩展说明
+
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+
+### css覆盖
+
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+
+### 切换主题
+
+通过引用不同的主题文件的方式来修改当前表格的主题。
+
+**注：后续提供**
+
+### afterCreate
+
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
+
+### 扩展表格方法
+
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
 
 ## 表格控件
 
@@ -1736,9 +1919,9 @@ rowIndex | integer | true | 需要展开节点的index
 
 
 {% raw %}
-<div class="grid-body">
+<div class="example-content"><div class="grid-body">
 	<div class="grid" id="grid-comp1"></div>
-</div>
+</div></div>
 
 
 
@@ -1858,189 +2041,6 @@ $(document).ready(function () {
     });
 });
 ```
-
-## 日期
-
-用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/datetime)
-(http://tinper.org/webide/#/demos/ui/datetime)
-
-
-用户可以在`u-datepicker`的dom元素添加format属性，来自定义日期的显示格式。具体fomat内容定义如下：
-
-|         | 标记     | 输出结果  |
-| ------------- |:-------------:| -----:|
-| Year      | YY | 70 71 ... 29 30 |
-|     | YYYY    |   1970 1971 ... 2029 2030 |
-| Month | M     |   1 2 ... 11 12 |
-|  | MM     |   01 02 ... 11 12 |
-|  | MMM     |   1月 2月 ... 11月 12月 |
-|  | MMMM     |   一月 二月 ... 十一月 十二月 |
-| Day of Month | D     |   1 2 ... 30 31 |
-|  | DD     |  01 02 ... 30 31 |
-| Hour | H     |   0 1 ... 22 23 |
-|  | HH     |  00 01 ... 22 23 |
-|  | h   |  1 2 ... 11 12 |
-|  | hh    |  01 02 ... 11 12 |
-| Minute | m     |   0 1 ... 58 59 |
-|  | mm     |  00 01 ... 58 59 |
-| Second | s     |   0 1 ... 58 59 |
-|  | ss     |  00 01 ... 58 59|
-| 12小时制时间后缀 | a     |   am/pm |
-
-
-
-
-### API
-
-
-#### DateTimePicker 对象
-
-* 类型：`Object`
-* 说明： DateTimePicker表示一个时间对象
-* 用法：
-
-获取方式：1、获取绑定日期的dom元素 ； 2、读取dom元素上的属性'u.DateTimePicker'
-
-```
-
-var dateObject = document.getElementById('domId')['u.DateTimePicker'];
-
-```
-
-**注：** 如果获取的日期对象为空，原因为日期没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取日期对象。
-
-
-#### Methods
-
-#### setDate
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 设置具体的日期 | * `{String} dateStr` 具体格式："YYYY-MM-DD hh:mm:ss" |
-
-* 用法：
-
-```
-dateObject.setDate('2016-02-03'),可以设置空值，清掉之前设置的值，dateObject.setDate('')。
-
-```
-#### setEnable
-
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 设置日期控件是否可用 | * `{Boolean},  `true`时可用，为`false`为不可用 |
-
-* 用法：
-
-```
-
-dateObject.setEnable(false);
-
-```
-
-#### setStartDate
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 设置可选时间范围的起始日期 | * `{String} startDate` 具体格式："YYYY-MM-DD" |
-
-* 用法：
-
-```
-
-    dateObject.setStartDate('2016-01-01');
-
-```
-
-#### setEndDate
-
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 设置可选时间范围的结束日期 | * `{String} endDate` 具体格式："YYYY-MM-DD" |
-
-* 用法：
-
-```
-
-dateObject.setEndDate('2016-01-01');
-
-```
-
-#### setFormat
-
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
-
-
-* 用法：
-
-```
-
-dateObject.setFormat('YYYY');
-
-```
-
-#### Event
-
-#### select
-
-| 类型        | 说明          | 参数  |
-| ------------- |:-------------:| -----:|
-| Function     | 规定日期的显示格式 |  `{String} format` 具体格式：参考format内容 |
-
-
-
-相关内容：
-
-[日期在kero中使用](http://tinper.org/dist/kero/docs/ex_datetime.html)    
-
-[日期在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-### 如何使用
-定义样式为`u-datepicker`的div父元素，包裹样式为`u-input`的input元素。
-
-{% raw %}
-<div class='u-datepicker'>
-    <input class="u-input" type="text">
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class='u-datepicker'>
-    <input class="u-input" type="text">
-</div>
-```
-
-
-
-## 表格控件扩展说明
-
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
-
-### css覆盖
-
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
-
-### 切换主题
-
-通过引用不同的主题文件的方式来修改当前表格的主题。
-
-**注：后续提供**
-
-### afterCreate
-
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
-
-### 扩展表格方法
-
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
 
 ## message控件
 
@@ -2114,8 +2114,8 @@ u.on(msgBtn,'click', function(){
 点击 Success 弹出提示消息
 
 {% raw %}
-<button id="msgBtn" class="u-button" >Success</button>
-
+<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
+</div>
 
 
 
@@ -2139,99 +2139,6 @@ var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
 u.on(msgBtn,'click', function(){ 
     u.showMessage({msg:rightInfo,position:"center"})
 })
-```
-
-## 分页控件
-
-分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
-
-### 插件依赖
-
-依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
-
-### 用法
-
-1.分页通过添加`u-pagination`的样式来实现基本的分页效果
-
-2.创建一个分页对象，方法：new u.pagination(paramter)
-
-### js方法与参数
-名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
----------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
-pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
-update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
-
-
-### 基础分页
-
-{% raw %}
-<div id='pagination' class='u-pagination'>
-</div>
-
-
-
-<script>
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-</script>
-
-{% endraw %}
-``` html
-<div id='pagination' class='u-pagination'>
-</div>
-```
-
-``` js
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-```
-
-
-### 有间距的分页
-添加样式`pagination-gap`可以增加页码之间的间距
-
-{% raw %}
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
-
-
-
-<script>
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script>
-
-{% endraw %}
-``` html
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
-```
-
-``` js
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
 ```
 
 ## 模态框
@@ -2309,7 +2216,7 @@ dialogObject.show();//这里的dialog是通过u.dialog创建的对象
 点击保存，做进一步的确认校验
 
 {% raw %}
-<button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
+<div class="example-content"><button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
 <div id="dialog_content" style="display:none;">
 	<div class="u-msg-title">
 		<h4>单据名称</h4>
@@ -2321,7 +2228,7 @@ dialogObject.show();//这里的dialog是通过u.dialog创建的对象
 		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
 		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
 	</div>
-</div>
+</div></div>
 
 
 
@@ -2380,6 +2287,99 @@ var cancelButton = document.body.querySelector(".u-msg-cancel");
 u.on(cancelButton,'click', function(){
 	md.close();
 });
+```
+
+## 分页控件
+
+分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
+
+### 插件依赖
+
+依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
+
+### 用法
+
+1.分页通过添加`u-pagination`的样式来实现基本的分页效果
+
+2.创建一个分页对象，方法：new u.pagination(paramter)
+
+### js方法与参数
+名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
+---------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
+pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
+update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
+
+
+### 基础分页
+
+{% raw %}
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+
+
+
+<script>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+</script>
+
+{% endraw %}
+``` html
+<div id='pagination' class='u-pagination'>
+</div>
+```
+
+``` js
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+```
+
+
+### 有间距的分页
+添加样式`pagination-gap`可以增加页码之间的间距
+
+{% raw %}
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+
+
+
+<script>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+{% endraw %}
+``` html
+<div id='paginationGap' class='u-pagination pagination-gap'>
+</div>
+```
+
+``` js
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
 ```
 
 ## progress控件
@@ -2450,7 +2450,7 @@ u.on(cancelButton,'click', function(){
 ### 基本Progress
 
 {% raw %}
-<div id="p1" class="u-progress"></div>
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
 
 
 
@@ -2479,7 +2479,7 @@ u.on(window, 'load', function() {
 ### 不确定Progress
 
 {% raw %}
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
 
 
 
@@ -2496,7 +2496,7 @@ u.on(window, 'load', function() {
 有缓冲标识的进度条
 
 {% raw %}
-<div id="p3" class="u-progress"></div>
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
 
 
 
@@ -2577,7 +2577,7 @@ u.on(window, 'load', function() {
 常用于评级评分
 
 {% raw %}
- <div class="u-rating" data-score="3" data-plugin="rating"></div>
+<div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div></div>
 
 <style>
 .content{
@@ -2716,9 +2716,9 @@ u.refer({
 点击id为`referdom`元素的按钮，弹出参照层
 
 {% raw %}
-
+<div class="example-content">
 <button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-
+</div>
 
 
 
@@ -2786,238 +2786,6 @@ u.on(referDOM, 'click', function(){
 })
 
 ```
-
-## tabs控件
-
-多内容分类切换显示
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-### 用法
-
-定义锚链接，与内容id匹配，详情见示例
-
-
-### 背景tabs
-
-切换 背景色跟随作为`active`状态
-
-{% raw %}
-<div class="u-widget-body">
-    <div class="u-tabs u-tabs-pill">
-        <div class="u-tabs__tab-bar">
-            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
-            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
-            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
-        </div>
-        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-                <li>项目4</li>
-                <li>项目5</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-2">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-3">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-widget-body">
-    <div class="u-tabs u-tabs-pill">
-        <div class="u-tabs__tab-bar">
-            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
-            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
-            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
-        </div>
-        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-                <li>项目4</li>
-                <li>项目5</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-2">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-3">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-            </ul>
-        </div>
-    </div>
-</div>
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-```
-
-
-
-### 线性tabs
-
-切换 线性跟随作为`active`状态
-
-{% raw %}
-<div class="u-tabs">
-    <div class="u-tabs__tab-bar">
-        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
-        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
-        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
-    </div>
-    <div class="u-tabs__panel is-active" id="tab-panel-1">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-            <li>项目4</li>
-            <li>项目5</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-2">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-3">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-        </ul>
-    </div>
-</div>
-
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-tabs">
-    <div class="u-tabs__tab-bar">
-        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
-        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
-        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
-    </div>
-    <div class="u-tabs__panel is-active" id="tab-panel-1">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-            <li>项目4</li>
-            <li>项目5</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-2">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-3">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-        </ul>
-    </div>
-</div>
-
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-```
-
 
 ## 开关
 
@@ -3135,7 +2903,7 @@ switchObject.isChecked();
 - `disabled` 不可用
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-info" for="switch-info-unchecked">
     <input type="checkbox" id="switch-info-unchecked" class="u-switch-input">
     <span class="u-switch-label"></span>
@@ -3152,7 +2920,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-info-checkdisalbed" class="u-switch-input" checked disabled>
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 
@@ -3191,7 +2959,7 @@ switchObject.isChecked();
 * `.u-switch-dark` - 灰色开关
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-primary" for="switch-primary">
     <input type="checkbox" id="switch-primary" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
@@ -3216,7 +2984,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-dark" class="u-switch-input" checked>
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 
@@ -3260,7 +3028,7 @@ switchObject.isChecked();
 * `.u-switch-sm` - 小尺寸开关
 
 {% raw %}
-
+<div class="example-content">
 <label class="u-switch u-switch-primary u-switch-lg margin-bottom-20" for="switch-primary-lg">
     <input type="checkbox" id="switch-primary-lg" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
@@ -3273,7 +3041,7 @@ switchObject.isChecked();
     <input type="checkbox" id="switch-primary-sm" class="u-switch-input" checked="true">
     <span class="u-switch-label"></span>
 </label>
-
+</div>
 
 
 
@@ -3295,6 +3063,238 @@ switchObject.isChecked();
 
 ```
 
+
+
+## tabs控件
+
+多内容分类切换显示
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+### 用法
+
+定义锚链接，与内容id匹配，详情见示例
+
+
+### 背景tabs
+
+切换 背景色跟随作为`active`状态
+
+{% raw %}
+<div class="example-content"><div class="u-widget-body">
+    <div class="u-tabs u-tabs-pill">
+        <div class="u-tabs__tab-bar">
+            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+        </div>
+        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+                <li>项目4</li>
+                <li>项目5</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-2">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-3">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+            </ul>
+        </div>
+    </div>
+</div></div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-widget-body">
+    <div class="u-tabs u-tabs-pill">
+        <div class="u-tabs__tab-bar">
+            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+        </div>
+        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+                <li>项目4</li>
+                <li>项目5</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-2">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-3">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+            </ul>
+        </div>
+    </div>
+</div>
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+```
+
+
+
+### 线性tabs
+
+切换 线性跟随作为`active`状态
+
+{% raw %}
+<div class="example-content"><div class="u-tabs">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-tabs">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
+
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+```
 
 
 ## tooltip控件
@@ -3342,12 +3342,12 @@ title:'默认向上显示'
 ### 普通tooltip
 
 {% raw %}
-<div id='example'>
+<div class="example-content"><div id='example'>
 	<label id="top" class="ws">上提示</label>
 	<label id="down" class="ws">下提示</label>
 	<label id="left" class="ws">左提示</label>
 	<label id="right" class="ws">右提示</label>
-</div>
+</div></div>
 
 <style>
 .ws{
@@ -3457,13 +3457,13 @@ placement:'right'
 ### 批量生成tooltip
 
 {% raw %}
-<div id='example'>
+<div class="example-content"><div id='example'>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 	<label class="ws tl-ws">批量提示</label>
 </div>
-
+</div>
 
 <style>
 .ws{
@@ -3534,6 +3534,42 @@ title:'批量向上显示'
 
 ```
 
+## loading插件
+
+loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
+
+### 插件依赖
+
+
+首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+再引入js: http://design.yyuap.com/static/uui/latest/js/u-date.js
+
+### 用法
+
+定义样式为`u-loading is-active u-loading-single-color `的div父元素
+
+```
+<div class="u-loading is-active u-loading-single-color"></div>
+
+```
+
+js会根据`u-loading`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-loading is-active u-loading-single-color"></div>
+```
+
+
+
 ## menu控件
 
 动态弹出菜单
@@ -3546,7 +3582,7 @@ title:'批量向上显示'
 ### 左边menu
 
 {% raw %}
-<!-- Left aligned menu below button -->
+<div class="example-content"><!-- Left aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -3558,7 +3594,7 @@ title:'批量向上显示'
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{
@@ -3593,7 +3629,7 @@ title:'批量向上显示'
 ### 右边menu
 
 {% raw %}
-<!-- right aligned menu below button -->
+<div class="example-content"><!-- right aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -3604,7 +3640,7 @@ title:'批量向上显示'
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{
@@ -3632,6 +3668,72 @@ title:'批量向上显示'
 	padding-left: 30px;
 }
 ```
+
+
+## 月份
+
+用户可以通过此插件进行月份的选择。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/month)
+
+
+### API
+
+#### Month 对象
+
+* 类型：`Object`
+* 说明： Month表示一个月对象
+* 用法：
+
+获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
+
+```
+
+var monthObject = document.getElementById('domId')['u.Month'];
+
+```
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月份
+* 参数：
+	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
+* 用法：
+
+```
+monthObject.setValue(2);
+
+```
+
+
+相关内容：
+
+[月份在kero中使用](http://tinper.org/dist/kero/docs/ex_month.html)    
+
+[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
 
 
 ## 月日
@@ -3682,10 +3784,10 @@ monthDateObject.setValue('02-15');
 
 定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
 {% raw %}
-
+<div class="example-content">
 <div class='u-monthdate'>
     <input class="u-input" type="text">
-</div>
+</div></div>
 
 <style>
 .example .u-input{
@@ -3698,256 +3800,6 @@ monthDateObject.setValue('02-15');
 ``` html
 
 <div class='u-monthdate'>
-    <input class="u-input" type="text">
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
-
-
-## loading插件
-
-loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
-
-### 插件依赖
-
-
-首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-再引入js: http://design.yyuap.com/static/uui/latest/js/u-date.js
-
-### 用法
-
-定义样式为`u-loading is-active u-loading-single-color `的div父元素
-
-```
-<div class="u-loading is-active u-loading-single-color"></div>
-
-```
-
-js会根据`u-loading`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="u-loading is-active u-loading-single-color"></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-loading is-active u-loading-single-color"></div>
-```
-
-
-
-## 月份
-
-用户可以通过此插件进行月份的选择。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/month)
-
-
-### API
-
-#### Month 对象
-
-* 类型：`Object`
-* 说明： Month表示一个月对象
-* 用法：
-
-获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
-
-```
-
-var monthObject = document.getElementById('domId')['u.Month'];
-
-```
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月份
-* 参数：
-	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
-* 用法：
-
-```
-monthObject.setValue(2);
-
-```
-
-
-相关内容：
-
-[月份在kero中使用](http://tinper.org/dist/kero/docs/ex_month.html)    
-
-[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-
-
-
-
-{% endraw %}
-``` html
-
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-
-
-## year插件
-
-只选择年
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-除了js文件还需引入u.css。
-
-### 用法
-
-#### 引入文件
-在header中引入u.css
-```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
-```
-在文件尾部加入u.js
-
-```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
-
-```
-
-#### 代码
-
-定义样式为`u-year`的div父元素，包裹类`u-input`的input
-
-```
-<div class='u-year'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-js会根据`u-year`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="example">
-	<div class='u-year'>
-	    <input class="u-input" type="text">
-	</div>
-</div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="example">
-	<div class='u-year'>
-	    <input class="u-input" type="text">
-	</div>
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
-
-
-## 年月
-
-用户可以通过此插件进行年月的选择。
-
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/yearmonth)
-
-用户可以在`u-yearmonth`的dom元素添加format属性，来自定义年月的显示格式。具体定义方式参考[这里](http://tinper.org/dist/neoui/plugin/date.html)
-
-### API
-
-#### YearMonth 对象
-
-* 类型：`Object`
-* 说明： YearMonth表示一个年月对象
-* 用法：
-
-获取方式：1、获取绑定年月的dom元素 ； 2、读取dom元素上的属性'u.YearMonth'
-
-```
-
-var yearMonthObject = document.getElementById('domId')['u.YearMonth'];
-
-```
-
-**注：** 如果获取的年月对象为空，原因为年月没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取年月对象。
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的年月
-* 参数：
-	* `{String} value` 具体格式："YYYY-MM"
-* 用法：
-
-```
-yearMonthObject.setValue('2016-02');
-
-```
-
-
-相关内容：
-
-[年月在kero中使用](http://tinper.org/dist/kero/docs/ex_yearmonth.html)    
-
-[年月在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-定义样式为`u-yearmonth`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-
-<div class='u-yearmonth'>
-    <input class="u-input" type="text">
-</div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-
-<div class='u-yearmonth'>
     <input class="u-input" type="text">
 </div>
 ```
@@ -4045,7 +3897,7 @@ radioObject.enable();
 * `disabled`单选框不可用
 
 {% raw %}
-<span>可用未选radio</span>
+<div class="example-content"><span>可用未选radio</span>
 <label class="u-radio" for="option-1">
     <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
     <span class="u-radio-label">First</span>
@@ -4064,7 +3916,7 @@ radioObject.enable();
 <label class="u-radio" for="option-3">
     <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
     <span class="u-radio-label">Second</span>
-</label>
+</label></div>
 
 
 
@@ -4104,7 +3956,7 @@ radioObject.enable();
 * `u-radio-dark` - 灰色按钮
 
 {% raw %}
-<label class="u-radio u-radio-success" >
+<div class="example-content"><label class="u-radio u-radio-success" >
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">green</span>
 </label>
@@ -4123,7 +3975,7 @@ radioObject.enable();
 <label class="u-radio u-radio-dark">
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">grey</span>
-</label>
+</label></div>
 
 
 
@@ -4193,11 +4045,11 @@ js会根据`u-time`来定位dom，然后绑定事件。
 
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
 	<div class='u-time'>
 	    <input class="u-input" type="text">
 	</div>
-</div>
+</div></div>
 
 <style>
 .example .u-input{
@@ -4212,6 +4064,154 @@ js会根据`u-time`来定位dom，然后绑定事件。
 	<div class='u-time'>
 	    <input class="u-input" type="text">
 	</div>
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
+
+
+## year插件
+
+只选择年
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+除了js文件还需引入u.css。
+
+### 用法
+
+#### 引入文件
+在header中引入u.css
+```
+<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+```
+在文件尾部加入u.js
+
+```
+<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+
+```
+
+#### 代码
+
+定义样式为`u-year`的div父元素，包裹类`u-input`的input
+
+```
+<div class='u-year'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+js会根据`u-year`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="example">
+	<div class='u-year'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="example">
+	<div class='u-year'>
+	    <input class="u-input" type="text">
+	</div>
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
+
+
+## 年月
+
+用户可以通过此插件进行年月的选择。
+
+
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/yearmonth)
+
+用户可以在`u-yearmonth`的dom元素添加format属性，来自定义年月的显示格式。具体定义方式参考[这里](http://tinper.org/dist/neoui/plugin/date.html)
+
+### API
+
+#### YearMonth 对象
+
+* 类型：`Object`
+* 说明： YearMonth表示一个年月对象
+* 用法：
+
+获取方式：1、获取绑定年月的dom元素 ； 2、读取dom元素上的属性'u.YearMonth'
+
+```
+
+var yearMonthObject = document.getElementById('domId')['u.YearMonth'];
+
+```
+
+**注：** 如果获取的年月对象为空，原因为年月没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取年月对象。
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的年月
+* 参数：
+	* `{String} value` 具体格式："YYYY-MM"
+* 用法：
+
+```
+yearMonthObject.setValue('2016-02');
+
+```
+
+
+相关内容：
+
+[年月在kero中使用](http://tinper.org/dist/kero/docs/ex_yearmonth.html)    
+
+[年月在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+定义样式为`u-yearmonth`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-yearmonth'>
+    <input class="u-input" type="text">
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+
+<div class='u-yearmonth'>
+    <input class="u-input" type="text">
 </div>
 ```
 ``` css

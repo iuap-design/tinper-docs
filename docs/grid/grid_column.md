@@ -129,9 +129,9 @@ integer | 1   | 当表格属性overWidthHiddenColumn为true时，自动隐藏的
 
 
 {% raw %}
-<div class="grid-body">
+<div class="example-content"><div class="grid-body">
 	<div class="grid" id="grid-comp1"></div>
-</div>
+</div></div>
 
 
 

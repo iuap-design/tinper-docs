@@ -70,8 +70,8 @@ u.on(msgBtn,'click', function(){
 点击 Success 弹出提示消息
 
 {% raw %}
-<button id="msgBtn" class="u-button" >Success</button>
-
+<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
+</div>
 
 
 

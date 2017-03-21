@@ -54,7 +54,7 @@
 常用于评级评分
 
 {% raw %}
- <div class="u-rating" data-score="3" data-plugin="rating"></div>
+<div class="example-content"> <div class="u-rating" data-score="3" data-plugin="rating"></div></div>
 
 <style>
 .content{

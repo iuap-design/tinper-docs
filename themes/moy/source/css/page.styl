@@ -12,7 +12,7 @@
 .content
     position relative
     padding 2.2em 0
-    max-width 800px
+    max-width 600px
     margin 0 auto
     &.api
         > a:first-of-type > h2
@@ -75,13 +75,10 @@
 
         z-index: 1
     ul, ol
-        list-style none
         overflow hidden
         margin 0
         padding 0
         padding-left 1.5em
-        // FIX: Some link click targets are covered without this
-        position inherit
     a
         color $green
         font-weight 600
@@ -141,6 +138,15 @@
 #main.fix-sidebar
     .sidebar
         position fixed
+.example-content
+    margin-top 10px;
+    position relative;
+    padding 10px;
+    background #fff;
+    border 1px solid #ddd;
+#combo1
+    ul
+        padding 0
 
 @media screen and (min-width: 1590px)
     #header

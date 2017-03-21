@@ -1,7 +1,7 @@
 ---
 title: 单选框
 type: moy
-order: 14
+order: 15
 ---
 #### 单选框
 
@@ -82,7 +82,7 @@ radioAObject.setEnable(true);//设置可用
 
 实现效果如下：
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -97,7 +97,7 @@ radioAObject.setEnable(true);//设置可用
         <input type="radio" class="u-radio-button" name="options">
         <span class="u-radio-label"></span>
     </label>
-</div>
+</div></div>
 
 
 

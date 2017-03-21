@@ -4,7 +4,7 @@
 ### 左边menu
 
 {% raw %}
-<!-- Left aligned menu below button -->
+<div class="example-content"><!-- Left aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -28,7 +28,7 @@
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{
@@ -76,7 +76,7 @@
 按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
 
 {% raw %}
-<div class="u-row">
+<div class="example-content"><div class="u-row">
     <div class="u-col-3">
         <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
             success
@@ -125,7 +125,7 @@
             <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 
@@ -194,7 +194,7 @@
 * 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
 
 {% raw %}
-<div class="u-button-group u-split">
+<div class="example-content"><div class="u-button-group u-split">
     <button class="u-button u-split-pre">
         打印
     </button>
@@ -207,7 +207,7 @@
             <li class="u-menu-item"><a>到货单</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 
@@ -245,14 +245,14 @@
 * 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
 
 {% raw %}
-<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
     联查
     <span class="u-right-icon uf uf-arrow-down"></span>
 </button>
 <ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
     <li class="u-menu-item "><a>报价单</a></li>
     <li class="u-menu-item"><a>到货单</a></li>
-</ul>
+</ul></div>
 
 
 

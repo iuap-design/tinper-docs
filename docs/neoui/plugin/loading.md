@@ -23,7 +23,7 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 
 
 {% raw %}
-<div class="u-loading is-active u-loading-single-color"></div>
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
 
 
 

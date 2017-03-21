@@ -73,7 +73,7 @@ dialogObject.show();//这里的dialog是通过u.dialog创建的对象
 点击保存，做进一步的确认校验
 
 {% raw %}
-<button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
+<div class="example-content"><button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
 <div id="dialog_content" style="display:none;">
 	<div class="u-msg-title">
 		<h4>单据名称</h4>
@@ -85,7 +85,7 @@ dialogObject.show();//这里的dialog是通过u.dialog创建的对象
 		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
 		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
 	</div>
-</div>
+</div></div>
 
 
 

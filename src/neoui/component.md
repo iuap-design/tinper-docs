@@ -3,156 +3,6 @@ title: 组件
 type: neoui
 order: 2
 ---
-## 按钮组
-
-样式为`u-button-group`的父元素，包裹多个样式为`u-button`的button元素
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/buttongroup)
-
-
-### 基础
-
-{% raw %}
-<div class="u-button-group ">
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-</div>
-
-
-
-
-{% endraw %}
-``` html
-<div class="u-button-group ">
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-</div>
-
-```
-
-
-
-
-### 嵌套
-
-按钮组里嵌套下拉菜单
-
-{% raw %}
- <div class="u-button-group">
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button " id="demo-menu-default">
-        dropdown
-        <span class="u-right-icon uf uf-arrow-down"></span>
-    </button>
-    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
-        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-    </ul>
-</div>
-
-
-
-
-{% endraw %}
-``` html
- <div class="u-button-group">
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button " id="demo-menu-default">
-        dropdown
-        <span class="u-right-icon uf uf-arrow-down"></span>
-    </button>
-    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
-        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-    </ul>
-</div>
-
-```
-
-
-
-
-### 多尺寸
-
-* `.u-button-group-xg` - 特大尺寸
-* `.u-button-group-lg` - 大尺寸
-* `.u-button-group-xs` - 小尺寸
-* 不添加样式代表默认尺寸
-
-{% raw %}
-<div class="u-button-group u-button-group-xg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-lg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group ">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-xs">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-
-<style>
-.example-content .u-button-group{
-	margin: 5px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-button-group u-button-group-xg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-lg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group ">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-xs">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-```
-``` css
-.example-content .u-button-group{
-	margin: 5px;
-}
-```
-
-
 ## 面包屑
 
 用于带有层次的导航，active状态表明当前页面的位置
@@ -167,7 +17,7 @@ order: 2
 "/"为分隔符
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb">
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Library</li>
@@ -177,7 +27,7 @@ order: 2
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
 </ol>
-
+</div>
 
 
 
@@ -204,7 +54,7 @@ order: 2
 "/"为分隔符,并添加Home icon
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb">
     <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Data</li>
@@ -213,7 +63,7 @@ order: 2
     <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
-</ol>
+</ol></div>
 
 <style>
 .md-home:before {
@@ -247,7 +97,7 @@ order: 2
 ### 其他分隔符
 
 {% raw %}
-
+<div class="example-content">
 <ol class="u-breadcrumb u-breadcrumb-arrow">
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li class="active">Library</li>
@@ -256,7 +106,7 @@ order: 2
     <li><a class="u-link" href="javascript:void(0)">Home</a></li>
     <li><a class="u-link" href="javascript:void(0)">Library</a></li>
     <li class="active">Data</li>
-</ol>
+</ol></div>
 
 <style>
 .md-home:before {
@@ -286,238 +136,116 @@ order: 2
 ```
 
 
-## 图片画廊
+## 按钮组
 
-由图片与简明文字组成。预定了几个常用场景，用户可自定义。
+样式为`u-button-group`的父元素，包裹多个样式为`u-button`的button元素
 
 
-### 默认
-`u-gallery` 后跟上 `u-gallery-default`
+
+[试一试](http://tinper.org/webide/#/demos/ui/buttongroup)
+
+
+### 基础
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-default">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
+<div class="example-content"><div class="u-button-group ">
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+</div>
+</div>
 
 
 
 {% endraw %}
 ``` html
-<ul class="ui-gallery ui-gallery-default">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
+<div class="u-button-group ">
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+</div>
 
 ```
 
 
 
 
-### 悬浮标题
-`u-gallery` 后跟上 `u-gallery-overlay`
+### 嵌套
+
+按钮组里嵌套下拉菜单
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-overlay">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
+<div class="example-content"> <div class="u-button-group">
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button " id="demo-menu-default">
+        dropdown
+        <span class="u-right-icon uf uf-arrow-down"></span>
+    </button>
+    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
+        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+    </ul>
+</div>
+</div>
 
 
 
 {% endraw %}
 ``` html
-<ul class="ui-gallery ui-gallery-overlay">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
+ <div class="u-button-group">
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button " id="demo-menu-default">
+        dropdown
+        <span class="u-right-icon uf uf-arrow-down"></span>
+    </button>
+    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
+        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+    </ul>
+</div>
 
 ```
 
 
 
 
-### 容器边框
-`u-gallery` 后跟上 `u-gallery-bordered`
+### 多尺寸
+
+* `.u-button-group-xg` - 特大尺寸
+* `.u-button-group-lg` - 大尺寸
+* `.u-button-group-xs` - 小尺寸
+* 不添加样式代表默认尺寸
 
 {% raw %}
-<ul class="ui-gallery ui-gallery-bordered">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
+<div class="example-content"><div class="u-button-group u-button-group-xg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-lg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group ">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-xs">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div></div>
 
 <style>
 .example-content .u-button-group{
@@ -527,143 +255,35 @@ order: 2
 
 {% endraw %}
 ``` html
-<ul class="ui-gallery ui-gallery-bordered">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
+<div class="u-button-group u-button-group-xg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-lg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group ">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-xs">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
 ```
 ``` css
 .example-content .u-button-group{
 	margin: 5px;
 }
 ```
-
-
-
-### 图片边框
-`u-gallery` 后跟上 `u-gallery-imgbordered`
-
-{% raw %}
-<ul class="ui-gallery ui-gallery-imgbordered">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
-
-
-
-{% endraw %}
-``` html
-<ul class="ui-gallery ui-gallery-imgbordered">
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
-                <p class="ui-gallery-title">远方 有一个地方</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
-                <p class="ui-gallery-title">某天 也许会相遇</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
-                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-      <li class="u-col-md-3">
-        <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
-                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
-                <div class="ui-gallery-desc">2375-09-26</div>
-            </a>
-        </div>
-      </li>
-  </ul>
-
-```
-
 
 
 ## dropdown
@@ -672,7 +292,7 @@ order: 2
 ### 左边menu
 
 {% raw %}
-<!-- Left aligned menu below button -->
+<div class="example-content"><!-- Left aligned menu below button -->
 <div class="example">
 	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
 	    <i class="uf uf-3dot-v"></i>
@@ -696,7 +316,7 @@ order: 2
 	    <li disabled class="u-menu-item">删除</li>
 	    <li class="u-menu-item">审核</li>
 	</ul>
-</div>
+</div></div>
 
 <style>
 .example{
@@ -744,7 +364,7 @@ order: 2
 按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
 
 {% raw %}
-<div class="u-row">
+<div class="example-content"><div class="u-row">
     <div class="u-col-3">
         <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
             success
@@ -793,7 +413,7 @@ order: 2
             <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 
@@ -862,7 +482,7 @@ order: 2
 * 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
 
 {% raw %}
-<div class="u-button-group u-split">
+<div class="example-content"><div class="u-button-group u-split">
     <button class="u-button u-split-pre">
         打印
     </button>
@@ -875,7 +495,7 @@ order: 2
             <li class="u-menu-item"><a>到货单</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 
@@ -913,6 +533,19 @@ order: 2
 * 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
 
 {% raw %}
+<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+    联查
+    <span class="u-right-icon uf uf-arrow-down"></span>
+</button>
+<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
+    <li class="u-menu-item "><a>报价单</a></li>
+    <li class="u-menu-item"><a>到货单</a></li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
 <button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
     联查
     <span class="u-right-icon uf uf-arrow-down"></span>
@@ -921,122 +554,386 @@ order: 2
     <li class="u-menu-item "><a>报价单</a></li>
     <li class="u-menu-item"><a>到货单</a></li>
 </ul>
-
-
-
-{% endraw %}
-``` html
-<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
-    联查
-    <span class="u-right-icon uf uf-arrow-down"></span>
-</button>
-<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
-    <li class="u-menu-item "><a>报价单</a></li>
-    <li class="u-menu-item"><a>到货单</a></li>
-</ul>
 ```
 
 
 
-## 列表组
+## 图片画廊
 
-多个列表条目的无序列表，我们提供了一些预定义的样式
-
-
-### 基础
-
-{% raw %}
-<ul class="u-list-group">
-  <li class="u-list-group-item">Cras justo odio</li>
-  <li class="u-list-group-item">Dapibus ac facilisis in</li>
-  <li class="u-list-group-item">Morbi leo risus</li>
-  <li class="u-list-group-item">Porta ac consectetur ac</li>
-  <li class="u-list-group-item">Vestibulum at eros</li>
-</ul>
+由图片与简明文字组成。预定了几个常用场景，用户可自定义。
 
 
-
-{% endraw %}
-``` html
-<ul class="u-list-group">
-  <li class="u-list-group-item">Cras justo odio</li>
-  <li class="u-list-group-item">Dapibus ac facilisis in</li>
-  <li class="u-list-group-item">Morbi leo risus</li>
-  <li class="u-list-group-item">Porta ac consectetur ac</li>
-  <li class="u-list-group-item">Vestibulum at eros</li>
-</ul>
-```
-
-
-
-
-### 带图标
+### 默认
+`u-gallery` 后跟上 `u-gallery-default`
 
 {% raw %}
-<ul class="u-list-group">
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="14"></label>
-    Cras justo odio
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="2"></label>
-    Dapibus ac facilisis in
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="1"></label>
-    Morbi leo risus
-  </li>
-</ul>
-
-
-
-{% endraw %}
-``` html
-<ul class="u-list-group">
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="14"></label>
-    Cras justo odio
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="2"></label>
-    Dapibus ac facilisis in
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="1"></label>
-    Morbi leo risus
-  </li>
-</ul>
-```
-
-
-
-
-### 列表是链接
-
-{% raw %}
-<div class="u-list-group">
-  <a href="#" class="u-list-group-item active">
-    Cras justo odio
-  </a>
-  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="u-list-group-item">Morbi leo risus</a>
-  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
+<div class="example-content"><ul class="ui-gallery ui-gallery-default">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
 </div>
 
 
 
 {% endraw %}
 ``` html
-<div class="u-list-group">
-  <a href="#" class="u-list-group-item active">
-    Cras justo odio
-  </a>
-  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="u-list-group-item">Morbi leo risus</a>
-  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
+<ul class="ui-gallery ui-gallery-default">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+
+```
+
+
+
+
+### 悬浮标题
+`u-gallery` 后跟上 `u-gallery-overlay`
+
+{% raw %}
+<div class="example-content"><ul class="ui-gallery ui-gallery-overlay">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
 </div>
+
+
+
+{% endraw %}
+``` html
+<ul class="ui-gallery ui-gallery-overlay">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+
+```
+
+
+
+
+### 容器边框
+`u-gallery` 后跟上 `u-gallery-bordered`
+
+{% raw %}
+<div class="example-content"><ul class="ui-gallery ui-gallery-bordered">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+</div>
+
+<style>
+.example-content .u-button-group{
+	margin: 5px;
+}
+</style>
+
+{% endraw %}
+``` html
+<ul class="ui-gallery ui-gallery-bordered">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+
+```
+``` css
+.example-content .u-button-group{
+	margin: 5px;
+}
+```
+
+
+
+### 图片边框
+`u-gallery` 后跟上 `u-gallery-imgbordered`
+
+{% raw %}
+<div class="example-content"><ul class="ui-gallery ui-gallery-imgbordered">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+</div>
+
+
+
+{% endraw %}
+``` html
+<ul class="ui-gallery ui-gallery-imgbordered">
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                <p class="ui-gallery-title">远方 有一个地方</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                <p class="ui-gallery-title">某天 也许会相遇</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+                <p class="ui-gallery-title">不要太担心 只因为我相信</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+      <li class="u-col-md-3">
+        <div class="ui-gallery-item">
+            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+                <p class="ui-gallery-title">终会走过这条遥远的道路</p>
+                <div class="ui-gallery-desc">2375-09-26</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+
 ```
 
 
@@ -1053,7 +950,7 @@ order: 2
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
 </div>
@@ -1066,7 +963,7 @@ order: 2
   <input type="text" class="u-form-control" placeholder="Username">
   <span class="u-input-group-addon">.00</span>
 </div>
-
+</div>
 
 
 
@@ -1094,7 +991,7 @@ order: 2
 
 
 {% raw %}
-<div class="u-input-group u-input-group-lg">
+<div class="example-content"><div class="u-input-group u-input-group-lg">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
 </div>
@@ -1105,7 +1002,7 @@ order: 2
 <div class="u-input-group u-input-group-sm">
   <span class="u-input-group-addon">@</span>
   <input type="text" class="u-form-control" placeholder="Username">
-</div>
+</div></div>
 
 <style>
 .example-content .u-button-group{
@@ -1139,7 +1036,7 @@ order: 2
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
   <span class="u-input-group-addon">
     <label  class="u-checkbox">
         <input type="checkbox" class="u-checkbox-input" checked>
@@ -1154,7 +1051,7 @@ order: 2
     </label>
   </span>
   <input type="text" class="u-form-control">
-</div>
+</div></div>
 
 
 
@@ -1184,7 +1081,7 @@ order: 2
 
 
 {% raw %}
-<div class="u-input-group">
+<div class="example-content"><div class="u-input-group">
     <div class="u-input-group-btn">
    		<button class="u-button  u-button-default" id="demo-menu">
             success
@@ -1213,7 +1110,7 @@ order: 2
             <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
         </ul>
     </div>
-</div>
+</div></div>
 
 
 
@@ -1248,6 +1145,109 @@ order: 2
             <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
         </ul>
     </div>
+</div>
+```
+
+
+
+## 列表组
+
+多个列表条目的无序列表，我们提供了一些预定义的样式
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><ul class="u-list-group">
+  <li class="u-list-group-item">Cras justo odio</li>
+  <li class="u-list-group-item">Dapibus ac facilisis in</li>
+  <li class="u-list-group-item">Morbi leo risus</li>
+  <li class="u-list-group-item">Porta ac consectetur ac</li>
+  <li class="u-list-group-item">Vestibulum at eros</li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<ul class="u-list-group">
+  <li class="u-list-group-item">Cras justo odio</li>
+  <li class="u-list-group-item">Dapibus ac facilisis in</li>
+  <li class="u-list-group-item">Morbi leo risus</li>
+  <li class="u-list-group-item">Porta ac consectetur ac</li>
+  <li class="u-list-group-item">Vestibulum at eros</li>
+</ul>
+```
+
+
+
+
+### 带图标
+
+{% raw %}
+<div class="example-content"><ul class="u-list-group">
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="14"></label>
+    Cras justo odio
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="2"></label>
+    Dapibus ac facilisis in
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="1"></label>
+    Morbi leo risus
+  </li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<ul class="u-list-group">
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="14"></label>
+    Cras justo odio
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="2"></label>
+    Dapibus ac facilisis in
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="1"></label>
+    Morbi leo risus
+  </li>
+</ul>
+```
+
+
+
+
+### 列表是链接
+
+{% raw %}
+<div class="example-content"><div class="u-list-group">
+  <a href="#" class="u-list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="u-list-group-item">Morbi leo risus</a>
+  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-list-group">
+  <a href="#" class="u-list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="u-list-group-item">Morbi leo risus</a>
+  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
 </div>
 ```
 
@@ -1261,7 +1261,7 @@ order: 2
 ### 默认样式
 
 {% raw %}
-<div class="u-media">
+<div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
       <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
@@ -1271,7 +1271,7 @@ order: 2
     <h4 class="u-media-heading">u-Media heading</h4>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
-</div>
+</div></div>
 
 
 
@@ -1298,7 +1298,7 @@ order: 2
 媒体对象里嵌套媒体对象，只要整要嵌套的媒体对象放在父的`media-body`标签里
 
 {% raw %}
-<div class="u-media">
+<div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
       <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
@@ -1319,7 +1319,7 @@ order: 2
 	  </div>
 	</div>
   </div>
-</div>
+</div></div>
 
 
 
@@ -1358,7 +1358,7 @@ order: 2
 `media-bottom`: 底对齐
 
 {% raw %}
-<div class="u-media">
+<div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
       <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
@@ -1396,7 +1396,7 @@ order: 2
 
     Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
   </div>
-</div>
+</div></div>
 
 <style>
 .example-content .u-button-group{
@@ -1467,7 +1467,7 @@ order: 2
 * `.u-meswarning` - 警告信息提示
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
     <div class="u-message u-mesnews active">
         <span class="u-msg-close uf uf-close"></span>
         News!
@@ -1489,7 +1489,7 @@ order: 2
         Warning!
     </div>
 </div>
-
+</div>
 
 <style>
 .margin-r-10{
@@ -1544,7 +1544,7 @@ order: 2
 消息类型对应相应的icon
 
 {% raw %}
-<div class="example">
+<div class="example-content"><div class="example">
     <div class="u-message dark u-mesnews active" >    
         <span class="u-msg-close uf uf-close"></span>
         <i class="uf uf-bell margin-r-10"></i>News!
@@ -1565,7 +1565,7 @@ order: 2
         <span class="u-msg-close uf uf-close"></span>
         <i class="uf uf-exc-t-o margin-r-10"></i>Warning!
     </div>
-</div>
+</div></div>
 
 <style>
 .margin-r-10{
@@ -1660,6 +1660,161 @@ u.on(warnBtn,'click', function(){
 })
 ```
 
+## 导航条
+
+提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/navbar)
+
+
+
+{% raw %}
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<style>
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+</style>
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+</script>
+
+{% endraw %}
+``` html
+<nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+```
+``` css
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+```
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+```
+
 ## 分页控件
 
 分页控件提供了无border分页、有间距的分页、多尺寸分页。
@@ -1672,8 +1827,8 @@ u.on(warnBtn,'click', function(){
 ### 基础
 
 {% raw %}
-<div id='pagination' class='u-pagination'>
-</div>
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
 
 
 
@@ -1712,8 +1867,8 @@ u.on(warnBtn,'click', function(){
 在含有`u-pagination`的div元素中添加`u-pagination-no-border`样式即可
 
 {% raw %}
-<div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
-</div>
+<div class="example-content"><div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
+</div></div>
 
 
 
@@ -1744,8 +1899,8 @@ u.on(warnBtn,'click', function(){
 添加样式`pagination-gap`可以增加页码之间的间距
 
 {% raw %}
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
 
 
 
@@ -1778,7 +1933,7 @@ u.on(warnBtn,'click', function(){
 添加`pagination-lg`、`pagination-sm`样式可以使分页变大、变小
 
 {% raw %}
-<p>大尺寸</p>
+<div class="example-content"><p>大尺寸</p>
 <div id='paginationLg' class='u-pagination pagination-lg'>
 </div>
 <p>默认尺寸</p>
@@ -1786,7 +1941,7 @@ u.on(warnBtn,'click', function(){
 </div>
 <p>小尺寸</p>
 <div id='paginationSm' class='u-pagination pagination-sm'>
-</div>
+</div></div>
 
 
 
@@ -1837,7 +1992,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ### 基础
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
       <!-- Example Heading With Desc -->
       <div class="u-panel">
         <div class="u-panel-heading">
@@ -1853,7 +2008,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
     </div>
       <!-- End Example Heading With Desc -->
 </div>
-
+</div>
 
 
 
@@ -1884,7 +2039,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ### 带标题和注脚
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
     <!-- Example Panel With All -->
     <div class="u-panel u-panel-bordered">
         <div class="u-panel-heading">
@@ -1899,7 +2054,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
     </div>
       <!-- End Example Panel With All -->
 </div>
-
+</div>
 
 
 
@@ -1929,7 +2084,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ### 带注脚的面板
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
       <!-- Example Panel With Footer -->
     <div class="u-panel u-panel-bordered">
         <div class="u-panel-body">
@@ -1942,7 +2097,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
     </div>
       <!-- End Example Panel With Footer -->
 </div>
-
+</div>
 
 
 
@@ -1970,7 +2125,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ### 带标题的面板
 
 {% raw %}
-<div class="panel-example">
+<div class="example-content"><div class="panel-example">
   <!-- Example Panel With Heading -->
   <div class="u-panel u-panel-bordered">
     <div class="u-panel-heading">
@@ -1986,7 +2141,7 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
   </div>
   <!-- End Example Panel With Heading -->
 </div>
-
+</div>
 
 
 
@@ -2012,161 +2167,6 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ```
 
 
-
-## 导航条
-
-提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/navbar)
-
-
-
-{% raw %}
-<nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-<style>
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-</style>
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-</script>
-
-{% endraw %}
-``` html
-<nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-```
-``` css
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-```
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-```
 
 ## tooltip控件
 
@@ -2176,7 +2176,7 @@ u.on(window, 'load', function() {
 ### 方向 
 
 {% raw %}
-<div class="example-tooltips">
+<div class="example-content"><div class="example-tooltips">
     <div id='example2'>
         <div class="tooltip top active" role="tooltip">
             <div class="tooltip-arrow"></div>
@@ -2202,7 +2202,7 @@ u.on(window, 'load', function() {
         </div>
     </div>
 </div>
-
+</div>
 
 <style>
 .example-tooltips{
@@ -2267,7 +2267,7 @@ u.on(window, 'load', function() {
 ### 预定义样式
 
 {% raw %}
-<div class="example-tooltips">
+<div class="example-content"><div class="example-tooltips">
     <div id='example3'>
         <div class="tooltip tooltip-primary top active" role="tooltip">
             <div class="tooltip-arrow"></div>
@@ -2299,7 +2299,7 @@ u.on(window, 'load', function() {
         </div>
     </div>
 </div>
-
+</div>
 
 <style>
 .example-tooltips{

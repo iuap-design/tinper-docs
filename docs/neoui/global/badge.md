@@ -8,7 +8,7 @@
 使用`u-badge-primary`、`u-badge-success`、`u-badge-info`、`u-badge-warning`、`u-badge-danger`、`u-badge-dark`这七个基础类，来显示不同的颜色。
 
 {% raw %}
-<div class="example-content-edge">
+<div class="example-content"><div class="example-content-edge">
     <label class="u-badge u-badge-primary" data-badge="1">
     </label>
     <label class="u-badge u-badge-success" data-badge="1">
@@ -21,7 +21,7 @@
     </label>
     <label class="u-badge u-badge-dark" data-badge="1">
     </label>
-</div>
+</div></div>
 
 <style>
 .demo .u-badge{
@@ -60,12 +60,12 @@
 用于推送消息或提醒时，在标签dom元素中添加添加具体的图标即可。
 
 {% raw %}
-<div class="u-badge w-20 m" data-badge="1">
+<div class="example-content"><div class="u-badge w-20 m" data-badge="1">
     <i class="uf uf-bell"></i>
 </div>
 <div class="u-badge u-badge-no-background w-20 m" data-badge="1">
     <i class="uf uf-bell"></i>
-</div>
+</div></div>
 
 <style>
 .demo .u-badge{

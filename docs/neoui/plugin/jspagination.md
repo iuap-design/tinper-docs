@@ -22,8 +22,8 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
 ### 基础分页
 
 {% raw %}
-<div id='pagination' class='u-pagination'>
-</div>
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
 
 
 
@@ -62,8 +62,8 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
 添加样式`pagination-gap`可以增加页码之间的间距
 
 {% raw %}
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
 
 
 

@@ -16,7 +16,7 @@
 切换 背景色跟随作为`active`状态
 
 {% raw %}
-<div class="u-widget-body">
+<div class="example-content"><div class="u-widget-body">
     <div class="u-tabs u-tabs-pill">
         <div class="u-tabs__tab-bar">
             <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
@@ -46,7 +46,7 @@
             </ul>
         </div>
     </div>
-</div>
+</div></div>
 
 <style>
 .ws{
@@ -127,7 +127,7 @@
 切换 线性跟随作为`active`状态
 
 {% raw %}
-<div class="u-tabs">
+<div class="example-content"><div class="u-tabs">
     <div class="u-tabs__tab-bar">
         <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
         <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
@@ -156,7 +156,7 @@
         </ul>
     </div>
 </div>
-
+</div>
 
 <style>
 .ws{

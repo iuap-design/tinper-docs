@@ -19,7 +19,7 @@
 * 默认数据绑定：`textfield`输入框绑定默认字段
 
 {% raw %}
-<!--
+<div class="example-content"><!--
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定
 	id,type.data,field为必选项
@@ -31,7 +31,7 @@
 <div class="u-text"  u-meta='{"id":"f1","type":"u-text","data":"dt1","field":"f1"}'>
     <input class="u-input"/>
     <label class="u-label">f1</label>
-</div>
+</div></div>
 
 <style>
 

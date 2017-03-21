@@ -1,7 +1,7 @@
 ---
 title: 多行文本输入控件
 type: moy
-order: 25
+order: 26
 ---
 #### 多行文本输入控件
 
@@ -21,7 +21,7 @@ order: 25
 本例实现如下效果：
 
 {% raw %}
-<!--
+<div class="example-content"><!--
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定
 	id,type.data,field为必选项
@@ -33,7 +33,7 @@ order: 25
 <div id="txtWrap">
     <textarea u-meta='{&quot;id&quot;:&quot;textareaAdapter&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;,&quot;type&quot;:&quot;textarea&quot;}'></textarea>
 </div>
-
+</div>
 
 <style>
 #txtWrap textarea{

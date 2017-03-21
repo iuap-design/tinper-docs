@@ -46,10 +46,10 @@ monthDateObject.setValue('02-15');
 
 定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
 {% raw %}
-
+<div class="example-content">
 <div class='u-monthdate'>
     <input class="u-input" type="text">
-</div>
+</div></div>
 
 <style>
 .example .u-input{

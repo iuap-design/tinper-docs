@@ -11,7 +11,7 @@
 * 实现UI交互
 
 {% raw %}
-<!-- 
+<div class="example-content"><!-- 
 	HTML
 	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
 	id,type.data,field为必选项
@@ -22,7 +22,7 @@
 	datasource:绑定数据
 -->
 <div class="u-progress" u-meta='{"id":"c1","type":"u-progress","data":"dt1","field":"f1"}'></div>
-
+</div>
 
 
 

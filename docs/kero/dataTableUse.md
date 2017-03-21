@@ -74,11 +74,11 @@ dataTable1.on('valueChange',function(event){
 输入长度6-12字符之间
 
 {% raw %}
-<!-- HTML -->
+<div class="example-content"><!-- HTML -->
 <div id="demo1">
 	<input u-meta='{"data":"dt1","field":"f1"}' />	
 </div>
-
+</div>
 
 
 
@@ -147,7 +147,7 @@ r.setValue('f1','test txt');
 输入指定格式
 
 {% raw %}
-<!-- HTML -->
+<div class="example-content"><!-- HTML -->
 <div id="demo2">
 	<div class='u-datepicker' u-meta='{"id":"date1","type":"u-date","data":"dt2","field":"f2"}'>
 	    <input class="u-input" type="text">
@@ -157,7 +157,7 @@ r.setValue('f1','test txt');
 	    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 		</span>
 	</div>	
-</div>
+</div></div>
 
 
 
@@ -242,11 +242,11 @@ r.setValue('f3', "2016-2-13 4:58:58");
 input输入值变化后，弹框提示
 
 {% raw %}
-<!-- HTML -->
+<div class="example-content"><!-- HTML -->
 <div id="demo3">
 	<input u-meta='{"data":"dt3","field":"f1"}' />	
 </div>
-
+</div>
 
 
 
