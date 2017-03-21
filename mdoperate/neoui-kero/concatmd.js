@@ -68,10 +68,6 @@ setTimeout(function() {
             if (err) {
                 console.log('kero-plugin write err:' + err);
             } else {
-                if (index === 27) {
-                    // console.log('kero-plugin write success!');
-                }
-
             }
         });
     }
