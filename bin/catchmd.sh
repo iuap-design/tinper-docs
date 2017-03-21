@@ -17,56 +17,56 @@ do
     case ${name} in
 
         tinper-sparrow)
-            rm -r ./snippets/sparrow/docs/
-            cp -r ./node_modules/tinper-sparrow/snippets/ ./snippets/sparrow/docs/
+            rm -r ./snippets/sparrow/
+            cp -r ./node_modules/tinper-sparrow/snippets/ ./snippets/sparrow/
             echo "====抓取 tinper-sparrow 文档成功===="
          ;;
          tinper-neoui-grid)
-            rm -r ./snippets/grid/docs/
-            cp -r ./node_modules/tinper-neoui-grid/snippets/ ./snippets/grid/docs/
+            rm -r ./snippets/grid/
+            cp -r ./node_modules/tinper-neoui-grid/snippets/ ./snippets/grid/
             echo "====抓取 tinper-neoui-grid 文档成功===="
             ;;
          neoui-kero)
-             cp -r ./node_modules/neoui-kero/snippets/clockpicker/ ./snippets/neoui-kero/docs/clockpicker
-             cp -r ./node_modules/neoui-kero/snippets/combobox_ex/ ./snippets/neoui-kero/docs/combobox_ex
-             cp -r ./node_modules/neoui-kero/snippets/currency_ex/ ./snippets/neoui-kero/docs/currency_ex
-             cp -r ./node_modules/neoui-kero/snippets/ex_checkbox/ ./snippets/neoui-kero/docs/ex_checkbox
-             cp -r ./node_modules/neoui-kero/snippets/ex_checkboxdata/ ./snippets/neoui-kero/docs/ex_checkboxdata
-             cp -r ./node_modules/neoui-kero/snippets/ex_datetime/ ./snippets/neoui-kero/docs/ex_datetime
-             cp -r ./node_modules/neoui-kero/snippets/ex_month/ ./snippets/neoui-kero/docs/ex_month
-             cp -r ./node_modules/neoui-kero/snippets/ex_monthdate/ ./snippets/neoui-kero/docs/ex_monthdate
-             cp -r ./node_modules/neoui-kero/snippets/ex_pagination/ ./snippets/neoui-kero/docs/ex_pagination
-             cp -r ./node_modules/neoui-kero/snippets/ex_percent/ ./snippets/neoui-kero/docs/ex_percent
-             cp -r ./node_modules/neoui-kero/snippets/ex_progress/ ./snippets/neoui-kero/docs/ex_progress
-             cp -r ./node_modules/neoui-kero/snippets/ex_radio/ ./snippets/neoui-kero/docs/ex_radio
-             cp -r ./node_modules/neoui-kero/snippets/ex_switch/ ./snippets/neoui-kero/docs/ex_switch
-             cp -r ./node_modules/neoui-kero/snippets/ex_time/ ./snippets/neoui-kero/docs/ex_time
-             cp -r ./node_modules/neoui-kero/snippets/ex_validate/ ./snippets/neoui-kero/docs/ex_validate
-             cp -r ./node_modules/neoui-kero/snippets/ex_year/ ./snippets/neoui-kero/docs/ex_year
-             cp -r ./node_modules/neoui-kero/snippets/ex_yearmonth/ ./snippets/neoui-kero/docs/ex_yearmonth
-             cp -r ./node_modules/neoui-kero/snippets/grid/ ./snippets/neoui-kero/docs/grid
-             cp -r ./node_modules/neoui-kero/snippets/gridValidate/ ./snippets/neoui-kero/docs/gridValidate
-             cp -r ./node_modules/neoui-kero/snippets/mainChild/ ./snippets/neoui-kero/docs/mainChild
-             cp -r ./node_modules/neoui-kero/snippets/module/ ./snippets/neoui-kero/docs/module
-             cp -r ./node_modules/neoui-kero/snippets/moduleapi/ ./snippets/neoui-kero/docs/moduleapi
-             cp -r ./node_modules/neoui-kero/snippets/textarea/ ./snippets/neoui-kero/docs/textarea
-             cp -r ./node_modules/neoui-kero/snippets/textfield/ ./snippets/neoui-kero/docs/textfield
-             cp -r ./node_modules/neoui-kero/snippets/tree/ ./snippets/neoui-kero/docs/tree
+             cp -r ./node_modules/neoui-kero/snippets/clockpicker/ ./snippets/neoui-kero/clockpicker
+             cp -r ./node_modules/neoui-kero/snippets/combobox_ex/ ./snippets/neoui-kero/combobox_ex
+             cp -r ./node_modules/neoui-kero/snippets/currency_ex/ ./snippets/neoui-kero/currency_ex
+             cp -r ./node_modules/neoui-kero/snippets/ex_checkbox/ ./snippets/neoui-kero/ex_checkbox
+             cp -r ./node_modules/neoui-kero/snippets/ex_checkboxdata/ ./snippets/neoui-kero/ex_checkboxdata
+             cp -r ./node_modules/neoui-kero/snippets/ex_datetime/ ./snippets/neoui-kero/ex_datetime
+             cp -r ./node_modules/neoui-kero/snippets/ex_month/ ./snippets/neoui-kero/ex_month
+             cp -r ./node_modules/neoui-kero/snippets/ex_monthdate/ ./snippets/neoui-kero/ex_monthdate
+             cp -r ./node_modules/neoui-kero/snippets/ex_pagination/ ./snippets/neoui-kero/ex_pagination
+             cp -r ./node_modules/neoui-kero/snippets/ex_percent/ ./snippets/neoui-kero/ex_percent
+             cp -r ./node_modules/neoui-kero/snippets/ex_progress/ ./snippets/neoui-kero/ex_progress
+             cp -r ./node_modules/neoui-kero/snippets/ex_radio/ ./snippets/neoui-kero/ex_radio
+             cp -r ./node_modules/neoui-kero/snippets/ex_switch/ ./snippets/neoui-kero/ex_switch
+             cp -r ./node_modules/neoui-kero/snippets/ex_time/ ./snippets/neoui-kero/ex_time
+             cp -r ./node_modules/neoui-kero/snippets/ex_validate/ ./snippets/neoui-kero/ex_validate
+             cp -r ./node_modules/neoui-kero/snippets/ex_year/ ./snippets/neoui-kero/ex_year
+             cp -r ./node_modules/neoui-kero/snippets/ex_yearmonth/ ./snippets/neoui-kero/ex_yearmonth
+             cp -r ./node_modules/neoui-kero/snippets/grid/ ./snippets/neoui-kero/grid
+             cp -r ./node_modules/neoui-kero/snippets/gridValidate/ ./snippets/neoui-kero/gridValidate
+             cp -r ./node_modules/neoui-kero/snippets/mainChild/ ./snippets/neoui-kero/mainChild
+             cp -r ./node_modules/neoui-kero/snippets/module/ ./snippets/neoui-kero/module
+             cp -r ./node_modules/neoui-kero/snippets/moduleapi/ ./snippets/neoui-kero/moduleapi
+             cp -r ./node_modules/neoui-kero/snippets/textarea/ ./snippets/neoui-kero/textarea
+             cp -r ./node_modules/neoui-kero/snippets/textfield/ ./snippets/neoui-kero/textfield
+             cp -r ./node_modules/neoui-kero/snippets/tree/ ./snippets/neoui-kero/tree
              echo "====抓取 neoui-kero 文档成功===="
           ;;
         kero)
-            cp -r ./node_modules/kero/snippets/arch/ ./snippets/kero/docs/arch
-            cp -r ./node_modules/kero/snippets/core/ ./snippets/kero/docs/core
-            cp -r ./node_modules/kero/snippets/datatable/ ./snippets/kero/docs/datatable
-            cp -r ./node_modules/kero/snippets/dataTableUse/ ./snippets/kero/docs/dataTableUse
-            cp -r ./node_modules/kero/snippets/dataTableUseBackend/ ./snippets/kero/docs/dataTableUseBackend
-            cp -r ./node_modules/kero/snippets/gettingstarted/ ./snippets/kero/docs/gettingstarted
-            cp -r ./node_modules/kero/snippets/install/ ./snippets/kero/docs/install
-            cp -r ./node_modules/kero/snippets/knockout/ ./snippets/kero/docs/knockout
-            cp -r ./node_modules/kero/snippets/overview/ ./snippets/kero/docs/overview
-            cp -r ./node_modules/kero/snippets/row/ ./snippets/kero/docs/row
-            cp -r ./node_modules/kero/snippets/udatatable/ ./snippets/kero/docs/udatatable
-            cp -r ./node_modules/kero/snippets/validateapi/ ./snippets/kero/docs/validateapi
+            cp -r ./node_modules/kero/snippets/arch/ ./snippets/kero/arch
+            cp -r ./node_modules/kero/snippets/core/ ./snippets/kero/core
+            cp -r ./node_modules/kero/snippets/datatable/ ./snippets/kero/datatable
+            cp -r ./node_modules/kero/snippets/dataTableUse/ ./snippets/kero/dataTableUse
+            cp -r ./node_modules/kero/snippets/dataTableUseBackend/ ./snippets/kero/dataTableUseBackend
+            cp -r ./node_modules/kero/snippets/gettingstarted/ ./snippets/kero/gettingstarted
+            cp -r ./node_modules/kero/snippets/install/ ./snippets/kero/install
+            cp -r ./node_modules/kero/snippets/knockout/ ./snippets/kero/knockout
+            cp -r ./node_modules/kero/snippets/overview/ ./snippets/kero/overview
+            cp -r ./node_modules/kero/snippets/row/ ./snippets/kero/row
+            cp -r ./node_modules/kero/snippets/udatatable/ ./snippets/kero/udatatable
+            cp -r ./node_modules/kero/snippets/validateapi/ ./snippets/kero/validateapi
             echo "====抓取 kero 文档成功===="
         ;;
         tinper-neoui)
