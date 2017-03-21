@@ -1,7 +1,7 @@
 ---
 title: 分页
 type: moy
-order: 11
+order: 9
 ---
 #### 分页
 

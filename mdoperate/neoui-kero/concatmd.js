@@ -38,16 +38,16 @@ fs.readdir(readPath, function(err, files) {
         // 遍历目录下所有子项
         files.forEach(function(item) {
             var tmpPath = readPath + '/' + item;
-            if (plugin_arr[item.substring(0,item.length-3)]) {
+            if (plugin_arr[item.substring(0, item.length - 3)]) {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
                         // 读取文件
                         fs.readFile(tmpPath, function(err, data) {
-                            plugin_arr[item.substring(0,item.length-3)] = '---' + '\r\n' +
-                                'title: '+plugin_arr[item.substring(0,item.length-3)] + '\r\n' +
+                            plugin_arr[item.substring(0, item.length - 3)] = '---' + '\r\n' +
+                                'title: ' + plugin_arr[item.substring(0, item.length - 3)] + '\r\n' +
                                 'type: moy' + '\r\n' +
-                                'order: '+(index++) + '\r\n' +
-                                '---' + '\r\n'+
+                                'order: ' + (index++) + '\r\n' +
+                                '---' + '\r\n' +
                                 data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
                                     return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
                                         return match1.replace(/"/g, "&quot;")
@@ -63,13 +63,15 @@ fs.readdir(readPath, function(err, files) {
 
 setTimeout(function() {
     for (var item in plugin_arr) {
-        var tmpPath = writePath + '/' + item +'.md';
+        var tmpPath = writePath + '/' + item + '.md';
         fs.writeFile(tmpPath, plugin_arr[item], function(err) {
             if (err) {
                 console.log('kero-plugin write err:' + err);
             } else {
-                if(index===27)
-                console.log('kero-plugin write success!');
+                if (index === 27) {
+                    // console.log('kero-plugin write success!');
+                }
+
             }
         });
     }

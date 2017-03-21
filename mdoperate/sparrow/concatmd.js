@@ -5,8 +5,8 @@ var readPath = path.join(envPath, './docs/sparrow/');
 var writePath = path.join(envPath, './src/sparrow/index.md');
 var allData = '---' + '\r\n' +
     'title: 工具库详解' + '\r\n' +
-    'type: moy' + '\r\n' +
-    'order: 6' + '\r\n' +
+    'type: sparrow' + '\r\n' +
+    'order: 0' + '\r\n' +
     '---' + '\r\n';
 
 fs.readdir(readPath, function(err, files) {

@@ -1,7 +1,7 @@
 ---
 title: 文本输入框
 type: moy
-order: 26
+order: 25
 ---
 #### 文本输入框
 

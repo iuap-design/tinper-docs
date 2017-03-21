@@ -22,7 +22,7 @@ fs.readdir(readPath, function(err, files) {
         // 遍历目录下所有子项
         files.forEach(function(item) {
             var tmpPath = readPath + '/' + item;
-            if (item != "README.md" && item != "SUMMARY.md" && item !== "core.md"&& item !== "row.md"&& item !== "udatatable.md") {
+            if (item != "README.md" && item != "SUMMARY.md" && item !== "core.md" && item !== "row.md" && item !== "udatatable.md") {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
                         // 读取文件
@@ -56,7 +56,7 @@ fs.readdir(readPath, function(err, files) {
         // 遍历目录下所有子项
         files.forEach(function(item) {
             var tmpPath = readPath + '/' + item;
-            if (item === "core.md") {
+            if (item === "row.md" || item === "udatatable.md") {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
                         // 读取文件

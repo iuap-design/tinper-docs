@@ -18,25 +18,9 @@ $ uba -v
 ```
 
 
-## uba 命令行详解
+## 关于uba
 
-### 如何使用
-
-```sh
-# 打开uba界面
-$ uba
-
-# 查看版本
-$ uba -v
-
-#查看帮助
-$uba -h
-```
-
-> 打开uba的图形界面来选择需要的最佳实践。
-
----
-> 通过查看[uba-templates](https://github.com/uba-templates)已知repo名字可以这样快速创建。
+- `uba`是一款前端开发工具，它可以为您提供多种最佳实践，通过[uba-templates](https://github.com/uba-templates)仓库来进行更新维护，提供多种多样风格技术功能点来选择所需要的最佳实践模板。
 
 ## 如何参与最佳实践开发
 
@@ -56,9 +40,25 @@ $ npm install uba -g
 ```
 
 
-## 关于uba
+## uba 命令行详解
 
-- `uba`是一款前端开发工具，它可以为您提供多种最佳实践，通过[uba-templates](https://github.com/uba-templates)仓库来进行更新维护，提供多种多样风格技术功能点来选择所需要的最佳实践模板。
+### 如何使用
+
+```sh
+# 打开uba界面
+$ uba
+
+# 查看版本
+$ uba -v
+
+#查看帮助
+$uba -h
+```
+
+> 打开uba的图形界面来选择需要的最佳实践。
+
+---
+> 通过查看[uba-templates](https://github.com/uba-templates)已知repo名字可以这样快速创建。
 
 
 ## 快速初始化脚手架工程

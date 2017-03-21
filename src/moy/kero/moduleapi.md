@@ -1,7 +1,7 @@
 ---
 title: 控件模型API
 type: moy
-order: 25
+order: 22
 ---
 
 #### API

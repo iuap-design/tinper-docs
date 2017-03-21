@@ -3,6 +3,278 @@ title: 组件
 type: neoui
 order: 2
 ---
+## dropdown
+
+
+### 左边menu
+
+{% raw %}
+<div class="example-content"><!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+<!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div></div>
+
+<style>
+.example{
+	padding-left: 30px;
+}
+</style>
+
+{% endraw %}
+``` html
+<!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+<!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+```
+``` css
+.example{
+	padding-left: 30px;
+}
+```
+
+
+
+### 不同颜色的下拉
+按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
+
+{% raw %}
+<div class="example-content"><div class="u-row">
+    <div class="u-col-3">
+        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
+            info
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
+            danger
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
+            warning
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-row">
+    <div class="u-col-3">
+        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
+            info
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
+            danger
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
+            warning
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
+
+### 分割下拉
+分割下拉由一个文字和一个图标组成。
+
+* 创建一个含有`u-button-group`、`u-split`的div容器
+* 在第一步中的div容器中创建含有`u-split-pre`的button
+* 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
+
+{% raw %}
+<div class="example-content"><div class="u-button-group u-split">
+    <button class="u-button u-split-pre">
+        打印
+    </button>
+    <div class="u-button-group u-split-sub">
+        <button class="u-button u-dropdown-toggle" id="split">
+            <span class=" uf uf-arrow-down "></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right" for="split">
+            <li class="u-menu-item"><a>报价单</a></li>
+            <li class="u-menu-item"><a>到货单</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-button-group u-split">
+    <button class="u-button u-split-pre">
+        打印
+    </button>
+    <div class="u-button-group u-split-sub">
+        <button class="u-button u-dropdown-toggle" id="split">
+            <span class=" uf uf-arrow-down "></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right" for="split">
+            <li class="u-menu-item"><a>报价单</a></li>
+            <li class="u-menu-item"><a>到货单</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
+
+### 基本菜单按钮
+菜单按钮包括一个普通的button按钮和一个下拉内容ul元素。显示效果有4种，
+分别为：显示在按钮下方，左对齐、显示在按钮下方，右对齐、显示在按钮上方，左对齐、显示在按钮上方，右对齐。
+
+具体使用
+
+* 创建button元素，添加id属性，属性值可以自己定义 点击它时，菜单会进行隐藏或者显示。
+
+* 创建样式为“u-menu”的ul下拉列表，用于包括菜单内容。ul上定义for属性，属性值与第一步创建button中的id对应。菜单的样式还可以选择`u-menu-bottom-left`、`u-menu-bottom-right`、`u-menu-top-left`、`u-menu-top-right`中的一个来表示菜单相对于按钮的显示位置。
+
+* 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
+
+{% raw %}
+<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+    联查
+    <span class="u-right-icon uf uf-arrow-down"></span>
+</button>
+<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
+    <li class="u-menu-item "><a>报价单</a></li>
+    <li class="u-menu-item"><a>到货单</a></li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+    联查
+    <span class="u-right-icon uf uf-arrow-down"></span>
+</button>
+<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
+    <li class="u-menu-item "><a>报价单</a></li>
+    <li class="u-menu-item"><a>到货单</a></li>
+</ul>
+```
+
+
+
 ## 面包屑
 
 用于带有层次的导航，active状态表明当前页面的位置
@@ -284,278 +556,6 @@ order: 2
 	margin: 5px;
 }
 ```
-
-
-## dropdown
-
-
-### 左边menu
-
-{% raw %}
-<div class="example-content"><!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-<!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div></div>
-
-<style>
-.example{
-	padding-left: 30px;
-}
-</style>
-
-{% endraw %}
-``` html
-<!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-<!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-```
-``` css
-.example{
-	padding-left: 30px;
-}
-```
-
-
-
-### 不同颜色的下拉
-按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
-
-{% raw %}
-<div class="example-content"><div class="u-row">
-    <div class="u-col-3">
-        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
-            info
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
-            danger
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
-            warning
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-row">
-    <div class="u-col-3">
-        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
-            info
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
-            danger
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
-            warning
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
-
-### 分割下拉
-分割下拉由一个文字和一个图标组成。
-
-* 创建一个含有`u-button-group`、`u-split`的div容器
-* 在第一步中的div容器中创建含有`u-split-pre`的button
-* 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
-
-{% raw %}
-<div class="example-content"><div class="u-button-group u-split">
-    <button class="u-button u-split-pre">
-        打印
-    </button>
-    <div class="u-button-group u-split-sub">
-        <button class="u-button u-dropdown-toggle" id="split">
-            <span class=" uf uf-arrow-down "></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right" for="split">
-            <li class="u-menu-item"><a>报价单</a></li>
-            <li class="u-menu-item"><a>到货单</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-button-group u-split">
-    <button class="u-button u-split-pre">
-        打印
-    </button>
-    <div class="u-button-group u-split-sub">
-        <button class="u-button u-dropdown-toggle" id="split">
-            <span class=" uf uf-arrow-down "></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right" for="split">
-            <li class="u-menu-item"><a>报价单</a></li>
-            <li class="u-menu-item"><a>到货单</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
-
-### 基本菜单按钮
-菜单按钮包括一个普通的button按钮和一个下拉内容ul元素。显示效果有4种，
-分别为：显示在按钮下方，左对齐、显示在按钮下方，右对齐、显示在按钮上方，左对齐、显示在按钮上方，右对齐。
-
-具体使用
-
-* 创建button元素，添加id属性，属性值可以自己定义 点击它时，菜单会进行隐藏或者显示。
-
-* 创建样式为“u-menu”的ul下拉列表，用于包括菜单内容。ul上定义for属性，属性值与第一步创建button中的id对应。菜单的样式还可以选择`u-menu-bottom-left`、`u-menu-bottom-right`、`u-menu-top-left`、`u-menu-top-right`中的一个来表示菜单相对于按钮的显示位置。
-
-* 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
-
-{% raw %}
-<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
-    联查
-    <span class="u-right-icon uf uf-arrow-down"></span>
-</button>
-<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
-    <li class="u-menu-item "><a>报价单</a></li>
-    <li class="u-menu-item"><a>到货单</a></li>
-</ul></div>
-
-
-
-{% endraw %}
-``` html
-<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
-    联查
-    <span class="u-right-icon uf uf-arrow-down"></span>
-</button>
-<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
-    <li class="u-menu-item "><a>报价单</a></li>
-    <li class="u-menu-item"><a>到货单</a></li>
-</ul>
-```
-
 
 
 ## 图片画廊
@@ -1453,6 +1453,161 @@ order: 2
 ```
 
 
+## 导航条
+
+提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/navbar)
+
+
+
+{% raw %}
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<style>
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+</style>
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+</script>
+
+{% endraw %}
+``` html
+<nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+```
+``` css
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+```
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+```
+
 ## message控件
 
 用于即时信息的提示，添加.u-message即可实现一个基本的消息提示。其他效果的消息实现只需添加相应的样式即可。
@@ -1660,332 +1815,6 @@ u.on(warnBtn,'click', function(){
 })
 ```
 
-## 导航条
-
-提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/navbar)
-
-
-
-{% raw %}
-<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</div>
-
-<style>
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-</style>
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-</script>
-
-{% endraw %}
-``` html
-<nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-```
-``` css
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-```
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-```
-
-## 分页控件
-
-分页控件提供了无border分页、有间距的分页、多尺寸分页。
-
-#### 如何使用
-
-分页通过添加`u-pagination`的样式来实现基本的分页效果
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><div id='pagination' class='u-pagination'>
-</div></div>
-
-
-
-<script>
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-</script>
-
-{% endraw %}
-``` html
-<div id='pagination' class='u-pagination'>
-</div>
-```
-
-``` js
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-```
-
-
-### 无边框
-在含有`u-pagination`的div元素中添加`u-pagination-no-border`样式即可
-
-{% raw %}
-<div class="example-content"><div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
-</div></div>
-
-
-
-<script>
- var paginationNoBorder = document.getElementById("paginationNoBorder");
-
- var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script>
-
-{% endraw %}
-``` html
-<div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
-</div>
-```
-
-``` js
- var paginationNoBorder = document.getElementById("paginationNoBorder");
-
- var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-```
-
-
-### 有间距
-添加样式`pagination-gap`可以增加页码之间的间距
-
-{% raw %}
-<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
-</div></div>
-
-
-
-<script>
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script>
-
-{% endraw %}
-``` html
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
-```
-
-``` js
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-```
-
-
-### 多尺寸
-添加`pagination-lg`、`pagination-sm`样式可以使分页变大、变小
-
-{% raw %}
-<div class="example-content"><p>大尺寸</p>
-<div id='paginationLg' class='u-pagination pagination-lg'>
-</div>
-<p>默认尺寸</p>
-<div id='paginationDefault' class='u-pagination'>
-</div>
-<p>小尺寸</p>
-<div id='paginationSm' class='u-pagination pagination-sm'>
-</div></div>
-
-
-
-<script>
-var paginationLg = document.getElementById("paginationLg");
-var comp = new u.pagination({el:paginationLg,showState:false});
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-var paginationDefault = document.getElementById("paginationDefault");
-var comp = new u.pagination({el:paginationDefault,jumppage:true,showState:false});
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-var paginationSm = document.getElementById("paginationSm");
-var comp = new u.pagination({el:paginationSm,jumppage:true,showState:false});
-
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-
-</script>
-
-{% endraw %}
-``` html
-<p>大尺寸</p>
-<div id='paginationLg' class='u-pagination pagination-lg'>
-</div>
-<p>默认尺寸</p>
-<div id='paginationDefault' class='u-pagination'>
-</div>
-<p>小尺寸</p>
-<div id='paginationSm' class='u-pagination pagination-sm'>
-</div>
-```
-
-``` js
-var paginationLg = document.getElementById("paginationLg");
-var comp = new u.pagination({el:paginationLg,showState:false});
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-var paginationDefault = document.getElementById("paginationDefault");
-var comp = new u.pagination({el:paginationDefault,jumppage:true,showState:false});
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-var paginationSm = document.getElementById("paginationSm");
-var comp = new u.pagination({el:paginationSm,jumppage:true,showState:false});
-
-comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
-
-```
-
 ## 面板
 
 
@@ -2167,6 +1996,177 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 ```
 
 
+
+## 分页控件
+
+分页控件提供了无border分页、有间距的分页、多尺寸分页。
+
+#### 如何使用
+
+分页通过添加`u-pagination`的样式来实现基本的分页效果
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+
+
+
+<script>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+</script>
+
+{% endraw %}
+``` html
+<div id='pagination' class='u-pagination'>
+</div>
+```
+
+``` js
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+```
+
+
+### 无边框
+在含有`u-pagination`的div元素中添加`u-pagination-no-border`样式即可
+
+{% raw %}
+<div class="example-content"><div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
+</div></div>
+
+
+
+<script>
+ var paginationNoBorder = document.getElementById("paginationNoBorder");
+
+ var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+{% endraw %}
+``` html
+<div id='paginationNoBorder' class='u-pagination u-pagination-no-border'>
+</div>
+```
+
+``` js
+ var paginationNoBorder = document.getElementById("paginationNoBorder");
+
+ var comp = new u.pagination({ el: paginationNoBorder,showState:false  });
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+```
+
+
+### 有间距
+添加样式`pagination-gap`可以增加页码之间的间距
+
+{% raw %}
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+
+
+
+<script>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+{% endraw %}
+``` html
+<div id='paginationGap' class='u-pagination pagination-gap'>
+</div>
+```
+
+``` js
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+```
+
+
+### 多尺寸
+添加`pagination-lg`、`pagination-sm`样式可以使分页变大、变小
+
+{% raw %}
+<div class="example-content"><p>大尺寸</p>
+<div id='paginationLg' class='u-pagination pagination-lg'>
+</div>
+<p>默认尺寸</p>
+<div id='paginationDefault' class='u-pagination'>
+</div>
+<p>小尺寸</p>
+<div id='paginationSm' class='u-pagination pagination-sm'>
+</div></div>
+
+
+
+<script>
+var paginationLg = document.getElementById("paginationLg");
+var comp = new u.pagination({el:paginationLg,showState:false});
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+var paginationDefault = document.getElementById("paginationDefault");
+var comp = new u.pagination({el:paginationDefault,jumppage:true,showState:false});
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+var paginationSm = document.getElementById("paginationSm");
+var comp = new u.pagination({el:paginationSm,jumppage:true,showState:false});
+
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+
+</script>
+
+{% endraw %}
+``` html
+<p>大尺寸</p>
+<div id='paginationLg' class='u-pagination pagination-lg'>
+</div>
+<p>默认尺寸</p>
+<div id='paginationDefault' class='u-pagination'>
+</div>
+<p>小尺寸</p>
+<div id='paginationSm' class='u-pagination pagination-sm'>
+</div>
+```
+
+``` js
+var paginationLg = document.getElementById("paginationLg");
+var comp = new u.pagination({el:paginationLg,showState:false});
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+var paginationDefault = document.getElementById("paginationDefault");
+var comp = new u.pagination({el:paginationDefault,jumppage:true,showState:false});
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+var paginationSm = document.getElementById("paginationSm");
+var comp = new u.pagination({el:paginationSm,jumppage:true,showState:false});
+
+comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
+
+```
 
 ## tooltip控件
 
