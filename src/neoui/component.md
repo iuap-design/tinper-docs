@@ -3,278 +3,6 @@ title: 组件
 type: neoui
 order: 2
 ---
-## dropdown
-
-
-### 左边menu
-
-{% raw %}
-<div class="example-content"><!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-<!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div></div>
-
-<style>
-.example{
-	padding-left: 30px;
-}
-</style>
-
-{% endraw %}
-``` html
-<!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-<!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
-```
-``` css
-.example{
-	padding-left: 30px;
-}
-```
-
-
-
-### 不同颜色的下拉
-按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
-
-{% raw %}
-<div class="example-content"><div class="u-row">
-    <div class="u-col-3">
-        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
-            info
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
-            danger
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
-            warning
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-row">
-    <div class="u-col-3">
-        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
-            info
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
-            danger
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <div class="u-col-3">
-        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
-            warning
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
-
-### 分割下拉
-分割下拉由一个文字和一个图标组成。
-
-* 创建一个含有`u-button-group`、`u-split`的div容器
-* 在第一步中的div容器中创建含有`u-split-pre`的button
-* 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
-
-{% raw %}
-<div class="example-content"><div class="u-button-group u-split">
-    <button class="u-button u-split-pre">
-        打印
-    </button>
-    <div class="u-button-group u-split-sub">
-        <button class="u-button u-dropdown-toggle" id="split">
-            <span class=" uf uf-arrow-down "></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right" for="split">
-            <li class="u-menu-item"><a>报价单</a></li>
-            <li class="u-menu-item"><a>到货单</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-button-group u-split">
-    <button class="u-button u-split-pre">
-        打印
-    </button>
-    <div class="u-button-group u-split-sub">
-        <button class="u-button u-dropdown-toggle" id="split">
-            <span class=" uf uf-arrow-down "></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right" for="split">
-            <li class="u-menu-item"><a>报价单</a></li>
-            <li class="u-menu-item"><a>到货单</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
-
-### 基本菜单按钮
-菜单按钮包括一个普通的button按钮和一个下拉内容ul元素。显示效果有4种，
-分别为：显示在按钮下方，左对齐、显示在按钮下方，右对齐、显示在按钮上方，左对齐、显示在按钮上方，右对齐。
-
-具体使用
-
-* 创建button元素，添加id属性，属性值可以自己定义 点击它时，菜单会进行隐藏或者显示。
-
-* 创建样式为“u-menu”的ul下拉列表，用于包括菜单内容。ul上定义for属性，属性值与第一步创建button中的id对应。菜单的样式还可以选择`u-menu-bottom-left`、`u-menu-bottom-right`、`u-menu-top-left`、`u-menu-top-right`中的一个来表示菜单相对于按钮的显示位置。
-
-* 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
-
-{% raw %}
-<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
-    联查
-    <span class="u-right-icon uf uf-arrow-down"></span>
-</button>
-<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
-    <li class="u-menu-item "><a>报价单</a></li>
-    <li class="u-menu-item"><a>到货单</a></li>
-</ul></div>
-
-
-
-{% endraw %}
-``` html
-<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
-    联查
-    <span class="u-right-icon uf uf-arrow-down"></span>
-</button>
-<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
-    <li class="u-menu-item "><a>报价单</a></li>
-    <li class="u-menu-item"><a>到货单</a></li>
-</ul>
-```
-
-
-
 ## 面包屑
 
 用于带有层次的导航，active状态表明当前页面的位置
@@ -556,6 +284,490 @@ order: 2
 	margin: 5px;
 }
 ```
+
+
+## 输入框组
+
+由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
+
+#### 如何使用
+
+添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div></div>
+
+<style>
+.example-content .u-button-group{
+	margin: 5px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+```
+``` css
+.example-content .u-button-group{
+	margin: 5px;
+}
+```
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
+## dropdown
+
+
+### 左边menu
+
+{% raw %}
+<div class="example-content"><!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+<!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div></div>
+
+<style>
+.example{
+	padding-left: 30px;
+}
+</style>
+
+{% endraw %}
+``` html
+<!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+<!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+```
+``` css
+.example{
+	padding-left: 30px;
+}
+```
+
+
+
+### 不同颜色的下拉
+按钮配色，不同的色彩代表不同的情感和状态。添加颜色样式类分别为`.u-button-success`、`u-button-info`、`u-button-danger`、`u-button-warning`。
+
+{% raw %}
+<div class="example-content"><div class="u-row">
+    <div class="u-col-3">
+        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
+            info
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
+            danger
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
+            warning
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-row">
+    <div class="u-col-3">
+        <button class="u-button  u-button-success u-menu-button" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-success" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-info u-menu-button" id="demo-menu-info">
+            info
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-info" for="demo-menu-info">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-danger u-menu-button" id="demo-menu-danger">
+            danger
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-danger">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <div class="u-col-3">
+        <button class="u-button  u-button-warning u-menu-button" id="demo-menu-warning">
+            warning
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right u-menu-warning" for="demo-menu-warning">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
+
+### 分割下拉
+分割下拉由一个文字和一个图标组成。
+
+* 创建一个含有`u-button-group`、`u-split`的div容器
+* 在第一步中的div容器中创建含有`u-split-pre`的button
+* 接着在第一步中的div容器中创建含有`u-button-group`、`u-split-sub`的div容器。在容器此div中创建菜单按钮
+
+{% raw %}
+<div class="example-content"><div class="u-button-group u-split">
+    <button class="u-button u-split-pre">
+        打印
+    </button>
+    <div class="u-button-group u-split-sub">
+        <button class="u-button u-dropdown-toggle" id="split">
+            <span class=" uf uf-arrow-down "></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right" for="split">
+            <li class="u-menu-item"><a>报价单</a></li>
+            <li class="u-menu-item"><a>到货单</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-button-group u-split">
+    <button class="u-button u-split-pre">
+        打印
+    </button>
+    <div class="u-button-group u-split-sub">
+        <button class="u-button u-dropdown-toggle" id="split">
+            <span class=" uf uf-arrow-down "></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right" for="split">
+            <li class="u-menu-item"><a>报价单</a></li>
+            <li class="u-menu-item"><a>到货单</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
+
+### 基本菜单按钮
+菜单按钮包括一个普通的button按钮和一个下拉内容ul元素。显示效果有4种，
+分别为：显示在按钮下方，左对齐、显示在按钮下方，右对齐、显示在按钮上方，左对齐、显示在按钮上方，右对齐。
+
+具体使用
+
+* 创建button元素，添加id属性，属性值可以自己定义 点击它时，菜单会进行隐藏或者显示。
+
+* 创建样式为“u-menu”的ul下拉列表，用于包括菜单内容。ul上定义for属性，属性值与第一步创建button中的id对应。菜单的样式还可以选择`u-menu-bottom-left`、`u-menu-bottom-right`、`u-menu-top-left`、`u-menu-top-right`中的一个来表示菜单相对于按钮的显示位置。
+
+* 在ul标签内，使用样式为`u-menu-item`的li标签定义菜单的具体内容，当li标签不可用时，可以添加`disabled`属性。
+
+{% raw %}
+<div class="example-content"><button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+    联查
+    <span class="u-right-icon uf uf-arrow-down"></span>
+</button>
+<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
+    <li class="u-menu-item "><a>报价单</a></li>
+    <li class="u-menu-item"><a>到货单</a></li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<button class="u-button  raised u-menu-button" id="demo-menu-lower-right1">
+    联查
+    <span class="u-right-icon uf uf-arrow-down"></span>
+</button>
+<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right1">
+    <li class="u-menu-item "><a>报价单</a></li>
+    <li class="u-menu-item"><a>到货单</a></li>
+</ul>
+```
+
 
 
 ## 图片画廊
@@ -938,321 +1150,6 @@ order: 2
 
 
 
-## 输入框组
-
-由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
-
-#### 如何使用
-
-添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div></div>
-
-<style>
-.example-content .u-button-group{
-	margin: 5px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-```
-``` css
-.example-content .u-button-group{
-	margin: 5px;
-}
-```
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
-## 列表组
-
-多个列表条目的无序列表，我们提供了一些预定义的样式
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><ul class="u-list-group">
-  <li class="u-list-group-item">Cras justo odio</li>
-  <li class="u-list-group-item">Dapibus ac facilisis in</li>
-  <li class="u-list-group-item">Morbi leo risus</li>
-  <li class="u-list-group-item">Porta ac consectetur ac</li>
-  <li class="u-list-group-item">Vestibulum at eros</li>
-</ul></div>
-
-
-
-{% endraw %}
-``` html
-<ul class="u-list-group">
-  <li class="u-list-group-item">Cras justo odio</li>
-  <li class="u-list-group-item">Dapibus ac facilisis in</li>
-  <li class="u-list-group-item">Morbi leo risus</li>
-  <li class="u-list-group-item">Porta ac consectetur ac</li>
-  <li class="u-list-group-item">Vestibulum at eros</li>
-</ul>
-```
-
-
-
-
-### 带图标
-
-{% raw %}
-<div class="example-content"><ul class="u-list-group">
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="14"></label>
-    Cras justo odio
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="2"></label>
-    Dapibus ac facilisis in
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="1"></label>
-    Morbi leo risus
-  </li>
-</ul></div>
-
-
-
-{% endraw %}
-``` html
-<ul class="u-list-group">
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="14"></label>
-    Cras justo odio
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="2"></label>
-    Dapibus ac facilisis in
-  </li>
-  <li class="u-list-group-item">
-    <label class="u-badge u-badge-primary" data-badge="1"></label>
-    Morbi leo risus
-  </li>
-</ul>
-```
-
-
-
-
-### 列表是链接
-
-{% raw %}
-<div class="example-content"><div class="u-list-group">
-  <a href="#" class="u-list-group-item active">
-    Cras justo odio
-  </a>
-  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="u-list-group-item">Morbi leo risus</a>
-  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-list-group">
-  <a href="#" class="u-list-group-item active">
-    Cras justo odio
-  </a>
-  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="u-list-group-item">Morbi leo risus</a>
-  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
-</div>
-```
-
-
-
 ## 媒体对象
 
 允许在一个内容块的左边或右边展示一个多媒体内容（图像、视频、音频）
@@ -1452,161 +1349,6 @@ order: 2
 }
 ```
 
-
-## 导航条
-
-提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/navbar)
-
-
-
-{% raw %}
-<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</div>
-
-<style>
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-</style>
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-</script>
-
-{% endraw %}
-``` html
-<nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-```
-``` css
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-```
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-```
 
 ## message控件
 
@@ -1814,188 +1556,6 @@ u.on(warnBtn,'click', function(){
     u.showMessage({msg:warningInfo,position:"center",msgType:"warning"})
 })
 ```
-
-## 面板
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-      <!-- Example Heading With Desc -->
-      <div class="u-panel">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Heading With Desc
-            <small>Panel Description Here..</small>
-          </p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-    </div>
-      <!-- End Example Heading With Desc -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-      <!-- Example Heading With Desc -->
-      <div class="u-panel">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Heading With Desc
-            <small>Panel Description Here..</small>
-          </p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-    </div>
-      <!-- End Example Heading With Desc -->
-</div>
-
-```
-
-
-
-
-### 带标题和注脚
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-    <!-- Example Panel With All -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Panel Heading</p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With All -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-    <!-- Example Panel With All -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Panel Heading</p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With All -->
-</div>
-
-```
-
-
-
-
-### 带注脚的面板
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-      <!-- Example Panel With Footer -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-body">
-          <p>Body Heading</p>
-          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
-            that panel footers do not inherit colors and borders when using
-            contextual variations as they are not meant to be in the foreground.</p>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With Footer -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-      <!-- Example Panel With Footer -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-body">
-          <p>Body Heading</p>
-          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
-            that panel footers do not inherit colors and borders when using
-            contextual variations as they are not meant to be in the foreground.</p>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With Footer -->
-</div>
-
-```
-
-
-
-
-### 带标题的面板
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-  <!-- Example Panel With Heading -->
-  <div class="u-panel u-panel-bordered">
-    <div class="u-panel-heading">
-      <p class="u-panel-title">Panel Heading</p>
-    </div>
-    <div class="u-panel-body">
-      <p>Body Heading</p>
-      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
-        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
-      <p>For proper link coloring, be sure to place links in headings within
-        <code>.u-panel-title</code>.</p>
-    </div>
-  </div>
-  <!-- End Example Panel With Heading -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-  <!-- Example Panel With Heading -->
-  <div class="u-panel u-panel-bordered">
-    <div class="u-panel-heading">
-      <p class="u-panel-title">Panel Heading</p>
-    </div>
-    <div class="u-panel-body">
-      <p>Body Heading</p>
-      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
-        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
-      <p>For proper link coloring, be sure to place links in headings within
-        <code>.u-panel-title</code>.</p>
-    </div>
-  </div>
-  <!-- End Example Panel With Heading -->
-</div>
-
-```
-
-
 
 ## 分页控件
 
@@ -2364,5 +1924,445 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 }
 
 ```
+
+
+## 导航条
+
+提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/navbar)
+
+
+
+{% raw %}
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<style>
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+</style>
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+</script>
+
+{% endraw %}
+``` html
+<nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+```
+``` css
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+```
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+```
+
+## 面板
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+      <!-- Example Heading With Desc -->
+      <div class="u-panel">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Heading With Desc
+            <small>Panel Description Here..</small>
+          </p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+    </div>
+      <!-- End Example Heading With Desc -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+      <!-- Example Heading With Desc -->
+      <div class="u-panel">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Heading With Desc
+            <small>Panel Description Here..</small>
+          </p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+    </div>
+      <!-- End Example Heading With Desc -->
+</div>
+
+```
+
+
+
+
+### 带标题和注脚
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+    <!-- Example Panel With All -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Panel Heading</p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With All -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+    <!-- Example Panel With All -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Panel Heading</p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With All -->
+</div>
+
+```
+
+
+
+
+### 带注脚的面板
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+      <!-- Example Panel With Footer -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-body">
+          <p>Body Heading</p>
+          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
+            that panel footers do not inherit colors and borders when using
+            contextual variations as they are not meant to be in the foreground.</p>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With Footer -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+      <!-- Example Panel With Footer -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-body">
+          <p>Body Heading</p>
+          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
+            that panel footers do not inherit colors and borders when using
+            contextual variations as they are not meant to be in the foreground.</p>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With Footer -->
+</div>
+
+```
+
+
+
+
+### 带标题的面板
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+  <!-- Example Panel With Heading -->
+  <div class="u-panel u-panel-bordered">
+    <div class="u-panel-heading">
+      <p class="u-panel-title">Panel Heading</p>
+    </div>
+    <div class="u-panel-body">
+      <p>Body Heading</p>
+      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
+        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+      <p>For proper link coloring, be sure to place links in headings within
+        <code>.u-panel-title</code>.</p>
+    </div>
+  </div>
+  <!-- End Example Panel With Heading -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+  <!-- Example Panel With Heading -->
+  <div class="u-panel u-panel-bordered">
+    <div class="u-panel-heading">
+      <p class="u-panel-title">Panel Heading</p>
+    </div>
+    <div class="u-panel-body">
+      <p>Body Heading</p>
+      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
+        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+      <p>For proper link coloring, be sure to place links in headings within
+        <code>.u-panel-title</code>.</p>
+    </div>
+  </div>
+  <!-- End Example Panel With Heading -->
+</div>
+
+```
+
+
+
+## 列表组
+
+多个列表条目的无序列表，我们提供了一些预定义的样式
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><ul class="u-list-group">
+  <li class="u-list-group-item">Cras justo odio</li>
+  <li class="u-list-group-item">Dapibus ac facilisis in</li>
+  <li class="u-list-group-item">Morbi leo risus</li>
+  <li class="u-list-group-item">Porta ac consectetur ac</li>
+  <li class="u-list-group-item">Vestibulum at eros</li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<ul class="u-list-group">
+  <li class="u-list-group-item">Cras justo odio</li>
+  <li class="u-list-group-item">Dapibus ac facilisis in</li>
+  <li class="u-list-group-item">Morbi leo risus</li>
+  <li class="u-list-group-item">Porta ac consectetur ac</li>
+  <li class="u-list-group-item">Vestibulum at eros</li>
+</ul>
+```
+
+
+
+
+### 带图标
+
+{% raw %}
+<div class="example-content"><ul class="u-list-group">
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="14"></label>
+    Cras justo odio
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="2"></label>
+    Dapibus ac facilisis in
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="1"></label>
+    Morbi leo risus
+  </li>
+</ul></div>
+
+
+
+{% endraw %}
+``` html
+<ul class="u-list-group">
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="14"></label>
+    Cras justo odio
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="2"></label>
+    Dapibus ac facilisis in
+  </li>
+  <li class="u-list-group-item">
+    <label class="u-badge u-badge-primary" data-badge="1"></label>
+    Morbi leo risus
+  </li>
+</ul>
+```
+
+
+
+
+### 列表是链接
+
+{% raw %}
+<div class="example-content"><div class="u-list-group">
+  <a href="#" class="u-list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="u-list-group-item">Morbi leo risus</a>
+  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-list-group">
+  <a href="#" class="u-list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="u-list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="u-list-group-item">Morbi leo risus</a>
+  <a href="#" class="u-list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="u-list-group-item">Vestibulum at eros</a>
+</div>
+```
+
 
 

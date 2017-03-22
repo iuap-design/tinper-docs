@@ -1,7 +1,7 @@
 ---
 title: 主子表
 type: moy
-order: 21
+order: 20
 ---
 #### 主子表
 

@@ -3,6 +3,39 @@ title: 工具库详解
 type: sparrow
 order: 0
 ---
+## 起步
+
+### Sparrow介绍
+
+`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
+
+
+
+### 如何使用
+
+##### 浏览器环境
+
+* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
+
+```
+<script src="sparrow.js"></script>
+```
+
+
+##### 使用ES6模块开发环境
+
+* 步骤一：安装依赖
+
+```
+$ npm install --save tinper-sparrow
+```
+
+* 步骤二：在需要依赖的文件中引入
+
+```
+import {u} from 'tinper-sparrow/js/index.js'
+```
+
 ## 终端API
 
 ### isIE
@@ -211,76 +244,6 @@ order: 0
 
   Boolean
 
-
-## DOM
-
-### wrap(element,parent)
-* 说明：
-
-  将HTML元素添加到某HTML元素中。
-
-* 参数：
-  * {HTMLElement} element：必需。被添加的HTML元素。
-  * {String}/{HTMLElement} parent：必需。作为父项的HTML元素。
-* 返回值：
-
-  无
-* 用法：​
-  	u.wrap(document.getElementById('id1'), '<div></div>');	 
-  	u.wrap(document.getElementById('id1'), document.getElementById('id2'));
-
-
-
-
-
-### makeDOM(htmlString)
-* 说明：
-
-  创建HTML元素
-
-* 参数：
-
-  * {String} htmlString：必需。需要创建的HTML元素对应的html字符串。
-
-* 返回值：
-
-  创建之后的HTML元素
-* 用法：​
-  	u.makeDOM('<div></div>');	 
-
-## Tinper-Sparrow
-
-### Sparrow介绍
-
-`tinper-sparrow` 是一个轻量级 `javascript` 库，让开发者能更方便地进行 `DOM`操作、`events`处理、动画效果实现和`AJAX`交互等，并且提供丰富的`API`封装，如多平台多浏览器判断、`Cookies`操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。
-
-
-
-### 如何使用
-
-##### 浏览器环境
-
-* 离线下载：只需将下载到的`sparrow.js`放置在`script`标签中
-
-```
-<script src="sparrow.js"></script>
-```
-
-
-##### 使用ES6模块开发环境
-
-* 步骤一：安装依赖
-
-```
-$ npm install --save tinper-sparrow
-```
-
-* 步骤二：在需要依赖的文件中引入
-
-```
-import {u} from 'tinper-sparrow/js/index.js'
-```
-
 ## 事件绑定
 
 ### on(element,eventName,child,listener)
@@ -350,6 +313,43 @@ import {u} from 'tinper-sparrow/js/index.js'
   无
 * 用法：
   	u.stopEvent(e);	 
+
+
+## DOM
+
+### wrap(element,parent)
+* 说明：
+
+  将HTML元素添加到某HTML元素中。
+
+* 参数：
+  * {HTMLElement} element：必需。被添加的HTML元素。
+  * {String}/{HTMLElement} parent：必需。作为父项的HTML元素。
+* 返回值：
+
+  无
+* 用法：​
+  	u.wrap(document.getElementById('id1'), '<div></div>');	 
+  	u.wrap(document.getElementById('id1'), document.getElementById('id2'));
+
+
+
+
+
+### makeDOM(htmlString)
+* 说明：
+
+  创建HTML元素
+
+* 参数：
+
+  * {String} htmlString：必需。需要创建的HTML元素对应的html字符串。
+
+* 返回值：
+
+  创建之后的HTML元素
+* 用法：​
+  	u.makeDOM('<div></div>');	 
 
 ## 对象判断
 

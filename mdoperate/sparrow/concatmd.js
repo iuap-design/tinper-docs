@@ -3,11 +3,12 @@ var path = require('path');
 var envPath = process.cwd();
 var readPath = path.join(envPath, './docs/sparrow/');
 var writePath = path.join(envPath, './src/sparrow/index.md');
-var allData = '---' + '\r\n' +
+var headData = '---' + '\r\n' +
     'title: 工具库详解' + '\r\n' +
     'type: sparrow' + '\r\n' +
     'order: 0' + '\r\n' +
-    '---' + '\r\n';
+    '---' + '\r\n',
+    allData = "";
 
 fs.readdir(readPath, function(err, files) {
     if (err) {
@@ -21,7 +22,11 @@ fs.readdir(readPath, function(err, files) {
                     if (stat.isFile()) {
                         // 读取文件
                         fs.readFile(tmpPath, function(err, data) {
-                            allData += data.toString() + '\r\n';
+                            if (item == "install.md") {
+                                headData += data.toString() + '\r\n';
+                            } else {
+                                allData += data.toString() + '\r\n';
+                            }
                         })
                     }
                 })
@@ -31,6 +36,7 @@ fs.readdir(readPath, function(err, files) {
 });
 
 setTimeout(function() {
+    allData = headData + allData;
     fs.writeFile(writePath, allData, function(err) {
         if (err) {
             console.log('sparrow write err:' + err);

@@ -87,14 +87,12 @@ checkboxAObject.setEnable(true);//设置可用
 [复选框在grid中使用](http://tinper.org/webide/#/demos/ui/checkbox)
 
 
-### Checkbox
+#### Checkbox
 
 本例实现如下效果：
 
 * 绑定默认数据
 * 实现UI交互
-
-
 
 {% raw %}
 <div class="example-content"><!-- 

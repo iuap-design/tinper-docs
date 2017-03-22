@@ -1,7 +1,7 @@
 ---
 title: 数值百分比
 type: moy
-order: 12
+order: 9
 ---
 #### 数值百分比
 

@@ -1,6 +1,6 @@
 <a name="Row"></a>
 
-## Row : <code>object</code>
+### Row : <code>object</code>
 前端数据模型行对象
 
 
@@ -26,12 +26,12 @@
 
 <a name="Row+rowId"></a>
 
-### row.rowId : <code>string</code>
+#### row.rowId : <code>string</code>
 当前行的唯一标识
 
 <a name="Row+status"></a>
 
-### row.status : <code>string</code>
+#### row.status : <code>string</code>
 当前行的状态
 Row.STATUS.NORMAL('nrm') ：前后端都存在并且保持一致
 Row.STATUS.UPDATE('upd') ：前后端都存在并且前端进行了修改
@@ -42,12 +42,12 @@ Row.STATUS.FALSE_DELETE('fdel') ：后端存在，前端不存在的数据
 **Default**: <code>&quot;Row.STATUS.NEW&quot;</code>  
 <a name="Row+parent"></a>
 
-### row.parent
+#### row.parent
 当前行对应的DataTable对象
 
 <a name="Row.setValue"></a>
 
-### Row.setValue(fieldName, value, [ctx])
+#### Row.setValue(fieldName, value, [ctx])
 设置对应字段的值
 
 
@@ -64,7 +64,7 @@ row.setValue('filed1','value1','ctx') //设置字段值，同时传入自定义�
 ```
 <a name="Row.setData"></a>
 
-### Row.setData(data, [subscribe], [options])
+#### Row.setData(data, [subscribe], [options])
 设置row的数据信息
 
 
@@ -77,7 +77,7 @@ row.setValue('filed1','value1','ctx') //设置字段值，同时传入自定义�
 
 <a name="Row.getValue"></a>
 
-### Row.getValue(fieldName) ⇒ <code>string</code>
+#### Row.getValue(fieldName) ⇒ <code>string</code>
 获取row中某一字段的值
 
 **返回值**: <code>string</code> - 字段值  
@@ -92,7 +92,7 @@ row.getValue('field1')
 ```
 <a name="Row.getData"></a>
 
-### Row.getData() ⇒ <code>object</code>
+#### Row.getData() ⇒ <code>object</code>
 获取数据信息
 
 **返回值**: <code>object</code> - 格式如下：{'id': this.rowId, 'status': this.status, data: data}  
@@ -102,7 +102,7 @@ row.getData()
 ```
 <a name="Row.getSimpleData"></a>
 
-### Row.getSimpleData([options]) ⇒ <code>object</code>
+#### Row.getSimpleData([options]) ⇒ <code>object</code>
 获取数据信息
 
 **返回值**: <code>object</code> - 数据信息  
@@ -119,7 +119,7 @@ row.getSimpleData({fields:['field1','field2']})
 ```
 <a name="Row.setSimpleData"></a>
 
-### Row.setSimpleData(data, [status])
+#### Row.setSimpleData(data, [status])
 设置数据, 只设置字段值
 
 
@@ -139,7 +139,7 @@ datatable.setSimpleData(data,'upd')
 ```
 <a name="Row.toggleSelect"></a>
 
-### Row.toggleSelect([type])
+#### Row.toggleSelect([type])
 切换数据行的选中状态
 
 
@@ -155,7 +155,7 @@ row.toggleSelect('multi')
 ```
 <a name="Row.getMeta"></a>
 
-### Row.getMeta(fieldName, key, [fetchParent]) ⇒ <code>string</code>
+#### Row.getMeta(fieldName, key, [fetchParent]) ⇒ <code>string</code>
 获取字段的属性
 
 **返回值**: <code>string</code> - 属性值  
@@ -173,7 +173,7 @@ row.getMeta('field1','type',true)
 ```
 <a name="Row.setMeta"></a>
 
-### Row.setMeta(fieldName, key, value)
+#### Row.setMeta(fieldName, key, value)
 设置meta信息
 
 
@@ -189,7 +189,7 @@ row.setMeta('filed1','type','string')
 ```
 <a name="Row.ref"></a>
 
-### Row.ref(fieldName)
+#### Row.ref(fieldName)
 为某个字段绑定监听，当字段发生改变时触发对应方法
 
 
@@ -203,7 +203,7 @@ row.ref('field1').subscribe(function(){})
 ```
 <a name="Row.refMeta"></a>
 
-### Row.refMeta(fieldName, key)
+#### Row.refMeta(fieldName, key)
 绑定字段属性，当字段属性发生改变时触发对应方法
 
 
@@ -218,7 +218,7 @@ row.refMeta('field1','type').subscribe(function(){})
 ```
 <a name="Row.refCombo"></a>
 
-### Row.refCombo(fieldName, datasource)
+#### Row.refCombo(fieldName, datasource)
 为某个字段绑定监听，当字段发生改变时触发对应方法，针对下拉字段根据key转化为对应的value
 
 
@@ -233,7 +233,7 @@ row.refCombo('field1','source1').subscribe(function(){})
 ```
 <a name="Row.refDate"></a>
 
-### Row.refDate(fieldName, format)
+#### Row.refDate(fieldName, format)
 为某个字段绑定监听，当字段发生改变时触发对应方法，针对日期字段进行格式化
 
 

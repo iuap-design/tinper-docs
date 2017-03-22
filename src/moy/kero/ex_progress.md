@@ -1,7 +1,7 @@
 ---
 title: 进度条
 type: moy
-order: 10
+order: 12
 ---
 #### 进度条
 
