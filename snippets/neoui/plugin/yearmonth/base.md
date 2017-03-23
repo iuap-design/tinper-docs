@@ -7,7 +7,7 @@
 
 [试一试](http://tinper.org/webide/#/demos/ui/yearmonth)
 
-用户可以在`u-yearmonth`的dom元素添加format属性，来自定义年月的显示格式。具体定义方式参考[这里](http://tinper.org/dist/neoui/plugin/date.html)
+用户可以在`u-yearmonth`的dom元素添加format属性，来自定义年月的显示格式。具体定义方式参考[这里](http://docs.tinper.org/neoui/plugin.html#日期)
 
 ### API
 
@@ -43,6 +43,6 @@ yearMonthObject.setValue('2016-02');
 
 相关内容：
 
-[年月在kero中使用](http://tinper.org/dist/kero/docs/ex_yearmonth.html)    
+[年月在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
 
 [年月在grid中使用](http://tinper.org/webide/#/demos/grids/edit)

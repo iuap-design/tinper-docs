@@ -41,7 +41,7 @@ monthDateObject.setValue('02-15');
 
 相关内容：
 
-[月日在kero中使用](http://tinper.org/dist/kero/docs/ex_yearmonth.html)    
+[月日在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
 
 
 定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。

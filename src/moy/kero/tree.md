@@ -27,7 +27,7 @@ order: 24
 
 相关内容：
 
-[基础树](http://tinper.org/dist/neoui/plugin/tree.html)
+[基础树](http://docs.tinper.org/moy/kero/tree.html)
 
 
 

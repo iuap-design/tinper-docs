@@ -1,7 +1,7 @@
 ---
 title: 自定义验证
 type: moy
-order: 19
+order: 18
 ---
 #### 自定义验证
 
