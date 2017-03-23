@@ -10,7 +10,7 @@
             <% type !== 'api' && site.pages.find({type: type}).sort('order').each(function (p) { %>
                 <% var fileName = p.path.replace(/^.+?\/([\w-]+)\.html/, '$1') %>
                 <% if (type === 'moy') { %>
-                    <% if (fileName === 'kero') { %>
+                    <% if (fileName === 'kero-begin') { %>
                       <li><h3>Kero进阶</h3></li>
                     <% } %>
                     <% if (fileName === 'grid_index') { %>
@@ -20,7 +20,7 @@
                       <li><h3>工具库</h3></li>
                     <% } %>
                     <% if (fileName === 'clockpicker') { %>
-                      <li><h3>组件</h3></li>
+                      <li><h3>Kero组件</h3></li>
                     <% } %>
 
                 <% } %>

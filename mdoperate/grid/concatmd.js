@@ -52,7 +52,7 @@ fs.readdir(readPath, function(err, files) {
         // 遍历目录下所有子项
         files.forEach(function(item) {
             var tmpPath = readPath + '/' + item;
-            if (item !== "README.md"&& item !== "gridcustom.md") {
+            if (item !== "README.md"&& item !== "gridcustom.md" && item!=="SUMMARY.md") {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
                         // 读取文件

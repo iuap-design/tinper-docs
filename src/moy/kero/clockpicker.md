@@ -1,7 +1,7 @@
 ---
 title: 表盘选择
 type: moy
-order: 3
+order: 6
 ---
 #### 表盘选择
 

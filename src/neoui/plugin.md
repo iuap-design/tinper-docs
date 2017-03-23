@@ -3,243 +3,6 @@ title: JavaScript插件
 type: neoui
 order: 3
 ---
-## clockpicker插件
-
-模拟老式表盘设置时间
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-除了js文件还需引入u.css。
-
-### 用法
-
-#### 引入文件
-在header中引入u.css
-```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
-```
-在文件尾部加入u.js
-
-```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
-
-```
-
-#### 代码
-定义样式为`u-clockpicker`的div父元素，包裹类`u-input`的input
-
-```
-<div class='u-clockpicker'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-js会根据`u-clockpicker`来定位dom，然后绑定事件。
-
-
-### clockpicker
-
-{% raw %}
-<div class="example-content"><div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div></div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
-
-
-## 下拉框
-
-combobox组合框是由一个文本输入控件和一个下拉菜单组成的，类似于select元素。用户可以从一个预先定义的列表里选择一个或者多个选项。
-
-* `.u-combo` - 单选下拉框
-* `.u-combo .mutil-select` - 多选下拉框
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/combobox)
-
-#### API
-
-#### Combo下拉框对象
-
-* 类型：`Object`
-* 说明： Combo表示一个下拉对象
-* 用法：
-
-获取方式：1、获取绑定下拉框的dom元素 ； 2、读取dom元素上的属性'u.Combo'
-
-```
-
-var comboObject = document.getElementById('domId')['u.Combo'];
-
-```
-
-**注：** 如果获取的下拉对象为空，原因为下拉框没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取下拉对象。
-#### setComboData 设置数据源
-
-* 类型： `Function`
-* 说明：给下拉框对象添加数据源
-* 参数：
-	* `{Array} dataArray`
-* 用法：
-
-```
-
-var dataArray = [{value:'01',name:'男'},{value:'02',name:'女'}];//value为：下拉框真实值，name为下拉显示值
-
-document.getElementById('domId')['u.Combo'].setComboData(dataArray);
-
-```
-
-#### selectItem 选中某行
-* 类型： `Function`
-* 说明：设置选中下拉框的某条数据
-* 参数：
-	* `{Integer} index`：要选中的某行，从0开始
-* 用法：
-
-```
-
-document.getElementById('domId')['u.Combo'].selectItem(index);
-
-```
-
-#### setValue 根据真实值选中某行
-* 类型： `Function`
-* 说明： 查找下拉框数据中与传入的参数相同的真实值，并选中对应的某条数据
-* 参数：
-	* `{String} value`： 要选中行的真实值
-* 用法：
-
-```
-
-document.getElementById('domId')['u.Combo'].setValue(value);
-
-```
-
-#### setName 根据显示值选中某行
-* 类型： `Function`
-* 说明： 查找下拉框数据中与传入的参数相同的显示值，并选中对应的某条数据
-* 参数：
-	* `{String} name`： 要选中行的显示值
-* 用法：
-
-```
-
-document.getElementById('domId')['u.Combo'].setName(name);
-
-```
-
-
-#### emptyValue 清空所选内容
-* 类型： `Function`
-* 说明： 清空下拉列表所选内容
-* 用法：
-
-```
-
-document.getElementById('domId')['u.Combo'].emptyValue();
-
-```
-
-相关内容：
-
-[下拉框在kero中使用](http://tinper.org/dist/kero/docs/combobox_ex.html)    
-
-[下拉框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><div class="u-combo" id="combo1">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
-    </div>
-</div></div>
-
-
-
-<script>
-u.compMgr.updateComp();
-document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
-</script>
-
-{% endraw %}
-``` html
-<div class="u-combo" id="combo1">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
-    </div>
-</div>
-```
-
-``` js
-u.compMgr.updateComp();
-document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
-```
-
-
-### 多选下拉框
-添加 `mutil-select`样式 支持多选
-
-{% raw %}
-<div class="example-content"><div class="u-combo mutil-select" id="combo3">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
-    </div>
-</div></div>
-
-
-
-<script>
-u.compMgr.updateComp();
-document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
-</script>
-
-{% endraw %}
-``` html
-<div class="u-combo mutil-select" id="combo3">
-    <div class="u-input-group u-has-feedback">
-        <input class="u-form-control" />
-        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
-    </div>
-</div>
-```
-
-``` js
-u.compMgr.updateComp();
-document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
-```
-
 ## Autocomplete
 ### 基本使用
 下面的例子是autocomplete的基本使用   
@@ -538,29 +301,242 @@ checkboxObject.toggle();
 
 
 
-## 表格控件扩展说明
+## 下拉框
 
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+combobox组合框是由一个文本输入控件和一个下拉菜单组成的，类似于select元素。用户可以从一个预先定义的列表里选择一个或者多个选项。
 
-### css覆盖
+* `.u-combo` - 单选下拉框
+* `.u-combo .mutil-select` - 多选下拉框
 
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
 
-### 切换主题
 
-通过引用不同的主题文件的方式来修改当前表格的主题。
+[试一试](http://tinper.org/webide/#/demos/ui/combobox)
 
-**注：后续提供**
+#### API
 
-### afterCreate
+#### Combo下拉框对象
 
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
+* 类型：`Object`
+* 说明： Combo表示一个下拉对象
+* 用法：
 
-### 扩展表格方法
+获取方式：1、获取绑定下拉框的dom元素 ； 2、读取dom元素上的属性'u.Combo'
 
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
+```
+
+var comboObject = document.getElementById('domId')['u.Combo'];
+
+```
+
+**注：** 如果获取的下拉对象为空，原因为下拉框没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取下拉对象。
+#### setComboData 设置数据源
+
+* 类型： `Function`
+* 说明：给下拉框对象添加数据源
+* 参数：
+	* `{Array} dataArray`
+* 用法：
+
+```
+
+var dataArray = [{value:'01',name:'男'},{value:'02',name:'女'}];//value为：下拉框真实值，name为下拉显示值
+
+document.getElementById('domId')['u.Combo'].setComboData(dataArray);
+
+```
+
+#### selectItem 选中某行
+* 类型： `Function`
+* 说明：设置选中下拉框的某条数据
+* 参数：
+	* `{Integer} index`：要选中的某行，从0开始
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].selectItem(index);
+
+```
+
+#### setValue 根据真实值选中某行
+* 类型： `Function`
+* 说明： 查找下拉框数据中与传入的参数相同的真实值，并选中对应的某条数据
+* 参数：
+	* `{String} value`： 要选中行的真实值
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].setValue(value);
+
+```
+
+#### setName 根据显示值选中某行
+* 类型： `Function`
+* 说明： 查找下拉框数据中与传入的参数相同的显示值，并选中对应的某条数据
+* 参数：
+	* `{String} name`： 要选中行的显示值
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].setName(name);
+
+```
+
+
+#### emptyValue 清空所选内容
+* 类型： `Function`
+* 说明： 清空下拉列表所选内容
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].emptyValue();
+
+```
+
+相关内容：
+
+[下拉框在kero中使用](http://tinper.org/dist/kero/docs/combobox_ex.html)    
+
+[下拉框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><div class="u-combo" id="combo1">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
+    </div>
+</div></div>
+
+
+
+<script>
+u.compMgr.updateComp();
+document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+</script>
+
+{% endraw %}
+``` html
+<div class="u-combo" id="combo1">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
+    </div>
+</div>
+```
+
+``` js
+u.compMgr.updateComp();
+document.getElementById('combo1')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+```
+
+
+### 多选下拉框
+添加 `mutil-select`样式 支持多选
+
+{% raw %}
+<div class="example-content"><div class="u-combo mutil-select" id="combo3">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
+    </div>
+</div></div>
+
+
+
+<script>
+u.compMgr.updateComp();
+document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
+</script>
+
+{% endraw %}
+``` html
+<div class="u-combo mutil-select" id="combo3">
+    <div class="u-input-group u-has-feedback">
+        <input class="u-form-control" />
+        <span class="u-form-control-feedback uf uf-arrow-down" data-role="combo-button"></span>
+    </div>
+</div>
+```
+
+``` js
+u.compMgr.updateComp();
+document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
+```
+
+## clockpicker插件
+
+模拟老式表盘设置时间
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+除了js文件还需引入u.css。
+
+### 用法
+
+#### 引入文件
+在header中引入u.css
+```
+<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+```
+在文件尾部加入u.js
+
+```
+<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+
+```
+
+#### 代码
+定义样式为`u-clockpicker`的div父元素，包裹类`u-input`的input
+
+```
+<div class='u-clockpicker'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+js会根据`u-clockpicker`来定位dom，然后绑定事件。
+
+
+### clockpicker
+
+{% raw %}
+<div class="example-content"><div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
+
 
 ## 日期
 
@@ -720,6 +696,30 @@ dateObject.setFormat('YYYY');
 ```
 
 
+
+## 表格控件扩展说明
+
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+
+### css覆盖
+
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+
+### 切换主题
+
+通过引用不同的主题文件的方式来修改当前表格的主题。
+
+**注：后续提供**
+
+### afterCreate
+
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
+
+### 扩展表格方法
+
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
 
 ## 表格控件
 
@@ -2141,145 +2141,6 @@ u.on(msgBtn,'click', function(){
 })
 ```
 
-## progress控件
-
-常用于跟踪进度
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-### 用法
-
-1.详情见示例
-
-### API
-
-#### JS 方法参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setProgress(para)</td>
-	    <td>para:比例数据</td>
-	    <td>初始化滚动条并设置比例</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setBuffer(para)</td>
-	    <td>para:设置缓冲比例</td>
-	    <td>缓冲滚动条</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-#### css 参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>颜色</td>
-	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
-	    <td>加在父元素的类后面 设置不同的色值</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>大小</td>
-	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
-	    <td>父元素的类后面 设置不同的尺寸</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-
-### 基本Progress
-
-{% raw %}
-<div class="example-content"><div id="p1" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p1" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-```
-
-
-### 不确定Progress
-
-{% raw %}
-<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
-```
-
-
-
-
-### 缓冲Progress
-
-有缓冲标识的进度条
-
-{% raw %}
-<div class="example-content"><div id="p3" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p3" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-```
-
 ## 模态框
 
 用户自定义的内容以弹出对话框的形式显示，具有最小和最实用的功能集。
@@ -2521,6 +2382,145 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
 
 ```
 
+## progress控件
+
+常用于跟踪进度
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+### 用法
+
+1.详情见示例
+
+### API
+
+#### JS 方法参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setProgress(para)</td>
+	    <td>para:比例数据</td>
+	    <td>初始化滚动条并设置比例</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setBuffer(para)</td>
+	    <td>para:设置缓冲比例</td>
+	    <td>缓冲滚动条</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+#### css 参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>颜色</td>
+	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
+	    <td>加在父元素的类后面 设置不同的色值</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>大小</td>
+	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
+	    <td>父元素的类后面 设置不同的尺寸</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+
+### 基本Progress
+
+{% raw %}
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p1" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+```
+
+
+### 不确定Progress
+
+{% raw %}
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div id="p2" class="u-progress u-progress__indeterminate"></div>
+```
+
+
+
+
+### 缓冲Progress
+
+有缓冲标识的进度条
+
+{% raw %}
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p3" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+```
+
 ## rating控件
 
 评级评分
@@ -2666,6 +2666,125 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
       // }
     // });
   })(document, window, jQuery);
+```
+
+## 参照组件
+
+参照组件是基于`模态框组件`进行的开发，配合`kero`可实现赋值，传值等复杂操作。
+
+
+### 使用方法
+
+```
+u.refer({
+      title:'测试项目',
+      contentId: 'testitemid_ref',
+      height:'300px',
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      onOk: function(){
+          alert('ok');
+      },
+      onCancel: function(){
+          alert('cancel');
+      },
+      isPOPMode: true
+})
+```
+
+
+#### 参数说明
+
+* `isPOPMode`:弹出层模式
+
+* `title`:弹出层标题，默认值`'参照'`
+
+* `contentId`:弹出层ID，默认值`referWrap`
+
+* `module`:`template`为弹出层内容，默认为空
+
+* `onOk`:弹出层确认后的回调函数
+
+* `onCancel`:弹出层取消后的回调函数
+
+  ​
+
+
+### 参照示例
+
+点击id为`referdom`元素的按钮，弹出参照层
+
+{% raw %}
+<div class="example-content">
+<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
+</div>
+
+
+
+<script>
+var referDOM = document.getElementById('referdom');
+u.on(referDOM, 'click', function(){
+    u.refer({
+      // 模式 弹出层
+      isPOPMode: true,
+      // 弹出层id
+      contentId: 'testitemid_ref',
+      // 设定参照层标题
+      title:'测试项目',
+      // 设置而参照层高度
+      height:'300px',
+      // 设置参照层内容
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      // 点击确认后回调事件
+      onOk: function(){
+          alert('ok');
+      },
+      // 点击取消后回调事件
+      onCancel: function(){
+          alert('cancel');
+      }
+    })
+})
+
+</script>
+
+{% endraw %}
+``` html
+
+<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
+
+```
+
+``` js
+var referDOM = document.getElementById('referdom');
+u.on(referDOM, 'click', function(){
+    u.refer({
+      // 模式 弹出层
+      isPOPMode: true,
+      // 弹出层id
+      contentId: 'testitemid_ref',
+      // 设定参照层标题
+      title:'测试项目',
+      // 设置而参照层高度
+      height:'300px',
+      // 设置参照层内容
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      // 点击确认后回调事件
+      onOk: function(){
+          alert('ok');
+      },
+      // 点击取消后回调事件
+      onCancel: function(){
+          alert('cancel');
+      }
+    })
+})
+
 ```
 
 ## 开关
@@ -2946,362 +3065,6 @@ switchObject.isChecked();
 
 
 
-## tooltip控件
-
-当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-### 用法
-
-#### 创建tooltip对象
-```
-var toptip=new u.Tooltip(toptoolEle,{
-title:'默认向上显示'
-});
-
-```
-#### 参数设置
-创建对象时，添加显示内容title、显示位置placement、显示颜色级别colorLevel
-
-### API
-#### JS 方法参数
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>new u.Tooltip()</td>
-	    <td>1.title:显示内容 2.placement:显示方向 3.colorLevel:颜色主体</td>
-	    <td>
-	    	1.colorLevel：取值范围tooltip-primary、tooltip-info、tooltip-warning、tooltip-success、tooltip-danger
-			2.placement： 取值范围top、bottom、left、right，默认top</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-
-### 普通tooltip
-
-{% raw %}
-<div class="example-content"><div id='example'>
-	<label id="top" class="ws">上提示</label>
-	<label id="down" class="ws">下提示</label>
-	<label id="left" class="ws">左提示</label>
-	<label id="right" class="ws">右提示</label>
-</div></div>
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
- 
-</style>
-
-<script>
-var toptoolEle=document.getElementById('top');
-var bottomtoolEle=document.getElementById('down');
-var lefttoolEle=document.getElementById('left');
-var righttoolEle=document.getElementById('right');
-
-var toptip=new u.Tooltip(toptoolEle,{
-title:'默认向上显示'
-});
-
-
-var bottomtip=new u.Tooltip(bottomtoolEle,{
-title:'向下显示',
-placement:'bottom'
-
-});
-
-var leftTip=new u.Tooltip(lefttoolEle,{
-title:'向左显示',
-placement:'left'
-});
-
-var rightTip=new u.Tooltip(righttoolEle,{
-title:'向右显示',
-placement:'right'
-});
-</script>
-
-{% endraw %}
-``` html
-<div id='example'>
-	<label id="top" class="ws">上提示</label>
-	<label id="down" class="ws">下提示</label>
-	<label id="left" class="ws">左提示</label>
-	<label id="right" class="ws">右提示</label>
-</div>
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
- 
-```
-``` js
-var toptoolEle=document.getElementById('top');
-var bottomtoolEle=document.getElementById('down');
-var lefttoolEle=document.getElementById('left');
-var righttoolEle=document.getElementById('right');
-
-var toptip=new u.Tooltip(toptoolEle,{
-title:'默认向上显示'
-});
-
-
-var bottomtip=new u.Tooltip(bottomtoolEle,{
-title:'向下显示',
-placement:'bottom'
-
-});
-
-var leftTip=new u.Tooltip(lefttoolEle,{
-title:'向左显示',
-placement:'left'
-});
-
-var rightTip=new u.Tooltip(righttoolEle,{
-title:'向右显示',
-placement:'right'
-});
-```
-
-
-### 批量生成tooltip
-
-{% raw %}
-<div class="example-content"><div id='example'>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-</div>
-</div>
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
- 
-</style>
-
-<script>
-var toptoolEle=$('.tl-ws');
-// var toptoolEle=document.getElementsByClassName('ws');也可以这样
-
-var toptip=new u.Tooltip(toptoolEle,{
-title:'批量向上显示'
-});
-
-</script>
-
-{% endraw %}
-``` html
-<div id='example'>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-	<label class="ws tl-ws">批量提示</label>
-</div>
-
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
- 
-```
-``` js
-var toptoolEle=$('.tl-ws');
-// var toptoolEle=document.getElementsByClassName('ws');也可以这样
-
-var toptip=new u.Tooltip(toptoolEle,{
-title:'批量向上显示'
-});
-
-```
-
-## 参照组件
-
-参照组件是基于`模态框组件`进行的开发，配合`kero`可实现赋值，传值等复杂操作。
-
-
-### 使用方法
-
-```
-u.refer({
-      title:'测试项目',
-      contentId: 'testitemid_ref',
-      height:'300px',
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      onOk: function(){
-          alert('ok');
-      },
-      onCancel: function(){
-          alert('cancel');
-      },
-      isPOPMode: true
-})
-```
-
-
-#### 参数说明
-
-* `isPOPMode`:弹出层模式
-
-* `title`:弹出层标题，默认值`'参照'`
-
-* `contentId`:弹出层ID，默认值`referWrap`
-
-* `module`:`template`为弹出层内容，默认为空
-
-* `onOk`:弹出层确认后的回调函数
-
-* `onCancel`:弹出层取消后的回调函数
-
-  ​
-
-
-### 参照示例
-
-点击id为`referdom`元素的按钮，弹出参照层
-
-{% raw %}
-<div class="example-content">
-<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-</div>
-
-
-
-<script>
-var referDOM = document.getElementById('referdom');
-u.on(referDOM, 'click', function(){
-    u.refer({
-      // 模式 弹出层
-      isPOPMode: true,
-      // 弹出层id
-      contentId: 'testitemid_ref',
-      // 设定参照层标题
-      title:'测试项目',
-      // 设置而参照层高度
-      height:'300px',
-      // 设置参照层内容
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      // 点击确认后回调事件
-      onOk: function(){
-          alert('ok');
-      },
-      // 点击取消后回调事件
-      onCancel: function(){
-          alert('cancel');
-      }
-    })
-})
-
-</script>
-
-{% endraw %}
-``` html
-
-<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-
-```
-
-``` js
-var referDOM = document.getElementById('referdom');
-u.on(referDOM, 'click', function(){
-    u.refer({
-      // 模式 弹出层
-      isPOPMode: true,
-      // 弹出层id
-      contentId: 'testitemid_ref',
-      // 设定参照层标题
-      title:'测试项目',
-      // 设置而参照层高度
-      height:'300px',
-      // 设置参照层内容
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      // 点击确认后回调事件
-      onOk: function(){
-          alert('ok');
-      },
-      // 点击取消后回调事件
-      onCancel: function(){
-          alert('cancel');
-      }
-    })
-})
-
-```
-
 ## tabs控件
 
 多内容分类切换显示
@@ -3570,6 +3333,343 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 
 
 
+## tooltip控件
+
+当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+### 用法
+
+#### 创建tooltip对象
+```
+var toptip=new u.Tooltip(toptoolEle,{
+title:'默认向上显示'
+});
+
+```
+#### 参数设置
+创建对象时，添加显示内容title、显示位置placement、显示颜色级别colorLevel
+
+### API
+#### JS 方法参数
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>new u.Tooltip()</td>
+	    <td>1.title:显示内容 2.placement:显示方向 3.colorLevel:颜色主体</td>
+	    <td>
+	    	1.colorLevel：取值范围tooltip-primary、tooltip-info、tooltip-warning、tooltip-success、tooltip-danger
+			2.placement： 取值范围top、bottom、left、right，默认top</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+
+### 普通tooltip
+
+{% raw %}
+<div class="example-content"><div id='example'>
+	<label id="top" class="ws">上提示</label>
+	<label id="down" class="ws">下提示</label>
+	<label id="left" class="ws">左提示</label>
+	<label id="right" class="ws">右提示</label>
+</div></div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ 
+</style>
+
+<script>
+var toptoolEle=document.getElementById('top');
+var bottomtoolEle=document.getElementById('down');
+var lefttoolEle=document.getElementById('left');
+var righttoolEle=document.getElementById('right');
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'默认向上显示'
+});
+
+
+var bottomtip=new u.Tooltip(bottomtoolEle,{
+title:'向下显示',
+placement:'bottom'
+
+});
+
+var leftTip=new u.Tooltip(lefttoolEle,{
+title:'向左显示',
+placement:'left'
+});
+
+var rightTip=new u.Tooltip(righttoolEle,{
+title:'向右显示',
+placement:'right'
+});
+</script>
+
+{% endraw %}
+``` html
+<div id='example'>
+	<label id="top" class="ws">上提示</label>
+	<label id="down" class="ws">下提示</label>
+	<label id="left" class="ws">左提示</label>
+	<label id="right" class="ws">右提示</label>
+</div>
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ 
+```
+``` js
+var toptoolEle=document.getElementById('top');
+var bottomtoolEle=document.getElementById('down');
+var lefttoolEle=document.getElementById('left');
+var righttoolEle=document.getElementById('right');
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'默认向上显示'
+});
+
+
+var bottomtip=new u.Tooltip(bottomtoolEle,{
+title:'向下显示',
+placement:'bottom'
+
+});
+
+var leftTip=new u.Tooltip(lefttoolEle,{
+title:'向左显示',
+placement:'left'
+});
+
+var rightTip=new u.Tooltip(righttoolEle,{
+title:'向右显示',
+placement:'right'
+});
+```
+
+
+### 批量生成tooltip
+
+{% raw %}
+<div class="example-content"><div id='example'>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+</div>
+</div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ 
+</style>
+
+<script>
+var toptoolEle=$('.tl-ws');
+// var toptoolEle=document.getElementsByClassName('ws');也可以这样
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'批量向上显示'
+});
+
+</script>
+
+{% endraw %}
+``` html
+<div id='example'>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+	<label class="ws tl-ws">批量提示</label>
+</div>
+
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+ 
+```
+``` js
+var toptoolEle=$('.tl-ws');
+// var toptoolEle=document.getElementsByClassName('ws');也可以这样
+
+var toptip=new u.Tooltip(toptoolEle,{
+title:'批量向上显示'
+});
+
+```
+
+## menu控件
+
+动态弹出菜单
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+
+### 左边menu
+
+{% raw %}
+<div class="example-content"><!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div></div>
+
+<style>
+.example{
+	padding-left: 30px;
+}
+</style>
+
+{% endraw %}
+``` html
+<!-- Left aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>
+	左对齐
+	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+```
+``` css
+.example{
+	padding-left: 30px;
+}
+```
+
+
+
+### 右边menu
+
+{% raw %}
+<div class="example-content"><!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div></div>
+
+<style>
+.example{
+	padding-left: 30px;
+}
+</style>
+
+{% endraw %}
+``` html
+<!-- right aligned menu below button -->
+<div class="example">
+	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
+	    <i class="uf uf-3dot-v"></i>
+	</button>右对齐
+	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
+	    <li class="u-menu-item">新增</li>
+	    <li class="u-menu-item">修改</li>
+	    <li disabled class="u-menu-item">删除</li>
+	    <li class="u-menu-item">审核</li>
+	</ul>
+</div>
+```
+``` css
+.example{
+	padding-left: 30px;
+}
+```
+
+
 ## 月份
 
 用户可以通过此插件进行月份的选择。
@@ -3711,104 +3811,198 @@ monthDateObject.setValue('02-15');
 ```
 
 
-## menu控件
+## 单选框
 
-动态弹出菜单
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+radio提供了基本的单选框和不同色彩的单选框
 
 
-### 左边menu
+
+[试一试](http://tinper.org/webide/#/demos/ui/radio)
+
+#### API
+
+#### radio对象
+
+* 类型：`Object`
+* 说明： 获取radio对象
+* 用法：
+
+获取方式：1、获取绑定radio的dom元素 ； 2、读取dom元素上的属性'u.Radio'
+
+```
+
+var radioObject = document.getElementById('domId')['u.Radio'];
+
+```
+
+#### check
+
+* 类型：`Function`
+* 说明： 调用radio对象的check方法，选中单选框
+* 用法：
+
+```
+
+radioObject.check();
+
+```
+
+#### uncheck
+
+* 类型：`Function`
+* 说明： 调用radio对象的uncheck方法，取消选中单选框
+* 用法：
+
+```
+
+radioObject.uncheck();
+
+```
+
+#### disable
+
+* 类型：`Function`
+* 说明： 调用radio对象的disable方法，使单选框不可用
+* 用法：
+
+```
+
+radioObject.disable();
+
+```
+#### enable
+
+* 类型：`Function`
+* 说明： 调用radio对象的enable方法，使单选框可用
+* 用法：
+
+```
+
+radioObject.enable();
+
+```
+
+相关内容：
+
+[单选框在kero中使用](http://tinper.org/dist/kero/docs/ex_radio.html)    
+
+[单选框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+### 基础
+
+在单选框中input元素上添加如下属性可以实现多种效果。
+
+* `checked`单选框选中
+* `disabled`单选框不可用
 
 {% raw %}
-<div class="example-content"><!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div></div>
+<div class="example-content"><span>可用未选radio</span>
+<label class="u-radio" for="option-1">
+    <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
+    <span class="u-radio-label">First</span>
+</label>
+<span>可用已选radio</span>
+<label class="u-radio" for="option-6">
+    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
+    <span class="u-radio-label">First</span>
+</label>
+<span>不可用未选radio</span>
+<label class="u-radio" for="option-2">
+    <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
+    <span class="u-radio-label">Second</span>
+</label>
+<span>不可用已选radio</span>
+<label class="u-radio" for="option-3">
+    <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
+    <span class="u-radio-label">Second</span>
+</label></div>
 
-<style>
-.example{
-	padding-left: 30px;
-}
-</style>
+
 
 {% endraw %}
 ``` html
-<!-- Left aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-left" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>
-	左对齐
-	<ul class="u-menu u-menu-bottom-left" for="demo-menu-lower-left">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
+<span>可用未选radio</span>
+<label class="u-radio" for="option-1">
+    <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
+    <span class="u-radio-label">First</span>
+</label>
+<span>可用已选radio</span>
+<label class="u-radio" for="option-6">
+    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
+    <span class="u-radio-label">First</span>
+</label>
+<span>不可用未选radio</span>
+<label class="u-radio" for="option-2">
+    <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
+    <span class="u-radio-label">Second</span>
+</label>
+<span>不可用已选radio</span>
+<label class="u-radio" for="option-3">
+    <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
+    <span class="u-radio-label">Second</span>
+</label>
 ```
-``` css
-.example{
-	padding-left: 30px;
-}
-```
 
 
 
-### 右边menu
+
+### 预定义样式
+
+* `u-radio-success` - 绿色按钮
+* `u-radio-info` - 蓝色按钮
+* `u-radio-warning` - 黄色按钮
+* `u-radio-danger` - 红色按钮
+* `u-radio-dark` - 灰色按钮
 
 {% raw %}
-<div class="example-content"><!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div></div>
+<div class="example-content"><label class="u-radio u-radio-success" >
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">green</span>
+</label>
+<label class="u-radio u-radio-info">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">blue</span>
+</label>
+<label class="u-radio u-radio-warning">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">yellow</span>
+</label>
+<label class="u-radio u-radio-danger">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">red</span>
+</label>
+<label class="u-radio u-radio-dark">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">grey</span>
+</label></div>
 
-<style>
-.example{
-	padding-left: 30px;
-}
-</style>
+
 
 {% endraw %}
 ``` html
-<!-- right aligned menu below button -->
-<div class="example">
-	<button id="demo-menu-lower-right" class="u-button floating u-button-icon">
-	    <i class="uf uf-3dot-v"></i>
-	</button>右对齐
-	<ul class="u-menu u-menu-bottom-right" for="demo-menu-lower-right">
-	    <li class="u-menu-item">新增</li>
-	    <li class="u-menu-item">修改</li>
-	    <li disabled class="u-menu-item">删除</li>
-	    <li class="u-menu-item">审核</li>
-	</ul>
-</div>
+<label class="u-radio u-radio-success" >
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">green</span>
+</label>
+<label class="u-radio u-radio-info">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">blue</span>
+</label>
+<label class="u-radio u-radio-warning">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">yellow</span>
+</label>
+<label class="u-radio u-radio-danger">
+    <input type="radio" class="u-radio-button"   checked>
+    <span class="u-radio-label">red</span>
+</label>
+<label class="u-radio u-radio-dark">
+    <input type="radio" class="u-radio-button"  checked>
+    <span class="u-radio-label">grey</span>
+</label>
 ```
-``` css
-.example{
-	padding-left: 30px;
-}
-```
+
 
 
 ## time插件
@@ -4026,199 +4220,5 @@ yearMonthObject.setValue('2016-02');
 	width: 250px;
 }
 ```
-
-
-## 单选框
-
-radio提供了基本的单选框和不同色彩的单选框
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/radio)
-
-#### API
-
-#### radio对象
-
-* 类型：`Object`
-* 说明： 获取radio对象
-* 用法：
-
-获取方式：1、获取绑定radio的dom元素 ； 2、读取dom元素上的属性'u.Radio'
-
-```
-
-var radioObject = document.getElementById('domId')['u.Radio'];
-
-```
-
-#### check
-
-* 类型：`Function`
-* 说明： 调用radio对象的check方法，选中单选框
-* 用法：
-
-```
-
-radioObject.check();
-
-```
-
-#### uncheck
-
-* 类型：`Function`
-* 说明： 调用radio对象的uncheck方法，取消选中单选框
-* 用法：
-
-```
-
-radioObject.uncheck();
-
-```
-
-#### disable
-
-* 类型：`Function`
-* 说明： 调用radio对象的disable方法，使单选框不可用
-* 用法：
-
-```
-
-radioObject.disable();
-
-```
-#### enable
-
-* 类型：`Function`
-* 说明： 调用radio对象的enable方法，使单选框可用
-* 用法：
-
-```
-
-radioObject.enable();
-
-```
-
-相关内容：
-
-[单选框在kero中使用](http://tinper.org/dist/kero/docs/ex_radio.html)    
-
-[单选框在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-### 基础
-
-在单选框中input元素上添加如下属性可以实现多种效果。
-
-* `checked`单选框选中
-* `disabled`单选框不可用
-
-{% raw %}
-<div class="example-content"><span>可用未选radio</span>
-<label class="u-radio" for="option-1">
-    <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
-    <span class="u-radio-label">First</span>
-</label>
-<span>可用已选radio</span>
-<label class="u-radio" for="option-6">
-    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
-    <span class="u-radio-label">First</span>
-</label>
-<span>不可用未选radio</span>
-<label class="u-radio" for="option-2">
-    <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
-    <span class="u-radio-label">Second</span>
-</label>
-<span>不可用已选radio</span>
-<label class="u-radio" for="option-3">
-    <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
-    <span class="u-radio-label">Second</span>
-</label></div>
-
-
-
-{% endraw %}
-``` html
-<span>可用未选radio</span>
-<label class="u-radio" for="option-1">
-    <input type="radio" id="option-1" class="u-radio-button" name="options" value="1">
-    <span class="u-radio-label">First</span>
-</label>
-<span>可用已选radio</span>
-<label class="u-radio" for="option-6">
-    <input type="radio" id="option-6" class="u-radio-button" name="options" value="1" checked>
-    <span class="u-radio-label">First</span>
-</label>
-<span>不可用未选radio</span>
-<label class="u-radio" for="option-2">
-    <input type="radio" disabled id="option-2" class="u-radio-button" name="options" value="2">
-    <span class="u-radio-label">Second</span>
-</label>
-<span>不可用已选radio</span>
-<label class="u-radio" for="option-3">
-    <input type="radio" disabled checked id="option-3" class="u-radio-button" name="options1" value="3">
-    <span class="u-radio-label">Second</span>
-</label>
-```
-
-
-
-
-### 预定义样式
-
-* `u-radio-success` - 绿色按钮
-* `u-radio-info` - 蓝色按钮
-* `u-radio-warning` - 黄色按钮
-* `u-radio-danger` - 红色按钮
-* `u-radio-dark` - 灰色按钮
-
-{% raw %}
-<div class="example-content"><label class="u-radio u-radio-success" >
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">green</span>
-</label>
-<label class="u-radio u-radio-info">
-    <input type="radio" class="u-radio-button"   checked>
-    <span class="u-radio-label">blue</span>
-</label>
-<label class="u-radio u-radio-warning">
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">yellow</span>
-</label>
-<label class="u-radio u-radio-danger">
-    <input type="radio" class="u-radio-button"   checked>
-    <span class="u-radio-label">red</span>
-</label>
-<label class="u-radio u-radio-dark">
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">grey</span>
-</label></div>
-
-
-
-{% endraw %}
-``` html
-<label class="u-radio u-radio-success" >
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">green</span>
-</label>
-<label class="u-radio u-radio-info">
-    <input type="radio" class="u-radio-button"   checked>
-    <span class="u-radio-label">blue</span>
-</label>
-<label class="u-radio u-radio-warning">
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">yellow</span>
-</label>
-<label class="u-radio u-radio-danger">
-    <input type="radio" class="u-radio-button"   checked>
-    <span class="u-radio-label">red</span>
-</label>
-<label class="u-radio u-radio-dark">
-    <input type="radio" class="u-radio-button"  checked>
-    <span class="u-radio-label">grey</span>
-</label>
-```
-
 
 

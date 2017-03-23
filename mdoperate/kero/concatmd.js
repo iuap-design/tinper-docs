@@ -2,18 +2,24 @@ var fs = require('fs');
 var path = require('path');
 var envPath = process.cwd();
 var readPath = path.join(envPath, './docs/kero/');
-var writePath = path.join(envPath, './src/moy/kero.md');
+var writePath = path.join(envPath, './src/moy/kero-begin.md');
+var writePath0 = path.join(envPath, './src/moy/kero-data.md');
 var writePath1 = path.join(envPath, './src/moy/kero-api.md');
 var headData = '---' + '\r\n' +
-    'title: kero详解' + '\r\n' +
+    'title: 起步' + '\r\n' +
     'type: moy' + '\r\n' +
     'order: 1' + '\r\n' +
     '---' + '\r\n',
-    allData = "";
-var allData1 = '---' + '\r\n' +
-    'title: keroAPI' + '\r\n' +
+    beginData = "";
+var datamodel = '---' + '\r\n' +
+    'title: 数据模型' + '\r\n' +
     'type: moy' + '\r\n' +
     'order: 2' + '\r\n' +
+    '---' + '\r\n';
+var apiData = '---' + '\r\n' +
+    'title: keroAPI' + '\r\n' +
+    'type: moy' + '\r\n' +
+    'order: 5' + '\r\n' +
     '---' + '\r\n';
 var row_data = '',
     table_data = '';
@@ -25,7 +31,8 @@ fs.readdir(readPath, function(err, files) {
         // 遍历目录下所有子项
         files.forEach(function(item) {
             var tmpPath = readPath + '/' + item;
-            if (item != "README.md" && item != "SUMMARY.md" && item !== "core.md" && item !== "row.md" && item !== "udatatable.md") {
+            //起步文档拼接
+            if (item === "gettingstarted.md" || item === "overview.md" || item === "install.md") {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
                         // 读取文件
@@ -37,7 +44,7 @@ fs.readdir(readPath, function(err, files) {
                                     })
                                 }) + '\r\n';
                             } else {
-                                allData += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
+                                beginData += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
                                     return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
                                         return match1.replace(/"/g, "&quot;")
                                     })
@@ -48,6 +55,23 @@ fs.readdir(readPath, function(err, files) {
                     }
                 })
             }
+            //数据模型文档拼接
+            if (item === "datatable.md" || item === "dataTableUse.md" || item === "validateapi.md") {
+                fs.stat(tmpPath, function(err, stat) {
+                    if (stat.isFile()) {
+                        // 读取文件
+                        fs.readFile(tmpPath, function(err, data) {
+                            datamodel += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
+                                return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
+                                    return match1.replace(/"/g, "&quot;")
+                                })
+                            }) + '\r\n';
+
+                        })
+                    }
+                })
+            }
+            //api文档拼接
             if (item === "udatatable.md") {
                 fs.stat(tmpPath, function(err, stat) {
                     if (stat.isFile()) {
@@ -73,16 +97,23 @@ fs.readdir(readPath, function(err, files) {
 });
 
 setTimeout(function() {
-    allData = headData + allData;
-    fs.writeFile(writePath, allData, function(err) {
+    beginData = headData + beginData;
+    fs.writeFile(writePath, beginData, function(err) {
         if (err) {
-            console.log('kero write err:' + err);
+            console.log('kero-begin write err:' + err);
         } else {
-            console.log('kero write success!');
+            console.log('kero-begin write success!');
         }
     });
-    allData1 = allData1 + table_data + row_data;
-    fs.writeFile(writePath1, allData1, function(err) {
+    fs.writeFile(writePath0, datamodel, function(err) {
+        if (err) {
+            console.log('kero-data write err:' + err);
+        } else {
+            console.log('kero-data write success!');
+        }
+    });
+    apiData = apiData + table_data + row_data;
+    fs.writeFile(writePath1, apiData, function(err) {
         if (err) {
             console.log('kero-api write err:' + err);
         } else {
