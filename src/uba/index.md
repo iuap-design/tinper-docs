@@ -4,20 +4,6 @@ type: uba
 order: 0
 ---
 
-## 如何使用
-
-### 只需要执行简单的一条命令
-```sh
-# 打开uba界面来查看最佳实践
-$ uba
-```
-
-### 当前版本
-```sh
-$ uba -v
-```
-
-
 ## uba 命令行详解
 
 ### 如何使用
@@ -38,12 +24,18 @@ $uba -h
 ---
 > 通过查看[uba-templates](https://github.com/uba-templates)已知repo名字可以这样快速创建。
 
-## 如何安装
 
-使用 `npm` 将 `uba` 进行全局安装使用.
+## 如何使用
 
+### 只需要执行简单的一条命令
 ```sh
-$ npm install uba -g
+# 打开uba界面来查看最佳实践
+$ uba
+```
+
+### 当前版本
+```sh
+$ uba -v
 ```
 
 ## 如何参与最佳实践开发
@@ -54,6 +46,14 @@ $ npm install uba -g
   - 统一前缀为`uba-boilerplate-xxx`
 
 2. 其他待续...
+
+## 如何安装
+
+使用 `npm` 将 `uba` 进行全局安装使用.
+
+```sh
+$ npm install uba -g
+```
 
 
 ## 关于uba

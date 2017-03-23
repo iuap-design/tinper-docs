@@ -11,11 +11,12 @@ var headData = '---' + '\r\n' +
     'order: 1' + '\r\n' +
     '---' + '\r\n',
     beginData = "";
-var datamodel = '---' + '\r\n' +
+var head_datamodel = '---' + '\r\n' +
     'title: 数据模型' + '\r\n' +
     'type: moy' + '\r\n' +
     'order: 2' + '\r\n' +
-    '---' + '\r\n';
+    '---' + '\r\n',
+    datamodel = "";
 var apiData = '---' + '\r\n' +
     'title: keroAPI' + '\r\n' +
     'type: moy' + '\r\n' +
@@ -61,11 +62,19 @@ fs.readdir(readPath, function(err, files) {
                     if (stat.isFile()) {
                         // 读取文件
                         fs.readFile(tmpPath, function(err, data) {
-                            datamodel += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
-                                return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
-                                    return match1.replace(/"/g, "&quot;")
-                                })
-                            }) + '\r\n';
+                            if (item === "datatable.md") {
+                                head_datamodel += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
+                                    return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
+                                        return match1.replace(/"/g, "&quot;")
+                                    })
+                                }) + '\r\n';
+                            } else {
+                                datamodel += data.toString().replace(/{% raw %}([\s\S]*?){% endraw %}/g, function(match, p1, offset, string) {
+                                    return match.replace(/u-meta='{(.*?)}'/g, function(match1) {
+                                        return match1.replace(/"/g, "&quot;")
+                                    })
+                                }) + '\r\n';
+                            }
 
                         })
                     }
@@ -105,6 +114,7 @@ setTimeout(function() {
             console.log('kero-begin write success!');
         }
     });
+    datamodel = head_datamodel + datamodel;
     fs.writeFile(writePath0, datamodel, function(err) {
         if (err) {
             console.log('kero-data write err:' + err);
