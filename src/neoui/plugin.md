@@ -469,75 +469,6 @@ u.compMgr.updateComp();
 document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
 ```
 
-## clockpicker插件
-
-模拟老式表盘设置时间
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-除了js文件还需引入u.css。
-
-### 用法
-
-#### 引入文件
-在header中引入u.css
-```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
-```
-在文件尾部加入u.js
-
-```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
-
-```
-
-#### 代码
-定义样式为`u-clockpicker`的div父元素，包裹类`u-input`的input
-
-```
-<div class='u-clockpicker'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-js会根据`u-clockpicker`来定位dom，然后绑定事件。
-
-
-### clockpicker
-
-{% raw %}
-<div class="example-content"><div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div></div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="example">
-	<div class='u-clockpicker'>
-	    <input class="u-input" type="text">
-	</div>
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
-
-
 ## 日期
 
 用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。
@@ -697,29 +628,74 @@ dateObject.setFormat('YYYY');
 
 
 
-## 表格控件扩展说明
+## clockpicker插件
 
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+模拟老式表盘设置时间
 
-### css覆盖
+### 插件依赖
 
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
 
-### 切换主题
+除了js文件还需引入u.css。
 
-通过引用不同的主题文件的方式来修改当前表格的主题。
+### 用法
 
-**注：后续提供**
+#### 引入文件
+在header中引入u.css
+```
+<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+```
+在文件尾部加入u.js
 
-### afterCreate
+```
+<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
 
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
+```
 
-### 扩展表格方法
+#### 代码
+定义样式为`u-clockpicker`的div父元素，包裹类`u-input`的input
 
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
+```
+<div class='u-clockpicker'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+js会根据`u-clockpicker`来定位dom，然后绑定事件。
+
+
+### clockpicker
+
+{% raw %}
+<div class="example-content"><div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="example">
+	<div class='u-clockpicker'>
+	    <input class="u-input" type="text">
+	</div>
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
+
 
 ## 表格控件
 
@@ -2289,98 +2265,29 @@ u.on(cancelButton,'click', function(){
 });
 ```
 
-## 分页控件
+## 表格控件扩展说明
 
-分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
 
-### 插件依赖
+### css覆盖
 
-依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
 
-### 用法
+### 切换主题
 
-1.分页通过添加`u-pagination`的样式来实现基本的分页效果
+通过引用不同的主题文件的方式来修改当前表格的主题。
 
-2.创建一个分页对象，方法：new u.pagination(paramter)
+**注：后续提供**
 
-### js方法与参数
-名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
----------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
-pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
-update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
+### afterCreate
 
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
 
-### 基础分页
+### 扩展表格方法
 
-{% raw %}
-<div class="example-content"><div id='pagination' class='u-pagination'>
-</div></div>
-
-
-
-<script>
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-</script>
-
-{% endraw %}
-``` html
-<div id='pagination' class='u-pagination'>
-</div>
-```
-
-``` js
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-```
-
-
-### 有间距的分页
-添加样式`pagination-gap`可以增加页码之间的间距
-
-{% raw %}
-<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
-</div></div>
-
-
-
-<script>
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script>
-
-{% endraw %}
-``` html
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
-```
-
-``` js
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-```
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
 
 ## progress控件
 
@@ -2519,6 +2426,99 @@ u.on(window, 'load', function() {
     document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
 
 });
+```
+
+## 分页控件
+
+分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
+
+### 插件依赖
+
+依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
+
+### 用法
+
+1.分页通过添加`u-pagination`的样式来实现基本的分页效果
+
+2.创建一个分页对象，方法：new u.pagination(paramter)
+
+### js方法与参数
+名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
+---------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
+pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
+update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
+
+
+### 基础分页
+
+{% raw %}
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+
+
+
+<script>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+</script>
+
+{% endraw %}
+``` html
+<div id='pagination' class='u-pagination'>
+</div>
+```
+
+``` js
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+```
+
+
+### 有间距的分页
+添加样式`pagination-gap`可以增加页码之间的间距
+
+{% raw %}
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+
+
+
+<script>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+{% endraw %}
+``` html
+<div id='paginationGap' class='u-pagination pagination-gap'>
+</div>
+```
+
+``` js
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
 ```
 
 ## rating控件
@@ -2786,6 +2786,238 @@ u.on(referDOM, 'click', function(){
 })
 
 ```
+
+## tabs控件
+
+多内容分类切换显示
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+### 用法
+
+定义锚链接，与内容id匹配，详情见示例
+
+
+### 背景tabs
+
+切换 背景色跟随作为`active`状态
+
+{% raw %}
+<div class="example-content"><div class="u-widget-body">
+    <div class="u-tabs u-tabs-pill">
+        <div class="u-tabs__tab-bar">
+            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+        </div>
+        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+                <li>项目4</li>
+                <li>项目5</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-2">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-3">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+            </ul>
+        </div>
+    </div>
+</div></div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-widget-body">
+    <div class="u-tabs u-tabs-pill">
+        <div class="u-tabs__tab-bar">
+            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+        </div>
+        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+                <li>项目4</li>
+                <li>项目5</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-2">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+                <li>项目3</li>
+            </ul>
+        </div>
+        <div class="u-tabs__panel" id="tab-pills-panel-3">
+            <ul>
+                <li>项目1</li>
+                <li>项目2</li>
+            </ul>
+        </div>
+    </div>
+</div>
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+```
+
+
+
+### 线性tabs
+
+切换 线性跟随作为`active`状态
+
+{% raw %}
+<div class="example-content"><div class="u-tabs">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<style>
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-tabs">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
+
+```
+``` css
+.ws{
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+#example,#example1{
+	margin-left: 60px;
+}
+#example label:first-child,#example1 label:first-child{
+	margin-left: 0px;
+}
+```
+
 
 ## 开关
 
@@ -3065,274 +3297,6 @@ switchObject.isChecked();
 
 
 
-## tabs控件
-
-多内容分类切换显示
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-### 用法
-
-定义锚链接，与内容id匹配，详情见示例
-
-
-### 背景tabs
-
-切换 背景色跟随作为`active`状态
-
-{% raw %}
-<div class="example-content"><div class="u-widget-body">
-    <div class="u-tabs u-tabs-pill">
-        <div class="u-tabs__tab-bar">
-            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
-            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
-            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
-        </div>
-        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-                <li>项目4</li>
-                <li>项目5</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-2">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-3">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-            </ul>
-        </div>
-    </div>
-</div></div>
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-widget-body">
-    <div class="u-tabs u-tabs-pill">
-        <div class="u-tabs__tab-bar">
-            <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
-            <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
-            <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
-        </div>
-        <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-                <li>项目4</li>
-                <li>项目5</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-2">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-                <li>项目3</li>
-            </ul>
-        </div>
-        <div class="u-tabs__panel" id="tab-pills-panel-3">
-            <ul>
-                <li>项目1</li>
-                <li>项目2</li>
-            </ul>
-        </div>
-    </div>
-</div>
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-```
-
-
-
-### 线性tabs
-
-切换 线性跟随作为`active`状态
-
-{% raw %}
-<div class="example-content"><div class="u-tabs">
-    <div class="u-tabs__tab-bar">
-        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
-        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
-        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
-    </div>
-    <div class="u-tabs__panel is-active" id="tab-panel-1">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-            <li>项目4</li>
-            <li>项目5</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-2">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-3">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-        </ul>
-    </div>
-</div>
-</div>
-
-<style>
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-tabs">
-    <div class="u-tabs__tab-bar">
-        <a href="#tab-panel-1" class="u-tabs__tab is-active">页签1</a>
-        <a href="#tab-panel-2" class="u-tabs__tab">页签2</a>
-        <a href="#tab-panel-3" class="u-tabs__tab">页签3</a>
-    </div>
-    <div class="u-tabs__panel is-active" id="tab-panel-1">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-            <li>项目4</li>
-            <li>项目5</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-2">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-            <li>项目3</li>
-        </ul>
-    </div>
-    <div class="u-tabs__panel" id="tab-panel-3">
-        <ul>
-            <li>项目1</li>
-            <li>项目2</li>
-        </ul>
-    </div>
-</div>
-
-```
-``` css
-.ws{
-	width: 60px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	height:30px;
-	line-height: 30px;
-	text-align: center;
-	margin-left: 60px;
-	margin-top: 10px;
-}
-#example,#example1{
-	margin-left: 60px;
-}
-#example label:first-child,#example1 label:first-child{
-	margin-left: 0px;
-}
-```
-
-
-## loading插件
-
-loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
-
-### 插件依赖
-
-
-首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-再引入js: http://design.yyuap.com/static/uui/latest/js/u-date.js
-
-### 用法
-
-定义样式为`u-loading is-active u-loading-single-color `的div父元素
-
-```
-<div class="u-loading is-active u-loading-single-color"></div>
-
-```
-
-js会根据`u-loading`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-loading is-active u-loading-single-color"></div>
-```
-
-
-
 ## tooltip控件
 
 当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。
@@ -3570,6 +3534,42 @@ title:'批量向上显示'
 
 ```
 
+## loading插件
+
+loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
+
+### 插件依赖
+
+
+首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+再引入js: http://design.yyuap.com/static/uui/latest/js/u-date.js
+
+### 用法
+
+定义样式为`u-loading is-active u-loading-single-color `的div父元素
+
+```
+<div class="u-loading is-active u-loading-single-color"></div>
+
+```
+
+js会根据`u-loading`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-loading is-active u-loading-single-color"></div>
+```
+
+
+
 ## menu控件
 
 动态弹出菜单
@@ -3668,72 +3668,6 @@ title:'批量向上显示'
 	padding-left: 30px;
 }
 ```
-
-
-## 月份
-
-用户可以通过此插件进行月份的选择。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/month)
-
-
-### API
-
-#### Month 对象
-
-* 类型：`Object`
-* 说明： Month表示一个月对象
-* 用法：
-
-获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
-
-```
-
-var monthObject = document.getElementById('domId')['u.Month'];
-
-```
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月份
-* 参数：
-	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
-* 用法：
-
-```
-monthObject.setValue(2);
-
-```
-
-
-相关内容：
-
-[月份在kero中使用](http://tinper.org/dist/kero/docs/ex_month.html)    
-
-[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-<div class="example-content">
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
 
 
 ## 月日
@@ -4001,6 +3935,72 @@ radioObject.enable();
     <input type="radio" class="u-radio-button"  checked>
     <span class="u-radio-label">grey</span>
 </label>
+```
+
+
+
+## 月份
+
+用户可以通过此插件进行月份的选择。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/month)
+
+
+### API
+
+#### Month 对象
+
+* 类型：`Object`
+* 说明： Month表示一个月对象
+* 用法：
+
+获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
+
+```
+
+var monthObject = document.getElementById('domId')['u.Month'];
+
+```
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月份
+* 参数：
+	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
+* 用法：
+
+```
+monthObject.setValue(2);
+
+```
+
+
+相关内容：
+
+[月份在kero中使用](http://tinper.org/dist/kero/docs/ex_month.html)    
+
+[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+
 ```
 
 

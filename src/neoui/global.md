@@ -1423,6 +1423,135 @@ order: 1
 </div>
 {% endraw %}
 
+## 输入框
+
+
+### 基础
+在普通的input元素上添加`u-form-control`样式
+
+{% raw %}
+<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></div>
+
+
+
+{% endraw %}
+``` html
+<input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com">
+```
+
+
+
+
+### 禁止输入
+在普通输入框中添加`disabled` 属性
+
+{% raw %}
+<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
+</div>
+
+
+
+{% endraw %}
+``` html
+<input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
+
+```
+
+
+
+
+### 带后缀
+
+{% raw %}
+<div class="example-content"><div class="u-input-group u-has-feedback">
+    <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
+    <span class="u-form-control-feedback uf uf-search-light-2"></span>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group u-has-feedback">
+    <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
+    <span class="u-form-control-feedback uf uf-search-light-2"></span>
+</div>
+```
+
+
+
+
+### 必输项
+当input框失去焦点时，校验输入的内容，如果内容长度大于0则隐藏必输字符`*`,否则显示
+
+{% raw %}
+<div class="example-content"><div class="u-form-group">
+    <label for="exampleInput3">必输:</label>
+    <div class="u-input-group u-has-feedback must-in">
+        <div class="u-input-group-before " style="color: red;">*</div>
+        <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
+        <span class="u-form-control-feedback uf uf-search-light-2"></span>
+    </div>
+</div></div>
+
+
+
+<script>
+var mustinDom=document.querySelectorAll('.must-in input');
+var mustinlen=mustinDom.length;
+var checkInput=function(){
+    //console.log(this+'---'+this.previousSibling+'----'+this.previousSibling.innerHTML);
+    if(this.value.length>0){
+        this.previousElementSibling.innerHTML='';
+    }else{
+        this.previousElementSibling.innerHTML='*';
+    }
+}
+if(mustinlen>0){
+    for(var i=0;i< mustinlen;i++){
+        u.on(mustinDom[i],'blur',checkInput);
+        u.on(mustinDom[i],'keydown',function(){
+        	this.previousElementSibling.innerHTML='';
+        });
+    }
+}
+
+</script>
+
+{% endraw %}
+``` html
+<div class="u-form-group">
+    <label for="exampleInput3">必输:</label>
+    <div class="u-input-group u-has-feedback must-in">
+        <div class="u-input-group-before " style="color: red;">*</div>
+        <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
+        <span class="u-form-control-feedback uf uf-search-light-2"></span>
+    </div>
+</div>
+```
+
+``` js
+var mustinDom=document.querySelectorAll('.must-in input');
+var mustinlen=mustinDom.length;
+var checkInput=function(){
+    //console.log(this+'---'+this.previousSibling+'----'+this.previousSibling.innerHTML);
+    if(this.value.length>0){
+        this.previousElementSibling.innerHTML='';
+    }else{
+        this.previousElementSibling.innerHTML='*';
+    }
+}
+if(mustinlen>0){
+    for(var i=0;i< mustinlen;i++){
+        u.on(mustinDom[i],'blur',checkInput);
+        u.on(mustinDom[i],'keydown',function(){
+        	this.previousElementSibling.innerHTML='';
+        });
+    }
+}
+
+```
+
 ## 图标
 
 图标字体不用依赖任何JavaScript，只要CSS支持，无论颜色、大小或者其它任何效果，都可以轻易展现。
@@ -5224,247 +5353,6 @@ order: 1
 ```
 
 
-## 输入框
-
-
-### 基础
-在普通的input元素上添加`u-form-control`样式
-
-{% raw %}
-<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com"></div>
-
-
-
-{% endraw %}
-``` html
-<input type="text" class="u-form-control" id="exampleInput3"  placeholder="jane.doe@example.com">
-```
-
-
-
-
-### 禁止输入
-在普通输入框中添加`disabled` 属性
-
-{% raw %}
-<div class="example-content"><input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
-</div>
-
-
-
-{% endraw %}
-``` html
-<input type="text" class="u-form-control" id="exampleInput3" disabled placeholder="jane.doe@example.com">
-
-```
-
-
-
-
-### 带后缀
-
-{% raw %}
-<div class="example-content"><div class="u-input-group u-has-feedback">
-    <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
-    <span class="u-form-control-feedback uf uf-search-light-2"></span>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group u-has-feedback">
-    <input type="email" class="u-form-control" placeholder="jane.doe@example.com">
-    <span class="u-form-control-feedback uf uf-search-light-2"></span>
-</div>
-```
-
-
-
-
-### 必输项
-当input框失去焦点时，校验输入的内容，如果内容长度大于0则隐藏必输字符`*`,否则显示
-
-{% raw %}
-<div class="example-content"><div class="u-form-group">
-    <label for="exampleInput3">必输:</label>
-    <div class="u-input-group u-has-feedback must-in">
-        <div class="u-input-group-before " style="color: red;">*</div>
-        <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
-        <span class="u-form-control-feedback uf uf-search-light-2"></span>
-    </div>
-</div></div>
-
-
-
-<script>
-var mustinDom=document.querySelectorAll('.must-in input');
-var mustinlen=mustinDom.length;
-var checkInput=function(){
-    //console.log(this+'---'+this.previousSibling+'----'+this.previousSibling.innerHTML);
-    if(this.value.length>0){
-        this.previousElementSibling.innerHTML='';
-    }else{
-        this.previousElementSibling.innerHTML='*';
-    }
-}
-if(mustinlen>0){
-    for(var i=0;i< mustinlen;i++){
-        u.on(mustinDom[i],'blur',checkInput);
-        u.on(mustinDom[i],'keydown',function(){
-        	this.previousElementSibling.innerHTML='';
-        });
-    }
-}
-
-</script>
-
-{% endraw %}
-``` html
-<div class="u-form-group">
-    <label for="exampleInput3">必输:</label>
-    <div class="u-input-group u-has-feedback must-in">
-        <div class="u-input-group-before " style="color: red;">*</div>
-        <input type="text" class="u-form-control" id="exampleInput3" placeholder="jane.doe@example.com">
-        <span class="u-form-control-feedback uf uf-search-light-2"></span>
-    </div>
-</div>
-```
-
-``` js
-var mustinDom=document.querySelectorAll('.must-in input');
-var mustinlen=mustinDom.length;
-var checkInput=function(){
-    //console.log(this+'---'+this.previousSibling+'----'+this.previousSibling.innerHTML);
-    if(this.value.length>0){
-        this.previousElementSibling.innerHTML='';
-    }else{
-        this.previousElementSibling.innerHTML='*';
-    }
-}
-if(mustinlen>0){
-    for(var i=0;i< mustinlen;i++){
-        u.on(mustinDom[i],'blur',checkInput);
-        u.on(mustinDom[i],'keydown',function(){
-        	this.previousElementSibling.innerHTML='';
-        });
-    }
-}
-
-```
-
-## 标签
-
-
-### 预定义样式
-
-不同背景具有相应的样式名
-例如 u-tab-default 默认灰色
-
-{% raw %}
-<div class="example-content"><span class="u-tag u-tag-default">Default</span>
-<span class="u-tag u-tag-primary">Primary</span>
-<span class="u-tag u-tag-success">Success</span>
-<span class="u-tag u-tag-info">Info</span>
-<span class="u-tag u-tag-warning">Warning</span>
-<span class="u-tag u-tag-danger">Danger</span>
-<span class="u-tag u-tag-dark">Dark</span></div>
-
-
-
-{% endraw %}
-``` html
-<span class="u-tag u-tag-default">Default</span>
-<span class="u-tag u-tag-primary">Primary</span>
-<span class="u-tag u-tag-success">Success</span>
-<span class="u-tag u-tag-info">Info</span>
-<span class="u-tag u-tag-warning">Warning</span>
-<span class="u-tag u-tag-danger">Danger</span>
-<span class="u-tag u-tag-dark">Dark</span>
-```
-
-
-
-
-### 圆角
-
-
-`span` 标签上添加样式 `u-tag-round`
-
-{% raw %}
-<div class="example-content"><span class="u-tag u-tag-default u-tag-round">Default</span>
-<span class="u-tag u-tag-primary u-tag-round">Primary</span>
-<span class="u-tag u-tag-success u-tag-round">Success</span>
-<span class="u-tag u-tag-info u-tag-round">Info</span>
-<span class="u-tag u-tag-warning u-tag-round">Warning</span>
-<span class="u-tag u-tag-danger u-tag-round">Danger</span>
-<span class="u-tag u-tag-dark u-tag-round">Dark</span></div>
-
-
-
-{% endraw %}
-``` html
-<span class="u-tag u-tag-default u-tag-round">Default</span>
-<span class="u-tag u-tag-primary u-tag-round">Primary</span>
-<span class="u-tag u-tag-success u-tag-round">Success</span>
-<span class="u-tag u-tag-info u-tag-round">Info</span>
-<span class="u-tag u-tag-warning u-tag-round">Warning</span>
-<span class="u-tag u-tag-danger u-tag-round">Danger</span>
-<span class="u-tag u-tag-dark u-tag-round">Dark</span>
-```
-
-
-
-
-### 边框标签
-
-`span` 标签上添加样式 `u-tag-outline`
-
-{% raw %}
-<div class="example-content"><span class="u-tag u-tag-default u-tag-outline">Default</span>
-<span class="u-tag u-tag-primary u-tag-outline">Primary</span>
-<span class="u-tag u-tag-success u-tag-outline">Success</span>
-<span class="u-tag u-tag-info u-tag-outline">Info</span>
-<span class="u-tag u-tag-warning u-tag-outline">Warning</span>
-<span class="u-tag u-tag-danger u-tag-outline">Danger</span>
-<span class="u-tag u-tag-dark u-tag-outline">Dark</span></div>
-
-
-
-{% endraw %}
-``` html
-<span class="u-tag u-tag-default u-tag-outline">Default</span>
-<span class="u-tag u-tag-primary u-tag-outline">Primary</span>
-<span class="u-tag u-tag-success u-tag-outline">Success</span>
-<span class="u-tag u-tag-info u-tag-outline">Info</span>
-<span class="u-tag u-tag-warning u-tag-outline">Warning</span>
-<span class="u-tag u-tag-danger u-tag-outline">Danger</span>
-<span class="u-tag u-tag-dark u-tag-outline">Dark</span>
-```
-
-
-
-
-### 尺寸
-
-span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
-
-{% raw %}
-<div class="example-content"><span class="u-tag u-tag-lg u-tag-primary">大标签</span>
-<span class="u-tag u-tag-primary">默认大小</span>
-<span class="u-tag u-tag-sm u-tag-primary">小标签</span></div>
-
-
-
-{% endraw %}
-``` html
-<span class="u-tag u-tag-lg u-tag-primary">大标签</span>
-<span class="u-tag u-tag-primary">默认大小</span>
-<span class="u-tag u-tag-sm u-tag-primary">小标签</span>
-```
-
-
-
 ## 布局
  布局的栅格化系统使用了12列响应式网格布局。其工作原理如下：
 
@@ -5893,6 +5781,118 @@ span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
     border-radius: 0;
 }
 ```
+
+
+## 标签
+
+
+### 预定义样式
+
+不同背景具有相应的样式名
+例如 u-tab-default 默认灰色
+
+{% raw %}
+<div class="example-content"><span class="u-tag u-tag-default">Default</span>
+<span class="u-tag u-tag-primary">Primary</span>
+<span class="u-tag u-tag-success">Success</span>
+<span class="u-tag u-tag-info">Info</span>
+<span class="u-tag u-tag-warning">Warning</span>
+<span class="u-tag u-tag-danger">Danger</span>
+<span class="u-tag u-tag-dark">Dark</span></div>
+
+
+
+{% endraw %}
+``` html
+<span class="u-tag u-tag-default">Default</span>
+<span class="u-tag u-tag-primary">Primary</span>
+<span class="u-tag u-tag-success">Success</span>
+<span class="u-tag u-tag-info">Info</span>
+<span class="u-tag u-tag-warning">Warning</span>
+<span class="u-tag u-tag-danger">Danger</span>
+<span class="u-tag u-tag-dark">Dark</span>
+```
+
+
+
+
+### 圆角
+
+
+`span` 标签上添加样式 `u-tag-round`
+
+{% raw %}
+<div class="example-content"><span class="u-tag u-tag-default u-tag-round">Default</span>
+<span class="u-tag u-tag-primary u-tag-round">Primary</span>
+<span class="u-tag u-tag-success u-tag-round">Success</span>
+<span class="u-tag u-tag-info u-tag-round">Info</span>
+<span class="u-tag u-tag-warning u-tag-round">Warning</span>
+<span class="u-tag u-tag-danger u-tag-round">Danger</span>
+<span class="u-tag u-tag-dark u-tag-round">Dark</span></div>
+
+
+
+{% endraw %}
+``` html
+<span class="u-tag u-tag-default u-tag-round">Default</span>
+<span class="u-tag u-tag-primary u-tag-round">Primary</span>
+<span class="u-tag u-tag-success u-tag-round">Success</span>
+<span class="u-tag u-tag-info u-tag-round">Info</span>
+<span class="u-tag u-tag-warning u-tag-round">Warning</span>
+<span class="u-tag u-tag-danger u-tag-round">Danger</span>
+<span class="u-tag u-tag-dark u-tag-round">Dark</span>
+```
+
+
+
+
+### 边框标签
+
+`span` 标签上添加样式 `u-tag-outline`
+
+{% raw %}
+<div class="example-content"><span class="u-tag u-tag-default u-tag-outline">Default</span>
+<span class="u-tag u-tag-primary u-tag-outline">Primary</span>
+<span class="u-tag u-tag-success u-tag-outline">Success</span>
+<span class="u-tag u-tag-info u-tag-outline">Info</span>
+<span class="u-tag u-tag-warning u-tag-outline">Warning</span>
+<span class="u-tag u-tag-danger u-tag-outline">Danger</span>
+<span class="u-tag u-tag-dark u-tag-outline">Dark</span></div>
+
+
+
+{% endraw %}
+``` html
+<span class="u-tag u-tag-default u-tag-outline">Default</span>
+<span class="u-tag u-tag-primary u-tag-outline">Primary</span>
+<span class="u-tag u-tag-success u-tag-outline">Success</span>
+<span class="u-tag u-tag-info u-tag-outline">Info</span>
+<span class="u-tag u-tag-warning u-tag-outline">Warning</span>
+<span class="u-tag u-tag-danger u-tag-outline">Danger</span>
+<span class="u-tag u-tag-dark u-tag-outline">Dark</span>
+```
+
+
+
+
+### 尺寸
+
+span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
+
+{% raw %}
+<div class="example-content"><span class="u-tag u-tag-lg u-tag-primary">大标签</span>
+<span class="u-tag u-tag-primary">默认大小</span>
+<span class="u-tag u-tag-sm u-tag-primary">小标签</span></div>
+
+
+
+{% endraw %}
+``` html
+<span class="u-tag u-tag-lg u-tag-primary">大标签</span>
+<span class="u-tag u-tag-primary">默认大小</span>
+<span class="u-tag u-tag-sm u-tag-primary">小标签</span>
+```
+
 
 
 ## 表格

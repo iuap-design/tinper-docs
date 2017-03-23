@@ -3,6 +3,139 @@ title: 组件
 type: neoui
 order: 2
 ---
+## 面包屑
+
+用于带有层次的导航，active状态表明当前页面的位置
+
+#### 如何使用
+
+给父元素添加`.u-breadcrumb`,自定义导航结构的分隔符
+
+
+### 基础
+
+"/"为分隔符
+
+{% raw %}
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+
+```
+
+
+
+
+### 图标面包屑
+
+"/"为分隔符,并添加Home icon
+
+{% raw %}
+<div class="example-content">
+<ol class="u-breadcrumb">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Data</li>
+</ol>
+<ol class="u-breadcrumb breadcrumb-arrow">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+
+<style>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+</style>
+
+{% endraw %}
+``` html
+
+<ol class="u-breadcrumb">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Data</li>
+</ol>
+<ol class="u-breadcrumb breadcrumb-arrow">
+    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+```
+``` css
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+```
+
+
+
+### 其他分隔符
+
+{% raw %}
+<div class="example-content">
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol></div>
+
+<style>
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+</style>
+
+{% endraw %}
+``` html
+
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="u-breadcrumb u-breadcrumb-arrow">
+    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
+    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+```
+``` css
+.md-home:before {
+    content: "\e6a2";
+    font-family: 'uf';
+}
+```
+
+
 ## 按钮组
 
 样式为`u-button-group`的父元素，包裹多个样式为`u-button`的button元素
@@ -149,139 +282,6 @@ order: 2
 ``` css
 .example-content .u-button-group{
 	margin: 5px;
-}
-```
-
-
-## 面包屑
-
-用于带有层次的导航，active状态表明当前页面的位置
-
-#### 如何使用
-
-给父元素添加`.u-breadcrumb`,自定义导航结构的分隔符
-
-
-### 基础
-
-"/"为分隔符
-
-{% raw %}
-<div class="example-content">
-<ol class="u-breadcrumb">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Library</li>
-</ol>
-<ol class="u-breadcrumb">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol>
-</div>
-
-
-
-{% endraw %}
-``` html
-
-<ol class="u-breadcrumb">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Library</li>
-</ol>
-<ol class="u-breadcrumb">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol>
-
-```
-
-
-
-
-### 图标面包屑
-
-"/"为分隔符,并添加Home icon
-
-{% raw %}
-<div class="example-content">
-<ol class="u-breadcrumb">
-    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Data</li>
-</ol>
-<ol class="u-breadcrumb breadcrumb-arrow">
-    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol></div>
-
-<style>
-.md-home:before {
-    content: "\e6a2";
-    font-family: 'uf';
-}
-</style>
-
-{% endraw %}
-``` html
-
-<ol class="u-breadcrumb">
-    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Data</li>
-</ol>
-<ol class="u-breadcrumb breadcrumb-arrow">
-    <li><a class="icon md-home u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol>
-```
-``` css
-.md-home:before {
-    content: "\e6a2";
-    font-family: 'uf';
-}
-```
-
-
-
-### 其他分隔符
-
-{% raw %}
-<div class="example-content">
-<ol class="u-breadcrumb u-breadcrumb-arrow">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Library</li>
-</ol>
-<ol class="u-breadcrumb u-breadcrumb-arrow">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol></div>
-
-<style>
-.md-home:before {
-    content: "\e6a2";
-    font-family: 'uf';
-}
-</style>
-
-{% endraw %}
-``` html
-
-<ol class="u-breadcrumb u-breadcrumb-arrow">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li class="active">Library</li>
-</ol>
-<ol class="u-breadcrumb u-breadcrumb-arrow">
-    <li><a class="u-link" href="javascript:void(0)">Home</a></li>
-    <li><a class="u-link" href="javascript:void(0)">Library</a></li>
-    <li class="active">Data</li>
-</ol>
-```
-``` css
-.md-home:before {
-    content: "\e6a2";
-    font-family: 'uf';
 }
 ```
 
@@ -554,218 +554,6 @@ order: 2
     <li class="u-menu-item "><a>报价单</a></li>
     <li class="u-menu-item"><a>到货单</a></li>
 </ul>
-```
-
-
-
-## 输入框组
-
-由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
-
-#### 如何使用
-
-添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div></div>
-
-<style>
-.example-content .u-button-group{
-	margin: 5px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-```
-``` css
-.example-content .u-button-group{
-	margin: 5px;
-}
-```
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
 ```
 
 
@@ -1146,6 +934,218 @@ order: 2
       </li>
   </ul>
 
+```
+
+
+
+## 输入框组
+
+由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
+
+#### 如何使用
+
+添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div></div>
+
+<style>
+.example-content .u-button-group{
+	margin: 5px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+```
+``` css
+.example-content .u-button-group{
+	margin: 5px;
+}
+```
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
 ```
 
 
@@ -1986,6 +1986,188 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 
 ```
 
+## 面板
+
+
+### 基础
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+      <!-- Example Heading With Desc -->
+      <div class="u-panel">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Heading With Desc
+            <small>Panel Description Here..</small>
+          </p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+    </div>
+      <!-- End Example Heading With Desc -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+      <!-- Example Heading With Desc -->
+      <div class="u-panel">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Heading With Desc
+            <small>Panel Description Here..</small>
+          </p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+    </div>
+      <!-- End Example Heading With Desc -->
+</div>
+
+```
+
+
+
+
+### 带标题和注脚
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+    <!-- Example Panel With All -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Panel Heading</p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With All -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+    <!-- Example Panel With All -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-heading">
+          <p class="u-panel-title">Panel Heading</p>
+        </div>
+        <div class="u-panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
+            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
+            elit. Fusce velit tortor.</P>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With All -->
+</div>
+
+```
+
+
+
+
+### 带注脚的面板
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+      <!-- Example Panel With Footer -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-body">
+          <p>Body Heading</p>
+          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
+            that panel footers do not inherit colors and borders when using
+            contextual variations as they are not meant to be in the foreground.</p>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With Footer -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+      <!-- Example Panel With Footer -->
+    <div class="u-panel u-panel-bordered">
+        <div class="u-panel-body">
+          <p>Body Heading</p>
+          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
+            that panel footers do not inherit colors and borders when using
+            contextual variations as they are not meant to be in the foreground.</p>
+        </div>
+        <div class="u-panel-footer">Panel Footer</div>
+    </div>
+      <!-- End Example Panel With Footer -->
+</div>
+
+```
+
+
+
+
+### 带标题的面板
+
+{% raw %}
+<div class="example-content"><div class="panel-example">
+  <!-- Example Panel With Heading -->
+  <div class="u-panel u-panel-bordered">
+    <div class="u-panel-heading">
+      <p class="u-panel-title">Panel Heading</p>
+    </div>
+    <div class="u-panel-body">
+      <p>Body Heading</p>
+      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
+        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+      <p>For proper link coloring, be sure to place links in headings within
+        <code>.u-panel-title</code>.</p>
+    </div>
+  </div>
+  <!-- End Example Panel With Heading -->
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="panel-example">
+  <!-- Example Panel With Heading -->
+  <div class="u-panel u-panel-bordered">
+    <div class="u-panel-heading">
+      <p class="u-panel-title">Panel Heading</p>
+    </div>
+    <div class="u-panel-body">
+      <p>Body Heading</p>
+      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
+        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+      <p>For proper link coloring, be sure to place links in headings within
+        <code>.u-panel-title</code>.</p>
+    </div>
+  </div>
+  <!-- End Example Panel With Heading -->
+</div>
+
+```
+
+
+
 ## tooltip控件
 
 当您想要描述一个链接的时候，提示工具（Tooltip）就显得非常有用。
@@ -2182,187 +2364,5 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
 }
 
 ```
-
-
-## 面板
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-      <!-- Example Heading With Desc -->
-      <div class="u-panel">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Heading With Desc
-            <small>Panel Description Here..</small>
-          </p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-    </div>
-      <!-- End Example Heading With Desc -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-      <!-- Example Heading With Desc -->
-      <div class="u-panel">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Heading With Desc
-            <small>Panel Description Here..</small>
-          </p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-    </div>
-      <!-- End Example Heading With Desc -->
-</div>
-
-```
-
-
-
-
-### 带标题和注脚
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-    <!-- Example Panel With All -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Panel Heading</p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With All -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-    <!-- Example Panel With All -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-heading">
-          <p class="u-panel-title">Panel Heading</p>
-        </div>
-        <div class="u-panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit
-            tortor, dictum in gravida nec, aliquet non lorem. pellentesque.ipiscing
-            elit. Fusce velit tortor.</P>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With All -->
-</div>
-
-```
-
-
-
-
-### 带注脚的面板
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-      <!-- Example Panel With Footer -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-body">
-          <p>Body Heading</p>
-          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
-            that panel footers do not inherit colors and borders when using
-            contextual variations as they are not meant to be in the foreground.</p>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With Footer -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-      <!-- Example Panel With Footer -->
-    <div class="u-panel u-panel-bordered">
-        <div class="u-panel-body">
-          <p>Body Heading</p>
-          <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note
-            that panel footers do not inherit colors and borders when using
-            contextual variations as they are not meant to be in the foreground.</p>
-        </div>
-        <div class="u-panel-footer">Panel Footer</div>
-    </div>
-      <!-- End Example Panel With Footer -->
-</div>
-
-```
-
-
-
-
-### 带标题的面板
-
-{% raw %}
-<div class="example-content"><div class="panel-example">
-  <!-- Example Panel With Heading -->
-  <div class="u-panel u-panel-bordered">
-    <div class="u-panel-heading">
-      <p class="u-panel-title">Panel Heading</p>
-    </div>
-    <div class="u-panel-body">
-      <p>Body Heading</p>
-      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
-        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
-      <p>For proper link coloring, be sure to place links in headings within
-        <code>.u-panel-title</code>.</p>
-    </div>
-  </div>
-  <!-- End Example Panel With Heading -->
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="panel-example">
-  <!-- Example Panel With Heading -->
-  <div class="u-panel u-panel-bordered">
-    <div class="u-panel-heading">
-      <p class="u-panel-title">Panel Heading</p>
-    </div>
-    <div class="u-panel-body">
-      <p>Body Heading</p>
-      <p>Easily add a heading container to your panel with <code>.u-panel-heading</code>.
-        You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>                with a <code>.panel-title</code> class to add a pre-styled heading.</p>
-      <p>For proper link coloring, be sure to place links in headings within
-        <code>.u-panel-title</code>.</p>
-    </div>
-  </div>
-  <!-- End Example Panel With Heading -->
-</div>
-
-```
-
 
 
