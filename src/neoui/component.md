@@ -558,6 +558,218 @@ order: 2
 
 
 
+## 输入框组
+
+由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
+
+#### 如何使用
+
+添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div></div>
+
+<style>
+.example-content .u-button-group{
+	margin: 5px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+```
+``` css
+.example-content .u-button-group{
+	margin: 5px;
+}
+```
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+
+
 ## 图片画廊
 
 由图片与简明文字组成。预定了几个常用场景，用户可自定义。
@@ -938,218 +1150,6 @@ order: 2
 
 
 
-## 输入框组
-
-由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
-
-#### 如何使用
-
-添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
-</div>
-
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div></div>
-
-<style>
-.example-content .u-button-group{
-	margin: 5px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-```
-``` css
-.example-content .u-button-group{
-	margin: 5px;
-}
-```
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
-```
-
-
-
 ## 列表组
 
 多个列表条目的无序列表，我们提供了一些预定义的样式
@@ -1453,161 +1453,6 @@ order: 2
 ```
 
 
-## 导航条
-
-提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/navbar)
-
-
-
-{% raw %}
-<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</div>
-
-<style>
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-</style>
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-</script>
-
-{% endraw %}
-``` html
-<nav class="u-navbar u-navbar-default" role="navigation">
-    <div class="u-container-fluid">
-        <div class="u-navbar-header">
-            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="u-hamburger-bar"></span>
-            </button>
-            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
-        </div>
-        <ul class="nav-list u-navbar-nav hidden-xs">
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="uf uf-book" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
-                </a>
-            </li>
-            <li class="hidden-xs">
-                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
-                    <!-- <span class="sr-only">Toggle Search</span> -->
-                </a>
-            </li>
-        </ul>
-        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
-            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
-                <li class="dropdown">
-                    <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
-                        <i></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge w-20 m" data-badge="1">
-                        <i class="uf uf-bell"></i>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
-                        <i class="uf uf-mail"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-```
-``` css
-.u-navbar {
-    position: relative;
-}
-
-#content-wrap .article-container .u-navbar li {
-	list-style: none;
-}
-```
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-   $('.u-hamburger').click(function(){
-      var attrTarget = $(this).attr('data-target');
-      var $targetDom = $(attrTarget);
-      $(this).toggleClass("u-collapsed");
-      $targetDom.toggleClass("in");
-
-   });
-});
-```
-
 ## message控件
 
 用于即时信息的提示，添加.u-message即可实现一个基本的消息提示。其他效果的消息实现只需添加相应的样式即可。
@@ -1813,6 +1658,161 @@ var warningInfo='<i class="uf uf-exc-t-o margin-r-5"></i>警告信息!!!';
 u.on(warnBtn,'click', function(){ 
     u.showMessage({msg:warningInfo,position:"center",msgType:"warning"})
 })
+```
+
+## 导航条
+
+提供了几条常用的导航，包括基础导航、工具导航、图片导航、不同颜色导航。具体代码在[webIDE](http://tinper.org/webide/#/demos/ui/navbar)进行在线测试。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/navbar)
+
+
+
+{% raw %}
+<div class="example-content"><nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+<style>
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+</style>
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
+</script>
+
+{% endraw %}
+``` html
+<nav class="u-navbar u-navbar-default" role="navigation">
+    <div class="u-container-fluid">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed" data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="javascript:void(0)">Brand</a>
+        </div>
+        <ul class="nav-list u-navbar-nav hidden-xs">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="uf uf-book" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-bell" data-toggle="fullscreen" href="#" role="button">
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a class="uf uf-zoom-in" data-toggle="collapse" href="#example-default-search" role="button">
+                    <!-- <span class="sr-only">Toggle Search</span> -->
+                </a>
+            </li>
+        </ul>
+        <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
+            <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="u-avatar w-32 u-avatar-online">
+                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <i></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge w-20 m" data-badge="1">
+                        <i class="uf uf-bell"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="u-badge u-badge-info w-20 m" data-badge="3">
+                        <i class="uf uf-mail"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+```
+``` css
+.u-navbar {
+    position: relative;
+}
+
+#content-wrap .article-container .u-navbar li {
+	list-style: none;
+}
+```
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+   $('.u-hamburger').click(function(){
+      var attrTarget = $(this).attr('data-target');
+      var $targetDom = $(attrTarget);
+      $(this).toggleClass("u-collapsed");
+      $targetDom.toggleClass("in");
+
+   });
+});
 ```
 
 ## 分页控件

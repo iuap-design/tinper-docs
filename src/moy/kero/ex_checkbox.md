@@ -1,7 +1,7 @@
 ---
 title: 复选框
 type: moy
-order: 9
+order: 8
 ---
 #### 复选框
 

@@ -538,30 +538,6 @@ u.compMgr.updateComp();
 document.getElementById('combo3')['u.Combo'].setComboData([{value:'01',name:'java'},{value:'02',name:'javascript'},{value:'03',name:'C'},{value:'04',name:'C++'}]);
 ```
 
-## 表格控件扩展说明
-
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
-
-### css覆盖
-
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
-
-### 切换主题
-
-通过引用不同的主题文件的方式来修改当前表格的主题。
-
-**注：后续提供**
-
-### afterCreate
-
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
-
-### 扩展表格方法
-
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
-
 ## 日期
 
 用户可以自定义日期的显示格式，默认返回的日期是年-月-日，也可以返回年-月-日 时:分:秒。
@@ -720,253 +696,6 @@ dateObject.setFormat('YYYY');
 ```
 
 
-
-## message控件
-
-用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的`icon`
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-### 用法
-
-1.定义触发弹出事件的DOM
-
-```
-<button id="msgBtn" class="u-button" >Success</button>
-
-```
-2.定义弹出信息的具体内容
-
-```
-var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
-
-```
-
-3.js 获取dom
-
-```
-var msgBtn = document.body.querySelector("#msgBtn");
-
-```
-
-4.绑定弹框事件
-
-```
-u.on(msgBtn,'click', function(){
-    u.showMessage({msg:rightInfo,position:"center"})
-})
-
-```
-
-### API
-
-#### js参数
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>类型</td>
-	    <td>默认值</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>msg</td>
-	    <td>html片段</td>
-	    <td>无</td>
-	    <td><i class="uf uf-correct margin-r-5"></i>成功信息!!!';</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>position</td>
-	    <td>string</td>
-	    <td>center</td>
-	    <td>取值范围：center,top,right,left,bottom.定义弹框显示位置</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-
-点击 Success 弹出提示消息
-
-{% raw %}
-<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
-</div>
-
-
-
-<script>
-var msgBtn = document.body.querySelector("#msgBtn");
-var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
-u.on(msgBtn,'click', function(){ 
-    u.showMessage({msg:rightInfo,position:"center"})
-})
-</script>
-
-{% endraw %}
-``` html
-<button id="msgBtn" class="u-button" >Success</button>
-
-```
-
-``` js
-var msgBtn = document.body.querySelector("#msgBtn");
-var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
-u.on(msgBtn,'click', function(){ 
-    u.showMessage({msg:rightInfo,position:"center"})
-})
-```
-
-## 模态框
-
-用户自定义的内容以弹出对话框的形式显示，具有最小和最实用的功能集。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/modalDialog)
-
-
-### API
-
-#### u.dialog 创建一个模态框
-
-* 类型： `Function`
-* 说明：创建一个模态框
-* 参数：
-	* `{Object} dialogParam` dialogParam包括了模态框的初始化所需字段。
-
-下面对dialogParam具体字段内容进行说明。
-
-| 字段名称      |字段类型       |字段说明  |默认值|
-| ------------- |:-------------:| :-----:|----:|
-| id      | String | 自定义dialog的id值，确定唯一性 |空|
-| hasCloseMenu   | Boolean      |   是否含有右上角的关闭图标 | true|
-| content  | String  |   具体内容的选择器(例如：#dialog_content，.dialog_content) |空|
-| width   | String      |  模态框的宽度 | 空|
-| height  | String  |   模态框的高度  |空|
-| closeFun| Function  |   点击关闭按钮时触发的函数 |空|
-
-
-
-* 用法：
-
-```
-
-var dialogParam ={ id:'testDialg',
-			       content:"#dialog_content",
-			       hasCloseMenu:true,
-			       closeFun:closeFun
-				 };
-
-var dialogObject = u.dialog(dialogParam);
-
-```
-
-#### close 关闭模态框
-
-* 类型： `Function`
-* 说明：将显示的模态框关闭
-* 用法：
-
-```
-
-dialogObject.close();//这里的dialog是通过上u.dialog创建的对象
-
-```
-
-#### show 显示模态框
-* 类型： `Function`
-* 说明：将隐藏的模态框显示
-* 用法：
-
-```
-
-dialogObject.show();//这里的dialog是通过u.dialog创建的对象
-
-```
-
-
-### 自定义摸态框
-
-通过`dialog`方法调出模态框
-用户自定在html文件自定义所要展现的内容
-点击保存，做进一步的确认校验
-
-{% raw %}
-<div class="example-content"><button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
-<div id="dialog_content" style="display:none;">
-	<div class="u-msg-title">
-		<h4>单据名称</h4>
-	</div>
-	<div class="u-msg-content">
-		<p>单据内容区</p>
-	</div>
-	<div class="u-msg-footer">
-		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
-		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
-	</div>
-</div></div>
-
-
-
-<script>
-u.compMgr.apply({
-    el:'body'
-})
-var msgBtn3 = document.body.querySelector("#msgDialogBtn3");
-u.on(msgBtn3,'click', function(){
-	window.md = u.dialog({id:'testDialg',content:"#dialog_content",hasCloseMenu:true});
-});
-
-var okButton = document.body.querySelector(".u-msg-ok");
-u.on(okButton,'click', function(){
-	alert('ok');
-});
-
-var cancelButton = document.body.querySelector(".u-msg-cancel");
-u.on(cancelButton,'click', function(){
-	md.close();
-});
-</script>
-
-{% endraw %}
-``` html
-<button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
-<div id="dialog_content" style="display:none;">
-	<div class="u-msg-title">
-		<h4>单据名称</h4>
-	</div>
-	<div class="u-msg-content">
-		<p>单据内容区</p>
-	</div>
-	<div class="u-msg-footer">
-		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
-		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
-	</div>
-</div>
-```
-
-``` js
-u.compMgr.apply({
-    el:'body'
-})
-var msgBtn3 = document.body.querySelector("#msgDialogBtn3");
-u.on(msgBtn3,'click', function(){
-	window.md = u.dialog({id:'testDialg',content:"#dialog_content",hasCloseMenu:true});
-});
-
-var okButton = document.body.querySelector(".u-msg-ok");
-u.on(okButton,'click', function(){
-	alert('ok');
-});
-
-var cancelButton = document.body.querySelector(".u-msg-cancel");
-u.on(cancelButton,'click', function(){
-	md.close();
-});
-```
 
 ## 表格控件
 
@@ -2289,6 +2018,277 @@ $(document).ready(function () {
 });
 ```
 
+## 表格控件扩展说明
+
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+
+### css覆盖
+
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+
+### 切换主题
+
+通过引用不同的主题文件的方式来修改当前表格的主题。
+
+**注：后续提供**
+
+### afterCreate
+
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
+
+### 扩展表格方法
+
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
+
+## message控件
+
+用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的`icon`
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+### 用法
+
+1.定义触发弹出事件的DOM
+
+```
+<button id="msgBtn" class="u-button" >Success</button>
+
+```
+2.定义弹出信息的具体内容
+
+```
+var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
+
+```
+
+3.js 获取dom
+
+```
+var msgBtn = document.body.querySelector("#msgBtn");
+
+```
+
+4.绑定弹框事件
+
+```
+u.on(msgBtn,'click', function(){
+    u.showMessage({msg:rightInfo,position:"center"})
+})
+
+```
+
+### API
+
+#### js参数
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>类型</td>
+	    <td>默认值</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>msg</td>
+	    <td>html片段</td>
+	    <td>无</td>
+	    <td><i class="uf uf-correct margin-r-5"></i>成功信息!!!';</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>position</td>
+	    <td>string</td>
+	    <td>center</td>
+	    <td>取值范围：center,top,right,left,bottom.定义弹框显示位置</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+
+点击 Success 弹出提示消息
+
+{% raw %}
+<div class="example-content"><button id="msgBtn" class="u-button" >Success</button>
+</div>
+
+
+
+<script>
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})
+</script>
+
+{% endraw %}
+``` html
+<button id="msgBtn" class="u-button" >Success</button>
+
+```
+
+``` js
+var msgBtn = document.body.querySelector("#msgBtn");
+var rightInfo='<i class="uf uf-correct margin-r-5"></i>成功信息!!!';
+u.on(msgBtn,'click', function(){ 
+    u.showMessage({msg:rightInfo,position:"center"})
+})
+```
+
+## 模态框
+
+用户自定义的内容以弹出对话框的形式显示，具有最小和最实用的功能集。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/modalDialog)
+
+
+### API
+
+#### u.dialog 创建一个模态框
+
+* 类型： `Function`
+* 说明：创建一个模态框
+* 参数：
+	* `{Object} dialogParam` dialogParam包括了模态框的初始化所需字段。
+
+下面对dialogParam具体字段内容进行说明。
+
+| 字段名称      |字段类型       |字段说明  |默认值|
+| ------------- |:-------------:| :-----:|----:|
+| id      | String | 自定义dialog的id值，确定唯一性 |空|
+| hasCloseMenu   | Boolean      |   是否含有右上角的关闭图标 | true|
+| content  | String  |   具体内容的选择器(例如：#dialog_content，.dialog_content) |空|
+| width   | String      |  模态框的宽度 | 空|
+| height  | String  |   模态框的高度  |空|
+| closeFun| Function  |   点击关闭按钮时触发的函数 |空|
+
+
+
+* 用法：
+
+```
+
+var dialogParam ={ id:'testDialg',
+			       content:"#dialog_content",
+			       hasCloseMenu:true,
+			       closeFun:closeFun
+				 };
+
+var dialogObject = u.dialog(dialogParam);
+
+```
+
+#### close 关闭模态框
+
+* 类型： `Function`
+* 说明：将显示的模态框关闭
+* 用法：
+
+```
+
+dialogObject.close();//这里的dialog是通过上u.dialog创建的对象
+
+```
+
+#### show 显示模态框
+* 类型： `Function`
+* 说明：将隐藏的模态框显示
+* 用法：
+
+```
+
+dialogObject.show();//这里的dialog是通过u.dialog创建的对象
+
+```
+
+
+### 自定义摸态框
+
+通过`dialog`方法调出模态框
+用户自定在html文件自定义所要展现的内容
+点击保存，做进一步的确认校验
+
+{% raw %}
+<div class="example-content"><button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
+<div id="dialog_content" style="display:none;">
+	<div class="u-msg-title">
+		<h4>单据名称</h4>
+	</div>
+	<div class="u-msg-content">
+		<p>单据内容区</p>
+	</div>
+	<div class="u-msg-footer">
+		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
+		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
+	</div>
+</div></div>
+
+
+
+<script>
+u.compMgr.apply({
+    el:'body'
+})
+var msgBtn3 = document.body.querySelector("#msgDialogBtn3");
+u.on(msgBtn3,'click', function(){
+	window.md = u.dialog({id:'testDialg',content:"#dialog_content",hasCloseMenu:true});
+});
+
+var okButton = document.body.querySelector(".u-msg-ok");
+u.on(okButton,'click', function(){
+	alert('ok');
+});
+
+var cancelButton = document.body.querySelector(".u-msg-cancel");
+u.on(cancelButton,'click', function(){
+	md.close();
+});
+</script>
+
+{% endraw %}
+``` html
+<button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
+<div id="dialog_content" style="display:none;">
+	<div class="u-msg-title">
+		<h4>单据名称</h4>
+	</div>
+	<div class="u-msg-content">
+		<p>单据内容区</p>
+	</div>
+	<div class="u-msg-footer">
+		<button class="u-msg-ok u-button">保存<span class="u-button-container"><span class="u-ripple"></span></span></button>
+		<button class="u-msg-cancel u-button">取消<span class="u-button-container"><span class="u-ripple"></span></span></button>
+	</div>
+</div>
+```
+
+``` js
+u.compMgr.apply({
+    el:'body'
+})
+var msgBtn3 = document.body.querySelector("#msgDialogBtn3");
+u.on(msgBtn3,'click', function(){
+	window.md = u.dialog({id:'testDialg',content:"#dialog_content",hasCloseMenu:true});
+});
+
+var okButton = document.body.querySelector(".u-msg-ok");
+u.on(okButton,'click', function(){
+	alert('ok');
+});
+
+var cancelButton = document.body.querySelector(".u-msg-cancel");
+u.on(cancelButton,'click', function(){
+	md.close();
+});
+```
+
 ## 分页控件
 
 分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
@@ -2668,6 +2668,125 @@ u.on(window, 'load', function() {
   })(document, window, jQuery);
 ```
 
+## 参照组件
+
+参照组件是基于`模态框组件`进行的开发，配合`kero`可实现赋值，传值等复杂操作。
+
+
+### 使用方法
+
+```
+u.refer({
+      title:'测试项目',
+      contentId: 'testitemid_ref',
+      height:'300px',
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      onOk: function(){
+          alert('ok');
+      },
+      onCancel: function(){
+          alert('cancel');
+      },
+      isPOPMode: true
+})
+```
+
+
+#### 参数说明
+
+* `isPOPMode`:弹出层模式
+
+* `title`:弹出层标题，默认值`'参照'`
+
+* `contentId`:弹出层ID，默认值`referWrap`
+
+* `module`:`template`为弹出层内容，默认为空
+
+* `onOk`:弹出层确认后的回调函数
+
+* `onCancel`:弹出层取消后的回调函数
+
+  ​
+
+
+### 参照示例
+
+点击id为`referdom`元素的按钮，弹出参照层
+
+{% raw %}
+<div class="example-content">
+<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
+</div>
+
+
+
+<script>
+var referDOM = document.getElementById('referdom');
+u.on(referDOM, 'click', function(){
+    u.refer({
+      // 模式 弹出层
+      isPOPMode: true,
+      // 弹出层id
+      contentId: 'testitemid_ref',
+      // 设定参照层标题
+      title:'测试项目',
+      // 设置而参照层高度
+      height:'300px',
+      // 设置参照层内容
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      // 点击确认后回调事件
+      onOk: function(){
+          alert('ok');
+      },
+      // 点击取消后回调事件
+      onCancel: function(){
+          alert('cancel');
+      }
+    })
+})
+
+</script>
+
+{% endraw %}
+``` html
+
+<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
+
+```
+
+``` js
+var referDOM = document.getElementById('referdom');
+u.on(referDOM, 'click', function(){
+    u.refer({
+      // 模式 弹出层
+      isPOPMode: true,
+      // 弹出层id
+      contentId: 'testitemid_ref',
+      // 设定参照层标题
+      title:'测试项目',
+      // 设置而参照层高度
+      height:'300px',
+      // 设置参照层内容
+      module:{
+          template: 'Module: Refer Template Content'
+      },
+      // 点击确认后回调事件
+      onOk: function(){
+          alert('ok');
+      },
+      // 点击取消后回调事件
+      onCancel: function(){
+          alert('cancel');
+      }
+    })
+})
+
+```
+
 ## 开关
 
 开关控件实现了两种状态的切换，提供了多种色彩、多种尺寸样式。
@@ -2945,125 +3064,6 @@ switchObject.isChecked();
 ```
 
 
-
-## 参照组件
-
-参照组件是基于`模态框组件`进行的开发，配合`kero`可实现赋值，传值等复杂操作。
-
-
-### 使用方法
-
-```
-u.refer({
-      title:'测试项目',
-      contentId: 'testitemid_ref',
-      height:'300px',
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      onOk: function(){
-          alert('ok');
-      },
-      onCancel: function(){
-          alert('cancel');
-      },
-      isPOPMode: true
-})
-```
-
-
-#### 参数说明
-
-* `isPOPMode`:弹出层模式
-
-* `title`:弹出层标题，默认值`'参照'`
-
-* `contentId`:弹出层ID，默认值`referWrap`
-
-* `module`:`template`为弹出层内容，默认为空
-
-* `onOk`:弹出层确认后的回调函数
-
-* `onCancel`:弹出层取消后的回调函数
-
-  ​
-
-
-### 参照示例
-
-点击id为`referdom`元素的按钮，弹出参照层
-
-{% raw %}
-<div class="example-content">
-<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-</div>
-
-
-
-<script>
-var referDOM = document.getElementById('referdom');
-u.on(referDOM, 'click', function(){
-    u.refer({
-      // 模式 弹出层
-      isPOPMode: true,
-      // 弹出层id
-      contentId: 'testitemid_ref',
-      // 设定参照层标题
-      title:'测试项目',
-      // 设置而参照层高度
-      height:'300px',
-      // 设置参照层内容
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      // 点击确认后回调事件
-      onOk: function(){
-          alert('ok');
-      },
-      // 点击取消后回调事件
-      onCancel: function(){
-          alert('cancel');
-      }
-    })
-})
-
-</script>
-
-{% endraw %}
-``` html
-
-<button class="u-button u-button-primary langbtn" id="referdom">弹出参照</button>
-
-```
-
-``` js
-var referDOM = document.getElementById('referdom');
-u.on(referDOM, 'click', function(){
-    u.refer({
-      // 模式 弹出层
-      isPOPMode: true,
-      // 弹出层id
-      contentId: 'testitemid_ref',
-      // 设定参照层标题
-      title:'测试项目',
-      // 设置而参照层高度
-      height:'300px',
-      // 设置参照层内容
-      module:{
-          template: 'Module: Refer Template Content'
-      },
-      // 点击确认后回调事件
-      onOk: function(){
-          alert('ok');
-      },
-      // 点击取消后回调事件
-      onCancel: function(){
-          alert('cancel');
-      }
-    })
-})
-
-```
 
 ## tabs控件
 
@@ -3534,6 +3534,72 @@ title:'批量向上显示'
 
 ```
 
+## 月份
+
+用户可以通过此插件进行月份的选择。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/month)
+
+
+### API
+
+#### Month 对象
+
+* 类型：`Object`
+* 说明： Month表示一个月对象
+* 用法：
+
+获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
+
+```
+
+var monthObject = document.getElementById('domId')['u.Month'];
+
+```
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月份
+* 参数：
+	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
+* 用法：
+
+```
+monthObject.setValue(2);
+
+```
+
+
+相关内容：
+
+[月份在kero中使用](http://docs.tinper.org/moy/kero/ex_month.html)    
+
+[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+
+
 ## loading插件
 
 loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
@@ -3541,9 +3607,8 @@ loading 组件以一个圆环顺时针方向运动，用来传达某一事件已
 ### 插件依赖
 
 
-首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
 
-再引入js: http://design.yyuap.com/static/uui/latest/js/u-date.js
 
 ### 用法
 
@@ -3568,6 +3633,81 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 <div class="u-loading is-active u-loading-single-color"></div>
 ```
 
+
+
+## 月日
+
+用户可以通过此插件进行月日的选择。
+
+
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/monthdate)
+
+### API
+
+#### MonthDate 对象
+
+* 类型：`Object`
+* 说明： MonthDate表示一个月日对象
+* 用法：
+
+获取方式：1、获取绑定月日的dom元素 ； 2、读取dom元素上的属性'u.MonthDate'
+
+```
+
+var monthDateObject = document.getElementById('domId')['u.MonthDate'];
+
+```
+
+**注：** 如果获取的月日对象为空，原因为月日没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取月日对象。
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月日
+* 参数：
+	* `{String} value` 具体格式："MM-DD"
+* 用法：
+
+```
+monthDateObject.setValue('02-15');
+
+```
+
+
+相关内容：
+
+[月日在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
+
+
+定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-monthdate'>
+    <input class="u-input" type="text">
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+
+<div class='u-monthdate'>
+    <input class="u-input" type="text">
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
 
 
 ## menu控件
@@ -3666,147 +3806,6 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 ``` css
 .example{
 	padding-left: 30px;
-}
-```
-
-
-## 月份
-
-用户可以通过此插件进行月份的选择。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/month)
-
-
-### API
-
-#### Month 对象
-
-* 类型：`Object`
-* 说明： Month表示一个月对象
-* 用法：
-
-获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
-
-```
-
-var monthObject = document.getElementById('domId')['u.Month'];
-
-```
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月份
-* 参数：
-	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
-* 用法：
-
-```
-monthObject.setValue(2);
-
-```
-
-
-相关内容：
-
-[月份在kero中使用](http://docs.tinper.org/moy/kero/ex_month.html)    
-
-[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-<div class="example-content">
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-
-
-## 月日
-
-用户可以通过此插件进行月日的选择。
-
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/monthdate)
-
-### API
-
-#### MonthDate 对象
-
-* 类型：`Object`
-* 说明： MonthDate表示一个月日对象
-* 用法：
-
-获取方式：1、获取绑定月日的dom元素 ； 2、读取dom元素上的属性'u.MonthDate'
-
-```
-
-var monthDateObject = document.getElementById('domId')['u.MonthDate'];
-
-```
-
-**注：** 如果获取的月日对象为空，原因为月日没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取月日对象。
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月日
-* 参数：
-	* `{String} value` 具体格式："MM-DD"
-* 用法：
-
-```
-monthDateObject.setValue('02-15');
-
-```
-
-
-相关内容：
-
-[月日在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
-
-
-定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-<div class="example-content">
-<div class='u-monthdate'>
-    <input class="u-input" type="text">
-</div></div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-
-<div class='u-monthdate'>
-    <input class="u-input" type="text">
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
 }
 ```
 
@@ -4074,6 +4073,75 @@ js会根据`u-time`来定位dom，然后绑定事件。
 ```
 
 
+## year插件
+
+只选择年
+
+### 插件依赖
+
+依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+
+除了js文件还需引入u.css。
+
+### 用法
+
+#### 引入文件
+在header中引入u.css
+```
+<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+```
+在文件尾部加入u.js
+
+```
+<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+
+```
+
+#### 代码
+
+定义样式为`u-year`的div父元素，包裹类`u-input`的input
+
+```
+<div class='u-year'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+js会根据`u-year`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="example">
+	<div class='u-year'>
+	    <input class="u-input" type="text">
+	</div>
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="example">
+	<div class='u-year'>
+	    <input class="u-input" type="text">
+	</div>
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+```
+
+
 ## 年月
 
 用户可以通过此插件进行年月的选择。
@@ -4143,75 +4211,6 @@ yearMonthObject.setValue('2016-02');
 
 <div class='u-yearmonth'>
     <input class="u-input" type="text">
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
-
-
-## year插件
-
-只选择年
-
-### 插件依赖
-
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
-
-除了js文件还需引入u.css。
-
-### 用法
-
-#### 引入文件
-在header中引入u.css
-```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
-```
-在文件尾部加入u.js
-
-```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
-
-```
-
-#### 代码
-
-定义样式为`u-year`的div父元素，包裹类`u-input`的input
-
-```
-<div class='u-year'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-js会根据`u-year`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="example-content"><div class="example">
-	<div class='u-year'>
-	    <input class="u-input" type="text">
-	</div>
-</div></div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="example">
-	<div class='u-year'>
-	    <input class="u-input" type="text">
-	</div>
 </div>
 ```
 ``` css
