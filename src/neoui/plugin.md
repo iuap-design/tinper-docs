@@ -3,98 +3,6 @@ title: JavaScript插件
 type: neoui
 order: 3
 ---
-## Autocomplete
-### 基本使用
-下面的例子是autocomplete的基本使用   
-html 代码
-``` html
-<!--html-->
-<input id="test1"/><br/>
-```
-javascript 代码
-``` javascript
-// JS
-var sourceValue = [
-        {
-            label : "C++"
-        },
-        {
-            label : 'Java'
-        },
-        {
-            label : 'Python'
-        },
-        {
-            label : 'JavaScript'
-        },
-        {
-            label : 'C#'
-        },
-        {
-            label : 'C'
-        },
-        {
-            label : 'Jython'
-        },
-        {
-            label : 'Html'
-        },
-        {
-            label : 'html'
-        }
-    ];
-
-    new u.Autocomplete({
-        el:'#test1',
-        source: sourceValue,
-        select: function(item){
-            alert('select');
-        }
-    })
-```
-### 参数详解
-#### source
-数据源
-
-#### select
-选中之后的回调函数。
-
-#### multiSelect
-是否允许多选
-
-#### maxItemsToShow
-最多显示的条数。默认为-1，为不限制显示条数
-
-#### minChars
-控制智能提示时输入的最少字符数。默认为1
-
-#### delay
-设置弹出智能提示的延迟时间（单位ms）。默认为400ms
-
-#### inputClass
-input框的自定义样式。
-
-#### resultsClass
-下拉框的自定义样式
-
-#### lineSeparator
-ajax请求返回数据的行的分隔符。默认为\n
-
-#### cellSeparator
-ajax请求返回数据的数据项的分隔符。默认为|
-
-#### matchCase
-是否区分大小写。默认为否
-
-#### cacheLength
-是否缓存数据。默认为是
-
-#### loadingClass
-加载数据时input框的样式
-
-#### selectFirst
-是否默认选中第一项。默认为false
-
 ## 复选框
 
 checkbox提供了基础复选框、不同色彩复选框、图片复选框、个性复选框
@@ -300,6 +208,98 @@ checkboxObject.toggle();
 ```
 
 
+
+## Autocomplete
+### 基本使用
+下面的例子是autocomplete的基本使用   
+html 代码
+``` html
+<!--html-->
+<input id="test1"/><br/>
+```
+javascript 代码
+``` javascript
+// JS
+var sourceValue = [
+        {
+            label : "C++"
+        },
+        {
+            label : 'Java'
+        },
+        {
+            label : 'Python'
+        },
+        {
+            label : 'JavaScript'
+        },
+        {
+            label : 'C#'
+        },
+        {
+            label : 'C'
+        },
+        {
+            label : 'Jython'
+        },
+        {
+            label : 'Html'
+        },
+        {
+            label : 'html'
+        }
+    ];
+
+    new u.Autocomplete({
+        el:'#test1',
+        source: sourceValue,
+        select: function(item){
+            alert('select');
+        }
+    })
+```
+### 参数详解
+#### source
+数据源
+
+#### select
+选中之后的回调函数。
+
+#### multiSelect
+是否允许多选
+
+#### maxItemsToShow
+最多显示的条数。默认为-1，为不限制显示条数
+
+#### minChars
+控制智能提示时输入的最少字符数。默认为1
+
+#### delay
+设置弹出智能提示的延迟时间（单位ms）。默认为400ms
+
+#### inputClass
+input框的自定义样式。
+
+#### resultsClass
+下拉框的自定义样式
+
+#### lineSeparator
+ajax请求返回数据的行的分隔符。默认为\n
+
+#### cellSeparator
+ajax请求返回数据的数据项的分隔符。默认为|
+
+#### matchCase
+是否区分大小写。默认为否
+
+#### cacheLength
+是否缓存数据。默认为是
+
+#### loadingClass
+加载数据时input框的样式
+
+#### selectFirst
+是否默认选中第一项。默认为false
 
 ## clockpicker插件
 
@@ -696,6 +696,30 @@ dateObject.setFormat('YYYY');
 ```
 
 
+
+## 表格控件扩展说明
+
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+
+### css覆盖
+
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+
+### 切换主题
+
+通过引用不同的主题文件的方式来修改当前表格的主题。
+
+**注：后续提供**
+
+### afterCreate
+
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
+
+### 扩展表格方法
+
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
 
 ## 表格控件
 
@@ -2018,30 +2042,6 @@ $(document).ready(function () {
 });
 ```
 
-## 表格控件扩展说明
-
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
-
-### css覆盖
-
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
-
-### 切换主题
-
-通过引用不同的主题文件的方式来修改当前表格的主题。
-
-**注：后续提供**
-
-### afterCreate
-
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
-
-### 扩展表格方法
-
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
-
 ## message控件
 
 用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的`icon`
@@ -2289,99 +2289,6 @@ u.on(cancelButton,'click', function(){
 });
 ```
 
-## 分页控件
-
-分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
-
-### 插件依赖
-
-依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
-
-### 用法
-
-1.分页通过添加`u-pagination`的样式来实现基本的分页效果
-
-2.创建一个分页对象，方法：new u.pagination(paramter)
-
-### js方法与参数
-名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
----------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
-pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
-update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
-
-
-### 基础分页
-
-{% raw %}
-<div class="example-content"><div id='pagination' class='u-pagination'>
-</div></div>
-
-
-
-<script>
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-</script>
-
-{% endraw %}
-``` html
-<div id='pagination' class='u-pagination'>
-</div>
-```
-
-``` js
-  var element = document.getElementById("pagination");
-  var comp = new u.pagination({ el: element,showState:false });
-  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-  comp.on('pageChange', function(pageIndex) {
-      console.log('新的页号为' + pageIndex);
-  });
-  comp.on('sizeChange', function(arg) {
-      console.log('每页显示条数为' + arg[0]);
-  });
-```
-
-
-### 有间距的分页
-添加样式`pagination-gap`可以增加页码之间的间距
-
-{% raw %}
-<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
-</div></div>
-
-
-
-<script>
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-</script>
-
-{% endraw %}
-``` html
-<div id='paginationGap' class='u-pagination pagination-gap'>
-</div>
-```
-
-``` js
- var paginationGap = document.getElementById('paginationGap');
-
- var comp = new u.pagination({ el: paginationGap, showState:false  });
-
- comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
-
-```
-
 ## progress控件
 
 常用于跟踪进度
@@ -2519,6 +2426,99 @@ u.on(window, 'load', function() {
     document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
 
 });
+```
+
+## 分页控件
+
+分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
+
+### 插件依赖
+
+依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
+
+### 用法
+
+1.分页通过添加`u-pagination`的样式来实现基本的分页效果
+
+2.创建一个分页对象，方法：new u.pagination(paramter)
+
+### js方法与参数
+名称         | 方法参数                                                                    | 用法                                                                       | 描述        |
+---------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- |
+pagination | 1.el:分页绑定的dom元素 2.jumppage：是否可跳转到某页。type为：boolean                       | new u.pagination(paramter)                                               | 创建一个分页对象  |
+update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPage:当前页面 4.totalCount:总条数 | comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200}); | 更新分页的一些属性 |
+
+
+### 基础分页
+
+{% raw %}
+<div class="example-content"><div id='pagination' class='u-pagination'>
+</div></div>
+
+
+
+<script>
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+</script>
+
+{% endraw %}
+``` html
+<div id='pagination' class='u-pagination'>
+</div>
+```
+
+``` js
+  var element = document.getElementById("pagination");
+  var comp = new u.pagination({ el: element,showState:false });
+  comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+  comp.on('pageChange', function(pageIndex) {
+      console.log('新的页号为' + pageIndex);
+  });
+  comp.on('sizeChange', function(arg) {
+      console.log('每页显示条数为' + arg[0]);
+  });
+```
+
+
+### 有间距的分页
+添加样式`pagination-gap`可以增加页码之间的间距
+
+{% raw %}
+<div class="example-content"><div id='paginationGap' class='u-pagination pagination-gap'>
+</div></div>
+
+
+
+<script>
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
+</script>
+
+{% endraw %}
+``` html
+<div id='paginationGap' class='u-pagination pagination-gap'>
+</div>
+```
+
+``` js
+ var paginationGap = document.getElementById('paginationGap');
+
+ var comp = new u.pagination({ el: paginationGap, showState:false  });
+
+ comp.update({ totalPages: 100, pageSize: 20, currentPage: 1, totalCount: 200 });
+
 ```
 
 ## rating控件
@@ -3534,72 +3534,6 @@ title:'批量向上显示'
 
 ```
 
-## 月份
-
-用户可以通过此插件进行月份的选择。
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/month)
-
-
-### API
-
-#### Month 对象
-
-* 类型：`Object`
-* 说明： Month表示一个月对象
-* 用法：
-
-获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
-
-```
-
-var monthObject = document.getElementById('domId')['u.Month'];
-
-```
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月份
-* 参数：
-	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
-* 用法：
-
-```
-monthObject.setValue(2);
-
-```
-
-
-相关内容：
-
-[月份在kero中使用](http://docs.tinper.org/moy/kero/ex_month.html)    
-
-[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
-
-
-定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-<div class="example-content">
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-
-<div class='u-month'>
-    <input class="u-input" type="text">
-</div>
-
-```
-
-
-
 ## loading插件
 
 loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
@@ -3633,81 +3567,6 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 <div class="u-loading is-active u-loading-single-color"></div>
 ```
 
-
-
-## 月日
-
-用户可以通过此插件进行月日的选择。
-
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/monthdate)
-
-### API
-
-#### MonthDate 对象
-
-* 类型：`Object`
-* 说明： MonthDate表示一个月日对象
-* 用法：
-
-获取方式：1、获取绑定月日的dom元素 ； 2、读取dom元素上的属性'u.MonthDate'
-
-```
-
-var monthDateObject = document.getElementById('domId')['u.MonthDate'];
-
-```
-
-**注：** 如果获取的月日对象为空，原因为月日没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取月日对象。
-
-
-#### setValue
-* 类型： `Function`
-* 说明：设置具体的月日
-* 参数：
-	* `{String} value` 具体格式："MM-DD"
-* 用法：
-
-```
-monthDateObject.setValue('02-15');
-
-```
-
-
-相关内容：
-
-[月日在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
-
-
-定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
-{% raw %}
-<div class="example-content">
-<div class='u-monthdate'>
-    <input class="u-input" type="text">
-</div></div>
-
-<style>
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-</style>
-
-{% endraw %}
-``` html
-
-<div class='u-monthdate'>
-    <input class="u-input" type="text">
-</div>
-```
-``` css
-.example .u-input{
-	border: 1px solid rgba(0,0,0, 0.12);
-	width: 250px;
-}
-```
 
 
 ## menu控件
@@ -3806,6 +3665,147 @@ monthDateObject.setValue('02-15');
 ``` css
 .example{
 	padding-left: 30px;
+}
+```
+
+
+## 月份
+
+用户可以通过此插件进行月份的选择。
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/month)
+
+
+### API
+
+#### Month 对象
+
+* 类型：`Object`
+* 说明： Month表示一个月对象
+* 用法：
+
+获取方式：1、获取绑定月的dom元素 ； 2、读取dom元素上的属性'u.Month'
+
+```
+
+var monthObject = document.getElementById('domId')['u.Month'];
+
+```
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月份
+* 参数：
+	* `{String} value` value的范围为1~12，不在这个范围会按当前月份处理
+* 用法：
+
+```
+monthObject.setValue(2);
+
+```
+
+
+相关内容：
+
+[月份在kero中使用](http://docs.tinper.org/moy/kero/ex_month.html)    
+
+[月份在grid中使用](http://tinper.org/webide/#/demos/grids/edit)
+
+
+定义样式为`u-month`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<div class='u-month'>
+    <input class="u-input" type="text">
+</div>
+
+```
+
+
+
+## 月日
+
+用户可以通过此插件进行月日的选择。
+
+
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/monthdate)
+
+### API
+
+#### MonthDate 对象
+
+* 类型：`Object`
+* 说明： MonthDate表示一个月日对象
+* 用法：
+
+获取方式：1、获取绑定月日的dom元素 ； 2、读取dom元素上的属性'u.MonthDate'
+
+```
+
+var monthDateObject = document.getElementById('domId')['u.MonthDate'];
+
+```
+
+**注：** 如果获取的月日对象为空，原因为月日没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取月日对象。
+
+
+#### setValue
+* 类型： `Function`
+* 说明：设置具体的月日
+* 参数：
+	* `{String} value` 具体格式："MM-DD"
+* 用法：
+
+```
+monthDateObject.setValue('02-15');
+
+```
+
+
+相关内容：
+
+[月日在kero中使用](http://docs.tinper.org/neoui/plugin.html#月日)    
+
+
+定义样式为`u-monthdate`的div父元素，包裹样式为`u-input`的input元素。
+{% raw %}
+<div class="example-content">
+<div class='u-monthdate'>
+    <input class="u-input" type="text">
+</div></div>
+
+<style>
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
+}
+</style>
+
+{% endraw %}
+``` html
+
+<div class='u-monthdate'>
+    <input class="u-input" type="text">
+</div>
+```
+``` css
+.example .u-input{
+	border: 1px solid rgba(0,0,0, 0.12);
+	width: 250px;
 }
 ```
 

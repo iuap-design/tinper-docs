@@ -136,156 +136,6 @@ order: 2
 ```
 
 
-## 按钮组
-
-样式为`u-button-group`的父元素，包裹多个样式为`u-button`的button元素
-
-
-
-[试一试](http://tinper.org/webide/#/demos/ui/buttongroup)
-
-
-### 基础
-
-{% raw %}
-<div class="example-content"><div class="u-button-group ">
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-button-group ">
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-    <button class="u-button">BUTTON</button>
-</div>
-
-```
-
-
-
-
-### 嵌套
-
-按钮组里嵌套下拉菜单
-
-{% raw %}
-<div class="example-content"> <div class="u-button-group">
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button " id="demo-menu-default">
-        dropdown
-        <span class="u-right-icon uf uf-arrow-down"></span>
-    </button>
-    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
-        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-    </ul>
-</div>
-</div>
-
-
-
-{% endraw %}
-``` html
- <div class="u-button-group">
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button ">BUTTON</button>
-    <button class="u-button " id="demo-menu-default">
-        dropdown
-        <span class="u-right-icon uf uf-arrow-down"></span>
-    </button>
-    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
-        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-    </ul>
-</div>
-
-```
-
-
-
-
-### 多尺寸
-
-* `.u-button-group-xg` - 特大尺寸
-* `.u-button-group-lg` - 大尺寸
-* `.u-button-group-xs` - 小尺寸
-* 不添加样式代表默认尺寸
-
-{% raw %}
-<div class="example-content"><div class="u-button-group u-button-group-xg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-lg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group ">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-xs">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div></div>
-
-<style>
-.example-content .u-button-group{
-	margin: 5px;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="u-button-group u-button-group-xg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-lg">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group ">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-<br>
-<div class="u-button-group u-button-group-xs">	
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-	<button class="u-button raised u-button-border default">BUTTON</button>
-</div>
-```
-``` css
-.example-content .u-button-group{
-	margin: 5px;
-}
-```
-
-
 ## dropdown
 
 
@@ -558,30 +408,22 @@ order: 2
 
 
 
-## 输入框组
+## 按钮组
 
-由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
-
-#### 如何使用
-
-添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
+样式为`u-button-group`的父元素，包裹多个样式为`u-button`的button元素
 
 
 
+[试一试](http://tinper.org/webide/#/demos/ui/buttongroup)
+
+
+### 基础
 
 {% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
+<div class="example-content"><div class="u-button-group ">
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
 </div>
 </div>
 
@@ -589,18 +431,10 @@ order: 2
 
 {% endraw %}
 ``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-</div>
-<div class="u-input-group">
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">@example.com</span>
-</div>
-<div class="u-input-group">
-<span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
-  <span class="u-input-group-addon">.00</span>
+<div class="u-button-group ">
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
+    <button class="u-button">BUTTON</button>
 </div>
 
 ```
@@ -608,20 +442,81 @@ order: 2
 
 
 
+### 嵌套
 
+按钮组里嵌套下拉菜单
 
 {% raw %}
-<div class="example-content"><div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
+<div class="example-content"> <div class="u-button-group">
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button " id="demo-menu-default">
+        dropdown
+        <span class="u-right-icon uf uf-arrow-down"></span>
+    </button>
+    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
+        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+    </ul>
 </div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
 </div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
+
+
+
+{% endraw %}
+``` html
+ <div class="u-button-group">
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button ">BUTTON</button>
+    <button class="u-button " id="demo-menu-default">
+        dropdown
+        <span class="u-right-icon uf uf-arrow-down"></span>
+    </button>
+    <ul class="u-menu u-menu-bottom-right u-menu-danger" for="demo-menu-default">
+        <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+        <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+    </ul>
+</div>
+
+```
+
+
+
+
+### 多尺寸
+
+* `.u-button-group-xg` - 特大尺寸
+* `.u-button-group-lg` - 大尺寸
+* `.u-button-group-xs` - 小尺寸
+* 不添加样式代表默认尺寸
+
+{% raw %}
+<div class="example-content"><div class="u-button-group u-button-group-xg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-lg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group ">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-xs">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
 </div></div>
 
 <style>
@@ -632,17 +527,28 @@ order: 2
 
 {% endraw %}
 ``` html
-<div class="u-input-group u-input-group-lg">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
+<div class="u-button-group u-button-group-xg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
 </div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
+<br>
+<div class="u-button-group u-button-group-lg">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
 </div>
-<div class="u-input-group u-input-group-sm">
-  <span class="u-input-group-addon">@</span>
-  <input type="text" class="u-form-control" placeholder="Username">
+<br>
+<div class="u-button-group ">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+</div>
+<br>
+<div class="u-button-group u-button-group-xs">	
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
+	<button class="u-button raised u-button-border default">BUTTON</button>
 </div>
 ```
 ``` css
@@ -650,124 +556,6 @@ order: 2
 	margin: 5px;
 }
 ```
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-checkbox">
-        <input type="checkbox" class="u-checkbox-input" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-  <span class="u-input-group-addon">
-    <label  class="u-radio">
-        <input type="radio" class="u-radio-button" checked>
-    </label>
-  </span>
-  <input type="text" class="u-form-control">
-</div>
-```
-
-
-
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-input-group">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-default" id="demo-menu">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-    <input type="text" class="u-form-control">
-</div>
-<div class="u-input-group">
-	<input type="text" class="u-form-control">
-    <div class="u-input-group-btn">
-   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
-            success
-            <span class="u-right-icon uf uf-arrow-down"></span>
-        </button>
-        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
-            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
-            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
-        </ul>
-    </div>
-</div>
-```
-
 
 
 ## 图片画廊
@@ -1146,6 +934,218 @@ order: 2
       </li>
   </ul>
 
+```
+
+
+
+## 输入框组
+
+由input和按钮组成,按钮里可以是单纯的字体或者是checkbox、radio,还可以是下拉框
+
+#### 如何使用
+
+添加含有`u-button-group`样式的父元素，然后包裹一个以上的类为`u-button`button元素
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+</div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">@example.com</span>
+</div>
+<div class="u-input-group">
+<span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+  <span class="u-input-group-addon">.00</span>
+</div>
+
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div></div>
+
+<style>
+.example-content .u-button-group{
+	margin: 5px;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="u-input-group u-input-group-lg">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+<div class="u-input-group u-input-group-sm">
+  <span class="u-input-group-addon">@</span>
+  <input type="text" class="u-form-control" placeholder="Username">
+</div>
+```
+``` css
+.example-content .u-button-group{
+	margin: 5px;
+}
+```
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-checkbox">
+        <input type="checkbox" class="u-checkbox-input" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+  <span class="u-input-group-addon">
+    <label  class="u-radio">
+        <input type="radio" class="u-radio-button" checked>
+    </label>
+  </span>
+  <input type="text" class="u-form-control">
+</div>
+```
+
+
+
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-input-group">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-default" id="demo-menu">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+    <input type="text" class="u-form-control">
+</div>
+<div class="u-input-group">
+	<input type="text" class="u-form-control">
+    <div class="u-input-group-btn">
+   		<button class="u-button  u-button-u-button-default" id="demo-menu-sucess">
+            success
+            <span class="u-right-icon uf uf-arrow-down"></span>
+        </button>
+        <ul class="u-menu u-menu-default" for="demo-menu-sucess">
+            <li class="u-menu-item"><a href="javascript:void(0)">action zero</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action one</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action two</a></li>
+            <li class="u-menu-item"><a href="javascript:void(0)">action three</a></li>
+        </ul>
+    </div>
+</div>
 ```
 
 

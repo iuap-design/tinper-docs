@@ -212,6 +212,1217 @@ order: 1
 
 
 
+## 色彩
+{% raw %}
+<link rel="stylesheet" type="text/css" href="/assets/static/css/color.css">
+<div class="color">
+<h3>基础调色板</h3>
+<div class="primaries">
+<div class="bg-red">red</div>
+<div class="bg-pink">pink</div>
+<div class="bg-purple">purple</div>
+<div class="bg-deep-purple">deep-purple</div>
+<div class="bg-indigo">indigo</div>
+<div class="bg-blue">blue</div>
+<div class="bg-light-blue">light-blue</div>
+<div class="bg-cyan">cyan</div>
+<div class="bg-teal">teal</div>
+<div class="bg-green">green</div>
+<div class="bg-light-green">light-green</div>
+<div class="bg-lime">lime</div>
+<div class="bg-yellow grey">yellow</div>
+<div class="bg-amber">amber</div>
+<div class="bg-orange">orange</div>
+<div class="bg-deep-orange">deep-orange</div>
+<div class="bg-brown">brown</div>
+<div class="bg-grey">grey</div>
+<div class="bg-blue-grey">blue-grey</div>
+<div class="bg-black">black</div>
+<p>以上基础调色板均以背景色为示例，对应的字体颜色去掉bg即可。例如：背景色为.bg-grey，字体色为.grey</p>
+</div>
+<div class="example-wrap">
+<h3 class="example-title">调色板</h3>
+<p >调色板包含了主色和不同色阶的颜色</p>
+<h4>具体使用</h4>
+<p>1、引入u.css文件</p>
+<p>2、背景色使用样式类名为'.bg-颜色的名字'，字体使用样式类名为'.颜色的名字'。例如红色A700对应的背景色为<code>.bg-red-A700</code>,字体色为<code>.red-A700</code></p>
+<div class="u-row  color-palette">
+<div class="u-col-4">
+<h5 class="text-uppercase">red</h5>
+<ul class="list-group">
+<li class="bg-red-A700 grey-800 list-group-item">
+<span>A700</span> /
+<span>#d50000</span>
+</li>
+<li class="bg-red-A400 grey-800 list-group-item">
+<span>A400</span> /
+<span>#ff1744</span>
+</li>
+<li class="bg-red-A200 grey-800 list-group-item">
+<span>A200</span> /
+<span>#ff5252</span>
+</li>
+<li class="bg-red-A100 grey-800 list-group-item">
+<span>A100</span> /
+<span>#ff8a80</span>
+</li>
+<li class="bg-red-900 list-group-item">
+<span>900</span> /
+<span>#b71c1c</span>
+</li>
+<li class="bg-red-800 list-group-item">
+<span>800</span> /
+<span>#c62828</span>
+</li>
+<li class="bg-red-700 list-group-item">
+<span>700</span> /
+<span>#d32f2f</span>
+</li>
+<li class="bg-red-600 list-group-item">
+<span>600</span> /
+<span>#e53935</span>
+</li>
+<li class="bg-red-500 list-group-item">
+<span>500</span> /
+<span>#f44336</span>
+</li>
+<li class="bg-red-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ef5350</span>
+</li>
+<li class="bg-red-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#e57373</span>
+</li>
+<li class="bg-red-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#ef9a9a</span>
+</li>
+<li class="bg-red-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#ffcdd2</span>
+</li>
+<li class="bg-red-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#ffebee</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">pink</h5>
+<ul class="list-group">
+<li class="bg-pink-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#c51162</span>
+</li>
+<li class="bg-pink-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#f50057</span>
+</li>
+<li class="bg-pink-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#ff4081</span>
+</li>
+<li class="bg-pink-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ff80ab</span>
+</li>
+<li class="bg-pink-900 list-group-item">
+<span>900</span> /
+<span>#880e4f</span>
+</li>
+<li class="bg-pink-800 list-group-item">
+<span>800</span> /
+<span>#ad1457</span>
+</li>
+<li class="bg-pink-700 list-group-item">
+<span>700</span> /
+<span>#c2185b</span>
+</li>
+<li class="bg-pink-600 list-group-item">
+<span>600</span> /
+<span>#d81b60</span>
+</li>
+<li class="bg-pink-500 list-group-item">
+<span>500</span> /
+<span>#e91e63</span>
+</li>
+<li class="bg-pink-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ec407a</span>
+</li>
+<li class="bg-pink-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#f06292</span>
+</li>
+<li class="bg-pink-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#f48fb1</span>
+</li>
+<li class="bg-pink-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#f8bbd0</span>
+</li>
+<li class="bg-pink-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fce4ec</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">purple</h5>
+<ul class="list-group">
+<li class="bg-purple-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#aa00ff</span>
+</li>
+<li class="bg-purple-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#d500f9</span>
+</li>
+<li class="bg-purple-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#e040fb</span>
+</li>
+<li class="bg-purple-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ea80fc</span>
+</li>
+<li class="bg-purple-900 list-group-item">
+<span>900</span> /
+<span>#4a148c</span>
+</li>
+<li class="bg-purple-800 list-group-item">
+<span>800</span> /
+<span>#6a1b9a</span>
+</li>
+<li class="bg-purple-700 list-group-item">
+<span>700</span> /
+<span>#7b1fa2</span>
+</li>
+<li class="bg-purple-600 list-group-item">
+<span>600</span> /
+<span>#8e24aa</span>
+</li>
+<li class="bg-purple-500 list-group-item">
+<span>500</span> /
+<span>#9c27b0</span>
+</li>
+<li class="bg-purple-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ab47bc</span>
+</li>
+<li class="bg-purple-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#ba68c8</span>
+</li>
+<li class="bg-purple-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#ce93d8</span>
+</li>
+<li class="bg-purple-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#e1bee7</span>
+</li>
+<li class="bg-purple-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#f3e5f5</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">deep-purple</h5>
+<ul class="list-group">
+<li class="bg-deep-purple-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#6200ea</span>
+</li>
+<li class="bg-deep-purple-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#651fff</span>
+</li>
+<li class="bg-deep-purple-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#7c4dff</span>
+</li>
+<li class="bg-deep-purple-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#b388ff</span>
+</li>
+<li class="bg-deep-purple-900 list-group-item">
+<span>900</span> /
+<span>#311b92</span>
+</li>
+<li class="bg-deep-purple-800 list-group-item">
+<span>800</span> /
+<span>#4527a0</span>
+</li>
+<li class="bg-deep-purple-700 list-group-item">
+<span>700</span> /
+<span>#512da8</span>
+</li>
+<li class="bg-deep-purple-600 list-group-item">
+<span>600</span> /
+<span>#5e35b1</span>
+</li>
+<li class="bg-deep-purple-500 list-group-item">
+<span>500</span> /
+<span>#673ab7</span>
+</li>
+<li class="bg-deep-purple-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#7e57c2</span>
+</li>
+<li class="bg-deep-purple-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#9575cd</span>
+</li>
+<li class="bg-deep-purple-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#b39ddb</span>
+</li>
+<li class="bg-deep-purple-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#d1c4e9</span>
+</li>
+<li class="bg-deep-purple-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#ede7f6</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">indigo</h5>
+<ul class="list-group">
+<li class="bg-indigo-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#304ffe</span>
+</li>
+<li class="bg-indigo-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#3d5afe</span>
+</li>
+<li class="bg-indigo-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#536dfe</span>
+</li>
+<li class="bg-indigo-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#8c9eff</span>
+</li>
+<li class="bg-indigo-900 list-group-item">
+<span>900</span> /
+<span>#1a237e</span>
+</li>
+<li class="bg-indigo-800 list-group-item">
+<span>800</span> /
+<span>#283593</span>
+</li>
+<li class="bg-indigo-700 list-group-item">
+<span>700</span> /
+<span>#303f9f</span>
+</li>
+<li class="bg-indigo-600 list-group-item">
+<span>600</span> /
+<span>#3949ab</span>
+</li>
+<li class="bg-indigo-500 list-group-item">
+<span>500</span> /
+<span>#3f51b5</span>
+</li>
+<li class="bg-indigo-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#5c6bc0</span>
+</li>
+<li class="bg-indigo-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#7986cb</span>
+</li>
+<li class="bg-indigo-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#9fa8da</span>
+</li>
+<li class="bg-indigo-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#c5cae9</span>
+</li>
+<li class="bg-indigo-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e8eaf6</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">blue</h5>
+<ul class="list-group">
+<li class="bg-blue-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#2962ff</span>
+</li>
+<li class="bg-blue-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#2979ff</span>
+</li>
+<li class="bg-blue-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#448aff</span>
+</li>
+<li class="bg-blue-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#82b1ff</span>
+</li>
+<li class="bg-blue-900 list-group-item">
+<span>900</span> /
+<span>#0d47a1</span>
+</li>
+<li class="bg-blue-800 list-group-item">
+<span>800</span> /
+<span>#1565c0</span>
+</li>
+<li class="bg-blue-700 list-group-item">
+<span>700</span> /
+<span>#1976d2</span>
+</li>
+<li class="bg-blue-600 list-group-item">
+<span>600</span> /
+<span>#1e88e5</span>
+</li>
+<li class="bg-blue-500 list-group-item">
+<span>500</span> /
+<span>#2196f3</span>
+</li>
+<li class="bg-blue-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#42a5f5</span>
+</li>
+<li class="bg-blue-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#64b5f6</span>
+</li>
+<li class="bg-blue-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#90caf9</span>
+</li>
+<li class="bg-blue-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#bbdefb</span>
+</li>
+<li class="bg-blue-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e3f2fd</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">light-blue</h5>
+<ul class="list-group">
+<li class="bg-light-blue-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#0091ea</span>
+</li>
+<li class="bg-light-blue-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#00b0ff</span>
+</li>
+<li class="bg-light-blue-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#40c4ff</span>
+</li>
+<li class="bg-light-blue-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#80d8ff</span>
+</li>
+<li class="bg-light-blue-900 list-group-item">
+<span>900</span> /
+<span>#01579b</span>
+</li>
+<li class="bg-light-blue-800 list-group-item">
+<span>800</span> /
+<span>#0277bd</span>
+</li>
+<li class="bg-light-blue-700 list-group-item">
+<span>700</span> /
+<span>#0288d1</span>
+</li>
+<li class="bg-light-blue-600 list-group-item">
+<span>600</span> /
+<span>#039be5</span>
+</li>
+<li class="bg-light-blue-500 list-group-item">
+<span>500</span> /
+<span>#03a9f4</span>
+</li>
+<li class="bg-light-blue-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#29b6f6</span>
+</li>
+<li class="bg-light-blue-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#4fc3f7</span>
+</li>
+<li class="bg-light-blue-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#81d4fa</span>
+</li>
+<li class="bg-light-blue-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#b3e5fc</span>
+</li>
+<li class="bg-light-blue-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e1f5fe</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">cyan</h5>
+<ul class="list-group">
+<li class="bg-cyan-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#00b8d4</span>
+</li>
+<li class="bg-cyan-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#00e5ff</span>
+</li>
+<li class="bg-cyan-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#18ffff</span>
+</li>
+<li class="bg-cyan-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#84ffff</span>
+</li>
+<li class="bg-cyan-900 list-group-item">
+<span>900</span> /
+<span>#006064</span>
+</li>
+<li class="bg-cyan-800 list-group-item">
+<span>800</span> /
+<span>#00838f</span>
+</li>
+<li class="bg-cyan-700 list-group-item">
+<span>700</span> /
+<span>#0097a7</span>
+</li>
+<li class="bg-cyan-600 list-group-item">
+<span>600</span> /
+<span>#00acc1</span>
+</li>
+<li class="bg-cyan-500 list-group-item">
+<span>500</span> /
+<span>#00bcd4</span>
+</li>
+<li class="bg-cyan-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#26c6da</span>
+</li>
+<li class="bg-cyan-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#4dd0e1</span>
+</li>
+<li class="bg-cyan-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#80deea</span>
+</li>
+<li class="bg-cyan-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#b2ebf2</span>
+</li>
+<li class="bg-cyan-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e0f7fa</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">teal</h5>
+<ul class="list-group">
+<li class="bg-teal-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#00bfa5</span>
+</li>
+<li class="bg-teal-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#1de9b6</span>
+</li>
+<li class="bg-teal-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#64ffda</span>
+</li>
+<li class="bg-teal-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#a7ffeb</span>
+</li>
+<li class="bg-teal-900 list-group-item">
+<span>900</span> /
+<span>#004d40</span>
+</li>
+<li class="bg-teal-800 list-group-item">
+<span>800</span> /
+<span>#00695c</span>
+</li>
+<li class="bg-teal-700 list-group-item">
+<span>700</span> /
+<span>#00796b</span>
+</li>
+<li class="bg-teal-600 list-group-item">
+<span>600</span> /
+<span>#00897b</span>
+</li>
+<li class="bg-teal-500 list-group-item">
+<span>500</span> /
+<span>#009688</span>
+</li>
+<li class="bg-teal-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#26a69a</span>
+</li>
+<li class="bg-teal-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#4db6ac</span>
+</li>
+<li class="bg-teal-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#80cbc4</span>
+</li>
+<li class="bg-teal-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#b2dfdb</span>
+</li>
+<li class="bg-teal-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e0f2f1</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">green</h5>
+<ul class="list-group">
+<li class="bg-green-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#00c853</span>
+</li>
+<li class="bg-green-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#00e676</span>
+</li>
+<li class="bg-green-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#69f0ae</span>
+</li>
+<li class="bg-green-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#b9f6ca</span>
+</li>
+<li class="bg-green-900 list-group-item">
+<span>900</span> /
+<span>#1b5e20</span>
+</li>
+<li class="bg-green-800 list-group-item">
+<span>800</span> /
+<span>#2e7d32</span>
+</li>
+<li class="bg-green-700 list-group-item">
+<span>700</span> /
+<span>#388e3c</span>
+</li>
+<li class="bg-green-600 list-group-item">
+<span>600</span> /
+<span>#43a047</span>
+</li>
+<li class="bg-green-500 list-group-item">
+<span>500</span> /
+<span>#4caf50</span>
+</li>
+<li class="bg-green-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#66bb6a</span>
+</li>
+<li class="bg-green-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#81c784</span>
+</li>
+<li class="bg-green-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#a5d6a7</span>
+</li>
+<li class="bg-green-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#c8e6c9</span>
+</li>
+<li class="bg-green-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#e8f5e9</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">light-green</h5>
+<ul class="list-group">
+<li class="bg-light-green-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#64dd17</span>
+</li>
+<li class="bg-light-green-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#76ff03</span>
+</li>
+<li class="bg-light-green-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#b2ff59</span>
+</li>
+<li class="bg-light-green-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ccff90</span>
+</li>
+<li class="bg-light-green-900 list-group-item">
+<span>900</span> /
+<span>#33691e</span>
+</li>
+<li class="bg-light-green-800 list-group-item">
+<span>800</span> /
+<span>#558b2f</span>
+</li>
+<li class="bg-light-green-700 list-group-item">
+<span>700</span> /
+<span>#689f38</span>
+</li>
+<li class="bg-light-green-600 list-group-item">
+<span>600</span> /
+<span>#7cb342</span>
+</li>
+<li class="bg-light-green-500 list-group-item">
+<span>500</span> /
+<span>#8bc34a</span>
+</li>
+<li class="bg-light-green-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#9ccc65</span>
+</li>
+<li class="bg-light-green-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#aed581</span>
+</li>
+<li class="bg-light-green-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#c5e1a5</span>
+</li>
+<li class="bg-light-green-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#dcedc8</span>
+</li>
+<li class="bg-light-green-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#f1f8e9</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">lime</h5>
+<ul class="list-group">
+<li class="bg-lime-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#aeea00</span>
+</li>
+<li class="bg-lime-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#c6ff00</span>
+</li>
+<li class="bg-lime-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#eeff41</span>
+</li>
+<li class="bg-lime-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#f4ff81</span>
+</li>
+<li class="bg-lime-900 list-group-item">
+<span>900</span> /
+<span>#827717</span>
+</li>
+<li class="bg-lime-800 list-group-item">
+<span>800</span> /
+<span>#9e9d24</span>
+</li>
+<li class="bg-lime-700 list-group-item">
+<span>700</span> /
+<span>#afb42b</span>
+</li>
+<li class="bg-lime-600 list-group-item">
+<span>600</span> /
+<span>#c0ca33</span>
+</li>
+<li class="bg-lime-500 list-group-item">
+<span>500</span> /
+<span>#cddc39</span>
+</li>
+<li class="bg-lime-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#d4e157</span>
+</li>
+<li class="bg-lime-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#dce775</span>
+</li>
+<li class="bg-lime-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#e6ee9c</span>
+</li>
+<li class="bg-lime-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#f0f4c3</span>
+</li>
+<li class="bg-lime-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#f9fbe7</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">yellow</h5>
+<ul class="list-group">
+<li class="bg-yellow-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#ffd600</span>
+</li>
+<li class="bg-yellow-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#ffea00</span>
+</li>
+<li class="bg-yellow-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#ffff00</span>
+</li>
+<li class="bg-yellow-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ffff8d</span>
+</li>
+<li class="bg-yellow-900 list-group-item">
+<span>900</span> /
+<span>#f57f17</span>
+</li>
+<li class="bg-yellow-800 list-group-item">
+<span>800</span> /
+<span>#f9a825</span>
+</li>
+<li class="bg-yellow-700 list-group-item">
+<span>700</span> /
+<span>#fbc02d</span>
+</li>
+<li class="bg-yellow-600 list-group-item">
+<span>600</span> /
+<span>#fdd835</span>
+</li>
+<li class="bg-yellow-500 list-group-item">
+<span>500</span> /
+<span>#ffeb3b</span>
+</li>
+<li class="bg-yellow-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ffee58</span>
+</li>
+<li class="bg-yellow-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#fff176</span>
+</li>
+<li class="bg-yellow-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#fff59d</span>
+</li>
+<li class="bg-yellow-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#fff9c4</span>
+</li>
+<li class="bg-yellow-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fffde7</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">amber</h5>
+<ul class="list-group">
+<li class="bg-amber-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#ffab00</span>
+</li>
+<li class="bg-amber-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#ffc400</span>
+</li>
+<li class="bg-amber-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#ffd740</span>
+</li>
+<li class="bg-amber-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ffe57f</span>
+</li>
+<li class="bg-amber-900 list-group-item">
+<span>900</span> /
+<span>#ff6f00</span>
+</li>
+<li class="bg-amber-800 list-group-item">
+<span>800</span> /
+<span>#ff8f00</span>
+</li>
+<li class="bg-amber-700 list-group-item">
+<span>700</span> /
+<span>#ffa000</span>
+</li>
+<li class="bg-amber-600 list-group-item">
+<span>600</span> /
+<span>#ffb300</span>
+</li>
+<li class="bg-amber-500 list-group-item">
+<span>500</span> /
+<span>#ffc107</span>
+</li>
+<li class="bg-amber-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ffca28</span>
+</li>
+<li class="bg-amber-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#ffd54f</span>
+</li>
+<li class="bg-amber-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#ffe082</span>
+</li>
+<li class="bg-amber-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#ffecb3</span>
+</li>
+<li class="bg-amber-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fff8e1</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">orange</h5>
+<ul class="list-group">
+<li class="bg-orange-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#ff6d00</span>
+</li>
+<li class="bg-orange-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#ff9100</span>
+</li>
+<li class="bg-orange-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#ffab40</span>
+</li>
+<li class="bg-orange-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ffd180</span>
+</li>
+<li class="bg-orange-900 list-group-item">
+<span>900</span> /
+<span>#e65100</span>
+</li>
+<li class="bg-orange-800 list-group-item">
+<span>800</span> /
+<span>#ef6c00</span>
+</li>
+<li class="bg-orange-700 list-group-item">
+<span>700</span> /
+<span>#f57c00</span>
+</li>
+<li class="bg-orange-600 list-group-item">
+<span>600</span> /
+<span>#fb8c00</span>
+</li>
+<li class="bg-orange-500 list-group-item">
+<span>500</span> /
+<span>#ff9800</span>
+</li>
+<li class="bg-orange-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ffa726</span>
+</li>
+<li class="bg-orange-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#ffb74d</span>
+</li>
+<li class="bg-orange-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#ffcc80</span>
+</li>
+<li class="bg-orange-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#ffe0b2</span>
+</li>
+<li class="bg-orange-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fff3e0</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">deep-orange</h5>
+<ul class="list-group">
+<li class="bg-deep-orange-A700 grey-800 list-group-item">
+<span>a700</span> /
+<span>#dd2c00</span>
+</li>
+<li class="bg-deep-orange-A400 grey-800 list-group-item">
+<span>a400</span> /
+<span>#ff3d00</span>
+</li>
+<li class="bg-deep-orange-A200 grey-800 list-group-item">
+<span>a200</span> /
+<span>#ff6e40</span>
+</li>
+<li class="bg-deep-orange-A100 grey-800 list-group-item">
+<span>a100</span> /
+<span>#ff9e80</span>
+</li>
+<li class="bg-deep-orange-900 list-group-item">
+<span>900</span> /
+<span>#bf360c</span>
+</li>
+<li class="bg-deep-orange-800 list-group-item">
+<span>800</span> /
+<span>#d84315</span>
+</li>
+<li class="bg-deep-orange-700 list-group-item">
+<span>700</span> /
+<span>#e64a19</span>
+</li>
+<li class="bg-deep-orange-600 list-group-item">
+<span>600</span> /
+<span>#f4511e</span>
+</li>
+<li class="bg-deep-orange-500 list-group-item">
+<span>500</span> /
+<span>#ff5722</span>
+</li>
+<li class="bg-deep-orange-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#ff7043</span>
+</li>
+<li class="bg-deep-orange-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#ff8a65</span>
+</li>
+<li class="bg-deep-orange-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#ffab91</span>
+</li>
+<li class="bg-deep-orange-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#ffccbc</span>
+</li>
+<li class="bg-deep-orange-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fbe9e7</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">brown</h5>
+<ul class="list-group">
+<li class="bg-brown-900 list-group-item">
+<span>900</span> /
+<span>#3e2723</span>
+</li>
+<li class="bg-brown-800 list-group-item">
+<span>800</span> /
+<span>#4e342e</span>
+</li>
+<li class="bg-brown-700 list-group-item">
+<span>700</span> /
+<span>#5d4037</span>
+</li>
+<li class="bg-brown-600 list-group-item">
+<span>600</span> /
+<span>#6d4c41</span>
+</li>
+<li class="bg-brown-500 list-group-item">
+<span>500</span> /
+<span>#795548</span>
+</li>
+<li class="bg-brown-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#8d6e63</span>
+</li>
+<li class="bg-brown-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#a1887f</span>
+</li>
+<li class="bg-brown-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#bcaaa4</span>
+</li>
+<li class="bg-brown-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#d7ccc8</span>
+</li>
+<li class="bg-brown-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#efebe9</span>
+</li>
+</ul>
+</div>
+<div class="u-col-4">
+<h5 class="text-uppercase">grey</h5>
+<ul class="list-group">
+<li class="bg-grey-900 list-group-item">
+<span>900</span> /
+<span>#212121</span>
+</li>
+<li class="bg-grey-800 list-group-item">
+<span>800</span> /
+<span>#424242</span>
+</li>
+<li class="bg-grey-700 list-group-item">
+<span>700</span> /
+<span>#616161</span>
+</li>
+<li class="bg-grey-600 list-group-item">
+<span>600</span> /
+<span>#757575</span>
+</li>
+<li class="bg-grey-500 list-group-item">
+<span>500</span> /
+<span>#9e9e9e</span>
+</li>
+<li class="bg-grey-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#bdbdbd</span>
+</li>
+<li class="bg-grey-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#e0e0e0</span>
+</li>
+<li class="bg-grey-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#eeeeee</span>
+</li>
+<li class="bg-grey-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#f5f5f5</span>
+</li>
+<li class="bg-grey-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#fafafa</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="u-row   color-palette">
+<div class="u-col-4">
+<h5 class="text-uppercase">blue-grey</h5>
+<ul class="list-group">
+<li class="bg-blue-grey-900 list-group-item">
+<span>900</span> /
+<span>#263238</span>
+</li>
+<li class="bg-blue-grey-800 list-group-item">
+<span>800</span> /
+<span>#37474f</span>
+</li>
+<li class="bg-blue-grey-700 list-group-item">
+<span>700</span> /
+<span>#455a64</span>
+</li>
+<li class="bg-blue-grey-600 list-group-item">
+<span>600</span> /
+<span>#546e7a</span>
+</li>
+<li class="bg-blue-grey-500 list-group-item">
+<span>500</span> /
+<span>#607d8b</span>
+</li>
+<li class="bg-blue-grey-400 grey-800 list-group-item">
+<span>400</span> /
+<span>#78909c</span>
+</li>
+<li class="bg-blue-grey-300 grey-800 list-group-item">
+<span>300</span> /
+<span>#90a4ae</span>
+</li>
+<li class="bg-blue-grey-200 grey-800 list-group-item">
+<span>200</span> /
+<span>#b0bec5</span>
+</li>
+<li class="bg-blue-grey-100 grey-800 list-group-item">
+<span>100</span> /
+<span>#cfd8dc</span>
+</li>
+<li class="bg-blue-grey-50 grey-800 list-group-item">
+<span>50</span> /
+<span>#eceff1</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+{% endraw %}
+
+## 图片
+
+一个矩形图片可以显示成圆形图片、圆角图片，除此之外还可以添加多种颜色的边框。这个功能是不是很炫，赶快看下具体的示例吧！
+
+
+### 图片形状
+
+在`img`标签上添加`img-rounded`可以显示成圆角图片，添加`img-circle`可以显示成圆形图片
+
+{% raw %}
+<div class="example-content">
+<img class="img-rounded" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-circle" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+</div>
+
+
+
+{% endraw %}
+``` html
+
+<img class="img-rounded" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-circle" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+```
+
+
+
+
+### 边框图片
+
+在`img`标签上添加样式`img-bordered`即可实现一个灰色边框的图片。在上面的基础添加`img-bordered-orange`可以显示警告黄色边框，添加`img-bordered-green`实现成功绿色边框
+
+{% raw %}
+<div class="example-content"><img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="..."></div>
+
+
+
+{% endraw %}
+``` html
+<img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+
+<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
+```
+
+
+
 ## 图标
 
 图标字体不用依赖任何JavaScript，只要CSS支持，无论颜色、大小或者其它任何效果，都可以轻易展现。
@@ -4013,1217 +5224,6 @@ order: 1
 ```
 
 
-## 图片
-
-一个矩形图片可以显示成圆形图片、圆角图片，除此之外还可以添加多种颜色的边框。这个功能是不是很炫，赶快看下具体的示例吧！
-
-
-### 图片形状
-
-在`img`标签上添加`img-rounded`可以显示成圆角图片，添加`img-circle`可以显示成圆形图片
-
-{% raw %}
-<div class="example-content">
-<img class="img-rounded" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-circle" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-</div>
-
-
-
-{% endraw %}
-``` html
-
-<img class="img-rounded" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-circle" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-```
-
-
-
-
-### 边框图片
-
-在`img`标签上添加样式`img-bordered`即可实现一个灰色边框的图片。在上面的基础添加`img-bordered-orange`可以显示警告黄色边框，添加`img-bordered-green`实现成功绿色边框
-
-{% raw %}
-<div class="example-content"><img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="..."></div>
-
-
-
-{% endraw %}
-``` html
-<img class="img-rounded img-bordered img-bordered-primary" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-circle img-bordered img-bordered-orange" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-
-<img class="img-rounded img-bordered img-bordered-green" width="150" height="150" src="/assets/static/img/img1.png" alt="...">
-```
-
-
-
-## 色彩
-{% raw %}
-<link rel="stylesheet" type="text/css" href="/assets/static/css/color.css">
-<div class="color">
-<h3>基础调色板</h3>
-<div class="primaries">
-<div class="bg-red">red</div>
-<div class="bg-pink">pink</div>
-<div class="bg-purple">purple</div>
-<div class="bg-deep-purple">deep-purple</div>
-<div class="bg-indigo">indigo</div>
-<div class="bg-blue">blue</div>
-<div class="bg-light-blue">light-blue</div>
-<div class="bg-cyan">cyan</div>
-<div class="bg-teal">teal</div>
-<div class="bg-green">green</div>
-<div class="bg-light-green">light-green</div>
-<div class="bg-lime">lime</div>
-<div class="bg-yellow grey">yellow</div>
-<div class="bg-amber">amber</div>
-<div class="bg-orange">orange</div>
-<div class="bg-deep-orange">deep-orange</div>
-<div class="bg-brown">brown</div>
-<div class="bg-grey">grey</div>
-<div class="bg-blue-grey">blue-grey</div>
-<div class="bg-black">black</div>
-<p>以上基础调色板均以背景色为示例，对应的字体颜色去掉bg即可。例如：背景色为.bg-grey，字体色为.grey</p>
-</div>
-<div class="example-wrap">
-<h3 class="example-title">调色板</h3>
-<p >调色板包含了主色和不同色阶的颜色</p>
-<h4>具体使用</h4>
-<p>1、引入u.css文件</p>
-<p>2、背景色使用样式类名为'.bg-颜色的名字'，字体使用样式类名为'.颜色的名字'。例如红色A700对应的背景色为<code>.bg-red-A700</code>,字体色为<code>.red-A700</code></p>
-<div class="u-row  color-palette">
-<div class="u-col-4">
-<h5 class="text-uppercase">red</h5>
-<ul class="list-group">
-<li class="bg-red-A700 grey-800 list-group-item">
-<span>A700</span> /
-<span>#d50000</span>
-</li>
-<li class="bg-red-A400 grey-800 list-group-item">
-<span>A400</span> /
-<span>#ff1744</span>
-</li>
-<li class="bg-red-A200 grey-800 list-group-item">
-<span>A200</span> /
-<span>#ff5252</span>
-</li>
-<li class="bg-red-A100 grey-800 list-group-item">
-<span>A100</span> /
-<span>#ff8a80</span>
-</li>
-<li class="bg-red-900 list-group-item">
-<span>900</span> /
-<span>#b71c1c</span>
-</li>
-<li class="bg-red-800 list-group-item">
-<span>800</span> /
-<span>#c62828</span>
-</li>
-<li class="bg-red-700 list-group-item">
-<span>700</span> /
-<span>#d32f2f</span>
-</li>
-<li class="bg-red-600 list-group-item">
-<span>600</span> /
-<span>#e53935</span>
-</li>
-<li class="bg-red-500 list-group-item">
-<span>500</span> /
-<span>#f44336</span>
-</li>
-<li class="bg-red-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ef5350</span>
-</li>
-<li class="bg-red-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#e57373</span>
-</li>
-<li class="bg-red-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#ef9a9a</span>
-</li>
-<li class="bg-red-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#ffcdd2</span>
-</li>
-<li class="bg-red-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#ffebee</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">pink</h5>
-<ul class="list-group">
-<li class="bg-pink-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#c51162</span>
-</li>
-<li class="bg-pink-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#f50057</span>
-</li>
-<li class="bg-pink-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#ff4081</span>
-</li>
-<li class="bg-pink-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ff80ab</span>
-</li>
-<li class="bg-pink-900 list-group-item">
-<span>900</span> /
-<span>#880e4f</span>
-</li>
-<li class="bg-pink-800 list-group-item">
-<span>800</span> /
-<span>#ad1457</span>
-</li>
-<li class="bg-pink-700 list-group-item">
-<span>700</span> /
-<span>#c2185b</span>
-</li>
-<li class="bg-pink-600 list-group-item">
-<span>600</span> /
-<span>#d81b60</span>
-</li>
-<li class="bg-pink-500 list-group-item">
-<span>500</span> /
-<span>#e91e63</span>
-</li>
-<li class="bg-pink-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ec407a</span>
-</li>
-<li class="bg-pink-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#f06292</span>
-</li>
-<li class="bg-pink-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#f48fb1</span>
-</li>
-<li class="bg-pink-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#f8bbd0</span>
-</li>
-<li class="bg-pink-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fce4ec</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">purple</h5>
-<ul class="list-group">
-<li class="bg-purple-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#aa00ff</span>
-</li>
-<li class="bg-purple-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#d500f9</span>
-</li>
-<li class="bg-purple-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#e040fb</span>
-</li>
-<li class="bg-purple-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ea80fc</span>
-</li>
-<li class="bg-purple-900 list-group-item">
-<span>900</span> /
-<span>#4a148c</span>
-</li>
-<li class="bg-purple-800 list-group-item">
-<span>800</span> /
-<span>#6a1b9a</span>
-</li>
-<li class="bg-purple-700 list-group-item">
-<span>700</span> /
-<span>#7b1fa2</span>
-</li>
-<li class="bg-purple-600 list-group-item">
-<span>600</span> /
-<span>#8e24aa</span>
-</li>
-<li class="bg-purple-500 list-group-item">
-<span>500</span> /
-<span>#9c27b0</span>
-</li>
-<li class="bg-purple-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ab47bc</span>
-</li>
-<li class="bg-purple-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#ba68c8</span>
-</li>
-<li class="bg-purple-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#ce93d8</span>
-</li>
-<li class="bg-purple-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#e1bee7</span>
-</li>
-<li class="bg-purple-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#f3e5f5</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">deep-purple</h5>
-<ul class="list-group">
-<li class="bg-deep-purple-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#6200ea</span>
-</li>
-<li class="bg-deep-purple-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#651fff</span>
-</li>
-<li class="bg-deep-purple-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#7c4dff</span>
-</li>
-<li class="bg-deep-purple-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#b388ff</span>
-</li>
-<li class="bg-deep-purple-900 list-group-item">
-<span>900</span> /
-<span>#311b92</span>
-</li>
-<li class="bg-deep-purple-800 list-group-item">
-<span>800</span> /
-<span>#4527a0</span>
-</li>
-<li class="bg-deep-purple-700 list-group-item">
-<span>700</span> /
-<span>#512da8</span>
-</li>
-<li class="bg-deep-purple-600 list-group-item">
-<span>600</span> /
-<span>#5e35b1</span>
-</li>
-<li class="bg-deep-purple-500 list-group-item">
-<span>500</span> /
-<span>#673ab7</span>
-</li>
-<li class="bg-deep-purple-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#7e57c2</span>
-</li>
-<li class="bg-deep-purple-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#9575cd</span>
-</li>
-<li class="bg-deep-purple-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#b39ddb</span>
-</li>
-<li class="bg-deep-purple-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#d1c4e9</span>
-</li>
-<li class="bg-deep-purple-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#ede7f6</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">indigo</h5>
-<ul class="list-group">
-<li class="bg-indigo-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#304ffe</span>
-</li>
-<li class="bg-indigo-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#3d5afe</span>
-</li>
-<li class="bg-indigo-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#536dfe</span>
-</li>
-<li class="bg-indigo-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#8c9eff</span>
-</li>
-<li class="bg-indigo-900 list-group-item">
-<span>900</span> /
-<span>#1a237e</span>
-</li>
-<li class="bg-indigo-800 list-group-item">
-<span>800</span> /
-<span>#283593</span>
-</li>
-<li class="bg-indigo-700 list-group-item">
-<span>700</span> /
-<span>#303f9f</span>
-</li>
-<li class="bg-indigo-600 list-group-item">
-<span>600</span> /
-<span>#3949ab</span>
-</li>
-<li class="bg-indigo-500 list-group-item">
-<span>500</span> /
-<span>#3f51b5</span>
-</li>
-<li class="bg-indigo-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#5c6bc0</span>
-</li>
-<li class="bg-indigo-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#7986cb</span>
-</li>
-<li class="bg-indigo-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#9fa8da</span>
-</li>
-<li class="bg-indigo-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#c5cae9</span>
-</li>
-<li class="bg-indigo-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e8eaf6</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">blue</h5>
-<ul class="list-group">
-<li class="bg-blue-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#2962ff</span>
-</li>
-<li class="bg-blue-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#2979ff</span>
-</li>
-<li class="bg-blue-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#448aff</span>
-</li>
-<li class="bg-blue-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#82b1ff</span>
-</li>
-<li class="bg-blue-900 list-group-item">
-<span>900</span> /
-<span>#0d47a1</span>
-</li>
-<li class="bg-blue-800 list-group-item">
-<span>800</span> /
-<span>#1565c0</span>
-</li>
-<li class="bg-blue-700 list-group-item">
-<span>700</span> /
-<span>#1976d2</span>
-</li>
-<li class="bg-blue-600 list-group-item">
-<span>600</span> /
-<span>#1e88e5</span>
-</li>
-<li class="bg-blue-500 list-group-item">
-<span>500</span> /
-<span>#2196f3</span>
-</li>
-<li class="bg-blue-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#42a5f5</span>
-</li>
-<li class="bg-blue-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#64b5f6</span>
-</li>
-<li class="bg-blue-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#90caf9</span>
-</li>
-<li class="bg-blue-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#bbdefb</span>
-</li>
-<li class="bg-blue-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e3f2fd</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">light-blue</h5>
-<ul class="list-group">
-<li class="bg-light-blue-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#0091ea</span>
-</li>
-<li class="bg-light-blue-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#00b0ff</span>
-</li>
-<li class="bg-light-blue-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#40c4ff</span>
-</li>
-<li class="bg-light-blue-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#80d8ff</span>
-</li>
-<li class="bg-light-blue-900 list-group-item">
-<span>900</span> /
-<span>#01579b</span>
-</li>
-<li class="bg-light-blue-800 list-group-item">
-<span>800</span> /
-<span>#0277bd</span>
-</li>
-<li class="bg-light-blue-700 list-group-item">
-<span>700</span> /
-<span>#0288d1</span>
-</li>
-<li class="bg-light-blue-600 list-group-item">
-<span>600</span> /
-<span>#039be5</span>
-</li>
-<li class="bg-light-blue-500 list-group-item">
-<span>500</span> /
-<span>#03a9f4</span>
-</li>
-<li class="bg-light-blue-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#29b6f6</span>
-</li>
-<li class="bg-light-blue-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#4fc3f7</span>
-</li>
-<li class="bg-light-blue-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#81d4fa</span>
-</li>
-<li class="bg-light-blue-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#b3e5fc</span>
-</li>
-<li class="bg-light-blue-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e1f5fe</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">cyan</h5>
-<ul class="list-group">
-<li class="bg-cyan-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#00b8d4</span>
-</li>
-<li class="bg-cyan-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#00e5ff</span>
-</li>
-<li class="bg-cyan-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#18ffff</span>
-</li>
-<li class="bg-cyan-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#84ffff</span>
-</li>
-<li class="bg-cyan-900 list-group-item">
-<span>900</span> /
-<span>#006064</span>
-</li>
-<li class="bg-cyan-800 list-group-item">
-<span>800</span> /
-<span>#00838f</span>
-</li>
-<li class="bg-cyan-700 list-group-item">
-<span>700</span> /
-<span>#0097a7</span>
-</li>
-<li class="bg-cyan-600 list-group-item">
-<span>600</span> /
-<span>#00acc1</span>
-</li>
-<li class="bg-cyan-500 list-group-item">
-<span>500</span> /
-<span>#00bcd4</span>
-</li>
-<li class="bg-cyan-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#26c6da</span>
-</li>
-<li class="bg-cyan-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#4dd0e1</span>
-</li>
-<li class="bg-cyan-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#80deea</span>
-</li>
-<li class="bg-cyan-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#b2ebf2</span>
-</li>
-<li class="bg-cyan-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e0f7fa</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">teal</h5>
-<ul class="list-group">
-<li class="bg-teal-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#00bfa5</span>
-</li>
-<li class="bg-teal-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#1de9b6</span>
-</li>
-<li class="bg-teal-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#64ffda</span>
-</li>
-<li class="bg-teal-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#a7ffeb</span>
-</li>
-<li class="bg-teal-900 list-group-item">
-<span>900</span> /
-<span>#004d40</span>
-</li>
-<li class="bg-teal-800 list-group-item">
-<span>800</span> /
-<span>#00695c</span>
-</li>
-<li class="bg-teal-700 list-group-item">
-<span>700</span> /
-<span>#00796b</span>
-</li>
-<li class="bg-teal-600 list-group-item">
-<span>600</span> /
-<span>#00897b</span>
-</li>
-<li class="bg-teal-500 list-group-item">
-<span>500</span> /
-<span>#009688</span>
-</li>
-<li class="bg-teal-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#26a69a</span>
-</li>
-<li class="bg-teal-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#4db6ac</span>
-</li>
-<li class="bg-teal-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#80cbc4</span>
-</li>
-<li class="bg-teal-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#b2dfdb</span>
-</li>
-<li class="bg-teal-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e0f2f1</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">green</h5>
-<ul class="list-group">
-<li class="bg-green-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#00c853</span>
-</li>
-<li class="bg-green-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#00e676</span>
-</li>
-<li class="bg-green-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#69f0ae</span>
-</li>
-<li class="bg-green-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#b9f6ca</span>
-</li>
-<li class="bg-green-900 list-group-item">
-<span>900</span> /
-<span>#1b5e20</span>
-</li>
-<li class="bg-green-800 list-group-item">
-<span>800</span> /
-<span>#2e7d32</span>
-</li>
-<li class="bg-green-700 list-group-item">
-<span>700</span> /
-<span>#388e3c</span>
-</li>
-<li class="bg-green-600 list-group-item">
-<span>600</span> /
-<span>#43a047</span>
-</li>
-<li class="bg-green-500 list-group-item">
-<span>500</span> /
-<span>#4caf50</span>
-</li>
-<li class="bg-green-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#66bb6a</span>
-</li>
-<li class="bg-green-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#81c784</span>
-</li>
-<li class="bg-green-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#a5d6a7</span>
-</li>
-<li class="bg-green-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#c8e6c9</span>
-</li>
-<li class="bg-green-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#e8f5e9</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">light-green</h5>
-<ul class="list-group">
-<li class="bg-light-green-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#64dd17</span>
-</li>
-<li class="bg-light-green-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#76ff03</span>
-</li>
-<li class="bg-light-green-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#b2ff59</span>
-</li>
-<li class="bg-light-green-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ccff90</span>
-</li>
-<li class="bg-light-green-900 list-group-item">
-<span>900</span> /
-<span>#33691e</span>
-</li>
-<li class="bg-light-green-800 list-group-item">
-<span>800</span> /
-<span>#558b2f</span>
-</li>
-<li class="bg-light-green-700 list-group-item">
-<span>700</span> /
-<span>#689f38</span>
-</li>
-<li class="bg-light-green-600 list-group-item">
-<span>600</span> /
-<span>#7cb342</span>
-</li>
-<li class="bg-light-green-500 list-group-item">
-<span>500</span> /
-<span>#8bc34a</span>
-</li>
-<li class="bg-light-green-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#9ccc65</span>
-</li>
-<li class="bg-light-green-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#aed581</span>
-</li>
-<li class="bg-light-green-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#c5e1a5</span>
-</li>
-<li class="bg-light-green-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#dcedc8</span>
-</li>
-<li class="bg-light-green-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#f1f8e9</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">lime</h5>
-<ul class="list-group">
-<li class="bg-lime-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#aeea00</span>
-</li>
-<li class="bg-lime-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#c6ff00</span>
-</li>
-<li class="bg-lime-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#eeff41</span>
-</li>
-<li class="bg-lime-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#f4ff81</span>
-</li>
-<li class="bg-lime-900 list-group-item">
-<span>900</span> /
-<span>#827717</span>
-</li>
-<li class="bg-lime-800 list-group-item">
-<span>800</span> /
-<span>#9e9d24</span>
-</li>
-<li class="bg-lime-700 list-group-item">
-<span>700</span> /
-<span>#afb42b</span>
-</li>
-<li class="bg-lime-600 list-group-item">
-<span>600</span> /
-<span>#c0ca33</span>
-</li>
-<li class="bg-lime-500 list-group-item">
-<span>500</span> /
-<span>#cddc39</span>
-</li>
-<li class="bg-lime-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#d4e157</span>
-</li>
-<li class="bg-lime-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#dce775</span>
-</li>
-<li class="bg-lime-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#e6ee9c</span>
-</li>
-<li class="bg-lime-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#f0f4c3</span>
-</li>
-<li class="bg-lime-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#f9fbe7</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">yellow</h5>
-<ul class="list-group">
-<li class="bg-yellow-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#ffd600</span>
-</li>
-<li class="bg-yellow-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#ffea00</span>
-</li>
-<li class="bg-yellow-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#ffff00</span>
-</li>
-<li class="bg-yellow-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ffff8d</span>
-</li>
-<li class="bg-yellow-900 list-group-item">
-<span>900</span> /
-<span>#f57f17</span>
-</li>
-<li class="bg-yellow-800 list-group-item">
-<span>800</span> /
-<span>#f9a825</span>
-</li>
-<li class="bg-yellow-700 list-group-item">
-<span>700</span> /
-<span>#fbc02d</span>
-</li>
-<li class="bg-yellow-600 list-group-item">
-<span>600</span> /
-<span>#fdd835</span>
-</li>
-<li class="bg-yellow-500 list-group-item">
-<span>500</span> /
-<span>#ffeb3b</span>
-</li>
-<li class="bg-yellow-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ffee58</span>
-</li>
-<li class="bg-yellow-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#fff176</span>
-</li>
-<li class="bg-yellow-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#fff59d</span>
-</li>
-<li class="bg-yellow-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#fff9c4</span>
-</li>
-<li class="bg-yellow-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fffde7</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">amber</h5>
-<ul class="list-group">
-<li class="bg-amber-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#ffab00</span>
-</li>
-<li class="bg-amber-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#ffc400</span>
-</li>
-<li class="bg-amber-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#ffd740</span>
-</li>
-<li class="bg-amber-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ffe57f</span>
-</li>
-<li class="bg-amber-900 list-group-item">
-<span>900</span> /
-<span>#ff6f00</span>
-</li>
-<li class="bg-amber-800 list-group-item">
-<span>800</span> /
-<span>#ff8f00</span>
-</li>
-<li class="bg-amber-700 list-group-item">
-<span>700</span> /
-<span>#ffa000</span>
-</li>
-<li class="bg-amber-600 list-group-item">
-<span>600</span> /
-<span>#ffb300</span>
-</li>
-<li class="bg-amber-500 list-group-item">
-<span>500</span> /
-<span>#ffc107</span>
-</li>
-<li class="bg-amber-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ffca28</span>
-</li>
-<li class="bg-amber-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#ffd54f</span>
-</li>
-<li class="bg-amber-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#ffe082</span>
-</li>
-<li class="bg-amber-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#ffecb3</span>
-</li>
-<li class="bg-amber-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fff8e1</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">orange</h5>
-<ul class="list-group">
-<li class="bg-orange-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#ff6d00</span>
-</li>
-<li class="bg-orange-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#ff9100</span>
-</li>
-<li class="bg-orange-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#ffab40</span>
-</li>
-<li class="bg-orange-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ffd180</span>
-</li>
-<li class="bg-orange-900 list-group-item">
-<span>900</span> /
-<span>#e65100</span>
-</li>
-<li class="bg-orange-800 list-group-item">
-<span>800</span> /
-<span>#ef6c00</span>
-</li>
-<li class="bg-orange-700 list-group-item">
-<span>700</span> /
-<span>#f57c00</span>
-</li>
-<li class="bg-orange-600 list-group-item">
-<span>600</span> /
-<span>#fb8c00</span>
-</li>
-<li class="bg-orange-500 list-group-item">
-<span>500</span> /
-<span>#ff9800</span>
-</li>
-<li class="bg-orange-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ffa726</span>
-</li>
-<li class="bg-orange-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#ffb74d</span>
-</li>
-<li class="bg-orange-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#ffcc80</span>
-</li>
-<li class="bg-orange-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#ffe0b2</span>
-</li>
-<li class="bg-orange-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fff3e0</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">deep-orange</h5>
-<ul class="list-group">
-<li class="bg-deep-orange-A700 grey-800 list-group-item">
-<span>a700</span> /
-<span>#dd2c00</span>
-</li>
-<li class="bg-deep-orange-A400 grey-800 list-group-item">
-<span>a400</span> /
-<span>#ff3d00</span>
-</li>
-<li class="bg-deep-orange-A200 grey-800 list-group-item">
-<span>a200</span> /
-<span>#ff6e40</span>
-</li>
-<li class="bg-deep-orange-A100 grey-800 list-group-item">
-<span>a100</span> /
-<span>#ff9e80</span>
-</li>
-<li class="bg-deep-orange-900 list-group-item">
-<span>900</span> /
-<span>#bf360c</span>
-</li>
-<li class="bg-deep-orange-800 list-group-item">
-<span>800</span> /
-<span>#d84315</span>
-</li>
-<li class="bg-deep-orange-700 list-group-item">
-<span>700</span> /
-<span>#e64a19</span>
-</li>
-<li class="bg-deep-orange-600 list-group-item">
-<span>600</span> /
-<span>#f4511e</span>
-</li>
-<li class="bg-deep-orange-500 list-group-item">
-<span>500</span> /
-<span>#ff5722</span>
-</li>
-<li class="bg-deep-orange-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#ff7043</span>
-</li>
-<li class="bg-deep-orange-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#ff8a65</span>
-</li>
-<li class="bg-deep-orange-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#ffab91</span>
-</li>
-<li class="bg-deep-orange-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#ffccbc</span>
-</li>
-<li class="bg-deep-orange-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fbe9e7</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">brown</h5>
-<ul class="list-group">
-<li class="bg-brown-900 list-group-item">
-<span>900</span> /
-<span>#3e2723</span>
-</li>
-<li class="bg-brown-800 list-group-item">
-<span>800</span> /
-<span>#4e342e</span>
-</li>
-<li class="bg-brown-700 list-group-item">
-<span>700</span> /
-<span>#5d4037</span>
-</li>
-<li class="bg-brown-600 list-group-item">
-<span>600</span> /
-<span>#6d4c41</span>
-</li>
-<li class="bg-brown-500 list-group-item">
-<span>500</span> /
-<span>#795548</span>
-</li>
-<li class="bg-brown-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#8d6e63</span>
-</li>
-<li class="bg-brown-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#a1887f</span>
-</li>
-<li class="bg-brown-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#bcaaa4</span>
-</li>
-<li class="bg-brown-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#d7ccc8</span>
-</li>
-<li class="bg-brown-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#efebe9</span>
-</li>
-</ul>
-</div>
-<div class="u-col-4">
-<h5 class="text-uppercase">grey</h5>
-<ul class="list-group">
-<li class="bg-grey-900 list-group-item">
-<span>900</span> /
-<span>#212121</span>
-</li>
-<li class="bg-grey-800 list-group-item">
-<span>800</span> /
-<span>#424242</span>
-</li>
-<li class="bg-grey-700 list-group-item">
-<span>700</span> /
-<span>#616161</span>
-</li>
-<li class="bg-grey-600 list-group-item">
-<span>600</span> /
-<span>#757575</span>
-</li>
-<li class="bg-grey-500 list-group-item">
-<span>500</span> /
-<span>#9e9e9e</span>
-</li>
-<li class="bg-grey-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#bdbdbd</span>
-</li>
-<li class="bg-grey-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#e0e0e0</span>
-</li>
-<li class="bg-grey-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#eeeeee</span>
-</li>
-<li class="bg-grey-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#f5f5f5</span>
-</li>
-<li class="bg-grey-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#fafafa</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="u-row   color-palette">
-<div class="u-col-4">
-<h5 class="text-uppercase">blue-grey</h5>
-<ul class="list-group">
-<li class="bg-blue-grey-900 list-group-item">
-<span>900</span> /
-<span>#263238</span>
-</li>
-<li class="bg-blue-grey-800 list-group-item">
-<span>800</span> /
-<span>#37474f</span>
-</li>
-<li class="bg-blue-grey-700 list-group-item">
-<span>700</span> /
-<span>#455a64</span>
-</li>
-<li class="bg-blue-grey-600 list-group-item">
-<span>600</span> /
-<span>#546e7a</span>
-</li>
-<li class="bg-blue-grey-500 list-group-item">
-<span>500</span> /
-<span>#607d8b</span>
-</li>
-<li class="bg-blue-grey-400 grey-800 list-group-item">
-<span>400</span> /
-<span>#78909c</span>
-</li>
-<li class="bg-blue-grey-300 grey-800 list-group-item">
-<span>300</span> /
-<span>#90a4ae</span>
-</li>
-<li class="bg-blue-grey-200 grey-800 list-group-item">
-<span>200</span> /
-<span>#b0bec5</span>
-</li>
-<li class="bg-blue-grey-100 grey-800 list-group-item">
-<span>100</span> /
-<span>#cfd8dc</span>
-</li>
-<li class="bg-blue-grey-50 grey-800 list-group-item">
-<span>50</span> /
-<span>#eceff1</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-{% endraw %}
-
 ## 输入框
 
 
@@ -5893,6 +5893,509 @@ span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
     border-radius: 0;
 }
 ```
+
+
+## 辅助类
+
+辅助类中提供了对齐模块、文字相关方法、盒模型等其他常用类。
+
+* 对齐模块：浮动模块、垂直对齐、居中
+* 文字相关：大小写转换、包裹文字的各种方法（隐藏、一行显示所有内容、折行显示等）、文字垂直、水平居中方法、常用字体大小、字体加粗
+* 盒模型： 常用padding、margin、height以及width数值
+* 其他辅助类： display、响应式的visibility
+
+
+### 块级元素水平居中
+添加`.center-block`实现水平居中
+
+{% raw %}
+<div class="example-content"> <div class="example example-box">
+	<div class="h-64 w-64 bg-blue center-block ">
+		我是内容
+	</div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+ <div class="example example-box">
+	<div class="h-64 w-64 bg-blue center-block ">
+		我是内容
+	</div>
+</div>
+```
+
+
+
+
+### 浮动
+浮动是创建各种布局的基础。但是浮动需要被清理。下面的类将帮助你设置基本的布局
+
+* `.pull-left`: 向左浮动
+* `.pull-right`: 向右浮动
+* `.clearfix`: 清除浮动
+
+{% raw %}
+<div class="example-content"><div class="example example-box">
+  <button type="button" class="u-button  u-button-success ">Left</button>
+  <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="example example-box">
+  <button type="button" class="u-button  u-button-success ">Left</button>
+  <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
+</div>
+```
+
+
+
+
+### 行内块级元素垂直对齐
+添加如下样式即可实现垂直居中、垂直向下。
+
+* `.vertical-align`:添加这个样式到父元素上，该父元素需要指定高度
+* `.vertical-align-middle`:添加这个样式到到子元素上，实现垂直居中
+* `.vertical-align-bottom`:添加这个样式到子元素上，实现垂直向下
+
+{% raw %}
+<div class="example-content"><div class="example example-box u-container-fluid">
+	<div class="u-row">
+
+		<div class="u-col-6">
+			<div class="vertical-align h" >
+      		    <button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中</button>
+	        </div>
+		</div>
+		<div class="u-col-6">
+			<div class="vertical-align h" >
+	 			<button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下</button>
+	 		</div>
+		</div>
+	</div>
+</div></div>
+
+<style>
+.vertical-align-bottom.u-button{
+	vertical-align: bottom;
+}
+</style>
+
+{% endraw %}
+``` html
+<div class="example example-box u-container-fluid">
+	<div class="u-row">
+
+		<div class="u-col-6">
+			<div class="vertical-align h" >
+      		    <button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中</button>
+	        </div>
+		</div>
+		<div class="u-col-6">
+			<div class="vertical-align h" >
+	 			<button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下</button>
+	 		</div>
+		</div>
+	</div>
+</div>
+```
+``` css
+.vertical-align-bottom.u-button{
+	vertical-align: bottom;
+}
+```
+
+
+
+### 文字对齐
+添加如下样式来实现文字的对齐
+
+* `text-top`: 文字垂直向上对齐
+* `text-middle`: 文字垂直居中对齐
+* `text-bottom`: 文字垂直向下对齐
+* `text-left`: 文字水平向左对齐
+* `text-center`: 文字水平居中对齐
+* `text-right`: 文字水平向右对齐
+* `text-justify`: 文字两端对齐
+
+{% raw %}
+<div class="example-content"><div class="example example-box u-container-fluid">
+    <div class="row">
+        <div class="col-md-4 m-b-sm bg-grey h-64">
+    		<img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:top">
+           <span class="text-top">文字顶部对齐</span>
+        </div>
+        <div class="col-md-4  m-b-sm bg-grey h-64" >
+        <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:middle">
+           <span class="text-middle">文字居中对齐</span>
+        </div>
+        <div class="col-md-4  m-b-sm bg-grey h-64" >
+          <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
+            <span class="text-bottom">文字底部对齐</span>
+        </div>
+    </div>
+    <div class="margin-top-20">
+        <p class="text-left">文字向左对齐</p>
+        <p class="text-center">文字居中对齐</p>
+        <p class="text-right">文件向右对齐</p>
+        <p class="text-justify">文件两端对齐</p>
+    </div>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="example example-box u-container-fluid">
+    <div class="row">
+        <div class="col-md-4 m-b-sm bg-grey h-64">
+    		<img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:top">
+           <span class="text-top">文字顶部对齐</span>
+        </div>
+        <div class="col-md-4  m-b-sm bg-grey h-64" >
+        <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:middle">
+           <span class="text-middle">文字居中对齐</span>
+        </div>
+        <div class="col-md-4  m-b-sm bg-grey h-64" >
+          <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
+            <span class="text-bottom">文字底部对齐</span>
+        </div>
+    </div>
+    <div class="margin-top-20">
+        <p class="text-left">文字向左对齐</p>
+        <p class="text-center">文字居中对齐</p>
+        <p class="text-right">文件向右对齐</p>
+        <p class="text-justify">文件两端对齐</p>
+    </div>
+</div>
+```
+
+
+
+
+### 字体大小
+字体尺寸提供了如下大小的字体：0，10，12，14，16，18，20，24，26，30，40，50，60，70，80。
+
+添加如下样式即可实现对应的效果。
+
+* `.font-size-0`: 字体号为0px
+* `.font-size-10`: 字体号为10px
+* `.font-size-12`: 字体号为12px
+* `.font-size-14`: 字体号为14px
+* `.font-size-16`: 字体号为16px
+* `.font-size-18`: 字体号为18px
+* `.font-size-20`: 字体号为20px
+* `.font-size-24`: 字体号为24px
+* `.font-size-26`: 字体号为26px
+* `.font-size-30`: 字体号为30px
+* `.font-size-40`: 字体号为40px
+* `.font-size-50`: 字体号为50px
+* `.font-size-60`: 字体号为60px
+* `.font-size-70`: 字体号为70px
+* `.font-size-80`: 字体号为80px
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 字体粗细
+字体粗细提供了如下粗细数值：unset、100、200、300、400、500、600、700、800、900。
+
+添加如下样式即可实现对应的效果。
+
+* `.font-weight-unset`: font-weight值为unset
+* `.font-weight-100`: font-weight值为100
+* `.font-weight-200`: font-weight值为200
+* `.font-weight-300`: font-weight值为300
+* `.font-weight-400`: font-weight值为400
+* `.font-weight-500`: font-weight值为500
+* `.font-weight-600`: font-weight值为600
+* `.font-weight-700`: font-weight值为700
+* `.font-weight-800`: font-weight值为800
+* `.font-weight-900`: font-weight值为900
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 字体大小写转换
+添加如下样式即可实现文字大小写转换
+
+* `text-lowercase`: 将字母全部变成小写
+* `text-uppercase`: 将字母全部变成大写
+* `text-capitalize`: 将单词首字母大写
+
+{% raw %}
+<div class="example-content"><div class="example example-box">
+	<p class="text-lowercase">Lowercased text.</p>
+	<p class="text-uppercase">Uppercased text.</p>
+	<p class="text-capitalize">Capitalized text.</p>
+</div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="example example-box">
+	<p class="text-lowercase">Lowercased text.</p>
+	<p class="text-uppercase">Uppercased text.</p>
+	<p class="text-capitalize">Capitalized text.</p>
+</div>
+```
+
+
+
+
+### 文字包裹
+添加如下类实现文字包裹的各种样式
+
+* `.text-hide`: 元素中的内容隐藏
+* `text-truncate`: 内容显示到一行，多余的内容用`...`代替
+* `text-break`: 当内容超出容器宽度时，将自动折行
+* `text-nowrap`: 当内容超出容器宽度时，在一行显示，不折行。
+
+{% raw %}
+<div class="example-content"><p>文字是否包裹换行</p>
+<div class="example example-box u-container-fluid " style="width:500px">
+    <div class="u-row">
+        <div class="u-col-md-3">
+            <div class="text-hide h" style="border:1px solid #e6e8ea;">
+                我被隐藏了
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-truncate h" style="border:1px solid #e6e8ea;">
+                内容显示一行，超出的内容使用“...”代替 This is text truncate.This is text truncate.
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-break h " style="border:1px solid #e6e8ea;">
+                This-is-text-break.This-is-text-break.This-is-text-break.This-is-text-break.
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
+                内容显示一行，不换行 This is text nowrap.This is text nowrap.
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<style>
+.vertical-align-bottom.u-button {
+    vertical-align: bottom;
+}
+</style>
+
+{% endraw %}
+``` html
+<p>文字是否包裹换行</p>
+<div class="example example-box u-container-fluid " style="width:500px">
+    <div class="u-row">
+        <div class="u-col-md-3">
+            <div class="text-hide h" style="border:1px solid #e6e8ea;">
+                我被隐藏了
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-truncate h" style="border:1px solid #e6e8ea;">
+                内容显示一行，超出的内容使用“...”代替 This is text truncate.This is text truncate.
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-break h " style="border:1px solid #e6e8ea;">
+                This-is-text-break.This-is-text-break.This-is-text-break.This-is-text-break.
+            </div>
+        </div>
+        <div class="u-col-md-3">
+            <div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
+                内容显示一行，不换行 This is text nowrap.This is text nowrap.
+            </div>
+        </div>
+    </div>
+</div>
+```
+``` css
+.vertical-align-bottom.u-button {
+    vertical-align: bottom;
+}
+```
+
+
+
+### 高度
+高度提供了如下数值： 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, auto, 100%
+
+添加如下样式即可实现对应的效果。
+
+* `.height-50`: height高度为50px
+* `.height-100`: height高度为100px
+* `.height-150`: height高度为150px
+* `.height-200`: height高度为200px
+* `.height-250`: height高度为250px
+* `.height-300`: height高度为300px
+* `.height-350`: height高度为350px
+* `.height-400`: height高度为400px
+* `.height-450`: height高度为450px
+* `.height-500`: height高度为500px
+* `.height-auto`: height高度为auto
+* `.height-full`: height高度为100%
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 外间距
+margin提供了如下数值：0，3，5，10, 15, 20, 25, 30, 35, 40, 45, 50.
+
+以外边距5为例说明具体margin的使用方式
+
+
+| 样式名        | 描述           |
+| ------------- |:-------------:|
+| .margin-5   | margin:为5px |
+| .margin-vertical-5    | margin-top和margin-bottom均为 5px   |
+| .margin-horizontal-5 | margin-left和margin-right均为 5px    |
+| .margin-top-5    | margin-top为 5px   |
+| .margin-right-5 | margin-right为 5px    |
+| .margin-bottom-5   | margin-bottom为 5px   |
+| .margin-left-5 | margin-left为 5px    |
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 内间距
+padding提供了如下数值：0，3，5，10, 15, 20, 25, 30, 35, 40, 45, 50.
+
+以内边距5为例说明具体padding的使用方式
+
+
+| 样式名        | 描述           |
+| ------------- |:-------------:|
+| .padding-5   | padding:为5px |
+| .padding-vertical-5    | padding-top和padding-bottom均为 5px   |
+| .padding-horizontal-5 | padding-left和padding-right均为 5px    |
+| .padding-top-5    | padding-top为 5px   |
+| .padding-right-5 | padding-right为 5px    |
+| .padding-bottom-5   | padding-bottom为 5px   |
+| .padding-left-5 | padding-left为 5px    |
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 宽度
+宽度提供了如下数值：50, 100, 150, 200, 250, 300, 350, 400, 450, 500, auto, 100%
+
+添加如下样式即可实现对应的效果。
+
+* `.width-50`: width宽度为50px
+* `.width-100`: width宽度为100px
+* `.width-150`: width宽度为150px
+* `.width-200`: width宽度为200px
+* `.width-250`: width宽度为250px
+* `.width-300`: width宽度为300px
+* `.width-350`: width宽度为350px
+* `.width-400`: width宽度为400px
+* `.width-450`: width宽度为450px
+* `.width-500`: width宽度为500px
+* `.width-auto`: width宽度为auto
+* `.width-full`: width宽度为100%
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### display
+添加如下属性可以修改元素的display属性值。
+
+* `.inline`: 是元素变成内联元素，元素前后没有换行符
+* `.inline-block`: 行内块元素
+* `.block`: 块级元素，此元素前后会带有换行符
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
+
+
+
+### 响应式显示
+通过单独或联合使用以下列出的类，可以针对不同屏幕尺寸隐藏或显示页面内容
+
+|  样式名        |超小屏幕   (<768px)         |小屏幕(≥768PX)  |中等屏幕(≥992PX)|大屏幕(≥1200px)|
+| ------------- |:-------------:| :-----:| :-----:| -----:|
+| .show      | 可见 |可见 | 可见 |可见 |
+| .hide      | 隐藏 |隐藏 |隐藏 |隐藏 |
+| .visible-xs-* | 可见    | 隐藏 |隐藏 |隐藏 |
+| .visible-sm-* | 隐藏 |可见 |  隐藏 |隐藏 |
+| .visible-md-*  | 隐藏 |隐藏 |可见|隐藏 |
+| .visible-lg-* |   隐藏 |隐藏 |隐藏 |可见  |
+| .hidden-xs      | 隐藏 |可见 | 可见 |可见 |
+| .hidden-sm      | 可见 |隐藏 | 可见 |可见 |
+|.hidden-md      | 可见 |可见 | 隐藏 |可见 |
+| .hidden-lg    | 可见 |可见 | 可见 |隐藏 |
+
+形如 .visible-\*-\* 的类针对每种屏幕大小都有了三种变体，每个针对 CSS 中不同的 display 属性，列表如下：
+
+
+|样式名|描述|
+| ------ | ---:|
+|.visible-*-block|display: block|
+|.visible-*-inline|display: inline|
+|.visible-*-inline-block|display: inline-block|
+
+{% raw %}
+
+
+
+{% endraw %}
+
+
 
 
 ## 表格
@@ -6573,509 +7076,6 @@ span标签 添加 `.u-tag-lg` 或 `.u-tag-sm`类，来改变标签大小.
 </table>
 
 ```
-
-
-
-## 辅助类
-
-辅助类中提供了对齐模块、文字相关方法、盒模型等其他常用类。
-
-* 对齐模块：浮动模块、垂直对齐、居中
-* 文字相关：大小写转换、包裹文字的各种方法（隐藏、一行显示所有内容、折行显示等）、文字垂直、水平居中方法、常用字体大小、字体加粗
-* 盒模型： 常用padding、margin、height以及width数值
-* 其他辅助类： display、响应式的visibility
-
-
-### 块级元素水平居中
-添加`.center-block`实现水平居中
-
-{% raw %}
-<div class="example-content"> <div class="example example-box">
-	<div class="h-64 w-64 bg-blue center-block ">
-		我是内容
-	</div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
- <div class="example example-box">
-	<div class="h-64 w-64 bg-blue center-block ">
-		我是内容
-	</div>
-</div>
-```
-
-
-
-
-### 浮动
-浮动是创建各种布局的基础。但是浮动需要被清理。下面的类将帮助你设置基本的布局
-
-* `.pull-left`: 向左浮动
-* `.pull-right`: 向右浮动
-* `.clearfix`: 清除浮动
-
-{% raw %}
-<div class="example-content"><div class="example example-box">
-  <button type="button" class="u-button  u-button-success ">Left</button>
-  <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="example example-box">
-  <button type="button" class="u-button  u-button-success ">Left</button>
-  <button type="button" class="u-button  u-button-success  pull-right" >Pull right</button>
-</div>
-```
-
-
-
-
-### 行内块级元素垂直对齐
-添加如下样式即可实现垂直居中、垂直向下。
-
-* `.vertical-align`:添加这个样式到父元素上，该父元素需要指定高度
-* `.vertical-align-middle`:添加这个样式到到子元素上，实现垂直居中
-* `.vertical-align-bottom`:添加这个样式到子元素上，实现垂直向下
-
-{% raw %}
-<div class="example-content"><div class="example example-box u-container-fluid">
-	<div class="u-row">
-
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-      		    <button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中</button>
-	        </div>
-		</div>
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-	 			<button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下</button>
-	 		</div>
-		</div>
-	</div>
-</div></div>
-
-<style>
-.vertical-align-bottom.u-button{
-	vertical-align: bottom;
-}
-</style>
-
-{% endraw %}
-``` html
-<div class="example example-box u-container-fluid">
-	<div class="u-row">
-
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-      		    <button type="button" class="vertical-align-middle u-button  u-button-success ">垂直居中</button>
-	        </div>
-		</div>
-		<div class="u-col-6">
-			<div class="vertical-align h" >
-	 			<button type="button" class="vertical-align-bottom u-button  u-button-success ">垂直向下</button>
-	 		</div>
-		</div>
-	</div>
-</div>
-```
-``` css
-.vertical-align-bottom.u-button{
-	vertical-align: bottom;
-}
-```
-
-
-
-### 文字对齐
-添加如下样式来实现文字的对齐
-
-* `text-top`: 文字垂直向上对齐
-* `text-middle`: 文字垂直居中对齐
-* `text-bottom`: 文字垂直向下对齐
-* `text-left`: 文字水平向左对齐
-* `text-center`: 文字水平居中对齐
-* `text-right`: 文字水平向右对齐
-* `text-justify`: 文字两端对齐
-
-{% raw %}
-<div class="example-content"><div class="example example-box u-container-fluid">
-    <div class="row">
-        <div class="col-md-4 m-b-sm bg-grey h-64">
-    		<img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:top">
-           <span class="text-top">文字顶部对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-        <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:middle">
-           <span class="text-middle">文字居中对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-          <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
-            <span class="text-bottom">文字底部对齐</span>
-        </div>
-    </div>
-    <div class="margin-top-20">
-        <p class="text-left">文字向左对齐</p>
-        <p class="text-center">文字居中对齐</p>
-        <p class="text-right">文件向右对齐</p>
-        <p class="text-justify">文件两端对齐</p>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="example example-box u-container-fluid">
-    <div class="row">
-        <div class="col-md-4 m-b-sm bg-grey h-64">
-    		<img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:top">
-           <span class="text-top">文字顶部对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-        <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:middle">
-           <span class="text-middle">文字居中对齐</span>
-        </div>
-        <div class="col-md-4  m-b-sm bg-grey h-64" >
-          <img src="/assets/static/img/img2.png" height="64" width="64" style="vertical-align:bottom">
-            <span class="text-bottom">文字底部对齐</span>
-        </div>
-    </div>
-    <div class="margin-top-20">
-        <p class="text-left">文字向左对齐</p>
-        <p class="text-center">文字居中对齐</p>
-        <p class="text-right">文件向右对齐</p>
-        <p class="text-justify">文件两端对齐</p>
-    </div>
-</div>
-```
-
-
-
-
-### 字体大小
-字体尺寸提供了如下大小的字体：0，10，12，14，16，18，20，24，26，30，40，50，60，70，80。
-
-添加如下样式即可实现对应的效果。
-
-* `.font-size-0`: 字体号为0px
-* `.font-size-10`: 字体号为10px
-* `.font-size-12`: 字体号为12px
-* `.font-size-14`: 字体号为14px
-* `.font-size-16`: 字体号为16px
-* `.font-size-18`: 字体号为18px
-* `.font-size-20`: 字体号为20px
-* `.font-size-24`: 字体号为24px
-* `.font-size-26`: 字体号为26px
-* `.font-size-30`: 字体号为30px
-* `.font-size-40`: 字体号为40px
-* `.font-size-50`: 字体号为50px
-* `.font-size-60`: 字体号为60px
-* `.font-size-70`: 字体号为70px
-* `.font-size-80`: 字体号为80px
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 字体粗细
-字体粗细提供了如下粗细数值：unset、100、200、300、400、500、600、700、800、900。
-
-添加如下样式即可实现对应的效果。
-
-* `.font-weight-unset`: font-weight值为unset
-* `.font-weight-100`: font-weight值为100
-* `.font-weight-200`: font-weight值为200
-* `.font-weight-300`: font-weight值为300
-* `.font-weight-400`: font-weight值为400
-* `.font-weight-500`: font-weight值为500
-* `.font-weight-600`: font-weight值为600
-* `.font-weight-700`: font-weight值为700
-* `.font-weight-800`: font-weight值为800
-* `.font-weight-900`: font-weight值为900
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 字体大小写转换
-添加如下样式即可实现文字大小写转换
-
-* `text-lowercase`: 将字母全部变成小写
-* `text-uppercase`: 将字母全部变成大写
-* `text-capitalize`: 将单词首字母大写
-
-{% raw %}
-<div class="example-content"><div class="example example-box">
-	<p class="text-lowercase">Lowercased text.</p>
-	<p class="text-uppercase">Uppercased text.</p>
-	<p class="text-capitalize">Capitalized text.</p>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="example example-box">
-	<p class="text-lowercase">Lowercased text.</p>
-	<p class="text-uppercase">Uppercased text.</p>
-	<p class="text-capitalize">Capitalized text.</p>
-</div>
-```
-
-
-
-
-### 文字包裹
-添加如下类实现文字包裹的各种样式
-
-* `.text-hide`: 元素中的内容隐藏
-* `text-truncate`: 内容显示到一行，多余的内容用`...`代替
-* `text-break`: 当内容超出容器宽度时，将自动折行
-* `text-nowrap`: 当内容超出容器宽度时，在一行显示，不折行。
-
-{% raw %}
-<div class="example-content"><p>文字是否包裹换行</p>
-<div class="example example-box u-container-fluid " style="width:500px">
-    <div class="u-row">
-        <div class="u-col-md-3">
-            <div class="text-hide h" style="border:1px solid #e6e8ea;">
-                我被隐藏了
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-truncate h" style="border:1px solid #e6e8ea;">
-                内容显示一行，超出的内容使用“...”代替 This is text truncate.This is text truncate.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-break h " style="border:1px solid #e6e8ea;">
-                This-is-text-break.This-is-text-break.This-is-text-break.This-is-text-break.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
-                内容显示一行，不换行 This is text nowrap.This is text nowrap.
-            </div>
-        </div>
-    </div>
-</div></div>
-
-<style>
-.vertical-align-bottom.u-button {
-    vertical-align: bottom;
-}
-</style>
-
-{% endraw %}
-``` html
-<p>文字是否包裹换行</p>
-<div class="example example-box u-container-fluid " style="width:500px">
-    <div class="u-row">
-        <div class="u-col-md-3">
-            <div class="text-hide h" style="border:1px solid #e6e8ea;">
-                我被隐藏了
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-truncate h" style="border:1px solid #e6e8ea;">
-                内容显示一行，超出的内容使用“...”代替 This is text truncate.This is text truncate.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-break h " style="border:1px solid #e6e8ea;">
-                This-is-text-break.This-is-text-break.This-is-text-break.This-is-text-break.
-            </div>
-        </div>
-        <div class="u-col-md-3">
-            <div class="text-nowrap h" style="border:1px solid #e6e8ea;overflow: hidden;">
-                内容显示一行，不换行 This is text nowrap.This is text nowrap.
-            </div>
-        </div>
-    </div>
-</div>
-```
-``` css
-.vertical-align-bottom.u-button {
-    vertical-align: bottom;
-}
-```
-
-
-
-### 高度
-高度提供了如下数值： 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, auto, 100%
-
-添加如下样式即可实现对应的效果。
-
-* `.height-50`: height高度为50px
-* `.height-100`: height高度为100px
-* `.height-150`: height高度为150px
-* `.height-200`: height高度为200px
-* `.height-250`: height高度为250px
-* `.height-300`: height高度为300px
-* `.height-350`: height高度为350px
-* `.height-400`: height高度为400px
-* `.height-450`: height高度为450px
-* `.height-500`: height高度为500px
-* `.height-auto`: height高度为auto
-* `.height-full`: height高度为100%
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 外间距
-margin提供了如下数值：0，3，5，10, 15, 20, 25, 30, 35, 40, 45, 50.
-
-以外边距5为例说明具体margin的使用方式
-
-
-| 样式名        | 描述           |
-| ------------- |:-------------:|
-| .margin-5   | margin:为5px |
-| .margin-vertical-5    | margin-top和margin-bottom均为 5px   |
-| .margin-horizontal-5 | margin-left和margin-right均为 5px    |
-| .margin-top-5    | margin-top为 5px   |
-| .margin-right-5 | margin-right为 5px    |
-| .margin-bottom-5   | margin-bottom为 5px   |
-| .margin-left-5 | margin-left为 5px    |
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 内间距
-padding提供了如下数值：0，3，5，10, 15, 20, 25, 30, 35, 40, 45, 50.
-
-以内边距5为例说明具体padding的使用方式
-
-
-| 样式名        | 描述           |
-| ------------- |:-------------:|
-| .padding-5   | padding:为5px |
-| .padding-vertical-5    | padding-top和padding-bottom均为 5px   |
-| .padding-horizontal-5 | padding-left和padding-right均为 5px    |
-| .padding-top-5    | padding-top为 5px   |
-| .padding-right-5 | padding-right为 5px    |
-| .padding-bottom-5   | padding-bottom为 5px   |
-| .padding-left-5 | padding-left为 5px    |
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 宽度
-宽度提供了如下数值：50, 100, 150, 200, 250, 300, 350, 400, 450, 500, auto, 100%
-
-添加如下样式即可实现对应的效果。
-
-* `.width-50`: width宽度为50px
-* `.width-100`: width宽度为100px
-* `.width-150`: width宽度为150px
-* `.width-200`: width宽度为200px
-* `.width-250`: width宽度为250px
-* `.width-300`: width宽度为300px
-* `.width-350`: width宽度为350px
-* `.width-400`: width宽度为400px
-* `.width-450`: width宽度为450px
-* `.width-500`: width宽度为500px
-* `.width-auto`: width宽度为auto
-* `.width-full`: width宽度为100%
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### display
-添加如下属性可以修改元素的display属性值。
-
-* `.inline`: 是元素变成内联元素，元素前后没有换行符
-* `.inline-block`: 行内块元素
-* `.block`: 块级元素，此元素前后会带有换行符
-
-{% raw %}
-
-
-
-{% endraw %}
-
-
-
-
-
-### 响应式显示
-通过单独或联合使用以下列出的类，可以针对不同屏幕尺寸隐藏或显示页面内容
-
-|  样式名        |超小屏幕   (<768px)         |小屏幕(≥768PX)  |中等屏幕(≥992PX)|大屏幕(≥1200px)|
-| ------------- |:-------------:| :-----:| :-----:| -----:|
-| .show      | 可见 |可见 | 可见 |可见 |
-| .hide      | 隐藏 |隐藏 |隐藏 |隐藏 |
-| .visible-xs-* | 可见    | 隐藏 |隐藏 |隐藏 |
-| .visible-sm-* | 隐藏 |可见 |  隐藏 |隐藏 |
-| .visible-md-*  | 隐藏 |隐藏 |可见|隐藏 |
-| .visible-lg-* |   隐藏 |隐藏 |隐藏 |可见  |
-| .hidden-xs      | 隐藏 |可见 | 可见 |可见 |
-| .hidden-sm      | 可见 |隐藏 | 可见 |可见 |
-|.hidden-md      | 可见 |可见 | 隐藏 |可见 |
-| .hidden-lg    | 可见 |可见 | 可见 |隐藏 |
-
-形如 .visible-\*-\* 的类针对每种屏幕大小都有了三种变体，每个针对 CSS 中不同的 display 属性，列表如下：
-
-
-|样式名|描述|
-| ------ | ---:|
-|.visible-*-block|display: block|
-|.visible-*-inline|display: inline|
-|.visible-*-inline-block|display: inline-block|
-
-{% raw %}
-
-
-
-{% endraw %}
-
 
 
 

@@ -323,7 +323,7 @@ order: 0
 
 4. 然后刷新页面，看到表格出现了！
 
-   在此代码中，主要最重要的就是u-meta中的json字符串其中的参数，我这里控制的是不能点击，表头不支持拖动更改列顺序，其他功能可以参见[文档](http://tinper.org/dist/grid/docs/grid_attribute.html)
+   在此代码中，主要最重要的就是u-meta中的json字符串其中的参数，我这里控制的是不能点击，表头不支持拖动更改列顺序，其他功能可以参见[文档](/moy/grid_index.html)
 
 
 
