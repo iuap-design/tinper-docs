@@ -7,6 +7,7 @@ prodName=(
     "tinper-neoui-grid"
     "neoui-kero"
     "kero"
+    "kero-fetch"
     "tinper-neoui"
     "tinper-neoui-tree"
 )
@@ -67,6 +68,10 @@ do
             cp -r ./node_modules/kero/snippets/row/ ./snippets/kero/row
             cp -r ./node_modules/kero/snippets/udatatable/ ./snippets/kero/udatatable
             cp -r ./node_modules/kero/snippets/validateapi/ ./snippets/kero/validateapi
+            echo "====抓取 kero 文档成功===="
+        ;;
+        kero-fetch)
+            cp -r ./node_modules/kero-fetch/docs/ ./snippets/kero-fetch/
             echo "====抓取 kero 文档成功===="
         ;;
         tinper-neoui)
