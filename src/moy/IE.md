@@ -1,3 +1,4 @@
+
 ---
 title: IE8兼容方案
 type: moy
@@ -25,3 +26,10 @@ order: 40
 <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
 <![endif]-->
 ```
+
+
+## 相关说明
+
+- polyfill--主要是针对低级浏览器在es5-shim的基础上加入了一些其他的js的兼容代码
+- [es5-shim](http://www.bootcdn.cn/es5-shim/readme/)
+- [html5shiv](http://www.bootcdn.cn/html5shiv/readme/)
