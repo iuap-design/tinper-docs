@@ -3,7 +3,6 @@ title: 前端请求方法
 type: moy
 order: 35
 ---
-
 <a name="ServerEvent"></a>
 
 ## ServerEvent : <code>object</code>
@@ -25,10 +24,10 @@ order: 35
 增加一个datatable
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
 | dataTableId | <code>number</code> | dataTable的id：唯一标示 |
-| rule | <code>string</code> | all：所有数据 current：当前行数据 focus：焦点行数据 select：选中行数据 change：发生改变的数据 |
+| rule | <code>string</code> | all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据； |
 
 **Example**  
 ```js
@@ -40,10 +39,10 @@ app.serverEvent().addDataTable('datatableid','all')
 增加多个datatable
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
 | dataTables | <code>array</code> | dataTable的数组 |
-| rule | <code>string</code> | all：所有数据 current：当前行数据 focus：焦点行数据 select：选中行数据 change：发生改变的数据 |
+| rule | <code>string</code> | all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据； |
 
 **Example**  
 ```js
@@ -55,9 +54,9 @@ app.serverEvent().addDataTables([datatableId,datatableId1,datatableId2],'all')
 将rule对着匹配的datatable列表全部加入进来
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
-| rule | <code>string</code> | DataTable.SUBMIT.current('current') ：当前选中行 DataTable.SUBMIT.focus('focus') ：当前focus行 DataTable.SUBMIT.all('all') ：所有行 DataTable.SUBMIT.select('select') ：当前页选中行 DataTable.SUBMIT.change('change') ：发生改变的行 DataTable.SUBMIT.empty('empty') ：不获取数据，返回空数组 DataTable.SUBMIT.allSelect('allSelect') ：所有页选中行 DataTable.SUBMIT.allPages('allPages') ：所有页的数据 |
+| rule | <code>string</code> | all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据； |
 
 **Example**  
 ```js
@@ -67,18 +66,40 @@ app.serverEvent().addAllDataTables('all')
 
 ### ServerEvent.fire(p)
 前端缓存:前端会存储所有页的数据信息
-fire方法发出去的参数模型
+
+
+| 参数 | Type | Description |
+| --- | --- | --- |
+| p | <code>object</code> | 请求的json参数字段，必须包含url |
+| p.url | <code>string</code> | 请求地址 |
+| [p.type] | <code>string</code> | 请求类型 |
+| [p.success] | <code>string</code> | 请求成功回调方法 |
+| [p.error] | <code>string</code> | 请求失败回调方法 |
+
+**Example** *(fire方法的使用示例)*  
+```js
+app.serverEvent().addDataTable('dataTableid').fire({
+ type:"get",
+ url:"..../list",
+ success:function(data){
+ },
+ error:function(data){
+ }
+})
+```
+**Example** *(fire方法传递给后台的数据示例)*  
+```js
 {
      "environment": {
          "clientAttributes": {}
      },
      "dataTables": {
-         "dict类型Da": {
+         "dictTypeDa": {
              "meta": {
                  ...
              },
              "params": {
-                 "cls": "com.yonyou.iuap.example.entity.mybatis.SysDict类型",
+                 "cls": "com.yonyou.iuap.example.entity.mybatis.SysDictType",
                  "search_dicttypecode": "",
                  "search_dicttypename": ""
              },
@@ -96,13 +117,15 @@ fire方法发出去的参数模型
          }
      },
      "compression": false,
-     "compress类型": "",
+     "compressType": "",
      "parameters": {}
 }
-fire方法返回的数据模型
+```
+**Example** *(fire方法后台返回的数据示例)*  
+```js
 {
      "dataTables": {
-         "dict类型Da": {
+         "dictTypeDa": {
              "pageSize": 5,
              "pageIndex": 0,
              "totalPages": 5,
@@ -124,28 +147,8 @@ fire方法返回的数据模型
      },
      "comps": "",
      "custom": "",
-     "content类型": ""
+     "contentType": ""
 }
-
-
-| 参数 | 类型 | 描述 |
-| --- | --- | --- |
-| p | <code>object</code> | 请求的json参数字段，必须包含url |
-| p.url | <code>string</code> | 请求地址 |
-| [p.type] | <code>string</code> | 请求类型 |
-| [p.success] | <code>string</code> | 请求成功回调方法 |
-| [p.error] | <code>string</code> | 请求失败回调方法 |
-
-**Example**  
-```js
-app.serverEvent().addDataTable('dataTableid').fire({
- type:"get",
- url:"..../list",
- success:function(data){
- },
- error:function(data){
- }
-})
 ```
 <a name="ServerEvent.setCompression"></a>
 
@@ -153,7 +156,7 @@ app.serverEvent().addDataTable('dataTableid').fire({
 设置数据是否压缩，fire方法默认是false
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
 | compression | <code>boolean</code> | 是否压缩的参数值 |
 
@@ -167,7 +170,7 @@ app.serverEvent().setCompression(true)
 为fire方法添加请求参数
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
 | key | <code>string</code> | 参数key |
 | value | <code>string</code> | 参数value |
@@ -182,13 +185,13 @@ app.serverEvent().addParameter('key', 'value')
 为fire的ajax请求参数中设置事件参数,设置到params.data.event上面
 
 
-| 参数 | 类型 | 描述 |
+| 参数 | Type | Description |
 | --- | --- | --- |
 | event | <code>string</code> | 事件 |
 
 **Example**  
 ```js
 app.serverEvent().setEvent(function(){
- 。。。。。
+ ...
 })
 ```
