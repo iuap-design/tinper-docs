@@ -9,7 +9,7 @@
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -25,7 +25,7 @@
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -46,7 +46,7 @@
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -55,7 +55,7 @@
     <div class="u-media">
 	  <div class="u-media-left">
 	    <a href="#">
-	      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+	      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
 	    </a>
 	  </div>
 	  <div class="u-media-body">
@@ -73,7 +73,7 @@
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -82,7 +82,7 @@
     <div class="u-media">
 	  <div class="u-media-left">
 	    <a href="#">
-	      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+	      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
 	    </a>
 	  </div>
 	  <div class="u-media-body">
@@ -106,7 +106,7 @@
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -119,7 +119,7 @@
 <div class="u-media">
   <div class="u-media-left u-media-middle">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -132,7 +132,7 @@
 <div class="u-media">
   <div class="u-media-left u-media-bottom">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -154,7 +154,7 @@
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -167,7 +167,7 @@
 <div class="u-media">
   <div class="u-media-left u-media-middle">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -180,7 +180,7 @@
 <div class="u-media">
   <div class="u-media-left u-media-bottom">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">

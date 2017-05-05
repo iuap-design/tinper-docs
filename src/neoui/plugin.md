@@ -307,7 +307,7 @@ ajax请求返回数据的数据项的分隔符。默认为|
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 除了js文件还需引入u.css。
 
@@ -316,12 +316,12 @@ ajax请求返回数据的数据项的分隔符。默认为|
 #### 引入文件
 在header中引入u.css
 ```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+<link rel="stylesheet" type="text/css" href='http://design.yonyoucloud.com/static/uui/latest/css/u.css'>
 ```
 在文件尾部加入u.js
 
 ```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+<script type="text/javascript" src='http://design.yonyoucloud.com/static/uui/latest/js/u.js'></script>
 
 ```
 
@@ -727,15 +727,15 @@ dateObject.setFormat('YYYY');
 
 ### 插件依赖
 
-<http://design.yyuap.com/static/uui/latest/css/font-awesome.css>
+<http://design.yonyoucloud.com/static/uui/latest/css/font-awesome.css>
 
-<http://design.yyuap.com/static/uui/latest/css/u.css>
+<http://design.yonyoucloud.com/static/uui/latest/css/u.css>
 
-<http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js>
+<http://design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js>
 
-<http://design.yyuap.com/static/uui/latest/js/u-polyfill.js>
+<http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js>
 
-<http://design.yyuap.com/static/uui/latest/js/u.js>
+<http://design.yonyoucloud.com/static/uui/latest/js/u.js>
 
 ### 如何使用
 
@@ -2048,7 +2048,7 @@ $(document).ready(function () {
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 ### 用法
 
@@ -2295,7 +2295,7 @@ u.on(cancelButton,'click', function(){
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 ### 用法
 
@@ -2434,7 +2434,7 @@ u.on(window, 'load', function() {
 
 ### 插件依赖
 
-依赖于 <http://design.yyuap.com/static/uui/latest/js/u.js>
+依赖于 <http://design.yonyoucloud.com/static/uui/latest/js/u.js>
 
 ### 用法
 
@@ -2527,9 +2527,9 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
 
 ### 插件依赖
 
-首先依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+首先依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
-再引入js: http://design.yyuap.com/static/raty/raty.js
+再引入js: http://design.yonyoucloud.com/static/raty/raty.js
 
 
 ### 用法
@@ -3071,7 +3071,7 @@ switchObject.isChecked();
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 ### 用法
 
@@ -3303,7 +3303,7 @@ switchObject.isChecked();
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 ### 用法
 
@@ -3541,7 +3541,7 @@ loading 组件以一个圆环顺时针方向运动，用来传达某一事件已
 ### 插件依赖
 
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 
 ### 用法
@@ -3575,7 +3575,7 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 
 ### 左边menu
@@ -4010,7 +4010,7 @@ radioObject.enable();
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 除了js文件还需引入u.css。
 
@@ -4019,12 +4019,12 @@ radioObject.enable();
 #### 引入文件
 在header中引入u.css
 ```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+<link rel="stylesheet" type="text/css" href='http://design.yonyoucloud.com/static/uui/latest/css/u.css'>
 ```
 在文件尾部加入u.js
 
 ```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+<script type="text/javascript" src='http://design.yonyoucloud.com/static/uui/latest/js/u.js'></script>
 
 ```
 
@@ -4079,7 +4079,7 @@ js会根据`u-time`来定位dom，然后绑定事件。
 
 ### 插件依赖
 
-依赖于 http://design.yyuap.com/static/uui/latest/js/u.js
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
 
 除了js文件还需引入u.css。
 
@@ -4088,12 +4088,12 @@ js会根据`u-time`来定位dom，然后绑定事件。
 #### 引入文件
 在header中引入u.css
 ```
-<link rel="stylesheet" type="text/css" href='http://design.yyuap.com/static/uui/latest/css/u.css'>
+<link rel="stylesheet" type="text/css" href='http://design.yonyoucloud.com/static/uui/latest/css/u.css'>
 ```
 在文件尾部加入u.js
 
 ```
-<script type="text/javascript" src='http://design.yyuap.com/static/uui/latest/js/u.js'></script>
+<script type="text/javascript" src='http://design.yonyoucloud.com/static/uui/latest/js/u.js'></script>
 
 ```
 

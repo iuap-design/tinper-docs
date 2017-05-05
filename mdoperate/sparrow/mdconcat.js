@@ -142,7 +142,7 @@ async.auto({
                                 var codeHtml = [];
                                 var codeCss = [];
                                 var codeJs = [];
-                                var ctxPath = '//design.yyuap.com/static/uui/latest';
+                                var ctxPath = '//design.yonyoucloud.com/static/uui/latest';
                                 var optBtn = '<button  class="u-button u-button-block u-button-accent margin-top-15 codeOptBtn" ><i class="uf uf-arrow-down"></i>查看代码</button>';
 
                                 var styles, htmls, scripts, tpl;

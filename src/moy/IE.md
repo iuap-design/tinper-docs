@@ -20,7 +20,7 @@ order: 40
 
 ```javascript
 <!--[if lt IE 9]>
-<script src="//design.yyuap.com/static/tinper-neoui-polyfill/latest/tinper-neoui-polyfill.min.js"></script>
+<script src="//design.yonyoucloud.com/static/tinper-neoui-polyfill/latest/tinper-neoui-polyfill.min.js"></script>
 <script src="//cdn.bootcss.com/es5-shim/4.5.9/es5-sham.min.js"></script>
 <script src="//cdn.bootcss.com/es5-shim/4.5.9/es5-shim.min.js"></script>
 <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>

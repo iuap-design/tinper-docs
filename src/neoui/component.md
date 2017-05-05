@@ -570,8 +570,8 @@ order: 2
 <div class="example-content"><ul class="ui-gallery ui-gallery-default">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -579,8 +579,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -588,8 +588,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -597,8 +597,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -614,8 +614,8 @@ order: 2
 <ul class="ui-gallery ui-gallery-default">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -623,8 +623,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -632,8 +632,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -641,8 +641,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -662,8 +662,8 @@ order: 2
 <div class="example-content"><ul class="ui-gallery ui-gallery-overlay">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -671,8 +671,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -680,8 +680,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -689,8 +689,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -706,8 +706,8 @@ order: 2
 <ul class="ui-gallery ui-gallery-overlay">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -715,8 +715,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -724,8 +724,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -733,8 +733,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -754,8 +754,8 @@ order: 2
 <div class="example-content"><ul class="ui-gallery ui-gallery-bordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -763,8 +763,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -772,8 +772,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -781,8 +781,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -802,8 +802,8 @@ order: 2
 <ul class="ui-gallery ui-gallery-bordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -811,8 +811,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -820,8 +820,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -829,8 +829,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -854,8 +854,8 @@ order: 2
 <div class="example-content"><ul class="ui-gallery ui-gallery-imgbordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -863,8 +863,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -872,8 +872,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -881,8 +881,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -898,8 +898,8 @@ order: 2
 <ul class="ui-gallery ui-gallery-imgbordered">
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              	<img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              	<img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
                 <p class="ui-gallery-title">远方 有一个地方</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -907,8 +907,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
                 <p class="ui-gallery-title">某天 也许会相遇</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -916,8 +916,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="不要太担心 只因为我相信"/>
                 <p class="ui-gallery-title">不要太担心 只因为我相信</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -925,8 +925,8 @@ order: 2
       </li>
       <li class="u-col-md-3">
         <div class="ui-gallery-item">
-            <a href="http://design.yyuap.com/static/img/bing-1.jpg" class="">
-              <img src="http://design.yyuap.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
+            <a href="http://design.yonyoucloud.com/static/img/bing-1.jpg" class="">
+              <img src="http://design.yonyoucloud.com/static/img/bing-1.jpg"  alt="终会走过这条遥远的道路"/>
                 <p class="ui-gallery-title">终会走过这条遥远的道路</p>
                 <div class="ui-gallery-desc">2375-09-26</div>
             </a>
@@ -1264,7 +1264,7 @@ order: 2
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1280,7 +1280,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1301,7 +1301,7 @@ order: 2
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1310,7 +1310,7 @@ order: 2
     <div class="u-media">
 	  <div class="u-media-left">
 	    <a href="#">
-	      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+	      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
 	    </a>
 	  </div>
 	  <div class="u-media-body">
@@ -1328,7 +1328,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1337,7 +1337,7 @@ order: 2
     <div class="u-media">
 	  <div class="u-media-left">
 	    <a href="#">
-	      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+	      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
 	    </a>
 	  </div>
 	  <div class="u-media-body">
@@ -1361,7 +1361,7 @@ order: 2
 <div class="example-content"><div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1374,7 +1374,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left u-media-middle">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1387,7 +1387,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left u-media-bottom">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1409,7 +1409,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1422,7 +1422,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left u-media-middle">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1435,7 +1435,7 @@ order: 2
 <div class="u-media">
   <div class="u-media-left u-media-bottom">
     <a href="#">
-      <img class="u-media-object" src="http://design.yyuap.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
+      <img class="u-media-object" src="http://design.yonyoucloud.com/static/img/navimg1.jpg" style="width: 64px;height: 64px;">
     </a>
   </div>
   <div class="u-media-body">
@@ -1699,7 +1699,7 @@ u.on(warnBtn,'click', function(){
             <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
                 <li class="dropdown">
                     <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <img src="http://design.yonyoucloud.com/static/img/navimg1.jpg" alt="..." class="img-circle">
                         <i></i>
                     </a>
                 </li>
@@ -1773,7 +1773,7 @@ u.on(window, 'load', function() {
             <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
                 <li class="dropdown">
                     <a class="u-avatar w-32 u-avatar-online">
-                        <img src="http://design.yyuap.com/static/img/navimg1.jpg" alt="..." class="img-circle">
+                        <img src="http://design.yonyoucloud.com/static/img/navimg1.jpg" alt="..." class="img-circle">
                         <i></i>
                     </a>
                 </li>
