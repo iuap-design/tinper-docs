@@ -58,27 +58,33 @@
         <script src="<%- url_for("/js/common.js") %>"></script>
 
         <!-- search -->
-        <!-- <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
         <%- css('css/search') %>
         <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
         <script>
-        [
-          '#search-query-nav',
-          '#search-query-sidebar'
-        ].forEach(function (selector) {
-          if (!document.querySelector(selector)) return
-          // search index defaults to v2
-          var match = window.location.pathname.match(/^\/(v\d+)/)
-          var version = match ? match[1] : 'v2'
-          docsearch({
-            appId: 'BH4D9OD16A',
-            apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
-            indexName: 'vuejs',
-            inputSelector: selector,
-            algoliaOptions: { facetFilters: ["version:" + version] }
-          })
-        })
-        </script> -->
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+          apiKey: '85cc3221c9f23bfbaa4e3913dd7625hk',
+          indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
 
         <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
