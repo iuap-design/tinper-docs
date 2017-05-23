@@ -3,6 +3,191 @@ title: JavaScript插件
 type: neoui
 order: 3
 ---
+## Autocomplete
+### 基本使用
+下面的例子是autocomplete的基本使用   
+html 代码
+``` html
+<!--html-->
+<input id="test1"/><br/>
+```
+javascript 代码
+``` javascript
+// JS
+var sourceValue = [
+        {
+            label : "C++"
+        },
+        {
+            label : 'Java'
+        },
+        {
+            label : 'Python'
+        },
+        {
+            label : 'JavaScript'
+        },
+        {
+            label : 'C#'
+        },
+        {
+            label : 'C'
+        },
+        {
+            label : 'Jython'
+        },
+        {
+            label : 'Html'
+        },
+        {
+            label : 'html'
+        }
+    ];
+
+    new u.Autocomplete({
+        el:'#test1',
+        source: sourceValue,
+        select: function(item){
+            alert('select');
+        }
+    })
+```
+### 参数详解
+#### source
+数据源
+
+#### select
+选中之后的回调函数。
+
+#### multiSelect
+是否允许多选
+
+#### maxItemsToShow
+最多显示的条数。默认为-1，为不限制显示条数
+
+#### minChars
+控制智能提示时输入的最少字符数。默认为1
+
+#### delay
+设置弹出智能提示的延迟时间（单位ms）。默认为400ms
+
+#### inputClass
+input框的自定义样式。
+
+#### resultsClass
+下拉框的自定义样式
+
+#### lineSeparator
+ajax请求返回数据的行的分隔符。默认为\n
+
+#### cellSeparator
+ajax请求返回数据的数据项的分隔符。默认为|
+
+#### matchCase
+是否区分大小写。默认为否
+
+#### cacheLength
+是否缓存数据。默认为是
+
+#### loadingClass
+加载数据时input框的样式
+
+#### selectFirst
+是否默认选中第一项。默认为false
+
+## 级联组件
+
+Cascader级联组件
+
+### 何时使用
+
+- 需要从一组相关联的数据集合进行选择，例如省市区，公司层级，事物分类等。
+- 从一个较大的数据集合中进行选择时，用多级分类进行分隔，方便选择。
+- 比起 Select 组件，可以在同一个浮层中完成选择，有较好的体验。
+
+
+#### type类型
+
+* `.u-cascader` - 默认级联组件
+* `.u-cascader .trigger-hover` - 地址级联-移入展开
+
+
+
+[试一试](http://tinper.org/webide/#/demos/ui/cascader)
+
+#### API
+
+#### Cascader级联对象
+
+* 类型：`Object`
+* 说明： Cascader表示一个级联对象
+* 用法：
+
+获取方式：1、获取绑定级联的dom元素 ； 2、读取dom元素上的属性'u.Cascader'
+
+```
+
+var comboObject = document.getElementById('domId')['u.Cascader'];
+
+```
+
+**注：** 如果获取的级联对象为空，原因为级联没有初始化成功，可以先调用`u.compMgr.updateComp();`来初始化页面中的控件。然后再获取级联对象。
+#### setData 设置数据源
+
+* 类型： `Function`
+* 说明：给级联对象添加数据源
+* 参数：
+	* `{Array} dataArray`
+* 用法：
+
+```
+//value为：级联真实值，name为级联显示值，children为子项列表数据，格式同上
+var data = [{
+        value: "01",
+        name: '浙江',
+        children: [{
+            value: "11",
+            name: '杭州',
+            children: [{
+                value: "21",
+                name: '西湖',
+                children: [{
+                        value: "31",
+                        name: '白娘子'
+                    },
+                    {
+                        value: "32",
+                        name: '许仙'
+                    }
+                ]
+            }]
+        }]
+    }];
+
+
+document.getElementById('demoId')['u.Cascader'].setData(data);
+
+```
+
+
+#### setValue 根据真实值选中某行
+* 类型： `Function`
+* 说明： 查找级联数据中与传入的参数相同的真实值，并选中对应的某条数据
+* 参数：
+	* `{String} value`： 要选中行的真实值，可以为空，如果为空，则不选中任何数据
+* 用法：
+
+```
+
+document.getElementById('domId')['u.Combo'].setValue(value);
+
+```
+
+
+相关内容：
+
+[级联组件在kero中使用](http://docs.tinper.org/moy/kero/cascader.html)    
+
 ## 复选框
 
 checkbox提供了基础复选框、不同色彩复选框、图片复选框、个性复选框
@@ -208,98 +393,6 @@ checkboxObject.toggle();
 ```
 
 
-
-## Autocomplete
-### 基本使用
-下面的例子是autocomplete的基本使用   
-html 代码
-``` html
-<!--html-->
-<input id="test1"/><br/>
-```
-javascript 代码
-``` javascript
-// JS
-var sourceValue = [
-        {
-            label : "C++"
-        },
-        {
-            label : 'Java'
-        },
-        {
-            label : 'Python'
-        },
-        {
-            label : 'JavaScript'
-        },
-        {
-            label : 'C#'
-        },
-        {
-            label : 'C'
-        },
-        {
-            label : 'Jython'
-        },
-        {
-            label : 'Html'
-        },
-        {
-            label : 'html'
-        }
-    ];
-
-    new u.Autocomplete({
-        el:'#test1',
-        source: sourceValue,
-        select: function(item){
-            alert('select');
-        }
-    })
-```
-### 参数详解
-#### source
-数据源
-
-#### select
-选中之后的回调函数。
-
-#### multiSelect
-是否允许多选
-
-#### maxItemsToShow
-最多显示的条数。默认为-1，为不限制显示条数
-
-#### minChars
-控制智能提示时输入的最少字符数。默认为1
-
-#### delay
-设置弹出智能提示的延迟时间（单位ms）。默认为400ms
-
-#### inputClass
-input框的自定义样式。
-
-#### resultsClass
-下拉框的自定义样式
-
-#### lineSeparator
-ajax请求返回数据的行的分隔符。默认为\n
-
-#### cellSeparator
-ajax请求返回数据的数据项的分隔符。默认为|
-
-#### matchCase
-是否区分大小写。默认为否
-
-#### cacheLength
-是否缓存数据。默认为是
-
-#### loadingClass
-加载数据时input框的样式
-
-#### selectFirst
-是否默认选中第一项。默认为false
 
 ## clockpicker插件
 
@@ -2289,145 +2382,6 @@ u.on(cancelButton,'click', function(){
 });
 ```
 
-## progress控件
-
-常用于跟踪进度
-
-### 插件依赖
-
-依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
-
-### 用法
-
-1.详情见示例
-
-### API
-
-#### JS 方法参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setProgress(para)</td>
-	    <td>para:比例数据</td>
-	    <td>初始化滚动条并设置比例</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setBuffer(para)</td>
-	    <td>para:设置缓冲比例</td>
-	    <td>缓冲滚动条</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-#### css 参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>颜色</td>
-	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
-	    <td>加在父元素的类后面 设置不同的色值</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>大小</td>
-	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
-	    <td>父元素的类后面 设置不同的尺寸</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-
-### 基本Progress
-
-{% raw %}
-<div class="example-content"><div id="p1" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p1" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-```
-
-
-### 不确定Progress
-
-{% raw %}
-<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
-```
-
-
-
-
-### 缓冲Progress
-
-有缓冲标识的进度条
-
-{% raw %}
-<div class="example-content"><div id="p3" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p3" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-```
-
 ## 分页控件
 
 分页控件提供了基础分页、无border分页、有间距的分页、多尺寸分页。
@@ -2666,6 +2620,145 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
       // }
     // });
   })(document, window, jQuery);
+```
+
+## progress控件
+
+常用于跟踪进度
+
+### 插件依赖
+
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
+
+### 用法
+
+1.详情见示例
+
+### API
+
+#### JS 方法参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setProgress(para)</td>
+	    <td>para:比例数据</td>
+	    <td>初始化滚动条并设置比例</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setBuffer(para)</td>
+	    <td>para:设置缓冲比例</td>
+	    <td>缓冲滚动条</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+#### css 参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>颜色</td>
+	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
+	    <td>加在父元素的类后面 设置不同的色值</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>大小</td>
+	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
+	    <td>父元素的类后面 设置不同的尺寸</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+
+### 基本Progress
+
+{% raw %}
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p1" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+```
+
+
+### 不确定Progress
+
+{% raw %}
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div id="p2" class="u-progress u-progress__indeterminate"></div>
+```
+
+
+
+
+### 缓冲Progress
+
+有缓冲标识的进度条
+
+{% raw %}
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p3" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
 ```
 
 ## 参照组件
@@ -3534,41 +3627,6 @@ title:'批量向上显示'
 
 ```
 
-## loading插件
-
-loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
-
-### 插件依赖
-
-
-依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
-
-
-### 用法
-
-定义样式为`u-loading is-active u-loading-single-color `的div父元素
-
-```
-<div class="u-loading is-active u-loading-single-color"></div>
-
-```
-
-js会根据`u-loading`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-loading is-active u-loading-single-color"></div>
-```
-
-
-
 ## menu控件
 
 动态弹出菜单
@@ -3667,6 +3725,41 @@ js会根据`u-loading`来定位dom，然后绑定事件。
 	padding-left: 30px;
 }
 ```
+
+
+## loading插件
+
+loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
+
+### 插件依赖
+
+
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
+
+
+### 用法
+
+定义样式为`u-loading is-active u-loading-single-color `的div父元素
+
+```
+<div class="u-loading is-active u-loading-single-color"></div>
+
+```
+
+js会根据`u-loading`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-loading is-active u-loading-single-color"></div>
+```
+
 
 
 ## 月份

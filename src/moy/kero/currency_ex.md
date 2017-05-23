@@ -1,7 +1,7 @@
 ---
 title: 输入转换
 type: moy
-order: 7
+order: 8
 ---
 #### 输入转换
 

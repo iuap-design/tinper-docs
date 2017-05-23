@@ -12,8 +12,8 @@
 .content
     position relative
     padding 2.2em 0
-    max-width 800px
-    left 350px
+    max-width 900px
+    left 300px
     &.api
         > a:first-of-type > h2
             margin-top 0
@@ -180,6 +180,7 @@
 @media screen and (max-width: 1300px)
     .content.with-sidebar
         margin-left 0
+        max-width 750px
     #ad
         z-index 7
         position relative
@@ -209,6 +210,7 @@
         padding 1.2em 1em
     .content
         &.with-sidebar
+            left 0px
             margin auto
         h2, h3
             &:before
@@ -217,6 +219,9 @@
                 margin-top -1 * $mobile-heading-link-padding-top
                 height $mobile-heading-link-padding-top
                 visibility hidden
+    #mobile-bar .logo
+        width 100px
+        background-size 100px
     .footer
         margin-left 0
         text-align center

@@ -35,7 +35,8 @@ var plugin_arr = {
     "ex_yearmonth": "年月选择",
     "textarea": "多行文本输入控件",
     "textfield": "文本输入框",
-    "tree": "树"
+    "tree": "树",
+    "cascader": "级联组件"
 };
 var index = 6;
 fs.readdir(readPath, function(err, files) {

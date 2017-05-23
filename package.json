@@ -7,6 +7,7 @@
     "server": "hexo server",
     "build": "hexo generate",
     "catch": "sh bin/catchmd.sh",
+    "docs": "npm run concat && npm run trans",
     "concat": "node mdoperate/kero/mdconcat.js&& node mdoperate/neoui/mdconcat.js&&node mdoperate/neoui-kero/mdconcat.js&&node mdoperate/sparrow/mdconcat.js&&node mdoperate/grid/mdconcat.js",
     "trans": "node mdoperate/kero/concatmd.js&& node mdoperate/neoui/concatmd.js&&node mdoperate/neoui-kero/concatmd.js&&node mdoperate/sparrow/concatmd.js&&node mdoperate/grid/concatmd.js&&node mdoperate/uba/concatmd.js"
   },
