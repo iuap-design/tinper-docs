@@ -13,7 +13,7 @@ order: 0
 
 最终演示：
 
-![default](https://cloud.githubusercontent.com/assets/12147318/23543637/054ec71e-002e-11e7-8865-b8da0b133cf3.gif)
+![default](https://design.yonyoucloud.com/static/img/tinper-docs/111.gif)
 
 
 
@@ -54,7 +54,7 @@ order: 0
 
      uba初始化演示：
 
-    ![uba_init](https://cloud.githubusercontent.com/assets/12147318/23543379/e74ec512-002c-11e7-9e39-74b3b5975638.gif)
+    ![uba_init](https://design.yonyoucloud.com/static/img/tinper-docs/222.gif)
 
 
 
