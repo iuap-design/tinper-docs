@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "hexo server",
+    "deploy": "hexo clean && hexo generate && hexo deploy",
     "build": "hexo generate",
     "catch": "sh bin/catchmd.sh",
     "docs": "npm run concat && npm run trans",
