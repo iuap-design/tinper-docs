@@ -1,0 +1,1278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>数据模型 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="数据模型 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="数据模型 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link current">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>数据模型</h1>
+    
+    <h2 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h2><p>数据模型(dataTabe)作为MVVM架构中Model层的增强。主要功能有：</p>
+<ul>
+<li>以行、列的形式，通过json对象对数据做存储，并对外暴露一批增删改查的API，方便开发者对页面数据的处理，而且所有开发者之间做到统一，减少出错概率。</li>
+<li>数据增加状态标识新增或修改，方便开发者使用。</li>
+<li>具有分页缓存能力，可在前端处理分页(非必要情况下，不推荐前端分页)。</li>
+<li>提供事件监听u.on(element, eventName,child,listener)，把数据变化触发出去，供开发者监听使用。</li>
+</ul>
+<h3 id="模型定义"><a href="#模型定义" class="headerlink" title="模型定义"></a>模型定义</h3><p>模型定义方法：</p>
+<pre><code>var myDataTable = new u.DataTable({
+    meta:{
+        field1:{type:date},
+        field2:{}
+    }
+})
+</code></pre><p>meta中是模型的字段信息，字段名对应的对象为字段的属性定义。其中常用字段的属性定义的有type、以及一些校验属性（详情参考<a href="/moy/kero-data.html#验证设置Validate">这里</a>）、default（设置字段的默认值）以及不同控件的属性设置等。没有字段属性时，可以为空对象。</p>
+<ul>
+<li><p>下面是常用的type类型。</p>
+<ul>
+<li>string：字符串</li>
+<li>integer：整型</li>
+<li>float：浮点型</li>
+<li>date： 日期类型（YY-MM-DD）</li>
+<li>datetime：日期时间类型（YY-MM-DD hh:mm:ss）</li>
+</ul>
+</li>
+<li><p>default可以对应函数（返回具体的默认值），也可以是具体的对象。</p>
+<ul>
+<li><p>对应函数的写法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">meta: &#123;</div><div class="line">	        f1: &#123;</div><div class="line">	            default: function() &#123;</div><div class="line">	                return &apos;02-01&apos;;//&apos;02-01&apos;为返回的默认值</div><div class="line">	            &#125;</div><div class="line">	        &#125;</div><div class="line">	   &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>对应对象的写法。default:function(){return ‘aa’}。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">meta: &#123;</div><div class="line">	        f1: &#123;</div><div class="line">            	default: &#123;</div><div class="line">                    value: &apos;02-01&apos;//value对应具体的默认值</div><div class="line">                &#125;</div><div class="line">	        &#125;</div><div class="line">	   &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>控件的属性设置</p>
+</li>
+</ul>
+<p>　　　　（1）integerAdapter （整数）</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th style="text-align:center">属性值类型</th>
+<th style="text-align:right">具体描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>max</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的值小于等于max</td>
+</tr>
+<tr>
+<td>min</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的值大于等于min</td>
+</tr>
+<tr>
+<td>maxNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的值小于max</td>
+</tr>
+<tr>
+<td>minNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的值大于min</td>
+</tr>
+</tbody>
+</table>
+<p>　　　　（2） stringAdapter （字符串）</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th style="text-align:center">属性值类型</th>
+<th style="text-align:right">具体描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>minLength</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的字符串长度大于等于minLength</td>
+</tr>
+<tr>
+<td>maxLength</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:right">输入的字符串长度小于等于maxLength</td>
+</tr>
+</tbody>
+</table>
+<p>　　　　（3） floatAdapter（浮点数）</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th style="text-align:center">属性值类型</th>
+<th style="text-align:center">具体描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>precision</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">浮点数的精度</td>
+<td>2</td>
+</tr>
+<tr>
+<td>max</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值小于等于max</td>
+<td>　</td>
+</tr>
+<tr>
+<td>min</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值大于等于min</td>
+<td>　</td>
+</tr>
+<tr>
+<td>maxNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值小于max</td>
+<td>　</td>
+</tr>
+<tr>
+<td>minNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值大于min</td>
+<td>　</td>
+</tr>
+</tbody>
+</table>
+<p>　　　　（4）currencyAdapter（货币）</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th style="text-align:center">属性值类型</th>
+<th style="text-align:center">具体描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>precision</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">浮点数的精度</td>
+<td>2</td>
+</tr>
+<tr>
+<td>max</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值小于等于max</td>
+<td></td>
+</tr>
+<tr>
+<td>min</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值大于等于min</td>
+<td></td>
+</tr>
+<tr>
+<td>maxNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值小于max</td>
+<td></td>
+</tr>
+<tr>
+<td>minNotEq</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">输入的值大于min</td>
+<td></td>
+</tr>
+<tr>
+<td>curSymbol</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">货币符号</td>
+<td>￥</td>
+</tr>
+</tbody>
+</table>
+<p>　　　　(5) percentAdapter（百分比）</p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th style="text-align:center">属性值类型</th>
+<th style="text-align:center">具体描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>precision</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:center">浮点数的精度</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>字段的属性值在控件模型中被使用到，主要用于控制表单输入、字段显示格式等业务特性。</p>
+<h3 id="数据载入到模型中"><a href="#数据载入到模型中" class="headerlink" title="数据载入到模型中"></a>数据载入到模型中</h3><p>模型定义好之后，可以通过<code>dataTable.setSimpleData</code>方法把从后台查询到的json数据载入模型之中：</p>
+<pre><code>dataTable.setSimpleData([
+    {&quot;id&quot;: &quot;001&quot;,&quot;name&quot;: &quot;tom&quot;},
+    {&quot;id&quot;: &quot;002&quot;,&quot;name&quot;: &quot;john&quot;}
+])
+</code></pre><p>数据载入到模型中之后，数据被存储在一组<code>Row</code>对象之中，json数组中的每一个对象，对应dataTable中的<code>Row</code>对象中。</p>
+<h3 id="数据的新增与修改"><a href="#数据的新增与修改" class="headerlink" title="数据的新增与修改"></a>数据的新增与修改</h3><h4 id="新增数据行并赋值"><a href="#新增数据行并赋值" class="headerlink" title="新增数据行并赋值"></a>新增数据行并赋值</h4><pre><code>var row = dataTable.createEmptyRow();
+row.setValue(&apos;id&apos;,&apos;003&apos;)
+</code></pre><p>新增的数据在dataTable中表现为新增一个<code>Row</code>对象。调用<code>setValue</code>对其中字段赋值。</p>
+<h4 id="修改已存在的行中数据"><a href="#修改已存在的行中数据" class="headerlink" title="修改已存在的行中数据"></a>修改已存在的行中数据</h4><pre><code>var row = dataTable.getRow(index);
+row.setValue(&apos;name&apos;,&apos;jerry&apos;);
+</code></pre><h3 id="数据的删除"><a href="#数据的删除" class="headerlink" title="数据的删除"></a>数据的删除</h3><h4 id="删除某一行数据"><a href="#删除某一行数据" class="headerlink" title="删除某一行数据"></a>删除某一行数据</h4><pre><code>dataTable.removeRow(index);
+</code></pre><h4 id="删除所有行数据"><a href="#删除所有行数据" class="headerlink" title="删除所有行数据"></a>删除所有行数据</h4><pre><code>dataTable.removeAllRows();
+</code></pre><h3 id="获取模型中的数据"><a href="#获取模型中的数据" class="headerlink" title="获取模型中的数据"></a>获取模型中的数据</h3><h4 id="获取所有数据"><a href="#获取所有数据" class="headerlink" title="获取所有数据"></a>获取所有数据</h4><pre><code>var json = dataTable.getSimpleData();
+</code></pre><p>获取到的json数据格式，与载入时的数据格式一致。一般是在提交数据时，调用此方法，获取数据后提交给后端。<br>在调用<code>getSimpleData</code>方法时可传递参数<code>type</code>来决定获取的数据类型。</p>
+<pre><code>var json = dataTable.getSimpleData({type:&apos;select&apos;});
+</code></pre><p>type可设置为：</p>
+<ul>
+<li>select: 处理选中状态的行数据</li>
+<li>focus: 焦点状态的行数据</li>
+<li>change: 发生改变的行数据</li>
+</ul>
+<p>默认不传递参数则获取所有的数据。</p>
+<h4 id="获取某一行的数据"><a href="#获取某一行的数据" class="headerlink" title="获取某一行的数据"></a>获取某一行的数据</h4><pre><code>var row = dataTable.getRow(index);
+var json = row.getSimpleData();
+</code></pre><h4 id="获取某一行中某个字段的值"><a href="#获取某一行中某个字段的值" class="headerlink" title="获取某一行中某个字段的值"></a>获取某一行中某个字段的值</h4><pre><code>var row = dataTable.getRow(index);
+var value = row.getValue(&apos;name&apos;);
+</code></pre><h2 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h2><p>设置基本的校验、格式化、添加事件监听。</p>
+<h3 id="校验"><a href="#校验" class="headerlink" title="校验"></a>校验</h3><p>在创建dataTable时进行校验设置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">/**</div><div class="line"> ### 校验类型说明：</div><div class="line"> *  precision: 精度</div><div class="line"> *  max: 数字最大值</div><div class="line"> *  min: 数字最小值</div><div class="line"> *  maxLength: string最大长度</div><div class="line"> *  minLength: string最小长度</div><div class="line"> *  required: 必填</div><div class="line"> */</div><div class="line"></div><div class="line">var dataTable1 = new u.DataTable(&#123;</div><div class="line">    meta:&#123;</div><div class="line">    f1:&#123;type:&apos;string&apos;,maxLength:8,minLength:3&#125;,</div><div class="line">    f2:&#123;type:&apos;float&apos;, precision:2,max:500,min:100&#125;,</div><div class="line">    f3:&#123;type:&apos;integer&apos;, required:true,regExp:/^[0-9]&#123;6&#125;$/&#125;,</div><div class="line">    f4:&#123;type:&apos;string&apos;,required:true&#125;</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h3><p>示例如下：​</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">var dataTable1 = new u.DataTable(&#123;</div><div class="line">    meta:&#123;</div><div class="line">    f1:&#123;type:&apos;date&apos;,format:&apos;YYYY-MM-DD&apos;&#125;,</div><div class="line">    f2:&#123;type:&apos;date&apos;,format:&apos;YYYY/MM/DD&apos;&#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="添加事件监听"><a href="#添加事件监听" class="headerlink" title="添加事件监听"></a>添加事件监听</h3><p>示例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">//数据改变监听</div><div class="line">dataTable1.on(&apos;valueChange&apos;,function(event)&#123;</div><div class="line">	var field = event.field,</div><div class="line">		rowId = event.rowId,</div><div class="line">		oldValue = event.oldValue,</div><div class="line">		newValue = event.newValue;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>更多设置参见 <a href="http://docs.tinper.org/moy/kero-api.html#DataTable-object" target="_blank" rel="external">u.DataTable</a></p>
+<hr>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><h3 id="示例：input输入框"><a href="#示例：input输入框" class="headerlink" title="示例：input输入框"></a>示例：input输入框</h3><p>输入长度6-12字符之间</p>
+
+<div class="example-content"><!-- HTML -->
+<div id="demo1">
+	<input u-meta="{&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}">	
+</div>
+</div>
+
+
+
+<script>
+// JS
+var app,viewModel1;
+viewModel1 = {
+    dt1: new u.DataTable({
+        meta:{
+            f1:{
+                type:'string',
+                minLength:6,
+                maxLength:12
+            }
+        }
+    })
+};
+
+app = u.createApp({
+    el:'#demo1',
+    model:viewModel1
+});
+
+var r = viewModel1.dt1.createEmptyRow();
+r.setValue('f1','test txt');
+
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- HTML --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"demo1"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"data":"dt1","field":"f1"&#125;'</span> /&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// JS</span></div><div class="line"><span class="keyword">var</span> app,viewModel1;</div><div class="line">viewModel1 = &#123;</div><div class="line">    <span class="attr">dt1</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">        <span class="attr">meta</span>:&#123;</div><div class="line">            <span class="attr">f1</span>:&#123;</div><div class="line">                <span class="attr">type</span>:<span class="string">'string'</span>,</div><div class="line">                <span class="attr">minLength</span>:<span class="number">6</span>,</div><div class="line">                <span class="attr">maxLength</span>:<span class="number">12</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;;</div><div class="line"></div><div class="line">app = u.createApp(&#123;</div><div class="line">    <span class="attr">el</span>:<span class="string">'#demo1'</span>,</div><div class="line">    <span class="attr">model</span>:viewModel1</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> r = viewModel1.dt1.createEmptyRow();</div><div class="line">r.setValue(<span class="string">'f1'</span>,<span class="string">'test txt'</span>);</div></pre></td></tr></table></figure>
+<h3 id="示例：时间、日期指定格式"><a href="#示例：时间、日期指定格式" class="headerlink" title="示例：时间、日期指定格式"></a>示例：时间、日期指定格式</h3><p>输入指定格式</p>
+
+<div class="example-content"><!-- HTML -->
+<div id="demo2">
+	<div class="u-datepicker" u-meta="{&quot;id&quot;:&quot;date1&quot;,&quot;type&quot;:&quot;u-date&quot;,&quot;data&quot;:&quot;dt2&quot;,&quot;field&quot;:&quot;f2&quot;}">
+	    <input class="u-input" type="text">
+	</div>
+	<div class="u-datepicker" u-meta="{&quot;id&quot;:&quot;datetime2&quot;,&quot;type&quot;:&quot;u-date&quot;,&quot;data&quot;:&quot;dt2&quot;,&quot;field&quot;:&quot;f3&quot;}">
+	    <input class="u-input" type="text">
+	    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		</span>
+	</div>	
+</div></div>
+
+
+
+<script>
+// JS
+var app, viewModel2;
+viewModel2 = {
+    dt2: new u.DataTable({
+        meta: {
+            f2: {
+                type:'date',
+                format:'YYYY-MM-DD'
+            },
+            f3: {
+                type:'date',
+                format:'YYYY/MM/DD'
+            }
+        }
+    })
+}
+
+app = u.createApp({
+    el: '#demo2',
+    model: viewModel2
+});
+
+var r = viewModel2.dt2.createEmptyRow();
+r.setValue('f2', "2016-6-30 12:13:22");
+r.setValue('f3', "2016-2-13 4:58:58");
+
+
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- HTML --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"demo2"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'u-datepicker'</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"date1","type":"u-date","data":"dt2","field":"f2"&#125;'</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"u-input"</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'u-datepicker'</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"datetime2","type":"u-date","data":"dt2","field":"f3"&#125;'</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"u-input"</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line">	    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"input-group-addon"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"glyphicon glyphicon-calendar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// JS</span></div><div class="line"><span class="keyword">var</span> app, viewModel2;</div><div class="line">viewModel2 = &#123;</div><div class="line">    <span class="attr">dt2</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">        <span class="attr">meta</span>: &#123;</div><div class="line">            <span class="attr">f2</span>: &#123;</div><div class="line">                <span class="attr">type</span>:<span class="string">'date'</span>,</div><div class="line">                <span class="attr">format</span>:<span class="string">'YYYY-MM-DD'</span></div><div class="line">            &#125;,</div><div class="line">            <span class="attr">f3</span>: &#123;</div><div class="line">                <span class="attr">type</span>:<span class="string">'date'</span>,</div><div class="line">                <span class="attr">format</span>:<span class="string">'YYYY/MM/DD'</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">app = u.createApp(&#123;</div><div class="line">    <span class="attr">el</span>: <span class="string">'#demo2'</span>,</div><div class="line">    <span class="attr">model</span>: viewModel2</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> r = viewModel2.dt2.createEmptyRow();</div><div class="line">r.setValue(<span class="string">'f2'</span>, <span class="string">"2016-6-30 12:13:22"</span>);</div><div class="line">r.setValue(<span class="string">'f3'</span>, <span class="string">"2016-2-13 4:58:58"</span>);</div></pre></td></tr></table></figure>
+<h3 id="示例：input输入框-1"><a href="#示例：input输入框-1" class="headerlink" title="示例：input输入框"></a>示例：input输入框</h3><p>input输入值变化后，弹框提示</p>
+
+<div class="example-content"><!-- HTML -->
+<div id="demo3">
+	<input u-meta="{&quot;data&quot;:&quot;dt3&quot;,&quot;field&quot;:&quot;f1&quot;}">	
+</div>
+</div>
+
+
+
+<script>
+// JS
+var app,viewModel3;
+viewModel3 = {
+    dt3: new u.DataTable({
+        meta:{
+            f1:{
+                type:'string'
+            }
+        }
+    })
+};
+
+app = u.createApp({
+    el:'#demo3',
+    model:viewModel3
+});
+
+var r = viewModel3.dt3.createEmptyRow();
+r.setValue('f1','test');
+
+// 绑定时间触发
+viewModel3.dt3.on('valueChange', function(event){
+    var oldValue = event.oldValue;
+    var newValue = event.newValue;
+    alert('dataTable原始值为:' + oldValue +'\n' + 'dataTable现在值为:' + newValue);
+});
+
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- HTML --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"demo3"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"data":"dt3","field":"f1"&#125;'</span> /&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// JS</span></div><div class="line"><span class="keyword">var</span> app,viewModel3;</div><div class="line">viewModel3 = &#123;</div><div class="line">    <span class="attr">dt3</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">        <span class="attr">meta</span>:&#123;</div><div class="line">            <span class="attr">f1</span>:&#123;</div><div class="line">                <span class="attr">type</span>:<span class="string">'string'</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;;</div><div class="line"></div><div class="line">app = u.createApp(&#123;</div><div class="line">    <span class="attr">el</span>:<span class="string">'#demo3'</span>,</div><div class="line">    <span class="attr">model</span>:viewModel3</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> r = viewModel3.dt3.createEmptyRow();</div><div class="line">r.setValue(<span class="string">'f1'</span>,<span class="string">'test'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 绑定时间触发</span></div><div class="line">viewModel3.dt3.on(<span class="string">'valueChange'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> oldValue = event.oldValue;</div><div class="line">    <span class="keyword">var</span> newValue = event.newValue;</div><div class="line">    alert(<span class="string">'dataTable原始值为:'</span> + oldValue +<span class="string">'\n'</span> + <span class="string">'dataTable现在值为:'</span> + newValue);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="验证设置Validate"><a href="#验证设置Validate" class="headerlink" title="验证设置Validate"></a>验证设置Validate</h2><p>创建dataTable,field字段中验证字段，基本设置如下：</p>
+<pre><code>new u.DataTable({
+    meta:{
+        field:{
+          required: true,
+          nullMsg: &apos;内容不能为空!&apos;,
+          errorMsg: &apos;内容输入错误&apos;,
+          placement: &apos;top&apos;
+          ...
+        }
+    }
+})
+</code></pre><p><em>params</em>:</p>
+<p><code>meta</code>: 字段信息集合，其中的key为字段名，value为字段属性信息，属性信息可自定义</p>
+<hr>
+<h3 id="required"><a href="#required" class="headerlink" title="required"></a>required</h3><p><code>required</code>:指定输入字段是否为必填项，默认为<code>false</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>required</td>
+<td>true</td>
+<td>字段为必填项</td>
+</tr>
+<tr>
+<td>required</td>
+<td>false</td>
+<td>字段为非必填项</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="validType"><a href="#validType" class="headerlink" title="validType"></a>validType</h3><p><code>validType</code>:验证输入类型，默认值为<code>null</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>validType</td>
+<td>integer</td>
+<td>输入需为整数</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>float</td>
+<td>输入需为浮点数</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>zipCode</td>
+<td>输入需为邮编</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>phone</td>
+<td>输入需为手机号码</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>landline</td>
+<td>输入需为座机号码</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>email</td>
+<td>输入需为邮箱</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>url</td>
+<td>输入需为网址</td>
+</tr>
+<tr>
+<td>validType</td>
+<td>datetime</td>
+<td>输入需为日期</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="nullMsg-errorMsg"><a href="#nullMsg-errorMsg" class="headerlink" title="nullMsg/errorMsg"></a>nullMsg/errorMsg</h3><p><code>nullMsg</code>:输入为空时的提示信息</p>
+<p><code>errorMsg</code>:输入错误时的提示信息</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nullMsg</td>
+<td>内容自定义：输入为空显示的内容</td>
+<td>输入为空时的提示信息</td>
+</tr>
+<tr>
+<td>errorMsg</td>
+<td>内容自定义：输入错误时显示的内容</td>
+<td>输入错误时的提示信息</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="regExp"><a href="#regExp" class="headerlink" title="regExp"></a>regExp</h3><p><code>regExp</code>:设置正则匹配</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regExp</td>
+<td>正则表达式</td>
+<td>文本框需要匹配的正则</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="notipFlag"><a href="#notipFlag" class="headerlink" title="notipFlag"></a>notipFlag</h3><p><code>notipFlag</code>:错误信息提示方式是否为<code>tooltip</code>,默认为<code>false</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>notipFlag</td>
+<td>false</td>
+<td>错误信息提示为tips形式</td>
+</tr>
+<tr>
+<td>notipFlag</td>
+<td>true</td>
+<td>错误信息提示自定义，不为tips形式</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="tipId"><a href="#tipId" class="headerlink" title="tipId"></a>tipId</h3><p><code>tipId</code>: 指定<code>tooltip</code>显示位置，其值为显示dom元素的id，默认为空，使用默认的<code>tooltip</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tipId</td>
+<td>‘ ‘</td>
+<td>使用默认的tooltip显示tip</td>
+</tr>
+<tr>
+<td>tipId</td>
+<td>id</td>
+<td>使用自定义的id元素显示tip</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="hasSuccess"><a href="#hasSuccess" class="headerlink" title="hasSuccess"></a>hasSuccess</h3><p><code>hasSuccess</code>:输入正确后是否提示。默认为<code>false</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hasSuccess</td>
+<td>true</td>
+<td>输入正确后提示</td>
+</tr>
+<tr>
+<td>hasSuccess</td>
+<td>false</td>
+<td>输入正确后不提示</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="successId"><a href="#successId" class="headerlink" title="successId"></a>successId</h3><p><code>successId</code>:指定正确提示信息的位置，其值为正确dom元素的id，默认在输入框的后面显示</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>successId</td>
+<td>id</td>
+<td>使用自定义的id元素显示正确提示信息</td>
+</tr>
+</tbody>
+</table>
+<p><code>successId</code>能正常显示的前提是<code>hasSuccess:true</code></p>
+<hr>
+<h3 id="placement"><a href="#placement" class="headerlink" title="placement"></a>placement</h3><p><code>placement</code>:提示框位置，默认为<code>top</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>placement</td>
+<td>top</td>
+<td>上部显示</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>bottom</td>
+<td>底部显示</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>left</td>
+<td>左边显示</td>
+</tr>
+<tr>
+<td>placement</td>
+<td>right</td>
+<td>右边显示</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="minLength-amp-maxLength"><a href="#minLength-amp-maxLength" class="headerlink" title="minLength&amp;maxLength"></a>minLength&amp;maxLength</h3><p>字符串长度，注意<code>type</code>类型<code>string</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>minLength</td>
+<td>num</td>
+<td>最小长度</td>
+</tr>
+<tr>
+<td>maxLength</td>
+<td>num</td>
+<td>最大长度</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="数值区间"><a href="#数值区间" class="headerlink" title="数值区间"></a>数值区间</h3><p>数值区间，注意<code>type</code>类型<code>integer</code>或<code>float</code></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min</td>
+<td>num</td>
+<td>最小数值(包含)</td>
+</tr>
+<tr>
+<td>max</td>
+<td>num</td>
+<td>最大数值(包含)</td>
+</tr>
+<tr>
+<td>minNotEq</td>
+<td>num</td>
+<td>最小数值(不包含)</td>
+</tr>
+<tr>
+<td>maxNotEq</td>
+<td>num</td>
+<td>最大数值(不包含)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="基本示例"><a href="#基本示例" class="headerlink" title="基本示例"></a>基本示例</h3><p><a href="http://tinper.org/webide/#/demos/kero/validate">试一试</a></p>
+<h3 id="Validate"><a href="#Validate" class="headerlink" title="Validate"></a>Validate</h3><p>本例实现如下效果：</p>
+<ul>
+<li>基本的validate API测试</li>
+</ul>
+
+<div class="example-content"><!-- 
+	HTML
+	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
+	id,type.data,field为必选项
+	id:创建组件唯一标识
+	type:创建组件对应的类型
+	data:指定数据模型中的数据集
+	field:绑定数据集中对应的字段
+-->
+<div class="u-form-group">
+    <label>验证测试用例</label>
+    <div class="u-input-group u-has-feedback" u-meta="{&quot;id&quot;:&quot;f1field&quot;,&quot;type&quot;:&quot;string&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;f1&quot;}">
+        <div class="u-input-group-before" style="color: red;">*</div>
+        <input type="text" class="u-form-control">
+    </div>
+</div>  
+</div>
+
+
+
+<script>
+// JS
+
+var app,viewModel;
+
+viewModel = {
+    dt1: new u.DataTable({
+        meta:{
+            f1:{type:'string',required:true,maxLength:8,minLength:3},
+            f2:{type:'string',required:true,maxLength:8,minLength:3,notipFlag: true,
+                    hasSuccess: true},
+        }
+    })
+};
+
+
+app = u.createApp({
+    el:'body',
+    model:viewModel
+});
+
+var r = viewModel.dt1.createEmptyRow();
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- </span></div><div class="line">	HTML</div><div class="line">	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 </div><div class="line">	id,type.data,field为必选项</div><div class="line">	id:创建组件唯一标识</div><div class="line">	type:创建组件对应的类型</div><div class="line">	data:指定数据模型中的数据集</div><div class="line">	field:绑定数据集中对应的字段</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-form-group"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>验证测试用例<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group u-has-feedback"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"f1field","type":"string","data":"dt1","field":"f1"&#125;'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before"</span> <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// JS</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> app,viewModel;</div><div class="line"></div><div class="line">viewModel = &#123;</div><div class="line">    <span class="attr">dt1</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">        <span class="attr">meta</span>:&#123;</div><div class="line">            <span class="attr">f1</span>:&#123;<span class="attr">type</span>:<span class="string">'string'</span>,<span class="attr">required</span>:<span class="literal">true</span>,<span class="attr">maxLength</span>:<span class="number">8</span>,<span class="attr">minLength</span>:<span class="number">3</span>&#125;,</div><div class="line">            <span class="attr">f2</span>:&#123;<span class="attr">type</span>:<span class="string">'string'</span>,<span class="attr">required</span>:<span class="literal">true</span>,<span class="attr">maxLength</span>:<span class="number">8</span>,<span class="attr">minLength</span>:<span class="number">3</span>,<span class="attr">notipFlag</span>: <span class="literal">true</span>,</div><div class="line">                    <span class="attr">hasSuccess</span>: <span class="literal">true</span>&#125;,</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line">app = u.createApp(&#123;</div><div class="line">    <span class="attr">el</span>:<span class="string">'body'</span>,</div><div class="line">    <span class="attr">model</span>:viewModel</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> r = viewModel.dt1.createEmptyRow();</div></pre></td></tr></table></figure>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,2263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>keroAPI — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="keroAPI — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="keroAPI — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link current">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>keroAPI</h1>
+    
+    <p><a name="DataTable"></a></p>
+<h3 id="DataTable-object"><a href="#DataTable-object" class="headerlink" title="DataTable : object"></a>DataTable : <code>object</code></h3><p>前端数据模型对象</p>
+<ul>
+<li><a href="#DataTable">DataTable</a> : <code>object</code><ul>
+<li><em>instance</em><ul>
+<li><a href="#DataTable+id">.id</a> : <code>string</code></li>
+<li><a href="#DataTable+strict">.strict</a> : <code>boolean</code></li>
+<li><a href="#DataTable+meta">.meta</a> : <code>object</code></li>
+<li><a href="#DataTable+enable">.enable</a> : <code>boolean</code></li>
+<li><a href="#DataTable+pageSize">.pageSize</a> : <code>number</code></li>
+<li><a href="#DataTable+pageIndex">.pageIndex</a> : <code>number</code></li>
+<li><a href="#DataTable+totalPages">.totalPages</a> : <code>number</code></li>
+<li><a href="#DataTable+pageCache">.pageCache</a> : <code>boolean</code></li>
+<li><a href="#DataTable+params">.params</a> : <code>object</code></li>
+<li><a href="#DataTable+master">.master</a> : <code>string</code></li>
+<li><a href="#DataTable+dateNoConvert">.dateNoConvert</a> : <code>boolean</code></li>
+</ul>
+</li>
+<li><em>static</em><ul>
+<li><a href="#DataTable.copyRow">.copyRow(index, row)</a></li>
+<li><a href="#DataTable.copyRows">.copyRows(index, rows)</a></li>
+<li><a href="#DataTable.setData">.setData(data, options)</a></li>
+<li><a href="#DataTable.setValue">.setValue(fieldName, value, [row], [ctx])</a></li>
+<li><a href="#DataTable.isEnable">.isEnable([fieldName])</a> ⇒ <code>boolean</code></li>
+<li><a href="#DataTable.setEnable">.setEnable(enable)</a></li>
+<li><a href="#DataTable.getCurrentRow">.getCurrentRow()</a> ⇒ <code>null</code> &#124; <code>u.Row</code></li>
+<li><a href="#DataTable.getCurrentIndex">.getCurrentIndex()</a> ⇒ <code>number</code></li>
+<li><a href="#DataTable.getData">.getData()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getDataByRule">.getDataByRule(rule)</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getRow">.getRow(index)</a> ⇒ <code>object</code></li>
+<li><a href="#DataTable.getRowByRowId">.getRowByRowId(rowid)</a> ⇒ <code>Row</code></li>
+<li><a href="#DataTable.getRowIndex">.getRowIndex(需要获取索引的row对象)</a> ⇒ <code>*</code></li>
+<li><a href="#DataTable.getRowsByField">.getRowsByField(field, value)</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getRowByField">.getRowByField(field, value)</a> ⇒ <code>u.Row</code></li>
+<li><a href="#DataTable.getAllRows">.getAllRows()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getAllPageRows">.getAllPageRows()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getChangedDatas">.getChangedDatas(withEmptyRow)</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getChangedRows">.getChangedRows()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getValue">.getValue(fieldName, [row])</a> ⇒ <code>string</code></li>
+<li><a href="#DataTable.getIndexByRowId">.getIndexByRowId(rowId)</a></li>
+<li><a href="#DataTable.getAllDatas">.getAllDatas()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getRowIdsByIndices">.getRowIdsByIndices(indices)</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getFocusRow">.getFocusRow()</a> ⇒ <code>u.Row</code></li>
+<li><a href="#DataTable.getFocusIndex">.getFocusIndex()</a> ⇒ <code>number</code></li>
+<li><a href="#DataTable.getMeta">.getMeta([fieldName], [key])</a> ⇒ <code>object</code></li>
+<li><a href="#DataTable.getRowMeta">.getRowMeta([fieldName], [key])</a> ⇒ <code>object</code></li>
+<li><a href="#DataTable.getParam">.getParam(key)</a> ⇒ <code>*</code></li>
+<li><a href="#DataTable.getSelectedIndex">.getSelectedIndex()</a> ⇒ <code>number</code></li>
+<li><a href="#DataTable.getSelectedIndices">.getSelectedIndices()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getSelectedDatas">.getSelectedDatas([withEmptyRow])</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getSelectedRows">.getSelectedRows()</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.getSimpleData">.getSimpleData([options])</a> ⇒ <code>array</code></li>
+<li><a href="#DataTable.setMeta">.setMeta(fieldName, key, value)</a></li>
+<li><a href="#DataTable.updateMeta">.updateMeta(meta)</a></li>
+<li><a href="#DataTable.addParam">.addParam(key, value)</a></li>
+<li><a href="#DataTable.addParams">.addParams(params)</a></li>
+<li><a href="#DataTable.refSelectedRows">.refSelectedRows(fieldName)</a></li>
+<li><a href="#DataTable.ref">.ref(fieldName)</a></li>
+<li><a href="#DataTable.refMeta">.refMeta(fieldName, key)</a></li>
+<li><a href="#DataTable.refRowMeta">.refRowMeta(fieldName, key)</a></li>
+<li><a href="#DataTable.refEnable">.refEnable(fieldName)</a></li>
+<li><a href="#DataTable.removeRowByRowId">.removeRowByRowId(rowId)</a></li>
+<li><a href="#DataTable.removeRow">.removeRow(index)</a></li>
+<li><a href="#DataTable.removeAllRows">.removeAllRows()</a></li>
+<li><a href="#DataTable.removeRows">.removeRows(indices)</a></li>
+<li><a href="#DataTable.clear">.clear()</a></li>
+<li><a href="#DataTable.addRow">.addRow(row)</a></li>
+<li><a href="#DataTable.addRows">.addRows(rows)</a></li>
+<li><a href="#DataTable.insertRow">.insertRow(index, row)</a></li>
+<li><a href="#DataTable.insertRows">.insertRows(index, rows)</a></li>
+<li><a href="#DataTable.createEmptyRow">.createEmptyRow()</a> ⇒ <code>u.Row</code></li>
+<li><a href="#DataTable.setAllRowsSelect">.setAllRowsSelect()</a></li>
+<li><a href="#DataTable.setRowSelect">.setRowSelect(index)</a></li>
+<li><a href="#DataTable.setRowsSelect">.setRowsSelect(indices)</a></li>
+<li><a href="#DataTable.addRowSelect">.addRowSelect(index)</a></li>
+<li><a href="#DataTable.addRowsSelect">.addRowsSelect(indices)</a></li>
+<li><a href="#DataTable.setAllRowsUnSelect">.setAllRowsUnSelect([options])</a></li>
+<li><a href="#DataTable.setRowUnSelect">.setRowUnSelect(index)</a></li>
+<li><a href="#DataTable.setRowsUnSelect">.setRowsUnSelect(indices)</a></li>
+<li><a href="#DataTable.toggleAllSelect">.toggleAllSelect()</a></li>
+<li><a href="#DataTable.setRowFocus">.setRowFocus(index, [quiet], [force])</a></li>
+<li><a href="#DataTable.setRowUnFocus">.setRowUnFocus()</a></li>
+<li><a href="#DataTable.setSimpleData">.setSimpleData(data, [options])</a></li>
+<li><a href="#DataTable.addSimpleData">.addSimpleData(data, status)</a></li>
+<li><a href="#DataTable.on">.on(name, [callback], [one])</a> ⇒ <code><a href="#DataTable">DataTable</a></code></li>
+<li><a href="#DataTable.off">.off(name, [callback])</a> ⇒ <code><a href="#DataTable">DataTable</a></code></li>
+<li><a href="#DataTable.one">.one(name, [callback])</a></li>
+<li><a href="#DataTable.trigger">.trigger(name)</a> ⇒ <code><a href="#DataTable">DataTable</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="DataTable+id"></a></p>
+<h4 id="dataTable-id-string"><a href="#dataTable-id-string" class="headerlink" title="dataTable.id : string"></a>dataTable.id : <code>string</code></h4><p>DataTable对应的唯一标识</p>
+<p><a name="DataTable+strict"></a></p>
+<h4 id="dataTable-strict-boolean"><a href="#dataTable-strict-boolean" class="headerlink" title="dataTable.strict : boolean"></a>dataTable.strict : <code>boolean</code></h4><p>在设置数据时是否自动创建对应字段，如果为true则不自动创建，如果为false则自动创建缺失的字段</p>
+<p><strong>Default</strong>: <code>false</code><br><a name="DataTable+meta"></a></p>
+<h4 id="dataTable-meta-object"><a href="#dataTable-meta-object" class="headerlink" title="dataTable.meta : object"></a>dataTable.meta : <code>object</code></h4><p>DataTable的所有字段属性信息</p>
+<p><a name="DataTable+enable"></a></p>
+<h4 id="dataTable-enable-boolean"><a href="#dataTable-enable-boolean" class="headerlink" title="dataTable.enable : boolean"></a>dataTable.enable : <code>boolean</code></h4><p>DataTable的是否支持编辑功能</p>
+<p><strong>Default</strong>: <code>true</code><br><a name="DataTable+pageSize"></a></p>
+<h4 id="dataTable-pageSize-number"><a href="#dataTable-pageSize-number" class="headerlink" title="dataTable.pageSize : number"></a>dataTable.pageSize : <code>number</code></h4><p>DataTable支持翻页功能时每页显示数据条数</p>
+<p><strong>Default</strong>: <code>20</code><br><a name="DataTable+pageIndex"></a></p>
+<h4 id="dataTable-pageIndex-number"><a href="#dataTable-pageIndex-number" class="headerlink" title="dataTable.pageIndex : number"></a>dataTable.pageIndex : <code>number</code></h4><p>DataTable支持翻页功能时当前页码</p>
+<p><strong>Default</strong>: <code>0</code><br><a name="DataTable+totalPages"></a></p>
+<h4 id="dataTable-totalPages-number"><a href="#dataTable-totalPages-number" class="headerlink" title="dataTable.totalPages : number"></a>dataTable.totalPages : <code>number</code></h4><p>DataTable支持翻页功能时总页数</p>
+<p><strong>Default</strong>: <code>0</code><br><a name="DataTable+pageCache"></a></p>
+<h4 id="dataTable-pageCache-boolean"><a href="#dataTable-pageCache-boolean" class="headerlink" title="dataTable.pageCache : boolean"></a>dataTable.pageCache : <code>boolean</code></h4><p>DataTable的是否支持前端缓存，支持前端缓存则前端会存储所有页的数据信息，否则只保存当前页的数据信息。如果使用前端缓存则需要使用框架封装的fire方法来与后台进行交互</p>
+<p><strong>Default</strong>: <code>false</code><br><a name="DataTable+params"></a></p>
+<h4 id="dataTable-params-object"><a href="#dataTable-params-object" class="headerlink" title="dataTable.params : object"></a>dataTable.params : <code>object</code></h4><p>使用者自定义的属性合集，框架内部不会针对此属性进行特殊处理，仅用于设置及获取</p>
+<p><a name="DataTable+master"></a></p>
+<h4 id="dataTable-master-string"><a href="#dataTable-master-string" class="headerlink" title="dataTable.master : string"></a>dataTable.master : <code>string</code></h4><p>使用者自定义的属性，框架内部不会针对此属性进行特殊处理，仅用于设置及获取。</p>
+<p><a name="DataTable+dateNoConvert"></a></p>
+<h4 id="dataTable-dateNoConvert-boolean"><a href="#dataTable-dateNoConvert-boolean" class="headerlink" title="dataTable.dateNoConvert : boolean"></a>dataTable.dateNoConvert : <code>boolean</code></h4><p>通过getSimpleData获取数据时，日期字段是否转化为long型，如果为true时不进行转化，为false时转化为long型</p>
+<p><strong>Default</strong>: <code>false</code><br><a name="DataTable.copyRow"></a></p>
+<h4 id="DataTable-copyRow-index-row"><a href="#DataTable-copyRow-index-row" class="headerlink" title="DataTable.copyRow(index, row)"></a>DataTable.copyRow(index, row)</h4><p>在指定index位置插入单条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>数据行插入之后的位置</td>
+</tr>
+<tr>
+<td>row</td>
+<td><code>object</code></td>
+<td>数据行信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row = &#123;</div><div class="line">   <span class="attr">field1</span>:<span class="string">'value1'</span></div><div class="line">&#125;</div><div class="line">datatable.copyRow(<span class="number">1</span>,row)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.copyRows"></a></p>
+<h4 id="DataTable-copyRows-index-rows"><a href="#DataTable-copyRows-index-rows" class="headerlink" title="DataTable.copyRows(index, rows)"></a>DataTable.copyRows(index, rows)</h4><p>在指定index位置插入多条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>数据行插入之后的位置</td>
+</tr>
+<tr>
+<td>rows</td>
+<td><code>array</code></td>
+<td>存储数据行信息的数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row1 = &#123;</div><div class="line">   <span class="attr">field1</span>:<span class="string">'value1'</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> row2 = &#123;</div><div class="line">   <span class="attr">field1</span>:<span class="string">'value1'</span></div><div class="line">&#125;</div><div class="line">datatable.copyRow(<span class="number">1</span>,[row1,row2])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setData"></a></p>
+<h4 id="DataTable-setData-data-options"><a href="#DataTable-setData-data-options" class="headerlink" title="DataTable.setData(data, options)"></a>DataTable.setData(data, options)</h4><p>设置数据信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>object</code></td>
+<td></td>
+<td>需要设置的数据信息，必须包含rows或者pages属性</td>
+</tr>
+<tr>
+<td>[data.rows]</td>
+<td><code>array</code></td>
+<td></td>
+<td>数据信息中的行信息数组</td>
+</tr>
+<tr>
+<td>[data.pages]</td>
+<td><code>array</code></td>
+<td></td>
+<td>数据信息中的page对象数组</td>
+</tr>
+<tr>
+<td>[data.pageIndex]</td>
+<td><code>number</code></td>
+<td><code>DataTable对象当前的页码</code></td>
+<td>数据信息中的当前页码</td>
+</tr>
+<tr>
+<td>[data.pageSize]</td>
+<td><code>number</code></td>
+<td><code>DataTable对象当前的每页显示条数</code></td>
+<td>数据信息中的每页显示条数</td>
+</tr>
+<tr>
+<td>[data.totalPages]</td>
+<td><code>number</code></td>
+<td><code>DataTable对象当前的总页数</code></td>
+<td>数据信息中的总页数</td>
+</tr>
+<tr>
+<td>[data.totalRow]</td>
+<td><code>number</code></td>
+<td><code>如果存在rows则为rows的长度，否则为DataTable对象当前的总条数</code></td>
+<td>数据信息中的总条数</td>
+</tr>
+<tr>
+<td>[data.select]</td>
+<td><code>number</code></td>
+<td></td>
+<td>数据信息中的选中行行号</td>
+</tr>
+<tr>
+<td>[data.focus]</td>
+<td><code>number</code></td>
+<td></td>
+<td>数据信息中的focus行行号</td>
+</tr>
+<tr>
+<td>options</td>
+<td><code>object</code></td>
+<td></td>
+<td>设置数据时的配置参数</td>
+</tr>
+<tr>
+<td>options.unSelect</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>是否默认选中第一行，如果为true则不选中第一行，否则选中第一行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">   <span class="attr">rows</span>:[&#123;</div><div class="line">     <span class="attr">filed1</span>:<span class="string">'value1'</span>,</div><div class="line">     <span class="attr">field2</span>:<span class="string">'value2'</span></div><div class="line">   &#125;,&#123;</div><div class="line">     <span class="attr">filed1</span>:<span class="string">'value11'</span>,</div><div class="line">     <span class="attr">field2</span>:<span class="string">'value21'</span></div><div class="line">   &#125;],</div><div class="line">   <span class="attr">select</span>:<span class="number">0</span>,</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> op = &#123;</div><div class="line">    <span class="attr">unSelect</span>:<span class="literal">true</span></div><div class="line">&#125;</div><div class="line">datatable.setData(data,op)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setValue"></a></p>
+<h4 id="DataTable-setValue-fieldName-value-row-ctx"><a href="#DataTable-setValue-fieldName-value-row-ctx" class="headerlink" title="DataTable.setValue(fieldName, value, [row], [ctx])"></a>DataTable.setValue(fieldName, value, [row], [ctx])</h4><p>设置对应行对应字段的值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td></td>
+<td>需要设置的字段</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td></td>
+<td>需要设置的值</td>
+</tr>
+<tr>
+<td>[row]</td>
+<td><code>u.row</code></td>
+<td><code>当前行</code></td>
+<td>需要设置的u.row对象，</td>
+</tr>
+<tr>
+<td>[ctx]</td>
+<td><code>*</code></td>
+<td></td>
+<td>自定义属性，在valuechange监听传入对象中可通过ctx获取此处设置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setValue(<span class="string">'filed1'</span>,<span class="string">'value1'</span>) <span class="comment">//设置当前行字段值</span></div><div class="line"><span class="keyword">var</span> row = datatable.getRow(<span class="number">1</span>)</div><div class="line">datatable.setValue(<span class="string">'filed1'</span>,<span class="string">'value1'</span>,row) <span class="comment">//设置在指定行字段值</span></div><div class="line">datatable.setValue(<span class="string">'filed1'</span>,<span class="string">'value1'</span>,row,<span class="string">'ctx'</span>) <span class="comment">//设置在指定行字段值，同时传入自定义数据</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.isEnable"></a></p>
+<h4 id="DataTable-isEnable-fieldName-⇒-boolean"><a href="#DataTable-isEnable-fieldName-⇒-boolean" class="headerlink" title="DataTable.isEnable([fieldName]) ⇒ boolean"></a>DataTable.isEnable([fieldName]) ⇒ <code>boolean</code></h4><p>判断DataTable或指定字段是否可修改</p>
+<p><strong>返回值</strong>: <code>boolean</code> - DataTable/指定字段是否可修改  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[fieldName]</td>
+<td><code>string</code></td>
+<td>需要进行判断的字段值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.isEnable() <span class="comment">//获取datatable是否可修改</span></div><div class="line">datatable.isEnable(<span class="string">'field1'</span>) <span class="comment">//获取字段field1是否可修改</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setEnable"></a></p>
+<h4 id="DataTable-setEnable-enable"><a href="#DataTable-setEnable-enable" class="headerlink" title="DataTable.setEnable(enable)"></a>DataTable.setEnable(enable)</h4><p>设置DataTable是否可修改</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enable</td>
+<td><code>boolean</code></td>
+<td>true表示可修改，否则表示不可修改</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setEnable(<span class="literal">true</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getCurrentRow"></a></p>
+<h4 id="DataTable-getCurrentRow-⇒-null-124-u-Row"><a href="#DataTable-getCurrentRow-⇒-null-124-u-Row" class="headerlink" title="DataTable.getCurrentRow() ⇒ null &#124; u.Row"></a>DataTable.getCurrentRow() ⇒ <code>null</code> &#124; <code>u.Row</code></h4><p>获取DataTable对象的当前行</p>
+<p><strong>返回值</strong>: <code>null</code> &#124; <code>u.Row</code> - DataTable对象的当前行<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getCurrentRow()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getCurrentIndex"></a></p>
+<h4 id="DataTable-getCurrentIndex-⇒-number"><a href="#DataTable-getCurrentIndex-⇒-number" class="headerlink" title="DataTable.getCurrentIndex() ⇒ number"></a>DataTable.getCurrentIndex() ⇒ <code>number</code></h4><p>获取DataTable对象的当前行对应的index</p>
+<p><strong>返回值</strong>: <code>number</code> - DataTable对象的当前行对应的index<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getCurrentIndex()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getData"></a></p>
+<h4 id="DataTable-getData-⇒-array"><a href="#DataTable-getData-⇒-array" class="headerlink" title="DataTable.getData() ⇒ array"></a>DataTable.getData() ⇒ <code>array</code></h4><p>获取DataTable的数据信息</p>
+<p><strong>返回值</strong>: <code>array</code> - 数据信息对应的数组，每项对应一条数据<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getData()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getDataByRule"></a></p>
+<h4 id="DataTable-getDataByRule-rule-⇒-array"><a href="#DataTable-getDataByRule-rule-⇒-array" class="headerlink" title="DataTable.getDataByRule(rule) ⇒ array"></a>DataTable.getDataByRule(rule) ⇒ <code>array</code></h4><p>按照特定规则获取数据</p>
+<p><strong>返回值</strong>: <code>array</code> - 按照规则获取到的数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rule</td>
+<td><code>string</code></td>
+<td>DataTable.SUBMIT.current(‘current’) ：当前选中行 DataTable.SUBMIT.focus(‘focus’) ：当前focus行 DataTable.SUBMIT.all(‘all’) ：所有行 DataTable.SUBMIT.select(‘select’) ：当前页选中行 DataTable.SUBMIT.change(‘change’) ：发生改变的行 DataTable.SUBMIT.empty(‘empty’) ：不获取数据，返回空数组 DataTable.SUBMIT.allSelect(‘allSelect’) ：所有页选中行 DataTable.SUBMIT.allPages(‘allPages’) ：所有页的数据</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getDataByRule(‘all’)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRow"></a></p>
+<h4 id="DataTable-getRow-index-⇒-object"><a href="#DataTable-getRow-index-⇒-object" class="headerlink" title="DataTable.getRow(index) ⇒ object"></a>DataTable.getRow(index) ⇒ <code>object</code></h4><p>根据索引获取指定行数据信息</p>
+<p><strong>返回值</strong>: <code>object</code> - 获取到的指定行数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>需要获取的数据信息的索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRow(<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowByRowId"></a></p>
+<h4 id="DataTable-getRowByRowId-rowid-⇒-Row"><a href="#DataTable-getRowByRowId-rowid-⇒-Row" class="headerlink" title="DataTable.getRowByRowId(rowid) ⇒ Row"></a>DataTable.getRowByRowId(rowid) ⇒ <code>Row</code></h4><p>根据rowid获取Row对象</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowid</td>
+<td><code>string</code></td>
+<td>需要获取的Row对应的rowid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRowByRowId(<span class="string">'rowid'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowIndex"></a></p>
+<h4 id="DataTable-getRowIndex-需要获取索引的row对象-⇒"><a href="#DataTable-getRowIndex-需要获取索引的row对象-⇒" class="headerlink" title="DataTable.getRowIndex(需要获取索引的row对象) ⇒ *"></a>DataTable.getRowIndex(需要获取索引的row对象) ⇒ <code>*</code></h4><p>获取Row对象对应的索引</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需要获取索引的row对象</td>
+<td><code>u.Row</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row = datatable.getRow(<span class="number">1</span>)</div><div class="line">datatable.getRowIndex(row) <span class="comment">// 1</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowsByField"></a></p>
+<h4 id="DataTable-getRowsByField-field-value-⇒-array"><a href="#DataTable-getRowsByField-field-value-⇒-array" class="headerlink" title="DataTable.getRowsByField(field, value) ⇒ array"></a>DataTable.getRowsByField(field, value) ⇒ <code>array</code></h4><p>根据字段及字段值获取所有数据行</p>
+<p><strong>返回值</strong>: <code>array</code> - 根据字段及字段值获取的所有数据行  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td><code>string</code></td>
+<td>需要获取行的对应字段</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>需要获取行的对应字段值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRowsByField(<span class="string">'field1'</span>,<span class="string">'value1'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowByField"></a></p>
+<h4 id="DataTable-getRowByField-field-value-⇒-u-Row"><a href="#DataTable-getRowByField-field-value-⇒-u-Row" class="headerlink" title="DataTable.getRowByField(field, value) ⇒ u.Row"></a>DataTable.getRowByField(field, value) ⇒ <code>u.Row</code></h4><p>根据字段及字段值获取第一条数据行</p>
+<p><strong>返回值</strong>: <code>u.Row</code> - 根据字段及字段值获取第一条数据行  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td><code>string</code></td>
+<td>需要获取行的对应字段</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>需要获取行的对应字段值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRowByField(<span class="string">'field1'</span>,<span class="string">'value1'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getAllRows"></a></p>
+<h4 id="DataTable-getAllRows-⇒-array"><a href="#DataTable-getAllRows-⇒-array" class="headerlink" title="DataTable.getAllRows() ⇒ array"></a>DataTable.getAllRows() ⇒ <code>array</code></h4><p>获取当前页的所有数据行</p>
+<p><strong>返回值</strong>: <code>array</code> - 获取到的数据行<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getAllRows()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getAllPageRows"></a></p>
+<h4 id="DataTable-getAllPageRows-⇒-array"><a href="#DataTable-getAllPageRows-⇒-array" class="headerlink" title="DataTable.getAllPageRows() ⇒ array"></a>DataTable.getAllPageRows() ⇒ <code>array</code></h4><p>获取所有页的所有数据行</p>
+<p><strong>返回值</strong>: <code>array</code> - 获取到的数据行<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getAllPageRows()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getChangedDatas"></a></p>
+<h4 id="DataTable-getChangedDatas-withEmptyRow-⇒-array"><a href="#DataTable-getChangedDatas-withEmptyRow-⇒-array" class="headerlink" title="DataTable.getChangedDatas(withEmptyRow) ⇒ array"></a>DataTable.getChangedDatas(withEmptyRow) ⇒ <code>array</code></h4><p>获取发生变化的数据信息</p>
+<p><strong>返回值</strong>: <code>array</code> - 发生变化的数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>withEmptyRow</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>未发生变化的数据是否使用空行代替，true表示以空行代替未发生变化行，false相反</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getChangedDatas()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getChangedRows"></a></p>
+<h4 id="DataTable-getChangedRows-⇒-array"><a href="#DataTable-getChangedRows-⇒-array" class="headerlink" title="DataTable.getChangedRows() ⇒ array"></a>DataTable.getChangedRows() ⇒ <code>array</code></h4><p>获取发生改变的Row对象</p>
+<p><strong>返回值</strong>: <code>array</code> - 发生改变的Row对象<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getChangedRows()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getValue"></a></p>
+<h4 id="DataTable-getValue-fieldName-row-⇒-string"><a href="#DataTable-getValue-fieldName-row-⇒-string" class="headerlink" title="DataTable.getValue(fieldName, [row]) ⇒ string"></a>DataTable.getValue(fieldName, [row]) ⇒ <code>string</code></h4><p>根据字段获取对应Row对象的字段值</p>
+<p><strong>返回值</strong>: <code>string</code> - 获取到的字段值  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td></td>
+<td>需要获取的值对应的字段</td>
+</tr>
+<tr>
+<td>[row]</td>
+<td><code>u.Row</code></td>
+<td><code>默认为当前行</code></td>
+<td>对应的数据行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getValue(<span class="string">'field1'</span>)</div><div class="line"><span class="keyword">var</span> row = datatable.getRow(<span class="number">1</span>)</div><div class="line">datatable.getValue(<span class="string">'field1'</span>,row)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getIndexByRowId"></a></p>
+<h4 id="DataTable-getIndexByRowId-rowId"><a href="#DataTable-getIndexByRowId-rowId" class="headerlink" title="DataTable.getIndexByRowId(rowId)"></a>DataTable.getIndexByRowId(rowId)</h4><p>根据行号获取行索引</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowId</td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getIndexByRowId(<span class="string">'rowid'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getAllDatas"></a></p>
+<h4 id="DataTable-getAllDatas-⇒-array"><a href="#DataTable-getAllDatas-⇒-array" class="headerlink" title="DataTable.getAllDatas() ⇒ array"></a>DataTable.getAllDatas() ⇒ <code>array</code></h4><p>获取所有行数据信息</p>
+<p><strong>返回值</strong>: <code>array</code> - 所有行数据信息<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getAllDatas()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowIdsByIndices"></a></p>
+<h4 id="DataTable-getRowIdsByIndices-indices-⇒-array"><a href="#DataTable-getRowIdsByIndices-indices-⇒-array" class="headerlink" title="DataTable.getRowIdsByIndices(indices) ⇒ array"></a>DataTable.getRowIdsByIndices(indices) ⇒ <code>array</code></h4><p>根据索引获取rowid</p>
+<p><strong>返回值</strong>: <code>array</code> - 获取到的rowid  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indices</td>
+<td><code>array</code></td>
+<td>需要获取rowid的索引值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRowIdsByIndices([<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getFocusRow"></a></p>
+<h4 id="DataTable-getFocusRow-⇒-u-Row"><a href="#DataTable-getFocusRow-⇒-u-Row" class="headerlink" title="DataTable.getFocusRow() ⇒ u.Row"></a>DataTable.getFocusRow() ⇒ <code>u.Row</code></h4><p>获取焦点行</p>
+<p><strong>返回值</strong>: <code>u.Row</code> - 焦点行<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getFocusRow()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getFocusIndex"></a></p>
+<h4 id="DataTable-getFocusIndex-⇒-number"><a href="#DataTable-getFocusIndex-⇒-number" class="headerlink" title="DataTable.getFocusIndex() ⇒ number"></a>DataTable.getFocusIndex() ⇒ <code>number</code></h4><p>获取焦点行索引</p>
+<p><strong>返回值</strong>: <code>number</code> - 焦点行索引<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getFocusIndex()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getMeta"></a></p>
+<h4 id="DataTable-getMeta-fieldName-key-⇒-object"><a href="#DataTable-getMeta-fieldName-key-⇒-object" class="headerlink" title="DataTable.getMeta([fieldName], [key]) ⇒ object"></a>DataTable.getMeta([fieldName], [key]) ⇒ <code>object</code></h4><p>获取meta信息</p>
+<p><strong>返回值</strong>: <code>object</code> - meta信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[fieldName]</td>
+<td><code>string</code></td>
+<td>需要获取的字段</td>
+</tr>
+<tr>
+<td>[key]</td>
+<td><code>string</code></td>
+<td>需要获取的字段指定meta信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getMeta() <span class="comment">// 获取所有meta信息</span></div><div class="line">datatable.getMeta(<span class="string">'field1'</span>) <span class="comment">// 获取field1所有meta信息</span></div><div class="line">datatable.getMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>) <span class="comment">// 获取field1的key信息</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getRowMeta"></a></p>
+<h4 id="DataTable-getRowMeta-fieldName-key-⇒-object"><a href="#DataTable-getRowMeta-fieldName-key-⇒-object" class="headerlink" title="DataTable.getRowMeta([fieldName], [key]) ⇒ object"></a>DataTable.getRowMeta([fieldName], [key]) ⇒ <code>object</code></h4><p>获取当前行的meta信息，如果不存在当前行则获取DataTable的meta信息</p>
+<p><strong>返回值</strong>: <code>object</code> - meta信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[fieldName]</td>
+<td><code>string</code></td>
+<td>需要获取的字段</td>
+</tr>
+<tr>
+<td>[key]</td>
+<td><code>string</code></td>
+<td>需要获取的字段指定meta信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getRowMeta() <span class="comment">// 获取当前行所有meta信息</span></div><div class="line">datatable.getRowMeta(<span class="string">'field1'</span>) <span class="comment">// 获取当前行field1所有meta信息</span></div><div class="line">datatable.getRowMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>) <span class="comment">// 获取当前行field1的key信息</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getParam"></a></p>
+<h4 id="DataTable-getParam-key-⇒"><a href="#DataTable-getParam-key-⇒" class="headerlink" title="DataTable.getParam(key) ⇒ *"></a>DataTable.getParam(key) ⇒ <code>*</code></h4><p>获取参数参数值</p>
+<p><strong>返回值</strong>: <code>*</code> - 参数参数值  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>参数对应的key</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getParam(<span class="string">'param1'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getSelectedIndex"></a></p>
+<h4 id="DataTable-getSelectedIndex-⇒-number"><a href="#DataTable-getSelectedIndex-⇒-number" class="headerlink" title="DataTable.getSelectedIndex() ⇒ number"></a>DataTable.getSelectedIndex() ⇒ <code>number</code></h4><p>获取选中行索引，多选时，只返回第一个行索引</p>
+<p><strong>返回值</strong>: <code>number</code> - 选中行索引<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getSelectedIndex()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getSelectedIndices"></a></p>
+<h4 id="DataTable-getSelectedIndices-⇒-array"><a href="#DataTable-getSelectedIndices-⇒-array" class="headerlink" title="DataTable.getSelectedIndices() ⇒ array"></a>DataTable.getSelectedIndices() ⇒ <code>array</code></h4><p>获取选中的所有行索引数组</p>
+<p><strong>返回值</strong>: <code>array</code> - 所有行索引数组<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getSelectedIndices()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getSelectedDatas"></a></p>
+<h4 id="DataTable-getSelectedDatas-withEmptyRow-⇒-array"><a href="#DataTable-getSelectedDatas-withEmptyRow-⇒-array" class="headerlink" title="DataTable.getSelectedDatas([withEmptyRow]) ⇒ array"></a>DataTable.getSelectedDatas([withEmptyRow]) ⇒ <code>array</code></h4><p>获取选中行的数据信息</p>
+<p><strong>返回值</strong>: <code>array</code> - 发生变化的数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[withEmptyRow]</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>未选中的数据是否使用空行代替，true表示以空行代替未选中行，false相反</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getSelectedDatas()</div><div class="line">datatable.getSelectedDatas(<span class="literal">true</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getSelectedRows"></a></p>
+<h4 id="DataTable-getSelectedRows-⇒-array"><a href="#DataTable-getSelectedRows-⇒-array" class="headerlink" title="DataTable.getSelectedRows() ⇒ array"></a>DataTable.getSelectedRows() ⇒ <code>array</code></h4><p>获取选中的Row对象</p>
+<p><strong>返回值</strong>: <code>array</code> - 选中的Row对象<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getSelectedRows()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.getSimpleData"></a></p>
+<h4 id="DataTable-getSimpleData-options-⇒-array"><a href="#DataTable-getSimpleData-options-⇒-array" class="headerlink" title="DataTable.getSimpleData([options]) ⇒ array"></a>DataTable.getSimpleData([options]) ⇒ <code>array</code></h4><p>获取数据信息，只获取字段名与字段值</p>
+<p><strong>返回值</strong>: <code>array</code> - 获取到的数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[options]</td>
+<td><code>object</code></td>
+<td></td>
+<td>[description]</td>
+</tr>
+<tr>
+<td>[options.type]</td>
+<td><code>string</code></td>
+<td><code>&quot;all&quot;</code></td>
+<td>获取数据的规则 all：所有数据 current：当前行数据 focus：焦点行数据 select：选中行数据 change：发生改变的数据</td>
+</tr>
+<tr>
+<td>[options.fields]</td>
+<td><code>array</code></td>
+<td></td>
+<td>需要获取数据的字段名数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.getSimpleData() <span class="comment">// 获取所有数据信息</span></div><div class="line">datatable.getSimpleData(&#123;<span class="attr">type</span>:<span class="string">'current'</span>&#125;) <span class="comment">// 获取当前行数据信息</span></div><div class="line">datatable.getSimpleData(&#123;<span class="attr">type</span>:<span class="string">'current'</span>,<span class="string">'fields'</span>:[<span class="string">'filed1'</span>,<span class="string">'field3'</span>]&#125;) <span class="comment">// 获取当前行field1和filed3数据信息</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setMeta"></a></p>
+<h4 id="DataTable-setMeta-fieldName-key-value"><a href="#DataTable-setMeta-fieldName-key-value" class="headerlink" title="DataTable.setMeta(fieldName, key, value)"></a>DataTable.setMeta(fieldName, key, value)</h4><p>设置meta信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>需要设置meta信息的字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>meta信息的key</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>meta信息的值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setMeta(<span class="string">'filed1'</span>,<span class="string">'type'</span>,<span class="string">'string'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.updateMeta"></a></p>
+<h4 id="DataTable-updateMeta-meta"><a href="#DataTable-updateMeta-meta" class="headerlink" title="DataTable.updateMeta(meta)"></a>DataTable.updateMeta(meta)</h4><p>更新meta信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>meta</td>
+<td><code>object</code></td>
+<td>需要更新的meta信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> metaObj = &#123;<span class="attr">supplier</span>: &#123;<span class="attr">meta</span>: &#123;<span class="attr">precision</span>:<span class="string">'3'</span>, <span class="attr">default</span>: <span class="string">'0239900x'</span>, <span class="attr">display</span>:<span class="string">'显示名称'</span>&#125;&#125;&#125;</div><div class="line">datatable.updateMeta(metaObj)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addParam"></a></p>
+<h4 id="DataTable-addParam-key-value"><a href="#DataTable-addParam-key-value" class="headerlink" title="DataTable.addParam(key, value)"></a>DataTable.addParam(key, value)</h4><p>增加参数参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>需要增加的key值</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>*</code></td>
+<td>需要增加的具体指</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.addParam(<span class="string">'precision'</span>,<span class="string">'3'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addParams"></a></p>
+<h4 id="DataTable-addParams-params"><a href="#DataTable-addParams-params" class="headerlink" title="DataTable.addParams(params)"></a>DataTable.addParams(params)</h4><p>增加多个参数参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>params</td>
+<td><code>object</code></td>
+<td>需要增加的参数对象</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> paramsObj = &#123;</div><div class="line"> <span class="string">'precision'</span>:<span class="string">'3'</span>,</div><div class="line"> <span class="string">'default'</span>:<span class="string">'1.234'</span></div><div class="line">&#125;</div><div class="line">datatable.addParams(paramsObj)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.refSelectedRows"></a></p>
+<h4 id="DataTable-refSelectedRows-fieldName"><a href="#DataTable-refSelectedRows-fieldName" class="headerlink" title="DataTable.refSelectedRows(fieldName)"></a>DataTable.refSelectedRows(fieldName)</h4><p>为选中行绑定监听，当选中行发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.refSelectedRows().subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.ref"></a></p>
+<h4 id="DataTable-ref-fieldName"><a href="#DataTable-ref-fieldName" class="headerlink" title="DataTable.ref(fieldName)"></a>DataTable.ref(fieldName)</h4><p>为某个字段绑定监听，当字段发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.ref(<span class="string">'field1'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.refMeta"></a></p>
+<h4 id="DataTable-refMeta-fieldName-key"><a href="#DataTable-refMeta-fieldName-key" class="headerlink" title="DataTable.refMeta(fieldName, key)"></a>DataTable.refMeta(fieldName, key)</h4><p>绑定字段属性，当字段属性发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>绑定的属性key</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.refMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.refRowMeta"></a></p>
+<h4 id="DataTable-refRowMeta-fieldName-key"><a href="#DataTable-refRowMeta-fieldName-key" class="headerlink" title="DataTable.refRowMeta(fieldName, key)"></a>DataTable.refRowMeta(fieldName, key)</h4><p>绑定当前行的字段属性，当字段属性发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>绑定的属性key</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.refRowMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.refEnable"></a></p>
+<h4 id="DataTable-refEnable-fieldName"><a href="#DataTable-refEnable-fieldName" class="headerlink" title="DataTable.refEnable(fieldName)"></a>DataTable.refEnable(fieldName)</h4><p>绑定字段是否可修改属性，当字段可修改属性发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.refEnable(<span class="string">'field1'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.removeRowByRowId"></a></p>
+<h4 id="DataTable-removeRowByRowId-rowId"><a href="#DataTable-removeRowByRowId-rowId" class="headerlink" title="DataTable.removeRowByRowId(rowId)"></a>DataTable.removeRowByRowId(rowId)</h4><p>根据rowId删除指定行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowId</td>
+<td><code>string</code></td>
+<td>需要删除行的rowId</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.removeRowByRowId(<span class="string">'rowid1'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.removeRow"></a></p>
+<h4 id="DataTable-removeRow-index"><a href="#DataTable-removeRow-index" class="headerlink" title="DataTable.removeRow(index)"></a>DataTable.removeRow(index)</h4><p>根据索引删除指定行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>需要删除行的索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.removeRow(<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.removeAllRows"></a></p>
+<h4 id="DataTable-removeAllRows"><a href="#DataTable-removeAllRows" class="headerlink" title="DataTable.removeAllRows()"></a>DataTable.removeAllRows()</h4><p>删除所有行</p>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.removeAllRows();</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.removeRows"></a></p>
+<h4 id="DataTable-removeRows-indices"><a href="#DataTable-removeRows-indices" class="headerlink" title="DataTable.removeRows(indices)"></a>DataTable.removeRows(indices)</h4><p>根据索引数据删除多条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indices</td>
+<td><code>array</code></td>
+<td>需要删除的数据行对应索引数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.removeRows([<span class="number">1</span>,<span class="number">2</span>])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.clear"></a></p>
+<h4 id="DataTable-clear"><a href="#DataTable-clear" class="headerlink" title="DataTable.clear()"></a>DataTable.clear()</h4><p>清空datatable的所有数据以及分页数据以及index</p>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.clear()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addRow"></a></p>
+<h4 id="DataTable-addRow-row"><a href="#DataTable-addRow-row" class="headerlink" title="DataTable.addRow(row)"></a>DataTable.addRow(row)</h4><p>在最后位置添加一条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td><code>u.Row</code></td>
+<td>数据行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row1 = <span class="keyword">new</span> Row(&#123;<span class="attr">parent</span>: datatable&#125;)</div><div class="line">row1.setData(&#123;</div><div class="line"> <span class="attr">field1</span>: <span class="string">'value1'</span>,</div><div class="line"> <span class="attr">field2</span>: <span class="string">'value2'</span></div><div class="line">&#125;)</div><div class="line">datatable.addRow(row1)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addRows"></a></p>
+<h4 id="DataTable-addRows-rows"><a href="#DataTable-addRows-rows" class="headerlink" title="DataTable.addRows(rows)"></a>DataTable.addRows(rows)</h4><p>在最后位置添加多条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rows</td>
+<td><code>array</code></td>
+<td>数据行数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row1 = <span class="keyword">new</span> Row(&#123;<span class="attr">parent</span>: datatable&#125;)</div><div class="line">row1.setData(&#123;</div><div class="line"> <span class="attr">field1</span>: <span class="string">'value1'</span>,</div><div class="line"> <span class="attr">field2</span>: <span class="string">'value2'</span></div><div class="line">&#125;)</div><div class="line"><span class="keyword">var</span> row2 = <span class="keyword">new</span> Row(&#123;<span class="attr">parent</span>: datatable&#125;)</div><div class="line">row2.setData(&#123;</div><div class="line"> <span class="attr">field1</span>: <span class="string">'value11'</span>,</div><div class="line"> <span class="attr">field2</span>: <span class="string">'value22'</span></div><div class="line">&#125;)</div><div class="line">datatable.addRow([row1,row2])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.insertRow"></a></p>
+<h4 id="DataTable-insertRow-index-row"><a href="#DataTable-insertRow-index-row" class="headerlink" title="DataTable.insertRow(index, row)"></a>DataTable.insertRow(index, row)</h4><p>在指定索引位置添加一条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>指定索引</td>
+</tr>
+<tr>
+<td>row</td>
+<td><code>u.Row</code></td>
+<td>数据行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> row1 = <span class="keyword">new</span> Row(&#123;<span class="attr">parent</span>: datatable&#125;)</div><div class="line">row1.setData(&#123;</div><div class="line"> <span class="attr">field1</span>: <span class="string">'value1'</span>,</div><div class="line"> <span class="attr">field2</span>: <span class="string">'value2'</span></div><div class="line">&#125;)</div><div class="line">datatable.insertRow(<span class="number">1</span>,row1)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.insertRows"></a></p>
+<h4 id="DataTable-insertRows-index-rows"><a href="#DataTable-insertRows-index-rows" class="headerlink" title="DataTable.insertRows(index, rows)"></a>DataTable.insertRows(index, rows)</h4><p>在指定索引位置添加多条数据行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>指定索引</td>
+</tr>
+<tr>
+<td>rows</td>
+<td><code>array</code></td>
+<td>数据行数组 var row1 = new Row({parent: datatable}) row1.setData({  field1: ‘value1’,  field2: ‘value2’ }) var row2 = new Row({parent: datatable}) row2.setData({  field1: ‘value11’,  field2: ‘value22’ }) datatable.insertRows(1,[row1,row2])</td>
+</tr>
+</tbody>
+</table>
+<p><a name="DataTable.createEmptyRow"></a></p>
+<h4 id="DataTable-createEmptyRow-⇒-u-Row"><a href="#DataTable-createEmptyRow-⇒-u-Row" class="headerlink" title="DataTable.createEmptyRow() ⇒ u.Row"></a>DataTable.createEmptyRow() ⇒ <code>u.Row</code></h4><p>创建空行</p>
+<p><strong>返回值</strong>: <code>u.Row</code> - 空行对象<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.createEmptyRow();</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setAllRowsSelect"></a></p>
+<h4 id="DataTable-setAllRowsSelect"><a href="#DataTable-setAllRowsSelect" class="headerlink" title="DataTable.setAllRowsSelect()"></a>DataTable.setAllRowsSelect()</h4><p>设置所有行选中</p>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setAllRowsSelect()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setRowSelect"></a></p>
+<h4 id="DataTable-setRowSelect-index"><a href="#DataTable-setRowSelect-index" class="headerlink" title="DataTable.setRowSelect(index)"></a>DataTable.setRowSelect(index)</h4><p>根据索引设置选中行，清空之前已选中的所有行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>需要选中行的索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowSelect(<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setRowsSelect"></a></p>
+<h4 id="DataTable-setRowsSelect-indices"><a href="#DataTable-setRowsSelect-indices" class="headerlink" title="DataTable.setRowsSelect(indices)"></a>DataTable.setRowsSelect(indices)</h4><p>根据索引数组设置选中行，清空之前已选中的所有行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indices</td>
+<td><code>array</code></td>
+<td>需要选中行的索引数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowsSelect([<span class="number">1</span>,<span class="number">2</span>])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addRowSelect"></a></p>
+<h4 id="DataTable-addRowSelect-index"><a href="#DataTable-addRowSelect-index" class="headerlink" title="DataTable.addRowSelect(index)"></a>DataTable.addRowSelect(index)</h4><p>根据索引添加选中行，不会清空之前已选中的行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>需要选中行的索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.addRowSelect(<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addRowsSelect"></a></p>
+<h4 id="DataTable-addRowsSelect-indices"><a href="#DataTable-addRowsSelect-indices" class="headerlink" title="DataTable.addRowsSelect(indices)"></a>DataTable.addRowsSelect(indices)</h4><p>根据索引数组添加选中行，不会清空之前已选中的行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indices</td>
+<td><code>array</code></td>
+<td>需要选中行的索引数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatabel.addRowsSelect([<span class="number">1</span>,<span class="number">2</span>])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setAllRowsUnSelect"></a></p>
+<h4 id="DataTable-setAllRowsUnSelect-options"><a href="#DataTable-setAllRowsUnSelect-options" class="headerlink" title="DataTable.setAllRowsUnSelect([options])"></a>DataTable.setAllRowsUnSelect([options])</h4><p>全部取消选中</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[options]</td>
+<td><code>object</code></td>
+<td>可选参数</td>
+</tr>
+<tr>
+<td>[options.quiet]</td>
+<td><code>boolean</code></td>
+<td>如果为true则不触发事件，否则触发事件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setAllRowsUnSelect() <span class="comment">// 全部取消选中</span></div><div class="line">datatable.setAllRowsUnSelect(&#123;<span class="attr">quiet</span>:<span class="literal">true</span>&#125;) <span class="comment">// 全部取消选中,不触发事件</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setRowUnSelect"></a></p>
+<h4 id="DataTable-setRowUnSelect-index"><a href="#DataTable-setRowUnSelect-index" class="headerlink" title="DataTable.setRowUnSelect(index)"></a>DataTable.setRowUnSelect(index)</h4><p>根据索引取消选中</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code></td>
+<td>需要取消选中的行索引</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowUnSelect(<span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setRowsUnSelect"></a></p>
+<h4 id="DataTable-setRowsUnSelect-indices"><a href="#DataTable-setRowsUnSelect-indices" class="headerlink" title="DataTable.setRowsUnSelect(indices)"></a>DataTable.setRowsUnSelect(indices)</h4><p>根据索引数组取消选中</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indices</td>
+<td><code>array</code></td>
+<td>需要取消选中的行索引数组</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowsUnSelect([<span class="number">1</span>,<span class="number">2</span>])</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.toggleAllSelect"></a></p>
+<h4 id="DataTable-toggleAllSelect"><a href="#DataTable-toggleAllSelect" class="headerlink" title="DataTable.toggleAllSelect()"></a>DataTable.toggleAllSelect()</h4><p>当全部选中时取消选中，否则全部选中</p>
+<p><a name="DataTable.setRowFocus"></a></p>
+<h4 id="DataTable-setRowFocus-index-quiet-force"><a href="#DataTable-setRowFocus-index-quiet-force" class="headerlink" title="DataTable.setRowFocus(index, [quiet], [force])"></a>DataTable.setRowFocus(index, [quiet], [force])</h4><p>设置焦点行</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td><code>number</code> &#124; <code>u.Row</code></td>
+<td>行对象或者行index</td>
+</tr>
+<tr>
+<td>[quiet]</td>
+<td><code>boolean</code></td>
+<td>如果为true则不触发事件，否则触发事件</td>
+</tr>
+<tr>
+<td>[force]</td>
+<td><code>boolean</code></td>
+<td>如果为true当index行与已focus的行相等时，仍然触发事件，否则不触发事件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowFocus(<span class="number">1</span>) <span class="comment">// 设置第二行为焦点行</span></div><div class="line">datatable.setRowFocus(<span class="number">1</span>,<span class="literal">true</span>) <span class="comment">// 设置第二行为焦点行，不触发事件</span></div><div class="line">datatable.setRowFocus(<span class="number">1</span>,<span class="literal">false</span>,<span class="literal">true</span>) <span class="comment">// 设置第二行为焦点行，如果当前焦点行为第二行，仍旧触发事件</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setRowUnFocus"></a></p>
+<h4 id="DataTable-setRowUnFocus"><a href="#DataTable-setRowUnFocus" class="headerlink" title="DataTable.setRowUnFocus()"></a>DataTable.setRowUnFocus()</h4><p>焦点行反选</p>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.setRowUnFocus()</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.setSimpleData"></a></p>
+<h4 id="DataTable-setSimpleData-data-options"><a href="#DataTable-setSimpleData-data-options" class="headerlink" title="DataTable.setSimpleData(data, [options])"></a>DataTable.setSimpleData(data, [options])</h4><p>设置数据, 只设置字段值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>array</code></td>
+<td></td>
+<td>数据信息</td>
+</tr>
+<tr>
+<td>[options]</td>
+<td><code>boject</code></td>
+<td></td>
+<td>可配置参数</td>
+</tr>
+<tr>
+<td>[options.unSelect]</td>
+<td><code>boject</code></td>
+<td><code>true</code></td>
+<td>是否默认选中第一行，如果为true则不选中第一行，否则选中第一行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> data = [&#123;</div><div class="line">  <span class="attr">filed1</span>:<span class="string">'value1'</span>,</div><div class="line">  <span class="attr">field2</span>:<span class="string">'value2'</span></div><div class="line">&#125;,&#123;</div><div class="line">  <span class="attr">filed1</span>:<span class="string">'value11'</span>,</div><div class="line">  <span class="attr">field2</span>:<span class="string">'value21'</span></div><div class="line">&#125;]</div><div class="line">datatable.setSimpleData(data)</div><div class="line">datatable.setSimpleData(data,&#123;<span class="attr">unSelect</span>:<span class="literal">false</span>&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.addSimpleData"></a></p>
+<h4 id="DataTable-addSimpleData-data-status"><a href="#DataTable-addSimpleData-data-status" class="headerlink" title="DataTable.addSimpleData(data, status)"></a>DataTable.addSimpleData(data, status)</h4><p>追加数据, 只设置字段值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>array</code></td>
+<td>数据信息</td>
+</tr>
+<tr>
+<td>status</td>
+<td><code>string</code></td>
+<td>追加数据信息的状态，参照Row对象的状态介绍</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> data = [&#123;</div><div class="line">  <span class="attr">filed1</span>:<span class="string">'value1'</span>,</div><div class="line">  <span class="attr">field2</span>:<span class="string">'value2'</span></div><div class="line">&#125;,&#123;</div><div class="line">  <span class="attr">filed1</span>:<span class="string">'value11'</span>,</div><div class="line">  <span class="attr">field2</span>:<span class="string">'value21'</span></div><div class="line">&#125;]</div><div class="line">datatable.addSimpleData(data,Row.STATUS.NEW)</div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.on"></a></p>
+<h4 id="DataTable-on-name-callback-one-⇒-DataTable"><a href="#DataTable-on-name-callback-one-⇒-DataTable" class="headerlink" title="DataTable.on(name, [callback], [one]) ⇒ DataTable"></a>DataTable.on(name, [callback], [one]) ⇒ <code><a href="#DataTable">DataTable</a></code></h4><p>为DataTable对象添加监听</p>
+<p><strong>返回值</strong>: <code><a href="#DataTable">DataTable</a></code> - 当前的DataTable对象  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>string</code> &#124; <code>array</code> &#124; <code>object</code></td>
+<td>针对不同用法分别对应监听名称、监听名称对应的数组、监听名称及对应的回调组成的对象</td>
+</tr>
+<tr>
+<td>[callback]</td>
+<td><code>function</code></td>
+<td>监听对应的回调函数</td>
+</tr>
+<tr>
+<td>[one]</td>
+<td><code>boolean</code></td>
+<td>是否只执行一次监听，为true则表示只执行一次回调函数，否则每次触发监听都是执行回调函数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.on(u.DataTable.ON_ROW_FOCUS, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 普通</span></div><div class="line">datatable.on([u.DataTable.ON_INSERT, u.DataTable.ON_DELETE], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 数组</span></div><div class="line">datatable.on(&#123;u.DataTable.ON_INSERT: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;, u.DataTable.ON_DELETE: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;&#125;) <span class="comment">// map</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.off"></a></p>
+<h4 id="DataTable-off-name-callback-⇒-DataTable"><a href="#DataTable-off-name-callback-⇒-DataTable" class="headerlink" title="DataTable.off(name, [callback]) ⇒ DataTable"></a>DataTable.off(name, [callback]) ⇒ <code><a href="#DataTable">DataTable</a></code></h4><p>为DataTable对象取消监听</p>
+<p><strong>返回值</strong>: <code><a href="#DataTable">DataTable</a></code> - 当前的DataTable对象  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>string</code> &#124; <code>array</code> &#124; <code>object</code></td>
+<td>针对不同用法分别对应监听名称、监听名称对应的数组、监听名称及对应的回调组成的对象</td>
+</tr>
+<tr>
+<td>[callback]</td>
+<td><code>function</code></td>
+<td>监听对应的回调函数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.off(u.DataTable.ON_ROW_FOCUS, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 普通</span></div><div class="line">datatable.off([u.DataTable.ON_INSERT, u.DataTable.ON_DELETE], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 数组</span></div><div class="line">datatable.off(&#123;u.DataTable.ON_INSERT: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;, u.DataTable.ON_DELETE: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;&#125;) <span class="comment">// map</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.one"></a></p>
+<h4 id="DataTable-one-name-callback"><a href="#DataTable-one-name-callback" class="headerlink" title="DataTable.one(name, [callback])"></a>DataTable.one(name, [callback])</h4><p>为DataTable对象添加只执行一次的监听</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>string</code> &#124; <code>array</code> &#124; <code>object</code></td>
+<td>针对不同用法分别对应监听名称、监听名称对应的数组、监听名称及对应的回调组成的对象</td>
+</tr>
+<tr>
+<td>[callback]</td>
+<td><code>function</code></td>
+<td>监听对应的回调函数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.one(u.DataTable.ON_ROW_FOCUS, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 普通</span></div><div class="line">datatable.one([u.DataTable.ON_INSERT, u.DataTable.ON_DELETE], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;) <span class="comment">// 数组</span></div><div class="line">datatable.one(&#123;u.DataTable.ON_INSERT: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;, u.DataTable.ON_DELETE: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;&#125;) <span class="comment">// map</span></div></pre></td></tr></table></figure></p>
+<p><a name="DataTable.trigger"></a></p>
+<h4 id="DataTable-trigger-name-⇒-DataTable"><a href="#DataTable-trigger-name-⇒-DataTable" class="headerlink" title="DataTable.trigger(name) ⇒ DataTable"></a>DataTable.trigger(name) ⇒ <code><a href="#DataTable">DataTable</a></code></h4><p>触发DataTable对象绑定的事件监听</p>
+<p><strong>返回值</strong>: <code><a href="#DataTable">DataTable</a></code> - 当前的DataTable对象  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>string</code></td>
+<td>需要触发的事件监听对应的名称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">datatable.trigger(<span class="string">'valuechange'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row"></a></p>
+<h3 id="Row-object"><a href="#Row-object" class="headerlink" title="Row : object"></a>Row : <code>object</code></h3><p>前端数据模型行对象</p>
+<ul>
+<li><a href="#Row">Row</a> : <code>object</code><ul>
+<li><em>instance</em><ul>
+<li><a href="#Row+rowId">.rowId</a> : <code>string</code></li>
+<li><a href="#Row+status">.status</a> : <code>string</code></li>
+<li><a href="#Row+parent">.parent</a></li>
+</ul>
+</li>
+<li><em>static</em><ul>
+<li><a href="#Row.setValue">.setValue(fieldName, value, [ctx])</a></li>
+<li><a href="#Row.setData">.setData(data, [subscribe], [options])</a></li>
+<li><a href="#Row.getValue">.getValue(fieldName)</a> ⇒ <code>string</code></li>
+<li><a href="#Row.getData">.getData()</a> ⇒ <code>object</code></li>
+<li><a href="#Row.getSimpleData">.getSimpleData([options])</a> ⇒ <code>object</code></li>
+<li><a href="#Row.setSimpleData">.setSimpleData(data, [status])</a></li>
+<li><a href="#Row.toggleSelect">.toggleSelect([type])</a></li>
+<li><a href="#Row.getMeta">.getMeta(fieldName, key, [fetchParent])</a> ⇒ <code>string</code></li>
+<li><a href="#Row.setMeta">.setMeta(fieldName, key, value)</a></li>
+<li><a href="#Row.ref">.ref(fieldName)</a></li>
+<li><a href="#Row.refMeta">.refMeta(fieldName, key)</a></li>
+<li><a href="#Row.refCombo">.refCombo(fieldName, datasource)</a></li>
+<li><a href="#Row.refDate">.refDate(fieldName, format)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="Row+rowId"></a></p>
+<h4 id="row-rowId-string"><a href="#row-rowId-string" class="headerlink" title="row.rowId : string"></a>row.rowId : <code>string</code></h4><p>当前行的唯一标识</p>
+<p><a name="Row+status"></a></p>
+<h4 id="row-status-string"><a href="#row-status-string" class="headerlink" title="row.status : string"></a>row.status : <code>string</code></h4><p>当前行的状态<br>Row.STATUS.NORMAL(‘nrm’) ：前后端都存在并且保持一致<br>Row.STATUS.UPDATE(‘upd’) ：前后端都存在并且前端进行了修改<br>Row.STATUS.NEW(‘new’) ：后端不存在，前端存在的数据<br>Row.STATUS.DELETE(‘del’) ：后端请求返回的状态，前端判断为此状态则将数据删除<br>Row.STATUS.FALSE_DELETE(‘fdel’) ：后端存在，前端不存在的数据</p>
+<p><strong>Default</strong>: <code>&quot;Row.STATUS.NEW&quot;</code><br><a name="Row+parent"></a></p>
+<h4 id="row-parent"><a href="#row-parent" class="headerlink" title="row.parent"></a>row.parent</h4><p>当前行对应的DataTable对象</p>
+<p><a name="Row.setValue"></a></p>
+<h4 id="Row-setValue-fieldName-value-ctx"><a href="#Row-setValue-fieldName-value-ctx" class="headerlink" title="Row.setValue(fieldName, value, [ctx])"></a>Row.setValue(fieldName, value, [ctx])</h4><p>设置对应字段的值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>需要设置的字段</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>需要设置的值</td>
+</tr>
+<tr>
+<td>[ctx]</td>
+<td><code>*</code></td>
+<td>自定义属性，在valuechange监听传入对象中可通过ctx获取此处设置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.setValue(<span class="string">'filed1'</span>,<span class="string">'value1'</span>) <span class="comment">// 设置字段值</span></div><div class="line">row.setValue(<span class="string">'filed1'</span>,<span class="string">'value1'</span>,<span class="string">'ctx'</span>) <span class="comment">//设置字段值，同时传入自定义数据</span></div></pre></td></tr></table></figure></p>
+<p><a name="Row.setData"></a></p>
+<h4 id="Row-setData-data-subscribe-options"><a href="#Row-setData-data-subscribe-options" class="headerlink" title="Row.setData(data, [subscribe], [options])"></a>Row.setData(data, [subscribe], [options])</h4><p>设置row的数据信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>object</code></td>
+<td>需要设置的配置信息</td>
+</tr>
+<tr>
+<td>[subscribe]</td>
+<td><code>boolean</code></td>
+<td>是否触发监听，true表示触发监听</td>
+</tr>
+<tr>
+<td>[options]</td>
+<td><code>object</code></td>
+<td>设置数据信息是的配置参数</td>
+</tr>
+<tr>
+<td>[options.fieldFlag]</td>
+<td><code>boolean</code></td>
+<td>未设置的meta是否进行存储，如果为true则未设置的meta也进行存储 var data = {   filed1:’value1’,   field2:’value2’ } row.setData(data) row.setData(data,false) row.setData(data),false,{fieldFlag:true})</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Row.getValue"></a></p>
+<h4 id="Row-getValue-fieldName-⇒-string"><a href="#Row-getValue-fieldName-⇒-string" class="headerlink" title="Row.getValue(fieldName) ⇒ string"></a>Row.getValue(fieldName) ⇒ <code>string</code></h4><p>获取row中某一字段的值</p>
+<p><strong>返回值</strong>: <code>string</code> - 字段值  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>字段名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.getValue(<span class="string">'field1'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.getData"></a></p>
+<h4 id="Row-getData-⇒-object"><a href="#Row-getData-⇒-object" class="headerlink" title="Row.getData() ⇒ object"></a>Row.getData() ⇒ <code>object</code></h4><p>获取数据信息</p>
+<p><strong>返回值</strong>: <code>object</code> - 格式如下：{‘id’: this.rowId, ‘status’: this.status, data: data}<br><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.getData()</div></pre></td></tr></table></figure></p>
+<p><a name="Row.getSimpleData"></a></p>
+<h4 id="Row-getSimpleData-options-⇒-object"><a href="#Row-getSimpleData-options-⇒-object" class="headerlink" title="Row.getSimpleData([options]) ⇒ object"></a>Row.getSimpleData([options]) ⇒ <code>object</code></h4><p>获取数据信息</p>
+<p><strong>返回值</strong>: <code>object</code> - 数据信息  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[options]</td>
+<td><code>object</code></td>
+<td>获取数据信息时的配置参数</td>
+</tr>
+<tr>
+<td>[options.fields]</td>
+<td><code>array</code></td>
+<td>获取数据信息时是否制定字段值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.getSimpleData()</div><div class="line">row.getSimpleData(&#123;<span class="attr">fields</span>:[<span class="string">'field1'</span>,<span class="string">'field2'</span>]&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.setSimpleData"></a></p>
+<h4 id="Row-setSimpleData-data-status"><a href="#Row-setSimpleData-data-status" class="headerlink" title="Row.setSimpleData(data, [status])"></a>Row.setSimpleData(data, [status])</h4><p>设置数据, 只设置字段值</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td><code>object</code></td>
+<td></td>
+<td>数据信息</td>
+</tr>
+<tr>
+<td>[status]</td>
+<td><code>boject</code></td>
+<td><code>nrm</code></td>
+<td>数据行状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> data = &#123;</div><div class="line">  <span class="attr">filed1</span>:<span class="string">'value1'</span>,</div><div class="line">  <span class="attr">field2</span>:<span class="string">'value2'</span></div><div class="line">&#125;</div><div class="line">datatable.setSimpleData(data)</div><div class="line">datatable.setSimpleData(data,<span class="string">'upd'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.toggleSelect"></a></p>
+<h4 id="Row-toggleSelect-type"><a href="#Row-toggleSelect-type" class="headerlink" title="Row.toggleSelect([type])"></a>Row.toggleSelect([type])</h4><p>切换数据行的选中状态</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[type]</td>
+<td><code>boolean</code></td>
+<td>执行选中操作时，如果为single则取消其他行的选中状态，否则只修改当前行的选中状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.toggleSelect()</div><div class="line">row.toggleSelect(<span class="string">'single'</span>)</div><div class="line">row.toggleSelect(<span class="string">'multi'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.getMeta"></a></p>
+<h4 id="Row-getMeta-fieldName-key-fetchParent-⇒-string"><a href="#Row-getMeta-fieldName-key-fetchParent-⇒-string" class="headerlink" title="Row.getMeta(fieldName, key, [fetchParent]) ⇒ string"></a>Row.getMeta(fieldName, key, [fetchParent]) ⇒ <code>string</code></h4><p>获取字段的属性</p>
+<p><strong>返回值</strong>: <code>string</code> - 属性值  </p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>Default</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td></td>
+<td>字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td></td>
+<td>属性名</td>
+</tr>
+<tr>
+<td>[fetchParent]</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>未定义时是否去DataTable对象查找，为true则未定义时去DataTable对象查找</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.getMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>)</div><div class="line">row.getMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>,<span class="literal">true</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.setMeta"></a></p>
+<h4 id="Row-setMeta-fieldName-key-value"><a href="#Row-setMeta-fieldName-key-value" class="headerlink" title="Row.setMeta(fieldName, key, value)"></a>Row.setMeta(fieldName, key, value)</h4><p>设置meta信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>需要设置meta信息的字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>meta信息的key</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>meta信息的值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.setMeta(<span class="string">'filed1'</span>,<span class="string">'type'</span>,<span class="string">'string'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.ref"></a></p>
+<h4 id="Row-ref-fieldName"><a href="#Row-ref-fieldName" class="headerlink" title="Row.ref(fieldName)"></a>Row.ref(fieldName)</h4><p>为某个字段绑定监听，当字段发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.ref(<span class="string">'field1'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.refMeta"></a></p>
+<h4 id="Row-refMeta-fieldName-key"><a href="#Row-refMeta-fieldName-key" class="headerlink" title="Row.refMeta(fieldName, key)"></a>Row.refMeta(fieldName, key)</h4><p>绑定字段属性，当字段属性发生改变时触发对应方法</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>绑定的属性key</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.refMeta(<span class="string">'field1'</span>,<span class="string">'type'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.refCombo"></a></p>
+<h4 id="Row-refCombo-fieldName-datasource"><a href="#Row-refCombo-fieldName-datasource" class="headerlink" title="Row.refCombo(fieldName, datasource)"></a>Row.refCombo(fieldName, datasource)</h4><p>为某个字段绑定监听，当字段发生改变时触发对应方法，针对下拉字段根据key转化为对应的value</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+<tr>
+<td>datasource</td>
+<td><code>string</code></td>
+<td>下拉数据源变量名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.refCombo(<span class="string">'field1'</span>,<span class="string">'source1'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+<p><a name="Row.refDate"></a></p>
+<h4 id="Row-refDate-fieldName-format"><a href="#Row-refDate-fieldName-format" class="headerlink" title="Row.refDate(fieldName, format)"></a>Row.refDate(fieldName, format)</h4><p>为某个字段绑定监听，当字段发生改变时触发对应方法，针对日期字段进行格式化</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fieldName</td>
+<td><code>string</code></td>
+<td>绑定的字段名</td>
+</tr>
+<tr>
+<td>format</td>
+<td><code>string</code></td>
+<td>格式化规则</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">row.refDate(<span class="string">'field1'</span>,<span class="string">'YYYY-MM-DD'</span>).subscribe(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure></p>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

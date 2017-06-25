@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vue.js 1.0.0 Released — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Vue.js 1.0.0 Released — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Vue.js 1.0.0 Released — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = ""</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Recent Posts
+            <a href="/atom.xml" target="_blank" style="vertical-align: middle; margin-left: 5px">
+                <img src="/images/feed.png" style="width:15px;height:15px">
+            </a>
+        </h2>
+        <ul style="padding:0">
+        
+            <li>
+                <a href="/2016/04/27/announcing-2.0/" class="sidebar-link">Announcing Vue.js 2.0</a>
+            </li>
+        
+            <li>
+                <a href="/2016/03/14/march-update/" class="sidebar-link">March 2016 Update</a>
+            </li>
+        
+            <li>
+                <a href="/2016/02/06/common-gotchas/" class="sidebar-link">Common Beginner Gotchas</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/28/vue-cli/" class="sidebar-link">Announcing vue-cli</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/28/why-no-template-url/" class="sidebar-link">Why Vue.js doesn't support templateURL</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/26/1.0.0-release/" class="sidebar-link current">Vue.js 1.0.0 Released</a>
+            </li>
+        
+            <li>
+                <a href="/2015/06/11/012-release/" class="sidebar-link">Vue.js 0.12 released!</a>
+            </li>
+        
+            <li>
+                <a href="/2014/12/08/011-component/" class="sidebar-link">0.11 Component Tips</a>
+            </li>
+        
+            <li>
+                <a href="/2014/11/09/vue-011-release/" class="sidebar-link">Vue.js 0.11 released!</a>
+            </li>
+        
+            <li>
+                <a href="/2014/07/29/vue-next/" class="sidebar-link">Vue.js 0.10.6, and what's next</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content with-sidebar blog post">
+    <h1>Vue.js 1.0.0 Released</h1>
+    <h4>Oct 26, 2015</h4>
+    <blockquote>
+<p>Hi HN! If you are not familiar with Vue.js, you might want to read this <a href="http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/" target="_blank" rel="external">blog post</a> for a higher level overview.</p>
+</blockquote>
+<p>After 300+ commits, 8 alphas, 4 betas and 2 release candidates, today I am very proud to announce the release of <a href="https://github.com/vuejs/vue/releases/tag/1.0.0" target="_blank" rel="external">Vue.js 1.0.0 Evangelion</a>! Many thanks to all those who participated in the API re-design process - it would not have been possible without all the input from the community.</p>
+<a id="more"></a>
+<h3 id="Improved-Template-Syntax"><a href="#Improved-Template-Syntax" class="headerlink" title="Improved Template Syntax"></a>Improved Template Syntax</h3><p>The 1.0 template syntax resolves a lot of subtle consistency issues and makes Vue templates more concise and more readable in general. The most notable new feature is the shorthand syntax for <code>v-on</code> and <code>v-bind</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- short for v-bind:href --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">:href</span>=<span class="string">"someURL"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- short for v-on:click --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"onClick"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>When used on a child component, <code>v-on</code> listens for custom events and <code>v-bind</code> can be used to bind props. The shorthands using child components very succinct:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">item-list</span></span></div><div class="line">  <span class="attr">:items</span>=<span class="string">"items"</span></div><div class="line">  @<span class="attr">ready</span>=<span class="string">"onItemsReady"</span></div><div class="line">  @<span class="attr">update</span>=<span class="string">"onItemsUpdate"</span>&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">item-list</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="API-Cleanup"><a href="#API-Cleanup" class="headerlink" title="API Cleanup"></a>API Cleanup</h3><p>The overall goal for Vue.js 1.0 is to make it suitable for larger projects. This is why there are many API deprecations. Except for ones that are barely used, the most common reason for a deprecation is that the feature leads to patterns that damages maintainability. Specifically, we are deprecating features that make it hard to maintain and refactor a component in isolation without affecting the rest of the project.</p>
+<p>For example, the default asset resolution in 0.12 has implicit fallbacks to parents in the component tree. This makes the assets available to a component non-deterministic and subject how it is used at runtime. In 1.0, all assets are now resolved in strict mode and there are no longer implicit fallbacks to parent. The <code>inherit</code> option is also removed, because it too often leads to tightly coupled components that are hard to refactor.</p>
+<h3 id="Faster-Initial-Rendering"><a href="#Faster-Initial-Rendering" class="headerlink" title="Faster Initial Rendering"></a>Faster Initial Rendering</h3><p>1.0 replaces the old <code>v-repeat</code> directive with <code>v-for</code>. In addition to providing the same functionality and more intuitive scoping, <code>v-for</code> provides up to <strong>100%</strong> initial render performance boost when rendering large lists and tables!</p>
+<h3 id="More-Powerful-Tooling"><a href="#More-Powerful-Tooling" class="headerlink" title="More Powerful Tooling"></a>More Powerful Tooling</h3><p>There are also exciting things going on outside of Vue.js core - <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="external">vue-loader</a> and <a href="https://github.com/vuejs/vueify" target="_blank" rel="external">vueify</a> have received major upgrades including:</p>
+<ul>
+<li><p>Hot component reloading. When a <code>*.vue</code> component is edited, all of its active instances are hot swapped without reloading the page. This means when making small changes, e.g. tweaking the styles or the template, your app doesn’t need to fully reload; the state of the app the swapped component can be preserved, drastically improving the development experience.</p>
+</li>
+<li><p>Scoped CSS. By simply adding a <code>scoped</code> attribute to your <code>*.vue</code> component style tags, the component’s template and final generated CSS are magically re-written to ensure a component’s styles are only applied to its own elements. Most importantly, the styles specified in a parent component <strong>does not</strong> leak down to child components nested within it.</p>
+</li>
+<li><p>ES2015 by default. JavaScript is evolving. You can write much cleaner and expressive code using the latest syntax. <code>vue-loader</code> and <code>vueify</code> now transpiles the JavaScript in your <code>*.vue</code> components out of the box, without the need for extra setup. Write future JavaScript today!</p>
+</li>
+</ul>
+<p>Combined with <a href="https://github.com/vuejs/vue-router" target="_blank" rel="external">vue-router</a>, Vue.js is now more than a library - it provides a solid foundation for building complex SPAs.</p>
+<h3 id="What’s-Next"><a href="#What’s-Next" class="headerlink" title="What’s Next?"></a>What’s Next?</h3><p>As what 1.0.0 usually suggests, the core API will stay stable for the foreseeable future and the library is ready for production use. Future development will focus on:</p>
+<ol>
+<li><p>Improving <code>vue-router</code> and make it production ready.</p>
+</li>
+<li><p>Streamlining the developer experience, e.g. a better devtool and a CLI for scaffolding Vue.js projects and components.</p>
+</li>
+<li><p>Providing more learning resources such as tutorials and examples.</p>
+</li>
+</ol>
+
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

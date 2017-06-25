@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>grid详解 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="grid详解 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="grid详解 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link current">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>grid详解</h1>
+    
+    <h2 id="Grid表格控件"><a href="#Grid表格控件" class="headerlink" title="Grid表格控件"></a>Grid表格控件</h2><p>表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。</p>
+<h3 id="插件依赖"><a href="#插件依赖" class="headerlink" title="插件依赖"></a>插件依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;!--css--&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;//design.yonyoucloud.com/static/uui/latest/css/font-awesome.css&quot;&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;//design.yonyoucloud.com/static/uui/latest/css/u.css&quot;&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;//design.yonyoucloud.com/static/uui/latest/css/grid.css&quot;&gt;</div><div class="line"></div><div class="line">&lt;!--js--&gt;</div><div class="line">&lt;script src=&quot;//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;//design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;//design.yonyoucloud.com/static/uui/latest/js/u.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script src=&quot;//design.yonyoucloud.com/static/uui/latest/js/u-grid.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><p>1、创建div</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;div class=&quot;grid-body&quot;&gt;</div><div class="line">    &lt;div class=&quot;grid&quot; id=&quot;grid-comp1&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>2、创建column对象</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">var colu = [&#123;</div><div class="line">     field: &quot;id&quot;,</div><div class="line">    title: &quot;id&quot;</div><div class="line">&#125;, &#123;</div><div class="line">    field: &quot;pid&quot;,</div><div class="line">    title: &quot;pid&quot;</div><div class="line">&#125;, &#123;</div><div class="line">    field: &quot;column1&quot;,</div><div class="line">    title: &quot;column1&quot;</div><div class="line">&#125;, &#123;</div><div class="line">    field: &quot;column2&quot;,</div><div class="line">    title: &quot;column2&quot;</div><div class="line">&#125;, &#123;</div><div class="line">    field: &quot;column3&quot;,</div><div class="line">    title: &quot;column3&quot;</div><div class="line">&#125;</div><div class="line">];</div></pre></td></tr></table></figure>
+<p>3、创建数据信息</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">var data1 = &#123;</div><div class="line">    values: [&#123;</div><div class="line">        column1: &quot;11&quot;,</div><div class="line">        column2: &quot;12&quot;,</div><div class="line">        column3: &quot;13&quot;,</div><div class="line">        id: &apos;0&apos;,</div><div class="line">        pid: &apos;&apos;</div><div class="line">    &#125;, &#123;</div><div class="line">        column1: &quot;21&quot;,</div><div class="line">        column2: &quot;22&quot;,</div><div class="line">        column3: &quot;23&quot;,</div><div class="line">        id: &apos;1&apos;,</div><div class="line">        pid: &apos;0&apos;</div><div class="line">    &#125;, &#123;</div><div class="line">        column1: &quot;31&quot;,</div><div class="line">        column2: &quot;32&quot;,</div><div class="line">        column3: &quot;33&quot;,</div><div class="line">        id: &apos;3&apos;,</div><div class="line">        pid: &apos;1&apos;</div><div class="line">    &#125;</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>4、创建表格控件<br>​    </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$(&quot;#grid-comp1&quot;).grid(&#123;</div><div class="line">    dataSource: data1,</div><div class="line">    id: &apos;case-g1&apos;,</div><div class="line">    editable: true,</div><div class="line">    keyField: &apos;id&apos;,</div><div class="line">    columnmenu: false,</div><div class="line">    parentKeyField: &apos;pid&apos;,</div><div class="line">    columns: colu</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="表格控件扩展说明"><a href="#表格控件扩展说明" class="headerlink" title="表格控件扩展说明"></a>表格控件扩展说明</h2><p>在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。</p>
+<h3 id="css覆盖"><a href="#css覆盖" class="headerlink" title="css覆盖"></a>css覆盖</h3><p>如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。</p>
+<h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>通过引用不同的主题文件的方式来修改当前表格的主题。</p>
+<p><strong>注：后续提供</strong></p>
+<h3 id="afterCreate"><a href="#afterCreate" class="headerlink" title="afterCreate"></a>afterCreate</h3><p>表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。<br>详见API：</p>
+<h3 id="扩展表格方法"><a href="#扩展表格方法" class="headerlink" title="扩展表格方法"></a>扩展表格方法</h3><p>此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。<br>源码库：<a href="https://github.com/iuap-design/neoui-grid.git" target="_blank" rel="external">https://github.com/iuap-design/neoui-grid.git</a></p>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

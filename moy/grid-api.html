@@ -1,0 +1,2986 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>gridAPI — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="gridAPI — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="gridAPI — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link current">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>gridAPI</h1>
+    
+    <h2 id="Grid-属性API"><a href="#Grid-属性API" class="headerlink" title="Grid 属性API"></a>Grid 属性API</h2><h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>grid</td>
+<td>表格控件的标识</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cancelFocus"><a href="#cancelFocus" class="headerlink" title="cancelFocus"></a>cancelFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>第二次点击行是否取消focus效果。true表示取消focus效果，false表示不取消focus效果</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cancelSelect"><a href="#cancelSelect" class="headerlink" title="cancelSelect"></a>cancelSelect</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>第二次点击行是否取消select效果。true表示取消select效果，false表示不取消select效果</td>
+</tr>
+</tbody>
+</table>
+<h3 id="showHeader"><a href="#showHeader" class="headerlink" title="showHeader"></a>showHeader</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否显示表头。true表示显示表头，false表示不显示表头</td>
+</tr>
+</tbody>
+</table>
+<h3 id="showNumCol"><a href="#showNumCol" class="headerlink" title="showNumCol"></a>showNumCol</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否显示数字列。true表示显示数字列，false表示不显示数字列</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multiSelect"><a href="#multiSelect" class="headerlink" title="multiSelect"></a>multiSelect</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否显示复选框以支持复选功能。true表示显示复选框，false表示不显示复选框</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rowHeight"><a href="#rowHeight" class="headerlink" title="rowHeight"></a>rowHeight</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>44</td>
+<td>内容区数据行的行高</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sumRowHeight"><a href="#sumRowHeight" class="headerlink" title="sumRowHeight"></a>sumRowHeight</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>44</td>
+<td>内容区合计行的行高</td>
+</tr>
+</tbody>
+</table>
+<h3 id="columnMenu"><a href="#columnMenu" class="headerlink" title="columnMenu"></a>columnMenu</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否显示表头操作按钮，通过表头操作按钮可以动态设置数据列是否显示。true表示显示表头操作按钮，false表示不显示表头操作按钮</td>
+</tr>
+</tbody>
+</table>
+<h3 id="canDrag"><a href="#canDrag" class="headerlink" title="canDrag"></a>canDrag</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否支持拖动表头以修改数据列宽度。true表示支持拖动功能，false表示不支持拖动功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="maxHeaderLevel"><a href="#maxHeaderLevel" class="headerlink" title="maxHeaderLevel"></a>maxHeaderLevel</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>1</td>
+<td>多级表头情况下，表头的最高层级。目前只支持最大为2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overWidthHiddenColumn"><a href="#overWidthHiddenColumn" class="headerlink" title="overWidthHiddenColumn"></a>overWidthHiddenColumn</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>表格的整体宽度不足以显示所有数据列时是否自动隐藏超出部分的数据列。true表示超出时自动隐藏，false表示超出时不自动隐藏</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sortable"><a href="#sortable" class="headerlink" title="sortable"></a>sortable</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否支持点击表头进行排序功能。true表示支持排序功能，false表示不支持排序功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="showSumRow"><a href="#showSumRow" class="headerlink" title="showSumRow"></a>showSumRow</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否支持合计功能以显示合计行。true表示支持合计功能，false表示不支持合计功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sumRowFirst"><a href="#sumRowFirst" class="headerlink" title="sumRowFirst"></a>sumRowFirst</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>合计行是否显示在第一行，true表示显示在第一行，false表示显示在最后一行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sumRowFixed"><a href="#sumRowFixed" class="headerlink" title="sumRowFixed"></a>sumRowFixed</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>合计行是否固定在头部/尾部，不随滚动条滚动</td>
+</tr>
+</tbody>
+</table>
+<h3 id="canSwap"><a href="#canSwap" class="headerlink" title="canSwap"></a>canSwap</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否支持拖动表头以交换数据列的位置。true表示支持交换功能，false表示不支持交换功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="showTree"><a href="#showTree" class="headerlink" title="showTree"></a>showTree</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否支持以树表形式进行展示。true表示支持树表功能，false表示不支持树表功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoExpand"><a href="#autoExpand" class="headerlink" title="autoExpand"></a>autoExpand</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>树表形式展示时是否默认展开所有节点。true表示默认展开所有节点，false表示默认不展开节点</td>
+</tr>
+</tbody>
+</table>
+<h3 id="needTreeSort"><a href="#needTreeSort" class="headerlink" title="needTreeSort"></a>needTreeSort</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>树表形式下是否需要对传入数据进行排序，此设置是为了优化性能。如果传入数据是无序的则设置为true，如果可以保证先传入父节点后传入子节点则设置为false提高性能。目前只支持为false的情况</td>
+</tr>
+</tbody>
+</table>
+<h3 id="needLocalStorage"><a href="#needLocalStorage" class="headerlink" title="needLocalStorage"></a>needLocalStorage</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否使用前端缓存，使用前端缓存的情况会在浏览器保存数据列的宽度、是否显示、位置等信息，再次进入页面会按照上次的状态进行显示。true表示使用前端缓存,false表示不使用前端缓存</td>
+</tr>
+</tbody>
+</table>
+<h3 id="noScroll"><a href="#noScroll" class="headerlink" title="noScroll"></a>noScroll</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否显示滚动条。如果数据列宽度中存在百分比的设置则此参数自动修改为true。true表示不显示滚动条，数据列的宽度会根据整体宽度重新计算,false表示按照默认显示，如果列宽度超过整体宽度则显示滚动条</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contentSelect"><a href="#contentSelect" class="headerlink" title="contentSelect"></a>contentSelect</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>点击内容区是否执行选中逻辑，单选情况下则此参数修改为true。true表示执行选中逻辑,false表示不执行选中逻辑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contentFocus"><a href="#contentFocus" class="headerlink" title="contentFocus"></a>contentFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>点击内容区是否执行focus逻辑。true表示执行focus逻辑,false表示不执行focus逻辑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="showEditIcon"><a href="#showEditIcon" class="headerlink" title="showEditIcon"></a>showEditIcon</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>数据列可修改情况下是否显示编辑图标。true表示显示编辑图标,false表示不显示编辑图标</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editable"><a href="#editable" class="headerlink" title="editable"></a>editable</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否支持编辑功能。true表示支持编辑功能，false表示不支持编辑功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editType"><a href="#editType" class="headerlink" title="editType"></a>editType</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>default</td>
+<td>设置编辑方式。default表示在数据行上进行编辑，form表示在单独的form区域进行编辑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fixedFloat"><a href="#fixedFloat" class="headerlink" title="fixedFloat"></a>fixedFloat</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>left</td>
+<td>固定列的对齐方式。left表示固定列在左侧显示，right表示固定列在右侧显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="groupField"><a href="#groupField" class="headerlink" title="groupField"></a>groupField</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td></td>
+<td>按照某个字段进行分组，需为表格中包含的field名称</td>
+</tr>
+</tbody>
+</table>
+<h3 id="groupSumRow"><a href="#groupSumRow" class="headerlink" title="groupSumRow"></a>groupSumRow</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>存在分组字段的情况下，是否按照分组显示小计功能</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Grid-生命周期API"><a href="#Grid-生命周期API" class="headerlink" title="Grid 生命周期API"></a>Grid 生命周期API</h2><h3 id="onBeforeRowSelected"><a href="#onBeforeRowSelected" class="headerlink" title="onBeforeRowSelected"></a>onBeforeRowSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行被选中之前触发，可在function中决定是否选中数据行，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onRowSelected"><a href="#onRowSelected" class="headerlink" title="onRowSelected"></a>onRowSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行被选中后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeRowUnSelected"><a href="#onBeforeRowUnSelected" class="headerlink" title="onBeforeRowUnSelected"></a>onBeforeRowUnSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行取消选中之前触发，可在function中决定是否取消数据行选中，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onRowUnSelected"><a href="#onRowUnSelected" class="headerlink" title="onRowUnSelected"></a>onRowUnSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行取消选中后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeAllRowSelected"><a href="#onBeforeAllRowSelected" class="headerlink" title="onBeforeAllRowSelected"></a>onBeforeAllRowSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在点击表头复选框选中所有数据行之前触发，可在function中决定是否选中所有数据行，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObjs</td>
+<td>所有数据行对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onAllRowSelected"><a href="#onAllRowSelected" class="headerlink" title="onAllRowSelected"></a>onAllRowSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在点击表头复选框选中所有数据行之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObjs</td>
+<td>所有数据行对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeAllRowUnSelected"><a href="#onBeforeAllRowUnSelected" class="headerlink" title="onBeforeAllRowUnSelected"></a>onBeforeAllRowUnSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在点击表头复选框取消选中所有数据行之前触发，可在function中决定是否取消选中所有数据行，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObjs</td>
+<td>所有数据行对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onAllRowUnSelected"><a href="#onAllRowUnSelected" class="headerlink" title="onAllRowUnSelected"></a>onAllRowUnSelected</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在点击表头复选框选中所有数据行之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObjs</td>
+<td>所有数据行对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeRowFocus"><a href="#onBeforeRowFocus" class="headerlink" title="onBeforeRowFocus"></a>onBeforeRowFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行触发focus之前触发，可在function中决定是否继续focus操作，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onRowFocus"><a href="#onRowFocus" class="headerlink" title="onRowFocus"></a>onRowFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行触发focus之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeRowUnFocus"><a href="#onBeforeRowUnFocus" class="headerlink" title="onBeforeRowUnFocus"></a>onBeforeRowUnFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行取消focus之前触发，可在function中决定是否取消focus操作，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onRowUnFocus"><a href="#onRowUnFocus" class="headerlink" title="onRowUnFocus"></a>onRowUnFocus</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行取消focus之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onDblClickFun"><a href="#onDblClickFun" class="headerlink" title="onDblClickFun"></a>onDblClickFun</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行被双击时触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeValueChange"><a href="#onBeforeValueChange" class="headerlink" title="onBeforeValueChange"></a>onBeforeValueChange</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在对数据进行修改之前触发，可在function中决定是否进行数据修改，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onValueChange"><a href="#onValueChange" class="headerlink" title="onValueChange"></a>onValueChange</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在对数据进行修改之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+<tr>
+<td>field</td>
+<td>数据改变对应的field</td>
+</tr>
+<tr>
+<td>oldValue</td>
+<td>数据改变之前的值</td>
+</tr>
+<tr>
+<td>newValue</td>
+<td>数据改变之后的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeClickFun"><a href="#onBeforeClickFun" class="headerlink" title="onBeforeClickFun"></a>onBeforeClickFun</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行触发click之前触发，可在function中决定是否继续数据行的click操作，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onBeforeEditFun"><a href="#onBeforeEditFun" class="headerlink" title="onBeforeEditFun"></a>onBeforeEditFun</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行编辑操作之前触发，可在function中决定是否取消进行编辑操作，return true则继续当前操作，return false则取消当前操作，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+<tr>
+<td>colIndex</td>
+<td>数据列对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="onRowHover"><a href="#onRowHover" class="headerlink" title="onRowHover"></a>onRowHover</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>在数据行hover之后触发，调用时传入参数为object，object属性说明如下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="afterCreate"><a href="#afterCreate" class="headerlink" title="afterCreate"></a>afterCreate</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>表格创建完成或者重新添加数据之后触发，调用时无传入参数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Grid-列属性API"><a href="#Grid-列属性API" class="headerlink" title="Grid 列属性API"></a>Grid 列属性API</h2><h3 id="field"><a href="#field" class="headerlink" title="field"></a>field</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>null</td>
+<td>数据列对应的field</td>
+</tr>
+</tbody>
+</table>
+<h3 id="width"><a href="#width" class="headerlink" title="width"></a>width</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>200</td>
+<td>数据列显示的宽度，可支持百分比和数字两种方式。百分比情况下则内容区不显示滚动条。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sortable-1"><a href="#sortable-1" class="headerlink" title="sortable"></a>sortable</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>数据列是否支持排序。true表示支持排序，false表示不支持排序</td>
+</tr>
+</tbody>
+</table>
+<h3 id="canDrag-1"><a href="#canDrag-1" class="headerlink" title="canDrag"></a>canDrag</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>数据列是否支持拖动修改宽度。true表示支持拖动，false表示不支持拖动</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>是否为固定列。true表示此列为固定列，在表头前面固定显示，false，表示此列不为固定列</td>
+</tr>
+</tbody>
+</table>
+<h3 id="visible"><a href="#visible" class="headerlink" title="visible"></a>visible</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否显示。true表示此列进行显示，false表示此列不进行显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="canVisible"><a href="#canVisible" class="headerlink" title="canVisible"></a>canVisible</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>是否可以通过表头功能设置数据列是否显示。true表示可以通过表头设置是否显示，false表示不可以通过表头设置是否显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sumCol"><a href="#sumCol" class="headerlink" title="sumCol"></a>sumCol</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>表格支持合计功能时，是否计算合计。true表示需要计算合计，false表示不需要计算合计</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editable-1"><a href="#editable-1" class="headerlink" title="editable"></a>editable</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>表格支持修改过程时，数据列是否可以修改。true表示可以进行修改，false表示不可以进行修改</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editFormShow"><a href="#editFormShow" class="headerlink" title="editFormShow"></a>editFormShow</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>true</td>
+<td>在表格以form形式编辑时，数据列是否显示，此参数用于支持form编辑模式下可对未显示的数据列进行编辑。true表示显示，false表示不显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoExpand-1"><a href="#autoExpand-1" class="headerlink" title="autoExpand"></a>autoExpand</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>false</td>
+<td>数据列宽度是否需要自动扩展，只有最后一列需要设置为true。true表示自动扩展，false表示不自动扩展</td>
+</tr>
+</tbody>
+</table>
+<h3 id="renderType"><a href="#renderType" class="headerlink" title="renderType"></a>renderType</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>null</td>
+<td>数据列的渲染方式，通过function创建数据列对应的编辑控件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>单元格对应的value值</td>
+</tr>
+<tr>
+<td>element</td>
+<td>单元格渲染时，组件提供的顶层div，自定义渲染内容在此div下进行渲染</td>
+</tr>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>row</td>
+<td>单元格所在行对应的行对象，可获取所在行其他列信息</td>
+</tr>
+<tr>
+<td>gridCompColumn</td>
+<td>单元格对应的列对象，可获取所在列的配置信息</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>单元格所在行的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editType-1"><a href="#editType-1" class="headerlink" title="editType"></a>editType</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>function</td>
+<td>null</td>
+<td>数据列的编辑方式，通过function创建数据列对应的编辑控件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>object属性说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>单元格对应的value值</td>
+</tr>
+<tr>
+<td>element</td>
+<td>单元格编辑时，组件提供的顶层div，自定义编辑内容在此div下进行编辑</td>
+</tr>
+<tr>
+<td>gridObj</td>
+<td>表格控件对象</td>
+</tr>
+<tr>
+<td>field</td>
+<td>数据列对应的field</td>
+</tr>
+<tr>
+<td>rowObj</td>
+<td>数据行对象</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>数据行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataType"><a href="#dataType" class="headerlink" title="dataType"></a>dataType</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>String</td>
+<td>数据列的数据类型，支持：String, Date, Datetime, Int, Float</td>
+</tr>
+</tbody>
+</table>
+<h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>String</td>
+<td>数据列显示时的格式化方式。目前只对日期类型进行处理，例如：YYYY-MM-DD、YYYY-MM-DD hh:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h3 id="headerLevel"><a href="#headerLevel" class="headerlink" title="headerLevel"></a>headerLevel</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>1</td>
+<td>header的层级，目前只支持最大2级</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hiddenLevel"><a href="#hiddenLevel" class="headerlink" title="hiddenLevel"></a>hiddenLevel</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>1</td>
+<td>当表格属性overWidthHiddenColumn为true时，自动隐藏的优先级，数值越大，宽度不足时优先显示</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Grid-方法API"><a href="#Grid-方法API" class="headerlink" title="Grid 方法API"></a>Grid 方法API</h2><h3 id="setRequired"><a href="#setRequired" class="headerlink" title="setRequired"></a>setRequired</h3><p><strong>说明</strong></p>
+<p>编辑模式化设置某列是否必输</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>需要设置的数据列对应的field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示设置为必输，false表示设置为非必输</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getColumnAttr"><a href="#getColumnAttr" class="headerlink" title="getColumnAttr"></a>getColumnAttr</h3><p><strong>说明</strong></p>
+<p>获取field对应的column对象属性</p>
+<p><strong>返回值</strong></p>
+<p>对应的属性值</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attr</td>
+<td>string</td>
+<td>true</td>
+<td>属性名称</td>
+</tr>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>column对应的field</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getColumnByField"><a href="#getColumnByField" class="headerlink" title="getColumnByField"></a>getColumnByField</h3><p><strong>说明</strong></p>
+<p>根据field获取column对象</p>
+<p><strong>返回值</strong></p>
+<p>对应的column对象</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>stirng</td>
+<td>true</td>
+<td>需要获取的column对象对应的field</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getIndexOfColumn"><a href="#getIndexOfColumn" class="headerlink" title="getIndexOfColumn"></a>getIndexOfColumn</h3><p><strong>说明</strong></p>
+<p>获取column对象的index</p>
+<p><strong>返回值</strong></p>
+<p>对应的index</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>object</td>
+<td>true</td>
+<td>column对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getVisibleIndexOfColumn"><a href="#getVisibleIndexOfColumn" class="headerlink" title="getVisibleIndexOfColumn"></a>getVisibleIndexOfColumn</h3><p><strong>说明</strong></p>
+<p>获取column对象在显示的数据列中的index</p>
+<p><strong>返回值</strong></p>
+<p>对应的index</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>object</td>
+<td>true</td>
+<td>column对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getNextVisibleInidexOfColumn"><a href="#getNextVisibleInidexOfColumn" class="headerlink" title="getNextVisibleInidexOfColumn"></a>getNextVisibleInidexOfColumn</h3><p><strong>说明</strong></p>
+<p>获取column后面第一个显示列所在第几列</p>
+<p><strong>返回值</strong></p>
+<p>对应的index</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>object</td>
+<td>true</td>
+<td>column对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setColumnVisibleByColumn"><a href="#setColumnVisibleByColumn" class="headerlink" title="setColumnVisibleByColumn"></a>setColumnVisibleByColumn</h3><p><strong>说明</strong></p>
+<p>通过column对象设置某列是否显示</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>object</td>
+<td>true</td>
+<td>column对象</td>
+</tr>
+<tr>
+<td>visible</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示设置为显示，false表示设置为不显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setColumnVisibleByIndex"><a href="#setColumnVisibleByIndex" class="headerlink" title="setColumnVisibleByIndex"></a>setColumnVisibleByIndex</h3><p><strong>说明</strong></p>
+<p>通过index设置某列是否显示</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>true</td>
+<td>数据列对应的index</td>
+</tr>
+<tr>
+<td>visible</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示设置为显示，false表示设置为不显示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setCoulmnWidthByField"><a href="#setCoulmnWidthByField" class="headerlink" title="setCoulmnWidthByField"></a>setCoulmnWidthByField</h3><p><strong>说明</strong></p>
+<p>通过field属性设置数据列宽度</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>所需修改数据对应的field</td>
+</tr>
+<tr>
+<td>newWidth</td>
+<td>string</td>
+<td>true</td>
+<td>所需修改数据的新宽度的数值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setCoulmnWidth"><a href="#setCoulmnWidth" class="headerlink" title="setCoulmnWidth"></a>setCoulmnWidth</h3><p><strong>说明</strong></p>
+<p>通过coulmn对象设置宽度</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>object</td>
+<td>true</td>
+<td>column对象</td>
+</tr>
+<tr>
+<td>newWidth</td>
+<td>string</td>
+<td>true</td>
+<td>所需修改数据的新宽度的数值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setDataSource"><a href="#setDataSource" class="headerlink" title="setDataSource"></a>setDataSource</h3><p><strong>说明</strong></p>
+<p>设置表格控件的数据信息</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataSource</td>
+<td>object</td>
+<td>true</td>
+<td>数据信息。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">gridObj.setDataSource(&#123;</div><div class="line">    values: [&#123;</div><div class="line">        column1: &quot;11&quot;,</div><div class="line">        column2: &quot;12&quot;,</div><div class="line">        column3: &quot;13&quot;,</div><div class="line">        id: &apos;0&apos;,</div><div class="line">        pid: &apos;&apos;</div><div class="line">    &#125;, &#123;</div><div class="line">        column1: &quot;21&quot;,</div><div class="line">        column2: &quot;22&quot;,</div><div class="line">        column3: &quot;23&quot;,</div><div class="line">        id: &apos;1&apos;,</div><div class="line">        pid: &apos;0&apos;</div><div class="line">    &#125;, &#123;</div><div class="line">        column1: &quot;31&quot;,</div><div class="line">        column2: &quot;32&quot;,</div><div class="line">        column3: &quot;33&quot;,</div><div class="line">        id: &apos;3&apos;,</div><div class="line">        pid: &apos;1&apos;</div><div class="line">    &#125;]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="setDataSourceFun1"><a href="#setDataSourceFun1" class="headerlink" title="setDataSourceFun1"></a>setDataSourceFun1</h3><p><strong>说明</strong></p>
+<p>设置表格控件的数据信息与setDataSource传入格式不同</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataSource</td>
+<td>object</td>
+<td>true</td>
+<td>数据信息。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">gridObj.setDataSourceFun1(&#123;</div><div class="line">    fields:[&apos;column1&apos;,&apos;column2&apos;,&apos;column3&apos;,&apos;column4&apos;,&apos;column5&apos;,&apos;column6&apos;],</div><div class="line">        values:[</div><div class="line">        [&quot;cl1&quot;,&quot;1&quot;,&quot;cl3&quot;,&quot;cl4&quot;,&quot;cl5&quot;,&quot;cl6&quot;],</div><div class="line">        [&quot;cl12&quot;,&quot;2&quot;,&quot;cl32&quot;,&quot;cl42&quot;,&quot;cl52&quot;,&quot;cl62&quot;],</div><div class="line">        [&quot;cl13&quot;,&quot;3&quot;,&quot;cl33&quot;,&quot;cl43&quot;,&quot;cl53&quot;,&quot;cl63&quot;],</div><div class="line">        [&quot;cl14&quot;,&quot;4&quot;,&quot;cl34&quot;,&quot;cl44&quot;,&quot;cl54&quot;,&quot;cl64&quot;],</div><div class="line">        [&quot;cl15&quot;,&quot;5&quot;,&quot;cl35&quot;,&quot;cl45&quot;,&quot;cl55&quot;,&quot;cl65&quot;],</div><div class="line">        [&quot;cl16&quot;,&quot;6&quot;,&quot;cl36&quot;,&quot;cl46&quot;,&quot;cl56&quot;,&quot;cl66&quot;]</div><div class="line">        ]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="addOneRow"><a href="#addOneRow" class="headerlink" title="addOneRow"></a>addOneRow</h3><p><strong>说明</strong></p>
+<p>添加一行数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td>object</td>
+<td>true</td>
+<td>数据信息</td>
+</tr>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>false</td>
+<td>需要插入数据的位置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">gridObj.addonerow(&#123;</div><div class="line">        &quot;column1&quot;: &quot;value1&quot;,</div><div class="line">        &quot;column2&quot;: &quot;value2&quot;,</div><div class="line">        &quot;column3&quot;: &quot;value3&quot;</div><div class="line">    &#125;,1);</div></pre></td></tr></table></figure>
+<h3 id="addRows"><a href="#addRows" class="headerlink" title="addRows"></a>addRows</h3><p><strong>说明</strong></p>
+<p>添加多行数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rows</td>
+<td>array</td>
+<td>true</td>
+<td>数据信息</td>
+</tr>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>false</td>
+<td>需要插入数据的位置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">gridObj.addRows([&#123;</div><div class="line">        &quot;column1&quot;: &quot;value1&quot;,</div><div class="line">        &quot;column2&quot;: &quot;value2&quot;,</div><div class="line">        &quot;column3&quot;: &quot;value3&quot;</div><div class="line">    &#125;,&#123;</div><div class="line">        &quot;column1&quot;: &quot;value11&quot;,</div><div class="line">        &quot;column2&quot;: &quot;value22&quot;,</div><div class="line">        &quot;column3&quot;: &quot;value33&quot;</div><div class="line">    &#125;],1);</div></pre></td></tr></table></figure>
+<h3 id="deleteOneRow"><a href="#deleteOneRow" class="headerlink" title="deleteOneRow"></a>deleteOneRow</h3><p><strong>说明</strong></p>
+<p>删除某条数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>true</td>
+<td>需要删除数据对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="deleteRows"><a href="#deleteRows" class="headerlink" title="deleteRows"></a>deleteRows</h3><p><strong>说明</strong></p>
+<p>删除多条数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indexs</td>
+<td>array</td>
+<td>true</td>
+<td>需要删除数据的index组成的数组</td>
+</tr>
+</tbody>
+</table>
+<h3 id="updateRow"><a href="#updateRow" class="headerlink" title="updateRow"></a>updateRow</h3><p><strong>说明</strong></p>
+<p>修改某行数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>true</td>
+<td>被修改行的index</td>
+</tr>
+<tr>
+<td>row</td>
+<td>object</td>
+<td>true</td>
+<td>修改之后的数据信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">gridObj.updateRow(1,&#123;</div><div class="line">        &quot;column1&quot;: &quot;value1&quot;,</div><div class="line">        &quot;column2&quot;: &quot;value2&quot;,</div><div class="line">        &quot;column3&quot;: &quot;value3&quot;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
+<h3 id="updateValueAt"><a href="#updateValueAt" class="headerlink" title="updateValueAt"></a>updateValueAt</h3><p><strong>说明</strong></p>
+<p>修改某个单元格的数据</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>所需修改数据对应的行号</td>
+</tr>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>所需修改数据对应的field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>true</td>
+<td>修改之后的数据</td>
+</tr>
+<tr>
+<td>force</td>
+<td>boolean</td>
+<td>false</td>
+<td>true表示不管数据是否发生改变，都执行update操作，false表示只有数据改变时才执行update操作</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setRowSelect"><a href="#setRowSelect" class="headerlink" title="setRowSelect"></a>setRowSelect</h3><p><strong>说明</strong></p>
+<p>设置某行选中</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>选中行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setRowUnselect"><a href="#setRowUnselect" class="headerlink" title="setRowUnselect"></a>setRowUnselect</h3><p><strong>说明</strong></p>
+<p>取消某行的选中状态</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>取消选中行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setAllRowSelect"><a href="#setAllRowSelect" class="headerlink" title="setAllRowSelect"></a>setAllRowSelect</h3><p><strong>说明</strong></p>
+<p>设置所有行选中</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<h3 id="setAllRowUnSelect"><a href="#setAllRowUnSelect" class="headerlink" title="setAllRowUnSelect"></a>setAllRowUnSelect</h3><p><strong>说明</strong></p>
+<p>设置所有行取消选中</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<h3 id="getSelectRows"><a href="#getSelectRows" class="headerlink" title="getSelectRows"></a>getSelectRows</h3><p><strong>说明</strong></p>
+<p>获取所有选中行</p>
+<p><strong>返回值</strong></p>
+<p>所有选中行对象</p>
+<h3 id="getSelectRowsIndex"><a href="#getSelectRowsIndex" class="headerlink" title="getSelectRowsIndex"></a>getSelectRowsIndex</h3><p><strong>说明</strong></p>
+<p>获取所有选中行对应的inex</p>
+<p><strong>返回值</strong></p>
+<p>所有选中行index</p>
+<h3 id="setRowFocus"><a href="#setRowFocus" class="headerlink" title="setRowFocus"></a>setRowFocus</h3><p><strong>说明</strong></p>
+<p>设置某行为focus状态</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>focus行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setRowUnFocus"><a href="#setRowUnFocus" class="headerlink" title="setRowUnFocus"></a>setRowUnFocus</h3><p><strong>说明</strong></p>
+<p>取消某行的focus状态</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>取消focus行对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getFocusRow"><a href="#getFocusRow" class="headerlink" title="getFocusRow"></a>getFocusRow</h3><p><strong>说明</strong></p>
+<p>获取focus行对象</p>
+<p><strong>返回值</strong></p>
+<p>focus行对象</p>
+<h3 id="getFocusRowIndex"><a href="#getFocusRowIndex" class="headerlink" title="getFocusRowIndex"></a>getFocusRowIndex</h3><p><strong>说明</strong></p>
+<p>获取focus行对应的index</p>
+<p><strong>返回值</strong></p>
+<p>focus行对应的index</p>
+<h3 id="getAllRows"><a href="#getAllRows" class="headerlink" title="getAllRows"></a>getAllRows</h3><p><strong>说明</strong></p>
+<p>获取所有行对象</p>
+<p><strong>返回值</strong></p>
+<p>所有行对象</p>
+<h3 id="getRowByIndex"><a href="#getRowByIndex" class="headerlink" title="getRowByIndex"></a>getRowByIndex</h3><p><strong>说明</strong></p>
+<p>根据行号获取行对象</p>
+<p><strong>返回值</strong></p>
+<p>行号对应的行对象</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>true</td>
+<td>需要获取的行对象对应的index</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getRowIndexByValue"><a href="#getRowIndexByValue" class="headerlink" title="getRowIndexByValue"></a>getRowIndexByValue</h3><p><strong>说明</strong></p>
+<p>根据value值获取行号</p>
+<p><strong>返回值</strong></p>
+<p>查找到的行号</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>stirng</td>
+<td>true</td>
+<td>value值对应的field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>string</td>
+<td>true</td>
+<td>value值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getChildRowIndex"><a href="#getChildRowIndex" class="headerlink" title="getChildRowIndex"></a>getChildRowIndex</h3><p><strong>说明</strong></p>
+<p>树表展示下根据row对象获取此row下所有子元素的rowIndex</p>
+<p><strong>返回值</strong></p>
+<p>查找到的行号</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row</td>
+<td>object</td>
+<td>true</td>
+<td>grid中的row对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="getColumnByVisibleIndex"><a href="#getColumnByVisibleIndex" class="headerlink" title="getColumnByVisibleIndex"></a>getColumnByVisibleIndex</h3><p><strong>说明</strong></p>
+<p>获取显示的第N列的column对象</p>
+<p><strong>返回值</strong></p>
+<p>查找到的行号</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td>true</td>
+<td>需要查找的列在所有显示列中的序号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setRenderType"><a href="#setRenderType" class="headerlink" title="setRenderType"></a>setRenderType</h3><p><strong>说明</strong></p>
+<p>设置某列的renderType属性</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>设置renderType属性数据列对应的field</td>
+</tr>
+<tr>
+<td>renderType</td>
+<td>function</td>
+<td>true</td>
+<td>新的renderType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setShowHeader"><a href="#setShowHeader" class="headerlink" title="setShowHeader"></a>setShowHeader</h3><p><strong>说明</strong></p>
+<p>设置是否显示表头</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showHeader</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示设置为显示表头，false表示设置为不显示表头</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setColumnPrecision"><a href="#setColumnPrecision" class="headerlink" title="setColumnPrecision"></a>setColumnPrecision</h3><p><strong>说明</strong></p>
+<p>设置数据列的精度</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>需要设置的数据列对应的field</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setMultiSelect"><a href="#setMultiSelect" class="headerlink" title="setMultiSelect"></a>setMultiSelect</h3><p><strong>说明</strong></p>
+<p>设置是否显示复选框</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiSelect</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示显示复选框，false表示不显示复选框</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setShowNumCol"><a href="#setShowNumCol" class="headerlink" title="setShowNumCol"></a>setShowNumCol</h3><p><strong>说明</strong></p>
+<p>设置是否显示数字列</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showNumCol</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示显示数字列，false表示不显示数字列</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setEditType"><a href="#setEditType" class="headerlink" title="setEditType"></a>setEditType</h3><p><strong>说明</strong></p>
+<p>设置某列的editType属性</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td>string</td>
+<td>true</td>
+<td>设置editType属性数据列对应的field</td>
+</tr>
+<tr>
+<td>editType</td>
+<td>function</td>
+<td>true</td>
+<td>新的editType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setEditable"><a href="#setEditable" class="headerlink" title="setEditable"></a>setEditable</h3><p><strong>说明</strong></p>
+<p>设置是否支持编辑功能</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>editable</td>
+<td>boolean</td>
+<td>true</td>
+<td>true表示支持编辑功能，false表示不支持编辑功能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setGridEditType"><a href="#setGridEditType" class="headerlink" title="setGridEditType"></a>setGridEditType</h3><p><strong>说明</strong></p>
+<p>设置编辑方式</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>newEditType</td>
+<td>string</td>
+<td>true</td>
+<td>default表示在数据行上进行编辑，form表示在单独的form区域进行编辑</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setGridEditTypeAndEditRow"><a href="#setGridEditTypeAndEditRow" class="headerlink" title="setGridEditTypeAndEditRow"></a>setGridEditTypeAndEditRow</h3><p><strong>说明</strong></p>
+<p>设置编辑方式同时出发对应单元格的编辑</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>newEditType</td>
+<td>string</td>
+<td>true</td>
+<td>default表示在数据行上进行编辑，form表示在单独的form区域进行编辑</td>
+</tr>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>单元格对应的行号</td>
+</tr>
+<tr>
+<td>colIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>单元格对应的列号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="expandNode"><a href="#expandNode" class="headerlink" title="expandNode"></a>expandNode</h3><p><strong>说明</strong></p>
+<p>树表形式下通过value展开某个节点</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keyValue</td>
+<td>string</td>
+<td>true</td>
+<td>需要展开节点的keyField对应的数值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="expandNodeByIndex"><a href="#expandNodeByIndex" class="headerlink" title="expandNodeByIndex"></a>expandNodeByIndex</h3><p><strong>说明</strong></p>
+<p>树表形式下通过index展开某个节点</p>
+<p><strong>返回值</strong></p>
+<p>无</p>
+<p><strong>参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rowIndex</td>
+<td>integer</td>
+<td>true</td>
+<td>需要展开节点的index</td>
+</tr>
+</tbody>
+</table>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

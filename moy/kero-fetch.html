@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>前端请求方法 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="前端请求方法 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="前端请求方法 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link current">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>前端请求方法</h1>
+    
+    <p><a name="ServerEvent"></a></p>
+<h2 id="ServerEvent-object"><a href="#ServerEvent-object" class="headerlink" title="ServerEvent : object"></a>ServerEvent : <code>object</code></h2><p>前端请求事件</p>
+<ul>
+<li><a href="#ServerEvent">ServerEvent</a> : <code>object</code><ul>
+<li><a href="#ServerEvent.addDataTable">.addDataTable(dataTableId, rule)</a></li>
+<li><a href="#ServerEvent.addDataTables">.addDataTables(dataTables, rule)</a></li>
+<li><a href="#ServerEvent.addAllDataTables">.addAllDataTables(rule)</a></li>
+<li><a href="#ServerEvent.fire">.fire(p)</a></li>
+<li><a href="#ServerEvent.setCompression">.setCompression(compression)</a></li>
+<li><a href="#ServerEvent.addParameter">.addParameter(key, value)</a></li>
+<li><a href="#ServerEvent.setEvent">.setEvent(event)</a></li>
+</ul>
+</li>
+</ul>
+<p><a name="ServerEvent.addDataTable"></a></p>
+<h3 id="ServerEvent-addDataTable-dataTableId-rule"><a href="#ServerEvent-addDataTable-dataTableId-rule" class="headerlink" title="ServerEvent.addDataTable(dataTableId, rule)"></a>ServerEvent.addDataTable(dataTableId, rule)</h3><p>增加一个datatable</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataTableId</td>
+<td><code>number</code></td>
+<td>dataTable的id：唯一标示</td>
+</tr>
+<tr>
+<td>rule</td>
+<td><code>string</code></td>
+<td>all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据；</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().addDataTable(<span class="string">'datatableid'</span>,<span class="string">'all'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.addDataTables"></a></p>
+<h3 id="ServerEvent-addDataTables-dataTables-rule"><a href="#ServerEvent-addDataTables-dataTables-rule" class="headerlink" title="ServerEvent.addDataTables(dataTables, rule)"></a>ServerEvent.addDataTables(dataTables, rule)</h3><p>增加多个datatable</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataTables</td>
+<td><code>array</code></td>
+<td>dataTable的数组</td>
+</tr>
+<tr>
+<td>rule</td>
+<td><code>string</code></td>
+<td>all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据；</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().addDataTables([datatableId,datatableId1,datatableId2],<span class="string">'all'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.addAllDataTables"></a></p>
+<h3 id="ServerEvent-addAllDataTables-rule"><a href="#ServerEvent-addAllDataTables-rule" class="headerlink" title="ServerEvent.addAllDataTables(rule)"></a>ServerEvent.addAllDataTables(rule)</h3><p>将rule对着匹配的datatable列表全部加入进来</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rule</td>
+<td><code>string</code></td>
+<td>all：所有数据； current：当前行数据； focus：焦点行数据； select：选中行数据； change：发生改变的数据；</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().addAllDataTables(<span class="string">'all'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.fire"></a></p>
+<h3 id="ServerEvent-fire-p"><a href="#ServerEvent-fire-p" class="headerlink" title="ServerEvent.fire(p)"></a>ServerEvent.fire(p)</h3><p>前端缓存:前端会存储所有页的数据信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p</td>
+<td><code>object</code></td>
+<td>请求的json参数字段，必须包含url</td>
+</tr>
+<tr>
+<td>p.url</td>
+<td><code>string</code></td>
+<td>请求地址</td>
+</tr>
+<tr>
+<td>[p.type]</td>
+<td><code>string</code></td>
+<td>请求类型</td>
+</tr>
+<tr>
+<td>[p.success]</td>
+<td><code>string</code></td>
+<td>请求成功回调方法</td>
+</tr>
+<tr>
+<td>[p.error]</td>
+<td><code>string</code></td>
+<td>请求失败回调方法</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong> <em>(fire方法的使用示例)</em><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().addDataTable(<span class="string">'dataTableid'</span>).fire(&#123;</div><div class="line"> <span class="attr">type</span>:<span class="string">"get"</span>,</div><div class="line"> <span class="attr">url</span>:<span class="string">"..../list"</span>,</div><div class="line"> <span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line"> &#125;,</div><div class="line"> <span class="attr">error</span>:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line"> &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p><strong>Example</strong> <em>(fire方法传递给后台的数据示例)</em><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">     <span class="string">"environment"</span>: &#123;</div><div class="line">         <span class="string">"clientAttributes"</span>: &#123;&#125;</div><div class="line">     &#125;,</div><div class="line">     <span class="string">"dataTables"</span>: &#123;</div><div class="line">         <span class="string">"dictTypeDa"</span>: &#123;</div><div class="line">             <span class="string">"meta"</span>: &#123;</div><div class="line">                 ...</div><div class="line">             &#125;,</div><div class="line">             <span class="string">"params"</span>: &#123;</div><div class="line">                 <span class="string">"cls"</span>: <span class="string">"com.yonyou.iuap.example.entity.mybatis.SysDictType"</span>,</div><div class="line">                 <span class="string">"search_dicttypecode"</span>: <span class="string">""</span>,</div><div class="line">                 <span class="string">"search_dicttypename"</span>: <span class="string">""</span></div><div class="line">             &#125;,</div><div class="line">             <span class="string">"pages"</span>: [&#123;</div><div class="line">                 <span class="string">"index"</span>: <span class="number">0</span>,</div><div class="line">                 <span class="string">"select"</span>: [],</div><div class="line">                 <span class="string">"focus"</span>: <span class="number">-1</span>,</div><div class="line">                 <span class="string">"rows"</span>: []</div><div class="line">             &#125;],</div><div class="line">             <span class="string">"pageSize"</span>: <span class="number">5</span>,</div><div class="line">             <span class="string">"pageIndex"</span>: <span class="number">0</span>,</div><div class="line">             <span class="string">"isChanged"</span>: <span class="literal">false</span>,</div><div class="line">             <span class="string">"master"</span>: <span class="string">""</span>,</div><div class="line">             <span class="string">"pageCache"</span>: <span class="literal">true</span></div><div class="line">         &#125;</div><div class="line">     &#125;,</div><div class="line">     <span class="string">"compression"</span>: <span class="literal">false</span>,</div><div class="line">     <span class="string">"compressType"</span>: <span class="string">""</span>,</div><div class="line">     <span class="string">"parameters"</span>: &#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>Example</strong> <em>(fire方法后台返回的数据示例)</em><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">     <span class="string">"dataTables"</span>: &#123;</div><div class="line">         <span class="string">"dictTypeDa"</span>: &#123;</div><div class="line">             <span class="string">"pageSize"</span>: <span class="number">5</span>,</div><div class="line">             <span class="string">"pageIndex"</span>: <span class="number">0</span>,</div><div class="line">             <span class="string">"totalPages"</span>: <span class="number">5</span>,</div><div class="line">             <span class="string">"totalRow"</span>: <span class="number">25</span>,</div><div class="line">             <span class="string">"pages"</span>: [&#123;</div><div class="line">                 <span class="string">"index"</span>: <span class="number">0</span>,</div><div class="line">                 <span class="string">"select"</span>: [],</div><div class="line">                 <span class="string">"current"</span>: <span class="number">-1</span>,</div><div class="line">                 <span class="string">"rows"</span>: [&#123;</div><div class="line">                     <span class="string">"id"</span>: <span class="string">"r22901"</span>,</div><div class="line">                     <span class="string">"status"</span>: <span class="string">"nrm"</span>,</div><div class="line">                     <span class="string">"data"</span>: &#123;</div><div class="line">                         ...</div><div class="line">                     &#125;</div><div class="line">                 &#125;...]</div><div class="line">             &#125;],</div><div class="line">             <span class="string">"meta"</span>: <span class="literal">null</span></div><div class="line">         &#125;</div><div class="line">     &#125;,</div><div class="line">     <span class="string">"comps"</span>: <span class="string">""</span>,</div><div class="line">     <span class="string">"custom"</span>: <span class="string">""</span>,</div><div class="line">     <span class="string">"contentType"</span>: <span class="string">""</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.setCompression"></a></p>
+<h3 id="ServerEvent-setCompression-compression"><a href="#ServerEvent-setCompression-compression" class="headerlink" title="ServerEvent.setCompression(compression)"></a>ServerEvent.setCompression(compression)</h3><p>设置数据是否压缩，fire方法默认是false</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>compression</td>
+<td><code>boolean</code></td>
+<td>是否压缩的参数值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().setCompression(<span class="literal">true</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.addParameter"></a></p>
+<h3 id="ServerEvent-addParameter-key-value"><a href="#ServerEvent-addParameter-key-value" class="headerlink" title="ServerEvent.addParameter(key, value)"></a>ServerEvent.addParameter(key, value)</h3><p>为fire方法添加请求参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td><code>string</code></td>
+<td>参数key</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>参数value</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().addParameter(<span class="string">'key'</span>, <span class="string">'value'</span>)</div></pre></td></tr></table></figure></p>
+<p><a name="ServerEvent.setEvent"></a></p>
+<h3 id="ServerEvent-setEvent-event"><a href="#ServerEvent-setEvent-event" class="headerlink" title="ServerEvent.setEvent(event)"></a>ServerEvent.setEvent(event)</h3><p>为fire的ajax请求参数中设置事件参数,设置到params.data.event上面</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td><code>string</code></td>
+<td>事件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong><br><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">app.serverEvent().setEvent(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"> ...</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

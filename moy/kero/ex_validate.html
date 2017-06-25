@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>自定义验证 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="自定义验证 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="自定义验证 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link current">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>自定义验证</h1>
+    
+    <h4 id="自定义验证"><a href="#自定义验证" class="headerlink" title="自定义验证"></a>自定义验证</h4><p>本例实现自定义验证。</p>
+<h4 id="Validate"><a href="#Validate" class="headerlink" title="Validate"></a>Validate</h4><p>本例实现如下效果：</p>
+<ul>
+<li>验证非空</li>
+<li>验证数据格式</li>
+<li>绑定默认数值（类placeholder）</li>
+</ul>
+
+<div class="example-content"><!-- 
+	HTML
+	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 
+	id,type.data,field为必选项
+	id:创建组件唯一标识
+	type:创建组件对应的类型
+	data:指定数据模型中的数据集
+	field:绑定数据集中对应的字段
+-->
+<div class="u-form-group">
+    <label>验证输入不为空且需要为数值</label>
+    <div class="u-input-group u-has-feedback" u-meta="{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;otherSupportMoney&quot;}">
+        <div class="u-input-group-before" style="color: red;">*</div>
+        <input type="text" class="u-form-control">
+    </div>
+    <label>验证编码不能为空：</label>
+    <div class="u-input-group u-has-feedback" u-meta="{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;otherSupportCode&quot;}">
+        <div class="u-input-group-before" style="color: red;">*</div>
+        <input type="text" class="u-form-control">
+    </div>
+    <label>显示默认值：</label>
+    <div class="u-input-group u-has-feedback" u-meta="{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;isValid&quot;}">
+        <div class="u-input-group-before" style="color: red;">*</div>
+        <input type="text" class="u-form-control">
+    </div>
+    <label>显示默认值(函数)：</label>
+    <div class="u-input-group u-has-feedback" u-meta="{&quot;type&quot;:&quot;u-text&quot;,&quot;data&quot;:&quot;dt1&quot;,&quot;field&quot;:&quot;isDefault&quot;}">
+        <div class="u-input-group-before" style="color: red;">*</div>
+        <input type="text" class="u-form-control">
+    </div>
+</div>
+</div>
+
+
+
+<script>
+// JS
+
+var app,viewModel;
+
+/**
+ * viewModel 创建数据模型
+ * dt1 创建的数据集
+ * f1 创建数据集中的字段
+ * type:指定数据对应的类型
+ * otherSupportCode、otherSupportMoney、isValid、isDefault自定义验证条件
+ * required:必填项
+ * nullMsg:错误提示
+ * default:默认显示值，可以定义字符串或函数返回值
+ */
+var metaDt={
+    meta: {
+        id: {
+            type: 'string'
+        },
+        otherSupportCode: {
+            type: 'string',
+            required: true,
+            nullMsg: '编码不能为空！'
+        },
+        otherSupportMoney: {
+            type: 'float',
+            required: true,
+            nullMsg: '金额不能为空！'
+        },
+        isValid: {
+            type: 'string',
+            'default':'Y'
+        },
+        isDefault: {
+            type: 'string',
+            'default':function(){
+                return 'abc';
+            }
+        }
+    }
+};
+viewModel={
+    dt1: new u.DataTable(metaDt)
+};
+
+/**
+ * app 创建框架服务
+ * el 指定服务对应的顶层DOM
+ * model 指定服务对应的数据模型
+ */
+app=u.createApp({
+        el:'body',
+        model:viewModel
+    });
+
+// 创建空行
+var r = viewModel.dt1.createEmptyRow();
+viewModel.dt1.setRowSelect(0);
+
+
+
+
+
+
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!-- </span></div><div class="line">	HTML</div><div class="line">	u-meta:框架特有标记，框架通过识别此标记创建对应UI组件，以及进行数据绑定 </div><div class="line">	id,type.data,field为必选项</div><div class="line">	id:创建组件唯一标识</div><div class="line">	type:创建组件对应的类型</div><div class="line">	data:指定数据模型中的数据集</div><div class="line">	field:绑定数据集中对应的字段</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-form-group"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>验证输入不为空且需要为数值<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group u-has-feedback"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"u-text","data":"dt1","field":"otherSupportMoney"&#125;'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before"</span> <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>验证编码不能为空：<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group u-has-feedback"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"u-text","data":"dt1","field":"otherSupportCode"&#125;'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before"</span> <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>显示默认值：<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group u-has-feedback"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"u-text","data":"dt1","field":"isValid"&#125;'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before"</span> <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span>显示默认值(函数)：<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group u-has-feedback"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"u-text","data":"dt1","field":"isDefault"&#125;'</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before"</span> <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;</span>*<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// JS</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> app,viewModel;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * viewModel 创建数据模型</div><div class="line"> * dt1 创建的数据集</div><div class="line"> * f1 创建数据集中的字段</div><div class="line"> * type:指定数据对应的类型</div><div class="line"> * otherSupportCode、otherSupportMoney、isValid、isDefault自定义验证条件</div><div class="line"> * required:必填项</div><div class="line"> * nullMsg:错误提示</div><div class="line"> * default:默认显示值，可以定义字符串或函数返回值</div><div class="line"> */</div><div class="line"><span class="keyword">var</span> metaDt=&#123;</div><div class="line">    <span class="attr">meta</span>: &#123;</div><div class="line">        <span class="attr">id</span>: &#123;</div><div class="line">            <span class="attr">type</span>: <span class="string">'string'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">otherSupportCode</span>: &#123;</div><div class="line">            <span class="attr">type</span>: <span class="string">'string'</span>,</div><div class="line">            <span class="attr">required</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">nullMsg</span>: <span class="string">'编码不能为空！'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">otherSupportMoney</span>: &#123;</div><div class="line">            <span class="attr">type</span>: <span class="string">'float'</span>,</div><div class="line">            <span class="attr">required</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">nullMsg</span>: <span class="string">'金额不能为空！'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">isValid</span>: &#123;</div><div class="line">            <span class="attr">type</span>: <span class="string">'string'</span>,</div><div class="line">            <span class="string">'default'</span>:<span class="string">'Y'</span></div><div class="line">        &#125;,</div><div class="line">        <span class="attr">isDefault</span>: &#123;</div><div class="line">            <span class="attr">type</span>: <span class="string">'string'</span>,</div><div class="line">            <span class="string">'default'</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                <span class="keyword">return</span> <span class="string">'abc'</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">viewModel=&#123;</div><div class="line">    <span class="attr">dt1</span>: <span class="keyword">new</span> u.DataTable(metaDt)</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * app 创建框架服务</div><div class="line"> * el 指定服务对应的顶层DOM</div><div class="line"> * model 指定服务对应的数据模型</div><div class="line"> */</div><div class="line">app=u.createApp(&#123;</div><div class="line">        <span class="attr">el</span>:<span class="string">'body'</span>,</div><div class="line">        <span class="attr">model</span>:viewModel</div><div class="line">    &#125;);</div><div class="line"></div><div class="line"><span class="comment">// 创建空行</span></div><div class="line"><span class="keyword">var</span> r = viewModel.dt1.createEmptyRow();</div><div class="line">viewModel.dt1.setRowSelect(<span class="number">0</span>);</div></pre></td></tr></table></figure>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

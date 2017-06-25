@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>快速入门 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="快速入门 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="快速入门 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link current">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>快速入门</h1>
+    
+    <h2 id="moy是什么？"><a href="#moy是什么？" class="headerlink" title="moy是什么？"></a>moy是什么？</h2><p><code>moy</code> 是基于模型框架 <code>kero</code> 和 <code>UI</code> 框架 <code>neoui</code> 实现的应用框架，是一种前端集成解决方案，为企业级应用开发而生。<br>    github地址：<a href="https://github.com/iuap-design/tinper-moy" target="_blank" rel="external">https://github.com/iuap-design/tinper-moy</a></p>
+<h2 id="整体介绍"><a href="#整体介绍" class="headerlink" title="整体介绍"></a>整体介绍</h2><p>本文会一步步引导大家使用moy如何快速创建一个后台管理系统，该教程基于uba，包含查询、编辑、删除、创建，以及分页处理，数据 mock，自动处理 loading 状态等.</p>
+<p>最终演示：</p>
+<p><img src="https://design.yonyoucloud.com/static/img/tinper-docs/111.gif" alt="default"></p>
+<h2 id="环境准备和说明"><a href="#环境准备和说明" class="headerlink" title="环境准备和说明"></a>环境准备和说明</h2><ul>
+<li>安装<a href="http://nodejs.cn/" target="_blank" rel="external">node.js</a>开发环境，确保 node 版本是 4.x +</li>
+</ul>
+<ul>
+<li>用 <a href="http://npm.taobao.org/" target="_blank" rel="external">cnpm</a>能节约你安装依赖的时间</li>
+</ul>
+<h2 id="Step-1-使用uba初始化项目工程"><a href="#Step-1-使用uba初始化项目工程" class="headerlink" title="Step 1. 使用uba初始化项目工程"></a>Step 1. 使用uba初始化项目工程</h2><ol>
+<li><p>先安装<a href="https://github.com/iuap-design/tinper-uba" target="_blank" rel="external">uba</a>，并确保版本是2.0.4或以上(mac环境需加上<code>sudo</code>)</p>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">$ sudo npm install uba -g </div><div class="line">$ uba -v</div><div class="line">Version : 2.0.4</div></pre></td></tr></table></figure>
+</li>
+<li><p>然后创建应用，<a href="https://github.com/iuap-design/tinper-uba/blob/master/README_zh-CN.md" target="_blank" rel="external">uba详细使用文档</a>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ uba init</div></pre></td></tr></table></figure>
+</li>
+<li><p>根据上下键移动选择<code>uba-boilerplate-manage-init - 后台管理系统的示例工程(初始化)</code> ，并且输入自己的项目名称比如：<code>manage-demo</code><br>  ps：<code>uba-boilerplate-manage - 后台管理系统的示例工程</code> 是上面工程根据此文档完工后的示例工程，可以直接使用</p>
+</li>
+<li><p>进入应用，启动项目</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ cd manage-demo</div><div class="line">$ npm run start</div></pre></td></tr></table></figure>
+</li>
+<li><p>访问项目首页，<a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080/</a></p>
+<p>  uba初始化演示：</p>
+<p> <img src="https://design.yonyoucloud.com/static/img/tinper-docs/222.gif" alt="uba_init"></p>
+</li>
+</ol>
+<h2 id="step-2-实现路由切换页面展示"><a href="#step-2-实现路由切换页面展示" class="headerlink" title="step 2. 实现路由切换页面展示"></a>step 2. 实现路由切换页面展示</h2><ol>
+<li><p>注册路由：在<code>router/router.js</code>文件中替换为如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> [&#123;</div><div class="line">        <span class="attr">name</span>: <span class="string">"/mainPage/main"</span></div><div class="line">    &#125;, &#123;</div><div class="line">        <span class="attr">name</span>: <span class="string">"/cardtable/cardtable"</span></div><div class="line">    &#125;]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>在左侧栏添加入口：在<code>index.html</code>中加入新增应用管理入口代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"nav-menu height-full"</span> <span class="attr">id</span>=<span class="string">"menu"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- 原有代码请勿拷贝 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">'nav-li'</span>&gt;</span></div><div class="line">    ...</div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- 新增应用管理入口代码 begin --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">'nav-li'</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- a标签地址要指向到你想去的页面的路由地址 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#cardtable/cardtable"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"uf uf-4square-3"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"nav-title"</span>&gt;</span>应用管理<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- 新增应用管理入口代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>在首页添加入口：在<code>pages/mainPage/main.html</code>中加入新增应用管理代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-row bottom-layout margin-0"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- 原有代码请勿拷贝 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-xs-6 u-col-md-3 content"</span>&gt;</span></div><div class="line">    ...</div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!--新增应用管理 begin --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-xs-6 u-col-md-3 content"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#cardtable/cardtable"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-form-group"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-xs-12 content-svg"</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./static/applimanage.png"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!--新增应用管理 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>这个时候在浏览器刷新下页面，点击<strong>左侧栏</strong>的<strong>应用管理</strong>，这个时候地址栏变成了<a href="http://localhost:8080/#cardtable/cardtable" target="_blank" rel="external">http://localhost:8080/#cardtable/cardtable</a>，页面一片空白，到这里，这一步已经完成了</p>
+</li>
+</ol>
+<h2 id="step-3-实现grid表格数据展示和分页"><a href="#step-3-实现grid表格数据展示和分页" class="headerlink" title="step 3. 实现grid表格数据展示和分页"></a>step 3. 实现grid表格数据展示和分页</h2><ol>
+<li><p>添加grid表格ui：进入<code>pages/cardtable/cardtable.html</code>中加入grid表格相关代码到相应位置：</p>
+ <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list-panel"</span> <span class="attr">id</span>=<span class="string">"manager"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>系统管理<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!-- grid表格相关代码 begin --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-container cartable-container"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"hr-table"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"gridcardtable","type":"grid","data":"dt1","columnWidth":"150px","multiSelect":true,"contentSelect":false,"contentFocus":false,"canSwap":false&#125;'</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"code","title":"系统编码","dataType":"String","editType":"string"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"name","title":"系统名称","dataType":"String","editType":"string"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"gateway","title":"网关地址","dataType":"String","editType":"string"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"radiodatacontroller","title":"需要授权","type":"u-checkbox","data":"dt1","editOptions":&#123;"datasource":"radiodatacontroller"&#125;,"renderType":"comboRender"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"radiodataassociate","title":"用户自关联","type":"u-checkbox","data":"dt1","editOptions":&#123;"datasource":"radiodataassociate"&#125;,"renderType":"comboRender"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"combodatamodel","title":"认证模式","dataType":"String","editType":"string","renderType":"comboRender","editOptions":&#123;"datasource":"combodatamodel"&#125;&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"operate","dataType":"String","title":"操作","renderType":"optFun","editable":false,"autoExpand":true&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      	<span class="comment">&lt;!-- 分页部分 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'pagination'</span> <span class="attr">class</span>=<span class="string">'pagination u-pagination pagination-sm'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- grid表格相关代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>在js中添加grid表格中每一列对应field的参数：进入<code>pages/cardtable/cardtablemeta.js</code>中，将下面代码直接拷贝到该文件中</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> metaCardTable=&#123;</div><div class="line">		<span class="attr">meta</span>: &#123;</div><div class="line">            <span class="comment">//系统名称，和html中每一列的options参数中的field是一一对应</span></div><div class="line">		<span class="string">"name"</span>:&#123;</div><div class="line">			<span class="attr">type</span>:<span class="string">'string'</span>,</div><div class="line">			<span class="attr">required</span>:<span class="literal">true</span>,</div><div class="line">			<span class="attr">notipFlag</span>: <span class="literal">true</span>,</div><div class="line">			<span class="attr">hasSuccess</span>: <span class="literal">true</span>,</div><div class="line">			<span class="attr">nullMsg</span>:<span class="string">'系统名称不能为空!'</span></div><div class="line">		&#125;,</div><div class="line">		<span class="string">"code"</span>:&#123;</div><div class="line">			<span class="attr">type</span>:<span class="string">'string'</span>,</div><div class="line">			<span class="attr">required</span>:<span class="literal">true</span>,</div><div class="line">			<span class="attr">notipFlag</span>: <span class="literal">true</span>,</div><div class="line">			<span class="attr">hasSuccess</span>: <span class="literal">true</span>,</div><div class="line">			<span class="attr">nullMsg</span>:<span class="string">'系统编码不能为空!'</span></div><div class="line">		&#125;,</div><div class="line">		<span class="string">"radiodatacontroller"</span>:<span class="string">""</span>,</div><div class="line">		<span class="string">"radiodataassociate"</span>:<span class="string">""</span>,</div><div class="line">		<span class="string">"combodatamodel"</span>:<span class="string">""</span>,</div><div class="line">		<span class="string">"gateway"</span>: <span class="string">""</span>,</div><div class="line">		<span class="string">"operate"</span>: <span class="string">""</span></div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>然后将上面的js文件引入到<code>pages/cardtable/cardtablemeta.js</code>中，并且在<strong>init()</strong>中加入以下代码来实现html和数据的绑定:</p>
+<details><br><summary><strong>示例代码请点击展开</strong></summary><br><br> <figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> listUrl = ctx + <span class="string">'/cardtable/list'</span>;</div><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">            <span class="attr">app</span>: &#123;&#125;,</div><div class="line">            <span class="attr">draw</span>: <span class="number">1</span>,<span class="comment">//当前页面index</span></div><div class="line">            totlePage: <span class="number">0</span>,</div><div class="line">            <span class="attr">pageSize</span>: <span class="number">5</span>,</div><div class="line">            <span class="attr">totleCount</span>: <span class="number">0</span>,</div><div class="line">  			<span class="comment">//dt1对应的就是上面html中的u-meta的data中的dt1</span></div><div class="line">            dt1: <span class="keyword">new</span> u.DataTable(metaCardTable),</div><div class="line">            <span class="attr">radiodatacontroller</span>: [&#123;</div><div class="line">             <span class="attr">value</span>: <span class="string">'Y'</span>,</div><div class="line">             <span class="attr">name</span>: <span class="string">'是'</span></div><div class="line">            &#125;, &#123;</div><div class="line">             <span class="attr">value</span>: <span class="string">'N'</span>,</div><div class="line">             <span class="attr">name</span>: <span class="string">'否'</span></div><div class="line">            &#125;],</div><div class="line">            <span class="attr">radiodataassociate</span>: [&#123;</div><div class="line">             <span class="attr">value</span>: <span class="string">'Y'</span>,</div><div class="line">             <span class="attr">name</span>: <span class="string">'是'</span></div><div class="line">           &#125;, &#123;</div><div class="line">             <span class="attr">value</span>: <span class="string">'N'</span>,</div><div class="line">             <span class="attr">name</span>: <span class="string">'否'</span></div><div class="line">           &#125;],</div><div class="line">           <span class="attr">combodatamodel</span>: [&#123;</div><div class="line">             <span class="attr">name</span>: <span class="string">'信任'</span>,</div><div class="line">             <span class="attr">value</span>: <span class="string">'Y'</span></div><div class="line">           &#125;, &#123;</div><div class="line">             <span class="attr">name</span>: <span class="string">'不信任'</span>,</div><div class="line">             <span class="attr">value</span>: <span class="string">'N'</span></div><div class="line">           &#125;],</div><div class="line">            <span class="attr">event</span>: &#123;</div><div class="line">                <span class="comment">//清除datatable数据</span></div><div class="line">                clearDt: <span class="function"><span class="keyword">function</span>(<span class="params">dt</span>) </span>&#123;</div><div class="line">                    dt.removeAllRows();</div><div class="line">                    dt.clear();</div><div class="line">                &#125;,</div><div class="line">                <span class="comment">// 卡片表数据读取</span></div><div class="line">                initCardTableList: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    <span class="keyword">var</span> jsonData = &#123;</div><div class="line">                        <span class="attr">pageIndex</span>: viewModel.draw - <span class="number">1</span>,</div><div class="line">                        <span class="attr">pageSize</span>: viewModel.pageSize,</div><div class="line">                        <span class="attr">sortField</span>: <span class="string">"createtime"</span>,</div><div class="line">                        <span class="attr">sortDirection</span>: <span class="string">"asc"</span></div><div class="line">                    &#125;;</div><div class="line">                    $.ajax(&#123;</div><div class="line">                        <span class="attr">type</span>: <span class="string">'get'</span>,</div><div class="line">                        <span class="attr">url</span>: listUrl,</div><div class="line">                        <span class="attr">dataType</span>: <span class="string">'json'</span>,</div><div class="line">                        <span class="attr">data</span>: jsonData,</div><div class="line">                        <span class="attr">contentType</span>: <span class="string">'application/json;charset=utf-8'</span>,</div><div class="line">                        <span class="attr">success</span>: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</div><div class="line">                            <span class="keyword">if</span> (res) &#123;</div><div class="line">                                <span class="keyword">if</span> (res.success == <span class="string">'success'</span>) &#123;</div><div class="line">                                    <span class="keyword">if</span> (res.detailMsg.data) &#123;</div><div class="line">                                        <span class="keyword">if</span>(jsonData.pageSize==<span class="number">5</span>&amp;&amp;jsonData.pageIndex==<span class="number">1</span>)&#123;</div><div class="line">                                            res.detailMsg.data.content.splice(<span class="number">0</span>,<span class="number">5</span>);</div><div class="line">                                        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(jsonData.pageSize==<span class="number">5</span>)&#123;</div><div class="line">                                            res.detailMsg.data.content.splice(<span class="number">5</span>,<span class="number">3</span>);</div><div class="line">                                        &#125;</div><div class="line">                                        viewModel.totleCount = res.detailMsg.data.totalElements;</div><div class="line">                                        viewModel.totlePage = res.detailMsg.data.totalPages;</div><div class="line">                                      	<span class="comment">//更新分页信息</span></div><div class="line">                                        viewModel.event.comps.update(&#123;</div><div class="line">                                            <span class="attr">totalPages</span>: viewModel.totlePage,</div><div class="line">                                            <span class="attr">pageSize</span>: viewModel.pageSize,</div><div class="line">                                            <span class="attr">currentPage</span>: viewModel.draw,</div><div class="line">                                            <span class="attr">totalCount</span>: viewModel.totleCount</div><div class="line">                                        &#125;);</div><div class="line">                                        viewModel.dt1.removeAllRows();</div><div class="line">                                        viewModel.dt1.clear();</div><div class="line">                                        viewModel.dt1.setSimpleData(res.detailMsg.data.content, &#123;</div><div class="line">                                            <span class="attr">unSelect</span>: <span class="literal">true</span></div><div class="line">                                        &#125;);</div><div class="line">                                    &#125;</div><div class="line">                                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                                    <span class="keyword">var</span> msg = <span class="string">""</span>;</div><div class="line">                                    <span class="keyword">if</span> (res.success == <span class="string">'fail_global'</span>) &#123;</div><div class="line">                                        msg = res.message;</div><div class="line">                                    &#125; <span class="keyword">else</span> &#123;</div><div class="line">                                        <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> res.detailMsg) &#123;</div><div class="line">                                            msg += res.detailMsg[key] + <span class="string">"&lt;br/&gt;"</span>;</div><div class="line">                                        &#125;</div><div class="line">                                    &#125;</div><div class="line">                                    u.messageDialog(&#123;</div><div class="line">                                        <span class="attr">msg</span>: msg,</div><div class="line">                                        <span class="attr">title</span>: <span class="string">'请求错误'</span>,</div><div class="line">                                        <span class="attr">btnText</span>: <span class="string">'确定'</span></div><div class="line">                                    &#125;);</div><div class="line">                                &#125;</div><div class="line">                            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                                u.messageDialog(&#123;</div><div class="line">                                    <span class="attr">msg</span>: <span class="string">'后台返回数据格式有误，请联系管理员'</span>,</div><div class="line">                                    <span class="attr">title</span>: <span class="string">'数据错误'</span>,</div><div class="line">                                    <span class="attr">btnText</span>: <span class="string">'确定'</span></div><div class="line">                                &#125;);</div><div class="line">                            &#125;</div><div class="line">                        &#125;,</div><div class="line">                        <span class="attr">error</span>: <span class="function"><span class="keyword">function</span>(<span class="params">er</span>) </span>&#123;</div><div class="line">                            u.messageDialog(&#123;</div><div class="line">                                <span class="attr">msg</span>: <span class="string">'请求超时'</span>,</div><div class="line">                                <span class="attr">title</span>: <span class="string">'请求错误'</span>,</div><div class="line">                                <span class="attr">btnText</span>: <span class="string">'确定'</span></div><div class="line">                            &#125;);</div><div class="line">                        &#125;</div><div class="line">                    &#125;);</div><div class="line">                &#125;,</div><div class="line">                <span class="comment">//分页相关</span></div><div class="line">                pageChange: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    viewModel.event.comps.on(<span class="string">'pageChange'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">pageIndex</span>) </span>&#123;</div><div class="line">                        viewModel.draw = pageIndex + <span class="number">1</span>;</div><div class="line">                        viewModel.event.initCardTableList();</div><div class="line">                    &#125;);</div><div class="line">                &#125;,</div><div class="line">                <span class="attr">sizeChange</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    viewModel.event.comps.on(<span class="string">'sizeChange'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>) </span>&#123;</div><div class="line">                        viewModel.pageSize = <span class="built_in">parseInt</span>(arg);</div><div class="line">                        viewModel.draw = <span class="number">1</span>;</div><div class="line">                        viewModel.event.initCardTableList();</div><div class="line">                    &#125;);</div><div class="line">                &#125;,</div><div class="line">                <span class="comment">//页面初始化</span></div><div class="line">                pageInit: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    viewModel.app = u.createApp(&#123;</div><div class="line">                        <span class="attr">el</span>: element,</div><div class="line">                        <span class="attr">model</span>: viewModel</div><div class="line">                    &#125;);</div><div class="line">					<span class="comment">//找到分页的节点</span></div><div class="line">                    <span class="keyword">var</span> paginationDiv = $(element).find(<span class="string">'#pagination'</span>)[<span class="number">0</span>];</div><div class="line">                  	<span class="comment">//初始化分页页面，在获取到页面的具体的数据时候还会去更新分页信息</span></div><div class="line">                    <span class="keyword">this</span>.comps = <span class="keyword">new</span> u.pagination(&#123;</div><div class="line">                        <span class="attr">el</span>: paginationDiv,</div><div class="line">                        <span class="attr">jumppage</span>: <span class="literal">true</span></div><div class="line">                    &#125;);</div><div class="line">                    <span class="keyword">this</span>.initCardTableList();</div><div class="line">                    viewModel.event.pageChange();</div><div class="line">                    viewModel.event.sizeChange();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        $(element).html(html);</div><div class="line">        viewModel.event.pageInit();</div></pre></td></tr></table></figure><br><br></details>
+</li>
+<li><p>然后刷新页面，看到表格出现了！</p>
+<p>在此代码中，主要最重要的就是u-meta中的json字符串其中的参数，我这里控制的是不能点击，表头不支持拖动更改列顺序，其他功能可以参见<a href="/moy/grid_index.html">文档</a></p>
+</li>
+</ol>
+<h2 id="step-4-实现grid数据新增"><a href="#step-4-实现grid数据新增" class="headerlink" title="step 4. 实现grid数据新增"></a>step 4. 实现grid数据新增</h2><ol>
+<li><p>添加新增按钮ui部分：进入<code>pages/cardtable/cardtable.html</code>中，加入新增按钮部分的代码到相应位置，并且在<code>data-bind</code>属性中绑定点击事件<code>addClick</code>方法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list-panel"</span> <span class="attr">id</span>=<span class="string">"manager"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>系统管理<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line"></div><div class="line">  	<span class="comment">&lt;!-- 新增按钮 begin --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"common-header-2"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pull-left"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"u-button u-button-info "</span></span></div><div class="line">                    <span class="attr">id</span>=<span class="string">"addButton"</span> <span class="attr">data-bind</span>=<span class="string">"click: event.addClick"</span> <span class="attr">tabindex</span>=<span class="string">"-1"</span>&gt;新增</div><div class="line">            <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  	<span class="comment">&lt;!-- 新增按钮 end --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-container cartable-container"</span>&gt;</span></div><div class="line">        ...</div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>同时，在<code>pages/cardtable/cardtable.js</code>中的<code>viewModel.event</code>中添加<code>addClick</code>方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">  	...</div><div class="line">  	event: &#123;</div><div class="line">  		...</div><div class="line">  	<span class="comment">//addClick代码 begin</span></div><div class="line">    	addClick: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">          $(<span class="string">'#editPage'</span>).find(<span class="string">'.u-msg-title'</span>).html(<span class="string">"新增"</span>);</div><div class="line">          viewModel.event.clearDt(viewModel.dtnew);</div><div class="line">          <span class="keyword">var</span> newr = viewModel.dtnew.createEmptyRow();</div><div class="line">          newr.setValue(<span class="string">"radiodatacontroller"</span>, <span class="string">"Y"</span>);</div><div class="line">          newr.setValue(<span class="string">"radiodataassociate"</span>, <span class="string">"Y"</span>);</div><div class="line">          viewModel.dtnew.setRowSelect(newr);</div><div class="line">          $(<span class="string">'#code'</span>).removeAttr(<span class="string">"readOnly"</span>);</div><div class="line">          <span class="built_in">window</span>.md = u.dialog(&#123;</div><div class="line">            <span class="attr">id</span>: <span class="string">'addDialog'</span>,</div><div class="line">            <span class="attr">content</span>: <span class="string">'#editPage'</span>,</div><div class="line">            <span class="attr">hasCloseMenu</span>: <span class="literal">true</span></div><div class="line">          &#125;);</div><div class="line">          $(<span class="string">'#addDialog'</span>).css(<span class="string">'width'</span>, <span class="string">'70%'</span>);</div><div class="line">    	&#125;</div><div class="line">        <span class="comment">//addClick代码 end</span></div><div class="line">  	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>继续在js中的viewModel对象中加入dtnew属性代码</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">  <span class="attr">app</span>: &#123;&#125;,</div><div class="line">  <span class="attr">draw</span>: <span class="number">1</span>,</div><div class="line">  <span class="attr">totlePage</span>: <span class="number">0</span>,</div><div class="line">  <span class="attr">pageSize</span>: <span class="number">5</span>,</div><div class="line">  <span class="attr">totleCount</span>: <span class="number">0</span>,</div><div class="line">  <span class="attr">dt1</span>: <span class="keyword">new</span> u.DataTable(metaCardTable),</div><div class="line"></div><div class="line">  <span class="comment">//dtnew属性代码 begin</span></div><div class="line">  dtnew: <span class="keyword">new</span> u.DataTable(metaCardTable),<span class="comment">//新增时候的DataTable</span></div><div class="line">  <span class="comment">//dtnew属性代码 end</span></div><div class="line"></div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+<li><p>需要配置新增弹出页面，在<code>pages/cardtable/cardtable.html</code>中加入弹出页面代码，并且在页面的<code>取消</code>和<code>确定</code>按钮中相应增加了点击事件，分别是<code>saveCancelClick</code>和<code>saveOkClick</code></p>
+<details><br><summary><strong>弹出页面代码请点击展开</strong></summary><br><br><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="comment">&lt;!--原有代码请勿拷贝--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list-panel"</span> <span class="attr">id</span>=<span class="string">"manager"</span>&gt;</span></div><div class="line">    ...</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--新增弹出的页面 begin--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"editPage"</span> <span class="attr">style</span>=<span class="string">"background: #fff; display: none;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-msg-title"</span>&gt;</span>新增<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-msg-content "</span> <span class="attr">id</span>=<span class="string">"edit2"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--第一行--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">" u-row "</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2 "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"code"</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>系统编码:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-4 "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before padding-left-10 "</span></span></div><div class="line">             <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;*</div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"code"</span></span></div><div class="line">               <span class="attr">class</span>=<span class="string">"u-form-control padding-left-15"</span></div><div class="line">               <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"string","data":"dtnew","field":"code"&#125;'</span></div><div class="line">               <span class="attr">placeholder</span>=<span class="string">"系统编码不能为空"</span>&gt;</div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2 right-col"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>系统名称:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-4 "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-input-group-before padding-left-10 "</span></span></div><div class="line">             <span class="attr">style</span>=<span class="string">"color: red;"</span>&gt;*</div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"name"</span></span></div><div class="line">               <span class="attr">class</span>=<span class="string">"u-form-control padding-left-15"</span></div><div class="line">               <span class="attr">u-meta</span>=<span class="string">'&#123;"type":"string","data":"dtnew","field":"name"&#125;'</span></div><div class="line">               <span class="attr">placeholder</span>=<span class="string">"系统名称不能为空"</span>&gt;</div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--第二行--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">" system-row u-row margin-top-35"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2 "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>网关地址:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-4 "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"gateway"</span> <span class="attr">class</span>=<span class="string">"u-form-control"</span></span></div><div class="line">               <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"gateway","type":"string","data":"dtnew","field":"gateway"&#125;'</span></div><div class="line">               <span class="attr">placeholder</span>=<span class="string">"网关地址"</span>&gt;</div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2 right-col "</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>认证模式:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"model"</span> <span class="attr">class</span>=<span class="string">"u-col-4 u-combo u-label-floating"</span></span></div><div class="line">           <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"model","type":"u-combobox","data":"dtnew","field":"combodatamodel","renderType":"comboRender","datasource":"combodatamodel"&#125;'</span>&gt;</div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"u-input"</span>/&gt;</span> <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"u-combo-icon"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="comment">&lt;!--第三行--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">" system-row u-row margin-top-35"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>需要授权: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-4"</span> <span class="attr">id</span>=<span class="string">"underController"</span></span></div><div class="line">           <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"underController","type":"u-radio","data":"dtnew","field":"radiodatacontroller","renderType":"radioRender","datasource":"radiodatacontroller"&#125;'</span>&gt;</div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-radio"</span>&gt;</span> <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">class</span>=<span class="string">"u-radio-button"</span> <span class="attr">name</span>=<span class="string">"radiodatacontroller"</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span></span></div><div class="line">                                                                                                               <span class="attr">class</span>=<span class="string">"u-radio-label"</span>&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">          <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="comment">&lt;!--第四行--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">" system-row u-row margin-top-35"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-2"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-input-label right"</span>&gt;</span>自行关联: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-4"</span> <span class="attr">id</span>=<span class="string">"userAssociate"</span></span></div><div class="line">           <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"userAssociate","type":"u-radio","data":"dtnew","field":"radiodataassociate","renderType":"radioRender","datasource":"radiodataassociate"&#125;'</span>&gt;</div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"u-radio"</span>&gt;</span> <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span></span></div><div class="line">                                         <span class="attr">class</span>=<span class="string">"u-radio-button"</span> <span class="attr">name</span>=<span class="string">"radiodataassociate"</span>&gt; <span class="tag">&lt;<span class="name">span</span></span></div><div class="line">                                                                                                 <span class="attr">class</span>=<span class="string">"u-radio-label"</span>&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">          <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">" u-msg-footer "</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pull-right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"u-button u-button-white editCancel margin-right-15 "</span></span></div><div class="line">              <span class="attr">id</span>=<span class="string">"editCancel"</span> <span class="attr">data-bind</span>=<span class="string">"click: event.saveCancelClick"</span>&gt;取消</div><div class="line">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span></span></div><div class="line">              <span class="attr">class</span>=<span class="string">"u-button raised u-button-primary margin-right-10"</span> <span class="attr">id</span>=<span class="string">"editOk"</span></div><div class="line">              <span class="attr">data-bind</span>=<span class="string">"click: event.saveOkClick"</span>&gt;保存</div><div class="line">      <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--编辑和新增弹出的公用页面 begin--&gt;</span></div></pre></td></tr></table></figure><br><br></details>
+</li>
+<li><p>再往<code>pages/cardtable/cardtable.js</code>中的viewModel.event中添加<code>saveOkClick</code>和<code>saveCancelClick</code>方法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">  	...</div><div class="line">  	event: &#123;</div><div class="line">  		...</div><div class="line">  		<span class="comment">//点击事件代码 begin</span></div><div class="line">    	saveOkClick: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">          <span class="keyword">var</span> index = viewModel.index;</div><div class="line">          <span class="keyword">var</span> data = viewModel.dtnew.getSimpleData()[viewModel.dtnew.getSelectedIndexs()];</div><div class="line">          <span class="keyword">if</span> (!viewModel.app.compsValidate($(<span class="string">'#editPage'</span>)[<span class="number">0</span>])) &#123;</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">          &#125;</div><div class="line">          <span class="comment">//如果是readonly就是编辑，否则就是新增</span></div><div class="line">          <span class="keyword">if</span>($(<span class="string">'#code'</span>).attr(<span class="string">"readonly"</span>)==<span class="string">"readonly"</span>)&#123;</div><div class="line">            viewModel.dt1.getRowByRowId(index).setSimpleData(data)</div><div class="line">          &#125;<span class="keyword">else</span> &#123;</div><div class="line">            viewModel.dt1.addSimpleData(data);</div><div class="line">          &#125;</div><div class="line">          md.close();</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">saveCancelClick</span>: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">            md.close();</div><div class="line">        &#125;</div><div class="line">		<span class="comment">//点击事件代码 end</span></div><div class="line">  	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>到此，新增功能完毕，刷新下页面，试试自己的杰作吧！</p>
+<p>​</p>
+</li>
+</ol>
+<h2 id="step-5-实现grid数据编辑和删除"><a href="#step-5-实现grid数据编辑和删除" class="headerlink" title="step 5. 实现grid数据编辑和删除"></a>step 5. 实现grid数据编辑和删除</h2><ol>
+<li><p>因为在上面已经在html中加入了field为operate的列加入到了表格中了，见step 3。所以我们现在针对该属性定义的rederType属性中的值<code>optFun</code>，在<code>pages/cardtable/cardtable.js</code>中的viewModel对象中加入对应的方法，就可以显示出修改和删除图标了：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">  ...</div><div class="line"></div><div class="line">  <span class="comment">//定义操作列的内容 begin</span></div><div class="line">  optFun: <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">  	<span class="keyword">var</span> delfun = <span class="string">"data-bind=click:event.delClick.bind($data,"</span> + (obj.gridObj.getDataTableRowIdByRow(obj.row)) + <span class="string">")"</span>;</div><div class="line">  	<span class="keyword">var</span> editfun = <span class="string">"data-bind=click:event.editClick.bind($data,"</span> + (obj.gridObj.getDataTableRowIdByRow(obj.row)) + <span class="string">")"</span>;</div><div class="line">  	obj.element.innerHTML = <span class="string">'&lt;div&gt;&lt;i class="op uf uf-pencil" title="修改"'</span> + editfun + <span class="string">'&gt;&lt;/i&gt;'</span> + <span class="string">'&lt;i class=" op icon uf uf-del title="删除" '</span> + delfun + <span class="string">'&gt;&lt;/i&gt;&lt;/div&gt;'</span>;</div><div class="line">  	ko.applyBindings(viewModel, obj.element);</div><div class="line">  &#125;,</div><div class="line">  <span class="comment">//定义操作列的内容 end</span></div><div class="line"></div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在<code>optFun</code>方法中动态的加入了<strong>修改</strong>和<strong>删除</strong>图标，并绑定了相应的点击事件<code>delClick</code>和<code>editClick</code>。所以最后我们再往<code>pages/cardtable/cardtable.js</code>中的viewModel.ev中加入对应的方法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> viewModel = &#123;</div><div class="line">  	...</div><div class="line">  	event: &#123;</div><div class="line">  		...</div><div class="line">    	       <span class="comment">//点击事件 begin</span></div><div class="line">             editClick: <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</div><div class="line">                 viewModel.index = index;</div><div class="line">                 $(<span class="string">'#editPage'</span>).find(<span class="string">'.u-msg-title'</span>).html(<span class="string">"编辑"</span>);</div><div class="line">                 viewModel.event.clearDt(viewModel.dtnew);</div><div class="line">                 <span class="keyword">var</span> row = viewModel.dt1.getSelectedRows()[<span class="number">0</span>];</div><div class="line">           viewModel.dtnew.setSimpleData(viewModel.dt1.getRowByRowId(index).getSimpleData());</div><div class="line">                 $(<span class="string">'#code'</span>).attr(<span class="string">"readonly"</span>, <span class="string">"readonly"</span>);</div><div class="line">                 <span class="built_in">window</span>.md = u.dialog(&#123;</div><div class="line">                     <span class="attr">id</span>: <span class="string">'editDialog'</span>,</div><div class="line">                     <span class="attr">content</span>: <span class="string">'#editPage'</span>,</div><div class="line">                     <span class="attr">hasCloseMenu</span>: <span class="literal">true</span></div><div class="line">                 &#125;);</div><div class="line">             &#125;,</div><div class="line">             <span class="attr">delClick</span>: <span class="function"><span class="keyword">function</span>(<span class="params">index</span>) </span>&#123;</div><div class="line">                 <span class="keyword">var</span> row = viewModel.dt1.getSelectedRows()[<span class="number">0</span>];</div><div class="line">                 <span class="keyword">var</span> data = viewModel.dt1.getRowByRowId(index).getSimpleData()</div><div class="line">                 u.confirmDialog(&#123;</div><div class="line">                     <span class="attr">msg</span>: <span class="string">"是否删除"</span> + data.name + <span class="string">"?"</span>,</div><div class="line">                     <span class="attr">title</span>: <span class="string">"删除确认"</span>,</div><div class="line">                     <span class="attr">onOk</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                         viewModel.dt1.removeRowByRowId(index);</div><div class="line">                     &#125;,</div><div class="line">                     <span class="attr">onCancel</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">                 &#125;);</div><div class="line">             &#125;</div><div class="line">		  <span class="comment">//点击事件 end</span></div><div class="line">  	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>因为修改和新增是用的同一个弹出页面，所以现在，修改和删除功能也完成了</p>
+</li>
+</ol>
+<hr>
+<p>到这里，我们已经完成了一个标准功能的后台管理系统。但仅仅是完成，并不完善。</p>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

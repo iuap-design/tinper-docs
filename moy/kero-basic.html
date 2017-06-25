@@ -1,0 +1,1129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>典型场景开发 — moy</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="典型场景开发 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="典型场景开发 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "moy"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link current">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Moy
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/index.html" class="sidebar-link">快速入门</a>
+                </li>
+            
+                
+                
+                    
+                      <li><h3>Kero进阶</h3></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-begin.html" class="sidebar-link">起步</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-data.html" class="sidebar-link">数据模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-model.html" class="sidebar-link">控件模型</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-basic.html" class="sidebar-link current">典型场景开发</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero-api.html" class="sidebar-link">keroAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                      <li><h3>控件模型</h3></li>
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/cascader.html" class="sidebar-link">级联组件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/clockpicker.html" class="sidebar-link">表盘选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/currency_ex.html" class="sidebar-link">输入转换</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_checkbox.html" class="sidebar-link">复选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_datetime.html" class="sidebar-link">日期时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/combobox_ex.html" class="sidebar-link">下拉框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_month.html" class="sidebar-link">月份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_monthdate.html" class="sidebar-link">月日选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_pagination.html" class="sidebar-link">分页</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_percent.html" class="sidebar-link">数值百分比</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_progress.html" class="sidebar-link">进度条</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_radio.html" class="sidebar-link">单选框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_switch.html" class="sidebar-link">开关</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_time.html" class="sidebar-link">时间选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_validate.html" class="sidebar-link">自定义验证</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_year.html" class="sidebar-link">年份选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/ex_yearmonth.html" class="sidebar-link">年月选择</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textarea.html" class="sidebar-link">多行文本输入控件</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/textfield.html" class="sidebar-link">文本输入框</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/kero/tree.html" class="sidebar-link">树</a>
+                </li>
+            
+                
+                
+                    
+                    
+                      <li><h3>表格</h3></li>
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid_index.html" class="sidebar-link">grid详解</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                <li>
+                    <a href="/moy/grid-api.html" class="sidebar-link">gridAPI</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端请求</h3></li>
+                    
+                
+                <li>
+                    <a href="/moy/kero-fetch.html" class="sidebar-link">前端请求方法</a>
+                </li>
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                      <li><h3>前端解决方案</h3></li>
+                    
+                    
+                
+                <li>
+                    <a href="/moy/IE.html" class="sidebar-link">IE8兼容方案</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content moy with-sidebar ">
+    
+      <h1>典型场景开发</h1>
+    
+    <h3 id="表格控件"><a href="#表格控件" class="headerlink" title="表格控件"></a>表格控件</h3><p>表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。</p>
+<h4 id="依赖资源"><a href="#依赖资源" class="headerlink" title="依赖资源"></a>依赖资源</h4><p><a href="http://design.yonyoucloud.com/static/uui/latest/css/font-awesome.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/font-awesome.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/css/u.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/u.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/css/grid.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/grid.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u-grid.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u-grid.js</a></p>
+<h4 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h4><p>1、创建div</p>
+<pre><code>&lt;div id=&quot;gridTest1&quot; u-meta=&apos;{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}&apos;&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;名&quot;,&quot;editType&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;canSwap&quot;:true}&apos;&gt;&lt;/div&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;surname&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;姓氏&quot;,&quot;editType&quot;:&quot;string&quot; ,&quot;renderType&quot;:&quot;timeRender&quot;,&quot;sortable&quot;:true}&apos;&gt;&lt;/div&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;currency&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;余额&quot;,&quot;editType&quot;:&quot;float&quot;,&quot;editOptions&quot;:{&quot;validType&quot;:&quot;float&quot;,&quot;precision&quot;:&quot;3&quot;,&quot;max&quot;:10000},&quot;sumCol&quot;:true}&apos;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>示例中#gridTest1为表格控件的顶层div，u-meta中为表格控件的属性设置，其中data为dataTable的变量名，type固定为grid。子项div对应的每个column的属性设置，如果要设置编辑控件的属性，需要将属性设置到editOptions中。</p>
+<p>框架默认支持的editType如下：</p>
+<ul>
+<li>string</li>
+<li>integer</li>
+<li>checkbox</li>
+<li>combo</li>
+<li>radio</li>
+<li>float</li>
+<li>currency</li>
+<li>datetime</li>
+<li>date</li>
+<li>time</li>
+<li>url</li>
+<li>password</li>
+<li>percent</li>
+</ul>
+<p>框架默认支持的renderType如下：</p>
+<ul>
+<li>booleanRender</li>
+<li>integerRender</li>
+<li>currencyRender</li>
+<li>floatRender</li>
+<li>comboRender</li>
+<li>dateRender</li>
+<li>dateTimeRender</li>
+<li>radioRender</li>
+<li>urlRender</li>
+<li>passwordRender</li>
+<li>percentRender</li>
+</ul>
+<p>表格的详细API：<a href="http://docs.tinper.org/neoui/plugin.html#表格控件" target="_blank" rel="external">http://docs.tinper.org/neoui/plugin.html#表格控件</a></p>
+<p>2、创建viewModel</p>
+<pre><code>$(document).ready(function () {
+    viewModel = {
+        dataTable: new u.dataTable({
+            meta: {
+                &quot;name&quot;: &quot;&quot;,
+                &quot;time&quot;:&quot;&quot;,
+                &quot;currency&quot;: &quot;&quot;
+            }
+        }, this),
+
+        onBeforeClickFun1:function(obj){
+            obj.gridObj.setGridEditType(&apos;default&apos;);
+            return true;
+        },
+    }
+});
+</code></pre><p>过程1中使用的dataTable以及grid中的function类型的变量都需要定义到viewModel中。</p>
+<p>3、创建app</p>
+<pre><code>var app = u.createApp({
+    el: &apos;body&apos;,
+    model: viewModel
+});
+</code></pre><p>创建app的时候会根据传入的el对应的选择器查找dom元素，并将dom元素下的所有代码u-meta的元素解析为控件，model属性为对应之前定义的viewModel。</p>
+<p>4、dataTable中添加数据</p>
+<pre><code>var data = [{
+            &quot;name&quot;: &quot;赵四&quot;,
+            &quot;time&quot;: &quot;12:22:00&quot;,
+            &quot;currency&quot;: &quot;200&quot;
+        }, {
+            &quot;name&quot;: &quot;王一&quot;,
+            &quot;time&quot;: &quot;04:44:22&quot;,
+            &quot;currency&quot;: &quot;300&quot;
+        }]
+viewModel.dataTable.removeAllRows();
+viewModel.dataTable.setSimpleData(data);
+</code></pre><p>通过dataTable的setSimpleData方法将数据插入dataTable中。框架会自动将数据传入表格控件并显示。</p>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4>
+<div class="example-content"><div id="gridTest1" u-meta="{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}">
+	<div options="{"field":"name","dataType":"String","title":"名","editType":"string","sortable":true,"canSwap":true}"></div>
+    <div options="{"field":"surname","dataType":"String","title":"姓氏","editType":"string" ,"renderType":"timeRender","sortable":true}"></div>
+	<div options="{"field":"currency","dataType":"String","title":"余额","editType":"float","editOptions":{"validType":"float","precision":"3","max":10000},"sumCol":true}"></div>
+</div></div>
+
+<style>
+
+</style>
+
+<script>
+$(document).ready(function () {
+	// 创建viewModel,包含dataTable以及grid中使用的function变量
+    viewModel = {
+        dataTable: new u.DataTable({
+            meta: {
+                "name": "",
+                "surname":"",
+                "currency": ""
+            }
+        }),
+		// 表格点击行之前触发的事件
+        onBeforeClickFun1:function(obj){
+            obj.gridObj.setGridEditType('default');
+            return true;
+        },
+    }
+	// 创建APP
+    app = u.createApp({
+        el: 'body',
+        model: viewModel
+    });
+	// 添加数据到dataTable中
+    var data = [{
+                "name": "Teagan",
+                "surname": "Prohaska",
+                "currency": "200"
+            }, {
+                "name": "Andy",
+                "surname": "Gaylord",
+                "currency": "300"
+            }]
+    viewModel.dataTable.removeAllRows();
+    viewModel.dataTable.setSimpleData(data);
+});
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"gridTest1"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"grid1","data":"dataTable","type":"grid","multiSelect":true,"editable":true,"onBeforeClickFun":"onBeforeClickFun1"&#125;'</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"name","dataType":"String","title":"名","editType":"string","sortable":true,"canSwap":true&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"surname","dataType":"String","title":"姓氏","editType":"string" ,"renderType":"timeRender","sortable":true&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"currency","dataType":"String","title":"余额","editType":"float","editOptions":&#123;"validType":"float","precision":"3","max":10000&#125;,"sumCol":true&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// 创建viewModel,包含dataTable以及grid中使用的function变量</span></div><div class="line">    viewModel = &#123;</div><div class="line">        <span class="attr">dataTable</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">            <span class="attr">meta</span>: &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"surname"</span>:<span class="string">""</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">""</span></div><div class="line">            &#125;</div><div class="line">        &#125;),</div><div class="line">		<span class="comment">// 表格点击行之前触发的事件</span></div><div class="line">        onBeforeClickFun1:<span class="function"><span class="keyword">function</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">            obj.gridObj.setGridEditType(<span class="string">'default'</span>);</div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;,</div><div class="line">    &#125;</div><div class="line">	<span class="comment">// 创建APP</span></div><div class="line">    app = u.createApp(&#123;</div><div class="line">        <span class="attr">el</span>: <span class="string">'body'</span>,</div><div class="line">        <span class="attr">model</span>: viewModel</div><div class="line">    &#125;);</div><div class="line">	<span class="comment">// 添加数据到dataTable中</span></div><div class="line">    <span class="keyword">var</span> data = [&#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">"Teagan"</span>,</div><div class="line">                <span class="string">"surname"</span>: <span class="string">"Prohaska"</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">"200"</span></div><div class="line">            &#125;, &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">"Andy"</span>,</div><div class="line">                <span class="string">"surname"</span>: <span class="string">"Gaylord"</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">"300"</span></div><div class="line">            &#125;]</div><div class="line">    viewModel.dataTable.removeAllRows();</div><div class="line">    viewModel.dataTable.setSimpleData(data);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="表格控件校验说明"><a href="#表格控件校验说明" class="headerlink" title="表格控件校验说明"></a>表格控件校验说明</h3><p>使用表格控件进行编辑的过程中，需要对输入内容进行一定的校验。本文档针对表格控件如何与框架中的校验规则进行关联进行说明。</p>
+<h4 id="加入校验规则"><a href="#加入校验规则" class="headerlink" title="加入校验规则"></a>加入校验规则</h4><p>本文档中的说明以基础说明为基础，只增加校验相关说明。</p>
+<pre><code>&lt;div id=&quot;gridTest1&quot; u-meta=&apos;{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}&apos;&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;名&quot;,&quot;editType&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;canSwap&quot;:true,&quot;editOptions&quot;:{&quot;validType&quot;:&quot;string&quot;,&quot;maxLength&quot;:6}}&apos;&gt;&lt;/div&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;surname&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;姓氏&quot;,&quot;editType&quot;:&quot;string&quot; ,&quot;renderType&quot;:&quot;timeRender&quot;,&quot;sortable&quot;:true,&quot;editOptions&quot;:{&quot;validType&quot;:&quot;string&quot;,&quot;required&quot;:true}}&apos;&gt;&lt;/div&gt;
+    &lt;div options=&apos;{&quot;field&quot;:&quot;currency&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;余额&quot;,&quot;editType&quot;:&quot;float&quot;,&quot;editOptions&quot;:{&quot;validType&quot;:&quot;float&quot;,&quot;precision&quot;:&quot;3&quot;,&quot;max&quot;:10000},&quot;sumCol&quot;:true}&apos;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>在column的editOptions属性中进行校验规则的设置。validType为框架内置的校验规则，同时可以设置其他校验属性。详细的校验规则参照文档：后续补充。</p>
+<h4 id="整体校验"><a href="#整体校验" class="headerlink" title="整体校验"></a>整体校验</h4><p>表格整体输入完成之后，如果需要对表格中的所有信息进行一次性校验可以通过以下方式实现。</p>
+<pre><code>app.compsValidateMultiParam({element:$(&apos;body&apos;)[0]})
+</code></pre><p>返回值为object，其中属性passed表示校验结果是否通过，true表示全部校验通过，false表示校验不通过。属性notPassedArr表示校验不通过的组件数组，其中Msg为校验失败原因，comp为校验失败的组件。</p>
+
+<div class="example-content"><div id="gridTest1" u-meta="{&quot;id&quot;:&quot;grid1&quot;,&quot;data&quot;:&quot;dataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;multiSelect&quot;:true,&quot;editable&quot;:true,&quot;onBeforeClickFun&quot;:&quot;onBeforeClickFun1&quot;}">
+	<div options="{"field":"name","dataType":"String","title":"名","editType":"string","sortable":true,"canSwap":true,"editOptions":{"validType":"string","maxLength":6}}"></div>
+    <div options="{"field":"surname","dataType":"String","title":"姓氏","editType":"string" ,"renderType":"timeRender","sortable":true,"editOptions":{"validType":"string","required":true}}"></div>
+	<div options="{"field":"currency","dataType":"String","title":"余额","editType":"float","editOptions":{"validType":"float","precision":"3","max":10000},"sumCol":true}"></div>
+</div></div>
+
+<style>
+
+</style>
+
+<script>
+$(document).ready(function () {
+	// 创建viewModel,包含dataTable以及grid中使用的function变量
+    viewModel = {
+        dataTable: new u.DataTable({
+            meta: {
+                "name": "",
+                "surname":"",
+                "currency": ""
+            }
+        }),
+		// 表格点击行之前触发的事件
+        onBeforeClickFun1:function(obj){
+            obj.gridObj.setGridEditType('default');
+            return true;
+        },
+    }
+	// 创建APP
+    app = u.createApp({
+        el: 'body',
+        model: viewModel
+    });
+	// 添加数据到dataTable中
+    var data = [{
+                "name": "Teagan",
+                "surname": "Prohaska",
+                "currency": "200"
+            }, {
+                "name": "Andy",
+                "surname": "Gaylord",
+                "currency": "300"
+            }]
+    viewModel.dataTable.removeAllRows();
+    viewModel.dataTable.setSimpleData(data);
+});
+
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"gridTest1"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"grid1","data":"dataTable","type":"grid","multiSelect":true,"editable":true,"onBeforeClickFun":"onBeforeClickFun1"&#125;'</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"name","dataType":"String","title":"名","editType":"string","sortable":true,"canSwap":true,"editOptions":&#123;"validType":"string","maxLength":6&#125;&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"surname","dataType":"String","title":"姓氏","editType":"string" ,"renderType":"timeRender","sortable":true,"editOptions":&#123;"validType":"string","required":true&#125;&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"currency","dataType":"String","title":"余额","editType":"float","editOptions":&#123;"validType":"float","precision":"3","max":10000&#125;,"sumCol":true&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="comment">// 创建viewModel,包含dataTable以及grid中使用的function变量</span></div><div class="line">    viewModel = &#123;</div><div class="line">        <span class="attr">dataTable</span>: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">            <span class="attr">meta</span>: &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"surname"</span>:<span class="string">""</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">""</span></div><div class="line">            &#125;</div><div class="line">        &#125;),</div><div class="line">		<span class="comment">// 表格点击行之前触发的事件</span></div><div class="line">        onBeforeClickFun1:<span class="function"><span class="keyword">function</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">            obj.gridObj.setGridEditType(<span class="string">'default'</span>);</div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;,</div><div class="line">    &#125;</div><div class="line">	<span class="comment">// 创建APP</span></div><div class="line">    app = u.createApp(&#123;</div><div class="line">        <span class="attr">el</span>: <span class="string">'body'</span>,</div><div class="line">        <span class="attr">model</span>: viewModel</div><div class="line">    &#125;);</div><div class="line">	<span class="comment">// 添加数据到dataTable中</span></div><div class="line">    <span class="keyword">var</span> data = [&#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">"Teagan"</span>,</div><div class="line">                <span class="string">"surname"</span>: <span class="string">"Prohaska"</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">"200"</span></div><div class="line">            &#125;, &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">"Andy"</span>,</div><div class="line">                <span class="string">"surname"</span>: <span class="string">"Gaylord"</span>,</div><div class="line">                <span class="string">"currency"</span>: <span class="string">"300"</span></div><div class="line">            &#125;]</div><div class="line">    viewModel.dataTable.removeAllRows();</div><div class="line">    viewModel.dataTable.setSimpleData(data);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="主子表"><a href="#主子表" class="headerlink" title="主子表"></a>主子表</h3><h4 id="依赖资源-1"><a href="#依赖资源-1" class="headerlink" title="依赖资源"></a>依赖资源</h4><p><a href="http://design.yonyoucloud.com/static/uui/latest/css/font-awesome.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/font-awesome.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/css/u.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/u.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/css/grid.css" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/css/grid.css</a></p>
+<p><a href="http://design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u-polyfill.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u.js</a></p>
+<p><a href="http://design.yonyoucloud.com/static/uui/latest/js/u-grid.js" target="_blank" rel="external">http://design.yonyoucloud.com/static/uui/latest/js/u-grid.js</a></p>
+<h4 id="如何使用-1"><a href="#如何使用-1" class="headerlink" title="如何使用"></a>如何使用</h4><p>1、创建主子表DOM元素</p>
+<pre><code>&lt;div class=&quot;u-container-fluid u-widget-bg&quot;&gt;
+    &lt;div class=&quot;u-row&quot;&gt;
+    &lt;div class=&quot;u-col-md-12&quot;&gt;
+        &lt;div class=&quot;u-widget  u-widget-right&quot;&gt;
+        &lt;div class=&quot;u-widget-heading&quot;&gt;
+            &lt;div class=&quot;u-widget-title&quot;&gt;主表&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;u-widget-body&quot; style=&quot;margin-bottom: 30px&quot;&gt;
+            &lt;div id=&quot;mainGridDiv&quot; u-meta=&apos;{&quot;id&quot;:&quot;mainGrid&quot;,&quot;data&quot;:&quot;mainDataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;onRowSelected&quot;:&quot;mainGridRowSelect&quot;}&apos;&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;姓名&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;tel&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;手机&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;email&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;邮件&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;depart&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;部门&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;company&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;公司&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;u-col-md-12&quot;&gt;
+        &lt;div class=&quot;u-widget  u-widget-right&quot;&gt;
+        &lt;div class=&quot;u-widget-heading&quot;&gt;
+            &lt;div class=&quot;u-widget-title&quot;&gt;子表&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;u-widget-body&quot; style=&quot;margin-bottom: 30px&quot;&gt;
+            &lt;div id=&quot;childGridDiv&quot; u-meta=&apos;{&quot;id&quot;:&quot;childGrid&quot;,&quot;data&quot;:&quot;childDataTable&quot;,&quot;type&quot;:&quot;grid&quot;}&apos;&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;name&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;报销人&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;date&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;日期&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;type&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;费用类型&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;detail&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;事由&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;div options=&apos;{&quot;field&quot;:&quot;count&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;title&quot;:&quot;报销金额&quot;}&apos;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>DOM说明：#mainGridDiv 为主表对应的表格控件的顶层div，#childGridDiv为子表对应的表格控件的顶层div。<br>2、创建viewModel</p>
+<pre><code>viewModel = {
+    // 主表对应的dataTable
+    mainDataTable: new u.DataTable({
+        meta: {
+            &quot;name&quot;: &quot;&quot;,
+            &quot;tel&quot;: &quot;&quot;,
+            &quot;email&quot;: &quot;&quot;,
+            &quot;depart&quot;: &quot;&quot;,
+            &quot;company&quot;: &quot;&quot;,
+        }
+    }),
+    // 子表对应的dataTable
+    childDataTable: new u.DataTable({
+        meta: {
+            &quot;name&quot;: &quot;&quot;,
+            &quot;date&quot;: &quot;&quot;,
+            &quot;type&quot;: &quot;&quot;,
+            &quot;detail&quot;: &quot;&quot;,
+            &quot;count&quot;: &quot;&quot;,
+        }
+    }),
+    //主表对应的表格控件选中行时执行的function
+    mainGridRowSelect: function(obj){
+            var filterName = obj.rowObj.value.name;
+            var newData = filterData(childData,filterName);
+            viewModel.childDataTable.removeAllRows();
+            viewModel.childDataTable.setSimpleData(newData);
+    }
+}
+</code></pre><p> mainDataTable为主表对应的dataTable，childDataTable为子表对应的dataTable，mainGridRowSelect为主表对应的表格控件选中行时执行的function。<br> 3、创建子表过滤function</p>
+<pre><code>/**
+ * 子表数据校验：
+ *  data: 子表数据集合
+ *  filtername: 过滤操作匹配值
+ */
+filterData = function(data,filtername){
+    var temp = []
+    for(var i in data){
+        if(data[i].name === filtername){
+            temp.push(data[i]);
+        }
+    }
+    return temp;
+}
+</code></pre><p> 4、创建app</p>
+<pre><code>var app = u.createApp({
+    el: &apos;body&apos;,
+    model: viewModel
+});
+</code></pre><p>5、创建主子表数据集合并为主表添加数据</p>
+<pre><code>// 创建主子表数据信息
+var mainData = [{
+        email: &quot;li@126.com&quot;,
+        depart: &quot;UAPweb&quot;,
+        company: &quot;UAP&quot;,
+        name: &apos;张三&apos;,
+        tel: &apos;13610068888&apos;
+    }, {
+        email: &quot;li@126.com&quot;,
+        depart: &quot;UAPweb&quot;,
+        company: &quot;UAP&quot;,
+        name: &apos;李四&apos;,
+        tel: &apos;13610068888&apos;
+    }, {
+        email: &quot;li@126.com&quot;,
+        depart: &quot;UAPweb&quot;,
+        company: &quot;UAP&quot;,
+        name: &apos;王五&apos;,
+        tel: &apos;13610068888&apos;
+    }, {
+        email: &quot;li@126.com&quot;,
+        depart: &quot;UAPweb&quot;,
+        company: &quot;UAP&quot;,
+        name: &apos;郭六&apos;,
+        tel: &apos;13610068888&apos;
+    }, {
+        email: &quot;li@126.com&quot;,
+        depart: &quot;UAPweb&quot;,
+        company: &quot;UAP&quot;,
+        name: &apos;田七&apos;,
+        tel: &apos;13610068888&apos;
+    }];
+var childData = [{
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;李四&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;李四&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;李四&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;张三&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;张三&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;王五&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;郭六&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;郭六&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;田七&apos;,
+        count: &apos;60&apos;
+    }, {
+        date: &quot;2015-05-15 00:00:00&quot;,
+        type: &quot;加班打车费用&quot;,
+        detail: &quot;加班&quot;,
+        name: &apos;田七&apos;,
+        count: &apos;60&apos;
+    }];
+// 为主表添加数据
+viewModel.mainDataTable.setSimpleData(mainData);
+</code></pre><h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4>
+<div class="example-content"><div class="u-container-fluid u-widget-bg">
+    <div class="u-row">
+        <div class="u-col-md-12">
+            <div class="u-widget  u-widget-right">
+                <div class="u-widget-heading">
+                    <div class="u-widget-title">主表</div>
+                </div>
+                <div class="u-widget-body" style="margin-bottom: 30px">
+                    <div id="mainGridDiv" u-meta="{&quot;id&quot;:&quot;mainGrid&quot;,&quot;data&quot;:&quot;mainDataTable&quot;,&quot;type&quot;:&quot;grid&quot;,&quot;onRowSelected&quot;:&quot;mainGridRowSelect&quot;}">
+						<div options="{"field":"name","dataType":"String","title":"姓名"}"></div>
+						<div options="{"field":"tel","dataType":"String","title":"手机"}"></div>
+						<div options="{"field":"email","dataType":"String","title":"邮件"}"></div>
+						<div options="{"field":"depart","dataType":"String","title":"部门"}"></div>
+						<div options="{"field":"company","dataType":"String","title":"公司"}"></div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="u-col-md-12">
+            <div class="u-widget  u-widget-right">
+                <div class="u-widget-heading">
+                    <div class="u-widget-title">子表</div>
+                </div>
+                <div class="u-widget-body" style="margin-bottom: 30px">
+                    <div id="childGridDiv" u-meta="{&quot;id&quot;:&quot;childGrid&quot;,&quot;data&quot;:&quot;childDataTable&quot;,&quot;type&quot;:&quot;grid&quot;}">
+						<div options="{"field":"name","dataType":"String","title":"报销人"}"></div>
+						<div options="{"field":"date","dataType":"String","title":"日期"}"></div>
+						<div options="{"field":"type","dataType":"String","title":"费用类型"}"></div>
+						<div options="{"field":"detail","dataType":"String","title":"事由"}"></div>
+						<div options="{"field":"count","dataType":"String","title":"报销金额"}"></div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<style>
+
+</style>
+
+<script>
+﻿$(document).ready(function () {
+    
+	// 创建viewModel,包含主子表对应dataTable以及grid中使用的function变量
+	viewModel = {
+		// 主表对应的dataTable
+        mainDataTable: new u.DataTable({
+            meta: {
+                "name": "",
+                "tel": "",
+                "email": "",
+				"depart": "",
+				"company": "",
+            }
+        }),
+		// 子表对应的dataTable
+		childDataTable: new u.DataTable({
+            meta: {
+                "name": "",
+                "date": "",
+                "type": "",
+				"detail": "",
+				"count": "",
+            }
+        }),
+		//主表对应的表格控件选中行时执行的function
+        mainGridRowSelect: function(obj){
+			var filterName = obj.rowObj.value.name;
+			var newData = filterData(childData,filterName);
+			viewModel.childDataTable.removeAllRows();
+			viewModel.childDataTable.setSimpleData(newData);
+        }
+    }
+
+	// 创建主子表数据信息
+	var mainData = [{
+            email: "li@126.com",
+            depart: "UAPweb",
+            company: "UAP",
+            name: '张三',
+            tel: '13610068888'
+        }, {
+            email: "li@126.com",
+            depart: "UAPweb",
+            company: "UAP",
+            name: '李四',
+            tel: '13610068888'
+        }, {
+            email: "li@126.com",
+            depart: "UAPweb",
+            company: "UAP",
+            name: '王五',
+            tel: '13610068888'
+        }, {
+            email: "li@126.com",
+            depart: "UAPweb",
+            company: "UAP",
+            name: '郭六',
+            tel: '13610068888'
+        }, {
+            email: "li@126.com",
+            depart: "UAPweb",
+            company: "UAP",
+            name: '田七',
+            tel: '13610068888'
+        }];
+	var childData = [{
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '李四',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '李四',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '李四',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '张三',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '张三',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '王五',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '郭六',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '郭六',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '田七',
+            count: '60'
+        }, {
+            date: "2015-05-15 00:00:00",
+            type: "加班打车费用",
+            detail: "加班",
+            name: '田七',
+            count: '60'
+        }];
+	/**
+	 * 子表数据校验：
+	 *  data: 子表数据集合
+	 *  filtername: 过滤操作匹配值
+	 */
+	filterData = function(data,filtername){
+        var temp = []
+        for(var i in data){
+            if(data[i].name === filtername){
+                temp.push(data[i]);
+            }
+        }
+        return temp;
+    }
+	// 创建app
+	var app = u.createApp({
+		el: 'body',
+		model: viewModel
+	});
+	// 为主表添加数据
+	viewModel.mainDataTable.setSimpleData(mainData);
+});
+</script>
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-container-fluid u-widget-bg"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-row"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-md-12"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget  u-widget-right"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-heading"</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-title"</span>&gt;</span>主表<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-body"</span> <span class="attr">style</span>=<span class="string">"margin-bottom: 30px"</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"mainGridDiv"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"mainGrid","data":"mainDataTable","type":"grid","onRowSelected":"mainGridRowSelect"&#125;'</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"name","dataType":"String","title":"姓名"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"tel","dataType":"String","title":"手机"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"email","dataType":"String","title":"邮件"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"depart","dataType":"String","title":"部门"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"company","dataType":"String","title":"公司"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">					<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-col-md-12"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget  u-widget-right"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-heading"</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-title"</span>&gt;</span>子表<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"u-widget-body"</span> <span class="attr">style</span>=<span class="string">"margin-bottom: 30px"</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"childGridDiv"</span> <span class="attr">u-meta</span>=<span class="string">'&#123;"id":"childGrid","data":"childDataTable","type":"grid"&#125;'</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"name","dataType":"String","title":"报销人"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"date","dataType":"String","title":"日期"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"type","dataType":"String","title":"费用类型"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"detail","dataType":"String","title":"事由"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">						<span class="tag">&lt;<span class="name">div</span> <span class="attr">options</span>=<span class="string">'&#123;"field":"count","dataType":"String","title":"报销金额"&#125;'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">					<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">﻿$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    </div><div class="line">	<span class="comment">// 创建viewModel,包含主子表对应dataTable以及grid中使用的function变量</span></div><div class="line">	viewModel = &#123;</div><div class="line">		<span class="comment">// 主表对应的dataTable</span></div><div class="line">        mainDataTable: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">            <span class="attr">meta</span>: &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"tel"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"email"</span>: <span class="string">""</span>,</div><div class="line">				<span class="string">"depart"</span>: <span class="string">""</span>,</div><div class="line">				<span class="string">"company"</span>: <span class="string">""</span>,</div><div class="line">            &#125;</div><div class="line">        &#125;),</div><div class="line">		<span class="comment">// 子表对应的dataTable</span></div><div class="line">		childDataTable: <span class="keyword">new</span> u.DataTable(&#123;</div><div class="line">            <span class="attr">meta</span>: &#123;</div><div class="line">                <span class="string">"name"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"date"</span>: <span class="string">""</span>,</div><div class="line">                <span class="string">"type"</span>: <span class="string">""</span>,</div><div class="line">				<span class="string">"detail"</span>: <span class="string">""</span>,</div><div class="line">				<span class="string">"count"</span>: <span class="string">""</span>,</div><div class="line">            &#125;</div><div class="line">        &#125;),</div><div class="line">		<span class="comment">//主表对应的表格控件选中行时执行的function</span></div><div class="line">        mainGridRowSelect: <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">			<span class="keyword">var</span> filterName = obj.rowObj.value.name;</div><div class="line">			<span class="keyword">var</span> newData = filterData(childData,filterName);</div><div class="line">			viewModel.childDataTable.removeAllRows();</div><div class="line">			viewModel.childDataTable.setSimpleData(newData);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">	<span class="comment">// 创建主子表数据信息</span></div><div class="line">	<span class="keyword">var</span> mainData = [&#123;</div><div class="line">            <span class="attr">email</span>: <span class="string">"li@126.com"</span>,</div><div class="line">            <span class="attr">depart</span>: <span class="string">"UAPweb"</span>,</div><div class="line">            <span class="attr">company</span>: <span class="string">"UAP"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'张三'</span>,</div><div class="line">            <span class="attr">tel</span>: <span class="string">'13610068888'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">email</span>: <span class="string">"li@126.com"</span>,</div><div class="line">            <span class="attr">depart</span>: <span class="string">"UAPweb"</span>,</div><div class="line">            <span class="attr">company</span>: <span class="string">"UAP"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'李四'</span>,</div><div class="line">            <span class="attr">tel</span>: <span class="string">'13610068888'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">email</span>: <span class="string">"li@126.com"</span>,</div><div class="line">            <span class="attr">depart</span>: <span class="string">"UAPweb"</span>,</div><div class="line">            <span class="attr">company</span>: <span class="string">"UAP"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'王五'</span>,</div><div class="line">            <span class="attr">tel</span>: <span class="string">'13610068888'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">email</span>: <span class="string">"li@126.com"</span>,</div><div class="line">            <span class="attr">depart</span>: <span class="string">"UAPweb"</span>,</div><div class="line">            <span class="attr">company</span>: <span class="string">"UAP"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'郭六'</span>,</div><div class="line">            <span class="attr">tel</span>: <span class="string">'13610068888'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">email</span>: <span class="string">"li@126.com"</span>,</div><div class="line">            <span class="attr">depart</span>: <span class="string">"UAPweb"</span>,</div><div class="line">            <span class="attr">company</span>: <span class="string">"UAP"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'田七'</span>,</div><div class="line">            <span class="attr">tel</span>: <span class="string">'13610068888'</span></div><div class="line">        &#125;];</div><div class="line">	<span class="keyword">var</span> childData = [&#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'李四'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'李四'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'李四'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'张三'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'张三'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'王五'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'郭六'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'郭六'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'田七'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;, &#123;</div><div class="line">            <span class="attr">date</span>: <span class="string">"2015-05-15 00:00:00"</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"加班打车费用"</span>,</div><div class="line">            <span class="attr">detail</span>: <span class="string">"加班"</span>,</div><div class="line">            <span class="attr">name</span>: <span class="string">'田七'</span>,</div><div class="line">            <span class="attr">count</span>: <span class="string">'60'</span></div><div class="line">        &#125;];</div><div class="line">	<span class="comment">/**</span></div><div class="line">	 * 子表数据校验：</div><div class="line">	 *  data: 子表数据集合</div><div class="line">	 *  filtername: 过滤操作匹配值</div><div class="line">	 */</div><div class="line">	filterData = <span class="function"><span class="keyword">function</span>(<span class="params">data,filtername</span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> temp = []</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> data)&#123;</div><div class="line">            <span class="keyword">if</span>(data[i].name === filtername)&#123;</div><div class="line">                temp.push(data[i]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> temp;</div><div class="line">    &#125;</div><div class="line">	<span class="comment">// 创建app</span></div><div class="line">	<span class="keyword">var</span> app = u.createApp(&#123;</div><div class="line">		<span class="attr">el</span>: <span class="string">'body'</span>,</div><div class="line">		<span class="attr">model</span>: viewModel</div><div class="line">	&#125;);</div><div class="line">	<span class="comment">// 为主表添加数据</span></div><div class="line">	viewModel.mainDataTable.setSimpleData(mainData);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>工具库详解 — sparrow</title>
+        <meta charset="utf-8">
+        <meta name="description" content="moy介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="工具库详解 — moy">
+        <meta property="og:description" content="moy介绍">
+        <meta property="og:image" content="https://tinper.org//images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="工具库详解 — moy">
+        <meta name="twitter:description" content="moy介绍">
+        <meta name="twitter:image" content="https://tinper.org/images/logo.png">
+
+        <link rel="icon" href="/images/logo-x.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/u.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/grid.css">
+        <link rel="stylesheet" href="//design.yonyoucloud.com/static/uui/latest/css/tree.css">
+        <script src="//design.yonyoucloud.com/static/jquery/jquery-1.9.1.min.js"></script>
+        <script src="//design.yonyoucloud.com/static/knockout/knockout-3.2.0.debug.js"></script>
+        <script src="//design.yonyoucloud.com/static/raty/rating.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-grid.js"></script>
+        <script src="//design.yonyoucloud.com/static/uui/latest/js/u-tree.js"></script>
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <script>window.PAGE_TYPE = "sparrow"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="http://tinper.org/">
+    <img src="/images/logo.png">
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link current">工具库sparrow</a></li>
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-input" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/moy/" class="nav-link">集成开发框架moy</a></li>
+<li><a href="/neoui/" class="nav-link">ui框架neoui</a></li>
+<li><a href="/uba/" class="nav-link">开发工具uba</a></li>
+<li><a target="_blank" href="http://bee.tinper.org/" class="nav-link">react组件库bee</a></li>
+<li><a href="/sparrow/" class="nav-link current">工具库sparrow</a></li>
+
+    </ul>
+    <div class="list">
+        <h2>
+            Sparrow
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                <li>
+                    <a href="/sparrow/index.html" class="sidebar-link current">工具库详解</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content sparrow with-sidebar ">
+    
+      <h1>工具库详解</h1>
+    
+    <h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><h3 id="Sparrow介绍"><a href="#Sparrow介绍" class="headerlink" title="Sparrow介绍"></a>Sparrow介绍</h3><p><code>tinper-sparrow</code> 是一个轻量级 <code>javascript</code> 库，让开发者能更方便地进行 <code>DOM</code>操作、<code>events</code>处理、动画效果实现和<code>AJAX</code>交互等，并且提供丰富的<code>API</code>封装，如多平台多浏览器判断、<code>Cookies</code>操作、事件机制、日期转换、数字处理、字符串相关判断等一系列功能方法。</p>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><h5 id="浏览器环境"><a href="#浏览器环境" class="headerlink" title="浏览器环境"></a>浏览器环境</h5><ul>
+<li>离线下载：只需将下载到的<code>sparrow.js</code>放置在<code>script</code>标签中</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;script src=&quot;sparrow.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h5 id="使用ES6模块开发环境"><a href="#使用ES6模块开发环境" class="headerlink" title="使用ES6模块开发环境"></a>使用ES6模块开发环境</h5><ul>
+<li>步骤一：安装依赖</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install --save tinper-sparrow</div></pre></td></tr></table></figure>
+<ul>
+<li>步骤二：在需要依赖的文件中引入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">import &#123;u&#125; from &apos;tinper-sparrow/js/index.js&apos;</div></pre></td></tr></table></figure>
+<h2 id="终端API"><a href="#终端API" class="headerlink" title="终端API"></a>终端API</h2><h3 id="isIE"><a href="#isIE" class="headerlink" title="isIE"></a>isIE</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+<li><p>用法:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">u.isIE //IE浏览器返回true,其他返回false</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="isFF"><a href="#isFF" class="headerlink" title="isFF"></a>isFF</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为火狐浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isOpera"><a href="#isOpera" class="headerlink" title="isOpera"></a>isOpera</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为Opera浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isChrome"><a href="#isChrome" class="headerlink" title="isChrome"></a>isChrome</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为Chrome浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isSafari"><a href="#isSafari" class="headerlink" title="isSafari"></a>isSafari</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为Safari浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isWebkit"><a href="#isWebkit" class="headerlink" title="isWebkit"></a>isWebkit</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为Webkit内核浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE8-BEFORE"><a href="#isIE8-BEFORE" class="headerlink" title="isIE8_BEFORE"></a>isIE8_BEFORE</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE8之前的浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE8"><a href="#isIE8" class="headerlink" title="isIE8"></a>isIE8</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE8浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE8-CORE"><a href="#isIE8-CORE" class="headerlink" title="isIE8_CORE"></a>isIE8_CORE</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE8内核浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE9"><a href="#isIE9" class="headerlink" title="isIE9"></a>isIE9</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE9浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE9-CORE"><a href="#isIE9-CORE" class="headerlink" title="isIE9_CORE"></a>isIE9_CORE</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE9内核浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE10"><a href="#isIE10" class="headerlink" title="isIE10"></a>isIE10</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE10浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIE11"><a href="#isIE11" class="headerlink" title="isIE11"></a>isIE11</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IE11浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIOS"><a href="#isIOS" class="headerlink" title="isIOS"></a>isIOS</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为IOS系统</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIphone"><a href="#isIphone" class="headerlink" title="isIphone"></a>isIphone</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为iphone浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isIPAD"><a href="#isIPAD" class="headerlink" title="isIPAD"></a>isIPAD</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为ipad浏览器</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isWin"><a href="#isWin" class="headerlink" title="isWin"></a>isWin</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为window系统</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isUnix"><a href="#isUnix" class="headerlink" title="isUnix"></a>isUnix</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为unix系统</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isLinux"><a href="#isLinux" class="headerlink" title="isLinux"></a>isLinux</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为linux系统</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isAndroid"><a href="#isAndroid" class="headerlink" title="isAndroid"></a>isAndroid</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为安卓系统</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="isMac"><a href="#isMac" class="headerlink" title="isMac"></a>isMac</h3><ul>
+<li><p>说明：</p>
+<p>判断是否为MAC</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h3 id="hasTouch"><a href="#hasTouch" class="headerlink" title="hasTouch"></a>hasTouch</h3><ul>
+<li><p>说明：</p>
+<p>判断是否存在touch事件</p>
+</li>
+<li><p>类型：</p>
+<p>Boolean</p>
+</li>
+</ul>
+<h2 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h2><h3 id="on-element-eventName-child-listener"><a href="#on-element-eventName-child-listener" class="headerlink" title="on(element,eventName,child,listener)"></a>on(element,eventName,child,listener)</h3><ul>
+<li><p>说明：</p>
+<p>为HTML元素绑定事件</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。需要绑定事件的HTML元素。</li>
+<li>{String} eventName：必需。绑定事件的事件名称。</li>
+<li>{String} child：可选。选择器，是否为element的子元素进行事件绑定。</li>
+<li>{function} listener：必需。触发事件时执行的function。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<pre><code>u.on(window, &apos;resize&apos;, function(){
+    alert(&apos;resizeFun&apos;)
+});
+</code></pre></li>
+</ul>
+<h3 id="off-element-eventName-listener"><a href="#off-element-eventName-listener" class="headerlink" title="off(element,eventName,listener)"></a>off(element,eventName,listener)</h3><ul>
+<li><p>说明：</p>
+<p>为HTML元素取消事件绑定</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。取消绑定事件的HTML元素。</li>
+<li>{String} eventName：必需。绑定事件的事件名称。</li>
+<li>{function} listener：可选。取消绑定的function，如果传入则只取消此function的绑定，对其他function不进行改变。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<pre><code>u.off(window, &apos;resize&apos;);
+</code></pre></li>
+</ul>
+<h3 id="trigger-element-eventName"><a href="#trigger-element-eventName" class="headerlink" title="trigger(element,eventName)"></a>trigger(element,eventName)</h3><ul>
+<li><p>说明：</p>
+<p>触发HTML元素的事件绑定</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。触发绑定事件的HTML元素。</li>
+<li>{String} eventName：必需。触发绑定事件的事件名称。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<br>​<pre><code>u.trigger(window, &apos;resize&apos;);
+</code></pre></li>
+</ul>
+<p>##stopEvent(e)</p>
+<ul>
+<li><p>说明：</p>
+<p>阻止事件传播，兼容不同浏览器</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Event} e：必需。需要阻止传播的事件。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<pre><code>u.stopEvent(e);     
+</code></pre></li>
+</ul>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h3 id="wrap-element-parent"><a href="#wrap-element-parent" class="headerlink" title="wrap(element,parent)"></a>wrap(element,parent)</h3><ul>
+<li><p>说明：</p>
+<p>将HTML元素添加到某HTML元素中。</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。被添加的HTML元素。</li>
+<li>{String}/{HTMLElement} parent：必需。作为父项的HTML元素。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：​<pre><code>u.wrap(document.getElementById(&apos;id1&apos;), &apos;&lt;div&gt;&lt;/div&gt;&apos;);     
+u.wrap(document.getElementById(&apos;id1&apos;), document.getElementById(&apos;id2&apos;));
+</code></pre></li>
+</ul>
+<h3 id="makeDOM-htmlString"><a href="#makeDOM-htmlString" class="headerlink" title="makeDOM(htmlString)"></a>makeDOM(htmlString)</h3><ul>
+<li><p>说明：</p>
+<p>创建HTML元素</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{String} htmlString：必需。需要创建的HTML元素对应的html字符串。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>创建之后的HTML元素</p>
+</li>
+<li>用法：​<pre><code>u.makeDOM(&apos;&lt;div&gt;&lt;/div&gt;&apos;);     
+</code></pre></li>
+</ul>
+<h2 id="对象判断"><a href="#对象判断" class="headerlink" title="对象判断"></a>对象判断</h2><h3 id="isDate-obj"><a href="#isDate-obj" class="headerlink" title="isDate(obj)"></a>isDate(obj)</h3><ul>
+<li><p>说明：</p>
+<p>判断传入对象是否为Date对象</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} obj：必需。需要进行判断的对象。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}传入对象为Date对象返回true否则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.isDate(new Date());     
+</code></pre></li>
+</ul>
+<h3 id="isNumber-obj"><a href="#isNumber-obj" class="headerlink" title="isNumber(obj)"></a>isNumber(obj)</h3><ul>
+<li><p>说明：</p>
+<p>判断传入对象是否为Number对象</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} obj：必需。需要进行判断的对象。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}传入对象为Number对象返回true否则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.isNumber(&apos;123&apos;);
+</code></pre></li>
+</ul>
+<h3 id="isArray-obj"><a href="#isArray-obj" class="headerlink" title="isArray(obj)"></a>isArray(obj)</h3><ul>
+<li><p>说明：</p>
+<p>判断传入对象是否为数组对象</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} obj：必需。需要进行判断的对象。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}传入对象为数组对象返回true否则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.isArray([&apos;1&apos;,&apos;2&apos;]);
+</code></pre></li>
+</ul>
+<h3 id="isEmptyObject-obj"><a href="#isEmptyObject-obj" class="headerlink" title="isEmptyObject(obj)"></a>isEmptyObject(obj)</h3><ul>
+<li><p>说明：</p>
+<p>判断传入对象是否为空对象</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} obj：必需。需要进行判断的对象。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}传入对象为空对象返回true否则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.isEmptyObject({id:&apos;id&apos;});
+</code></pre></li>
+</ul>
+<h3 id="inArray-node-arr"><a href="#inArray-node-arr" class="headerlink" title="inArray(node,arr)"></a>inArray(node,arr)</h3><ul>
+<li><p>说明：</p>
+<p>判断元素是否在数组中</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} node：必需。需要进行判断的元素。</li>
+<li>{Array} arr：必需。需要进行判断的数组。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}如果数组中存在元素则返回true，否则返回false。</p>
+</li>
+<li>用法：<br>​<pre><code>u.inArray(&apos;a1&apos;,[&apos;a2&apos;,&apos;a3&apos;]);
+</code></pre></li>
+</ul>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><h3 id="addClass-element-value"><a href="#addClass-element-value" class="headerlink" title="addClass(element,value)"></a>addClass(element,value)</h3><ul>
+<li><p>说明：</p>
+<p>为HTML元素添加样式</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。需要添加样式的HTML元素。</li>
+<li>{String} value：必需。添加的样式名。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<br>​<pre><code>u.addClass(document.getElementById(&apos;id1&apos;), &apos;add-class&apos;);
+</code></pre></li>
+</ul>
+<h3 id="removeClass-element-value"><a href="#removeClass-element-value" class="headerlink" title="removeClass(element,value)"></a>removeClass(element,value)</h3><ul>
+<li><p>说明：</p>
+<p>为HTML元素删除样式</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。需要删除样式的HTML元素。</li>
+<li>{String} value：必需。删除的样式名。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<br>​<pre><code>u.removeClass(document.getElementById(&apos;id1&apos;), &apos;add-class&apos;);
+</code></pre></li>
+</ul>
+<h3 id="hasClass-element-value"><a href="#hasClass-element-value" class="headerlink" title="hasClass(element,value)"></a>hasClass(element,value)</h3><ul>
+<li><p>说明：</p>
+<p>判断HTML元素是否存在某样式</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。进行判断的HTML元素。</li>
+<li>{String} value：必需。进行判断的样式名。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}存在样式则返回true，不存在样式则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.hasClass(document.getElementById(&apos;id1&apos;), &apos;add-class&apos;);
+</code></pre></li>
+</ul>
+<h3 id="toggleClass-element-value"><a href="#toggleClass-element-value" class="headerlink" title="toggleClass(element,value)"></a>toggleClass(element,value)</h3><ul>
+<li><p>说明：</p>
+<p>判断HTML元素是否存在某样式，存在则删除此样式，否则添加此样式</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。进行判断的HTML元素。</li>
+<li>{String} value：必需。进行判断的样式名。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Boolean}执行完方法之后，如果存在样式则返回true，不存在样式则返回false</p>
+</li>
+<li>用法：<br>​<pre><code>u.toggleClass(document.getElementById(&apos;id1&apos;), &apos;add-class&apos;);
+</code></pre></li>
+</ul>
+<h3 id="css-element-csstext-val"><a href="#css-element-csstext-val" class="headerlink" title="css(element,csstext,val)"></a>css(element,csstext,val)</h3><ul>
+<li><p>说明：</p>
+<p>为HTML元素添加css样式属性。传入2个参数且第二个参数为字符串时获取HTML元素的css样式属性。</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。进行判断的HTML元素。</li>
+<li>{String}/{Object} csstext：必需。传入值为String时表示要添加的css属性名称，传入值为Object时表示要添加的css属性名称及属性值组成的Object对象。</li>
+<li>{String} value：csstext为String时必需。需要添加的css属性值。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>设置css样式属性时返回值为空。</p>
+<p>获取css样式属性时返回值为对应的css样式属性值。</p>
+</li>
+<li>用法：<br>​<pre><code>u.css(document.getElementById(&apos;id1&apos;), &apos;width&apos;,&apos;200px&apos;);     //设置宽度为200px
+u.css(document.getElementById(&apos;id1&apos;), {width:&apos;500px&apos;}); // 设置宽度为500px
+u.css(document.getElementById(&apos;id1&apos;), &apos;width&apos;); // 获取宽度
+</code></pre></li>
+</ul>
+<h2 id="方法扩展"><a href="#方法扩展" class="headerlink" title="方法扩展"></a>方法扩展</h2><h3 id="extend-object-config"><a href="#extend-object-config" class="headerlink" title="extend(object, config)"></a>extend(object, config)</h3><ul>
+<li><p>说明：</p>
+<p>复制对象属性</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} object：必需。目标对象</li>
+<li>{Object} config：必需。源对象</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Object}复制之后的object</p>
+</li>
+<li>用法：​<pre><code>var obj1 = {
+    id : &apos;id&apos;,
+    name : &apos;name&apos;
+}
+var obj2 = {
+    code : &apos;code&apos;,
+    name : &apos;newName&apos;
+}
+u.extend(obj1, obj2); //obj1为{id: &quot;id&quot;, name: &quot;newName&quot;, code: &quot;code&quot;}
+</code></pre></li>
+</ul>
+<h3 id="setCookie-sName-sValue-oExpires-sPath-sDomain-bSecure"><a href="#setCookie-sName-sValue-oExpires-sPath-sDomain-bSecure" class="headerlink" title="setCookie(sName, sValue, oExpires, sPath, sDomain, bSecure)"></a>setCookie(sName, sValue, oExpires, sPath, sDomain, bSecure)</h3><ul>
+<li><p>说明：</p>
+<p>设置cookie属性</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{String} sName：必需。规定 cookie 的名称。</li>
+<li>{String} sValue：必需。规定 cookie 的值。</li>
+<li>{String} oExpires：可选。规定 cookie 的有效期。</li>
+<li>{String} sPath：可选。规定 cookie 的服务器路径。</li>
+<li>{String} sDomain：可选。规定 cookie 的域名。</li>
+<li>{String} bSecure：可选。规定是否通过安全的 HTTPS 连接来传输 cookie。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：<pre><code>u.setCookie(&apos;COOKIENAME&apos;, &apos;COOKIVALUE&apos;); //设置cookie的COOKIENAME为COOKIVALUE
+</code></pre></li>
+</ul>
+<h3 id="getCookie-sName"><a href="#getCookie-sName" class="headerlink" title="getCookie(sName)"></a>getCookie(sName)</h3><ul>
+<li><p>说明：</p>
+<p>获取cookie属性</p>
+</li>
+</ul>
+<ul>
+<li>参数：<ul>
+<li>{String} sName：必需。获取 cookie 的名称。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>cookie中sName对应的属性</p>
+</li>
+<li>用法：​​<pre><code>u.getCookie(&apos;COOKIENAME&apos;); //获取cookie的COOKIENAME
+</code></pre></li>
+</ul>
+<h3 id="getFunction-target-val"><a href="#getFunction-target-val" class="headerlink" title="getFunction(target, val)"></a>getFunction(target, val)</h3><ul>
+<li><p>说明：</p>
+<p>获取function</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} target：必需。function定义的上下文。</li>
+<li>{String} value：必需。function名称。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{function}获取到的function</p>
+</li>
+<li>用法：<br>​<pre><code>u.getFunction(window,&apos;funName1&apos;);     
+</code></pre></li>
+</ul>
+<h3 id="getJSObject-target-names"><a href="#getJSObject-target-names" class="headerlink" title="getJSObject(target, names)"></a>getJSObject(target, names)</h3><ul>
+<li><p>说明：</p>
+<p>获取Object对象</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object} target：必需。Object定义的上下文。</li>
+<li>{String} names：必需。Objcet名称。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Object}获取到的Object</p>
+</li>
+<li>用法：​<pre><code>u.getJSObject(window,&apos;funName1&apos;); //获取window对象上的funName1对象
+</code></pre></li>
+</ul>
+<h3 id="each-obj-callback"><a href="#each-obj-callback" class="headerlink" title="each(obj,callback)"></a>each(obj,callback)</h3><ul>
+<li><p>说明：</p>
+<p>遍历传入的obj执行callback方法</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{Object}/{Array} obj：必需。需要进行遍历的对象或数组。</li>
+<li>{function} callback：必需。需要执行的function。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>无</p>
+</li>
+<li>用法：​<pre><code>var tmpdata = [];
+u.each(target_div.querySelectorAll(&quot;.m_context&quot;),function(i,node){
+        tmpdata[i] = node.innerHTML
+    })
+//遍历将class为m_context的HTML的内容翻入数组tmpdata中。
+</code></pre></li>
+</ul>
+<h3 id="getStyle-element-key"><a href="#getStyle-element-key" class="headerlink" title="getStyle(element,key)"></a>getStyle(element,key)</h3><ul>
+<li><p>说明：</p>
+<p>获取HTML元素的style属性。</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。HTML元素。</li>
+<li>{String} key：必需。需要获取的style属性名称。</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>HTML元素的style属性值</p>
+</li>
+<li>用法：​<pre><code>u.getStyle(document.getElementById(&apos;id1&apos;), &apos;width&apos;);     
+</code></pre></li>
+</ul>
+<h3 id="getZIndex"><a href="#getZIndex" class="headerlink" title="getZIndex()"></a>getZIndex()</h3><ul>
+<li><p>说明：</p>
+<p>统一zindex值, 不同控件每次显示时都取最大的zindex，防止显示错乱</p>
+</li>
+<li><p>参数：</p>
+<p>无</p>
+</li>
+<li><p>返回值：</p>
+<p>新的zindex最大值</p>
+</li>
+<li>用法：​<pre><code>u.getZIndex();
+</code></pre></li>
+</ul>
+<h3 id="getOffset-ele-offset"><a href="#getOffset-ele-offset" class="headerlink" title="getOffset(ele, offset)"></a>getOffset(ele, offset)</h3><ul>
+<li><p>说明：</p>
+<p>获取/设置元素<code>ele</code>相对顶层<code>body</code>的偏移量</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。目标对象</li>
+<li>{Object} config：可选。设置的元素偏移量。默认则最终返回<code>ele</code>相对<code>body</code>的偏移量</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Object}：包含<code>top</code>,<code>left</code>值</p>
+</li>
+<li><p>用法：</p>
+<pre><code>var offsetObj = {
+    top : 10,
+    left : 20
+};
+var ele = document.getElementById(&apos;tit&apos;);
+
+u.getOffset(ele,offsetObj) // {top: 120, left:100}
+</code></pre></li>
+</ul>
+<h3 id="getScroll-ele-offset"><a href="#getScroll-ele-offset" class="headerlink" title="getScroll(ele, offset)"></a>getScroll(ele, offset)</h3><ul>
+<li><p>说明：</p>
+<p>获取/设置元素<code>ele</code>滚动的偏移量</p>
+</li>
+<li><p>参数：</p>
+<ul>
+<li>{HTMLElement} element：必需。目标对象</li>
+<li>{Object} config：可选。设置的元素偏移量。默认则最终返回<code>ele</code>相对浏览器顶部的偏移量</li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Object}：包含<code>top</code>,<code>left</code>值</p>
+</li>
+<li><p>用法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">同getOffset</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="ajax-…"><a href="#ajax-…" class="headerlink" title="ajax({…})"></a>ajax({…})</h3><ul>
+<li><p>说明：</p>
+<p>执行Ajax数交互</p>
+</li>
+<li><p>参数：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  url: &apos;test.html&apos;,</div><div class="line">  type: &apos;GET&apos;</div><div class="line">  success: function()&#123;&#125;,</div><div class="line">  async: true,</div><div class="line">  error: function()&#123;&#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+<ul>
+<li>{String} url：必需，文件在服务器上的位置</li>
+<li>{String} type：可选，默认为<code>post</code></li>
+<li>{Function} success：可选，回调函数</li>
+<li>{Function} error：可选，回调函数</li>
+<li>{Boolean} async: 可选，默认为<code>true</code></li>
+</ul>
+</li>
+<li><p>返回值：</p>
+<p>{Object}</p>
+</li>
+<li><p>用法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">document.getElementById(&apos;btn&apos;).addEventListener(&apos;click&apos;, function()&#123;</div><div class="line">    u.ajax(&#123;</div><div class="line">        url: &apos;./package.json&apos;,</div><div class="line">        type: &apos;GET&apos;,</div><div class="line">        success: function(data)&#123;</div><div class="line">            alert(data)</div><div class="line">        &#125;,</div><div class="line">        error: function()&#123;</div><div class="line">            alert(&quot;error&quot;)</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+    
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/css.escape.js"></script>
+        <script src="/js/common.js"></script>
+
+        <!-- search -->
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script>
+        // [
+        //   '#search-query-nav',
+        //   '#search-query-sidebar'
+        // ].forEach(function (selector) {
+        //   if (!document.querySelector(selector)) return
+        //   // search index defaults to v2
+        //   var match = window.location.pathname.match(/^\/(v\d+)/)
+        //   var version = match ? match[1] : 'v2'
+        //   docsearch({
+        //     appId: 'BH4D9OD16A',
+        //     apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+        //     indexName: 'tinper',
+        //     inputSelector: selector,
+        //     algoliaOptions: { facetFilters: ["version:" + version] }
+        //   })
+        // })
+
+        docsearch({
+            apiKey: 'f08119decf9f8511b70ece4fb199a2cd',
+            indexName: 'tinper',
+          inputSelector: '#search-query-input'
+        });
+        </script>
+
+        <!-- FastClick是一个非常方便的库,在移动浏览器上发生介于轻敲及点击之间的指令时,能够让你摆脱300毫秒的延迟 -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body)
+        }, false)
+        </script>
+    </body>
+</html>
