@@ -10,7 +10,11 @@
     "catch": "sh bin/catchmd.sh",
     "docs": "npm run concat && npm run trans",
     "concat": "node mdoperate/kero/snipp-tran-docs.js&& node mdoperate/neoui/snipp-tran-docs.js&&node mdoperate/neoui-kero/snipp-tran-docs.js&&node mdoperate/sparrow/snipp-tran-docs.js&&node mdoperate/grid/snipp-tran-docs.js",
-    "trans": "node mdoperate/kero/docs-tran-src.js&& node mdoperate/neoui/docs-tran-src.js&&node mdoperate/neoui-kero/docs-tran-src.js&&node mdoperate/sparrow/docs-tran-src.js&&node mdoperate/grid/docs-tran-src.js&&node mdoperate/uba/docs-tran-src.js"
+    "trans": "node mdoperate/kero/docs-tran-src.js&& node mdoperate/neoui/docs-tran-src.js&&node mdoperate/neoui-kero/docs-tran-src.js&&node mdoperate/sparrow/docs-tran-src.js&&node mdoperate/grid/docs-tran-src.js&&node mdoperate/uba/docs-tran-src.js",
+    "offline_docs": "npm run offline_concat && npm run offline_trans",
+    "offline_concat": "node offmdoperate/kero/snipp-tran-docs.js&& node offmdoperate/neoui/snipp-tran-docs.js&&node offmdoperate/neoui-kero/snipp-tran-docs.js&&node offmdoperate/sparrow/snipp-tran-docs.js&&node offmdoperate/grid/snipp-tran-docs.js",
+    "offline_trans": "node offmdoperate/kero/docs-tran-src.js&& node offmdoperate/neoui/docs-tran-src.js&&node offmdoperate/neoui-kero/docs-tran-src.js&&node offmdoperate/sparrow/docs-tran-src.js&&node offmdoperate/grid/docs-tran-src.js&&node offmdoperate/uba/docs-tran-src.js",
+    "offline":"node offmdoperate/concat.js"
   },
   "repository": {
     "type": "git",
