@@ -790,30 +790,6 @@ dateObject.setFormat('YYYY');
 
 
 
-## 表格控件扩展说明
-
-在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
-
-### css覆盖
-
-如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
-
-### 切换主题
-
-通过引用不同的主题文件的方式来修改当前表格的主题。
-
-**注：后续提供**
-
-### afterCreate
-
-表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
-详见API：
-
-### 扩展表格方法
-
-此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
-源码库：https://github.com/iuap-design/neoui-grid.git
-
 ## 表格控件
 
 表格控件将数据以表格的方式进行展示，同时提供了排序、交换列、数字列、复选、合计、自定义渲染、修改等复杂功能，满足了复杂场景下数据展示的需求。
@@ -2135,6 +2111,30 @@ $(document).ready(function () {
 });
 ```
 
+## 表格控件扩展说明
+
+在使用表格控件过程中会存在需要修改css、调整div布局的情况，本文档针对目前表格控件支持的几类扩展机制进行说明。
+
+### css覆盖
+
+如果只是简单修改css的样式，可以将需要修改的css样式写入单独文件并且保证编写的文件在grid.css之后引用，这样就会通过编写的css来覆盖默认的样式。
+
+### 切换主题
+
+通过引用不同的主题文件的方式来修改当前表格的主题。
+
+**注：后续提供**
+
+### afterCreate
+
+表格参数afterCreate对应一个自定义的function，在表格每次渲染完成之后都会调用此方法，可以再此方法中对表格的div布局以及css样式进行调整。
+详见API：
+
+### 扩展表格方法
+
+此方法要求对表格控件源码有一定了解，直接通过插件扩展方式对表格控件的默认方法进行重写。具体实现方式可参考源码库中js下除gridComp.js之外的js文件。
+源码库：https://github.com/iuap-design/neoui-grid.git
+
 ## message控件
 
 用于即时信息的提示，消息背景色取决于消息类型，易可添加相对应的`icon`
@@ -2475,6 +2475,145 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
 
 ```
 
+## progress控件
+
+常用于跟踪进度
+
+### 插件依赖
+
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
+
+### 用法
+
+1.详情见示例
+
+### API
+
+#### JS 方法参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setProgress(para)</td>
+	    <td>para:比例数据</td>
+	    <td>初始化滚动条并设置比例</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>setBuffer(para)</td>
+	    <td>para:设置缓冲比例</td>
+	    <td>缓冲滚动条</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+#### css 参数
+
+<table>
+  <tbody>
+  	  <tr>
+	    <td>名称</td>
+	    <td>参数</td>
+	    <td>描述</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>颜色</td>
+	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
+	    <td>加在父元素的类后面 设置不同的色值</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>大小</td>
+	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
+	    <td>父元素的类后面 设置不同的尺寸</td>
+	    <td></td>
+	  </tr>
+	</tbody>
+</table>
+
+
+### 基本Progress
+
+{% raw %}
+<div class="example-content"><div id="p1" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p1" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p1')['u.Progress'].setProgress(33);
+
+});
+```
+
+
+### 不确定Progress
+
+{% raw %}
+<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div id="p2" class="u-progress u-progress__indeterminate"></div>
+```
+
+
+
+
+### 缓冲Progress
+
+有缓冲标识的进度条
+
+{% raw %}
+<div class="example-content"><div id="p3" class="u-progress"></div></div>
+
+
+
+<script>
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+</script>
+
+{% endraw %}
+``` html
+<div id="p3" class="u-progress"></div>
+```
+
+``` js
+u.on(window, 'load', function() {
+    'use strict';
+    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
+
+});
+```
+
 ## rating控件
 
 评级评分
@@ -2620,145 +2759,6 @@ update     | 1.totalPages:总页数 2.pageSize:每页显示的条数 3.currentPa
       // }
     // });
   })(document, window, jQuery);
-```
-
-## progress控件
-
-常用于跟踪进度
-
-### 插件依赖
-
-依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
-
-### 用法
-
-1.详情见示例
-
-### API
-
-#### JS 方法参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setProgress(para)</td>
-	    <td>para:比例数据</td>
-	    <td>初始化滚动条并设置比例</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>setBuffer(para)</td>
-	    <td>para:设置缓冲比例</td>
-	    <td>缓冲滚动条</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-#### css 参数
-
-<table>
-  <tbody>
-  	  <tr>
-	    <td>名称</td>
-	    <td>参数</td>
-	    <td>描述</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>颜色</td>
-	    <td>1.u-progress-primary 2.u-progress-danger 3.u-progress-info 4.u-progress-warning 5.u-progress-dark</td>
-	    <td>加在父元素的类后面 设置不同的色值</td>
-	    <td></td>
-	  </tr>
-	  <tr>
-	    <td>大小</td>
-	    <td>1.u-progress-lg 2.u-progress-md 3.u-progress-sm</td>
-	    <td>父元素的类后面 设置不同的尺寸</td>
-	    <td></td>
-	  </tr>
-	</tbody>
-</table>
-
-
-### 基本Progress
-
-{% raw %}
-<div class="example-content"><div id="p1" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p1" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p1')['u.Progress'].setProgress(33);
-
-});
-```
-
-
-### 不确定Progress
-
-{% raw %}
-<div class="example-content"><div id="p2" class="u-progress u-progress__indeterminate"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div id="p2" class="u-progress u-progress__indeterminate"></div>
-```
-
-
-
-
-### 缓冲Progress
-
-有缓冲标识的进度条
-
-{% raw %}
-<div class="example-content"><div id="p3" class="u-progress"></div></div>
-
-
-
-<script>
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
-</script>
-
-{% endraw %}
-``` html
-<div id="p3" class="u-progress"></div>
-```
-
-``` js
-u.on(window, 'load', function() {
-    'use strict';
-    document.querySelector('#p3')['u.Progress'].setProgress(33).setBuffer(87);
-
-});
 ```
 
 ## 参照组件
@@ -3627,6 +3627,41 @@ title:'批量向上显示'
 
 ```
 
+## loading插件
+
+loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
+
+### 插件依赖
+
+
+依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
+
+
+### 用法
+
+定义样式为`u-loading is-active u-loading-single-color `的div父元素
+
+```
+<div class="u-loading is-active u-loading-single-color"></div>
+
+```
+
+js会根据`u-loading`来定位dom，然后绑定事件。
+
+
+
+{% raw %}
+<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
+
+
+
+{% endraw %}
+``` html
+<div class="u-loading is-active u-loading-single-color"></div>
+```
+
+
+
 ## menu控件
 
 动态弹出菜单
@@ -3725,41 +3760,6 @@ title:'批量向上显示'
 	padding-left: 30px;
 }
 ```
-
-
-## loading插件
-
-loading 组件以一个圆环顺时针方向运动，用来传达某一事件已经开始但尚未完成的。圆环的颜色可以是单一的或者变化的。
-
-### 插件依赖
-
-
-依赖于 http://design.yonyoucloud.com/static/uui/latest/js/u.js
-
-
-### 用法
-
-定义样式为`u-loading is-active u-loading-single-color `的div父元素
-
-```
-<div class="u-loading is-active u-loading-single-color"></div>
-
-```
-
-js会根据`u-loading`来定位dom，然后绑定事件。
-
-
-
-{% raw %}
-<div class="example-content"><div class="u-loading is-active u-loading-single-color"></div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-loading is-active u-loading-single-color"></div>
-```
-
 
 
 ## 月份
