@@ -198,26 +198,7 @@
     <button class="u-button u-split-pre">
         打印
     </button>
-    <div class="u-button-group u-split-sub">
-        <button class="u-button u-dropdown-toggle" id="split">
-            <span class=" uf uf-arrow-down "></span>
-        </button>
-        <ul class="u-menu u-menu-bottom-right" for="split">
-            <li class="u-menu-item"><a>报价单</a></li>
-            <li class="u-menu-item"><a>到货单</a></li>
-        </ul>
-    </div>
-</div></div>
-
-
-
-{% endraw %}
-``` html
-<div class="u-button-group u-split">
-    <button class="u-button u-split-pre">
-        打印
-    </button>
-    <div class="u-button-group u-split-sub">
+    <div class="u-button-group u-split-sub" id="split-demo">
         <button class="u-button u-dropdown-toggle" id="split">
             <span class=" uf uf-arrow-down "></span>
         </button>
@@ -227,8 +208,39 @@
         </ul>
     </div>
 </div>
-```
+</div>
 
+<style>
+#split-demo{
+	margin: 0;
+}
+
+</style>
+
+{% endraw %}
+``` html
+<div class="u-button-group u-split">
+    <button class="u-button u-split-pre">
+        打印
+    </button>
+    <div class="u-button-group u-split-sub" id="split-demo">
+        <button class="u-button u-dropdown-toggle" id="split">
+            <span class=" uf uf-arrow-down "></span>
+        </button>
+        <ul class="u-menu u-menu-bottom-right" for="split">
+            <li class="u-menu-item"><a>报价单</a></li>
+            <li class="u-menu-item"><a>到货单</a></li>
+        </ul>
+    </div>
+</div>
+
+```
+``` css
+#split-demo{
+	margin: 0;
+}
+
+```
 
 
 
